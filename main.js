@@ -3,10 +3,16 @@ window.onload = function() {
   var table = document.getElementById("myTable").getElementsByTagName('tbody')[0];
 
   var json = '{ "smartphones" : [' +
-    '{ "name":"Huawei" , 	"price":231, 	"display":5.5, "length":150, "width":50, "processor":2, "updates":2, "camera":1, "battery":1 },' +
-    '{ "name":"MI A1" , 	"price":251, 	"display":2.5, "length":150, "width":50, "processor":3, "updates":5,"camera":2, "battery":3 },' +
-    '{ "name":"Iphone" , 	"price":229, 	"display":4.5, "length":150, "width":50, "processor":5, "updates":5, "camera":5, "battery":5 },' +
-    '{ "name":"LG" , 			"price":193, 	"display":5.3, "length":150, "width":50, "processor":3, "updates":3, "camera":3, "battery":4 } ' +
+
+    '{ "name":"Moto X4", "brand":"Motorola", "imagelink":"https://images-na.ssl-images-amazon.com/images/I/61eEr3fsroL._SY879_.jpg", 	"price":289, 	"display":5.2, "length":148, "width":73, "processor":3, "updates":5, "camera":4, "battery":5, "storage":32, "memory":3, "sdslot":1, "simcards":2, "headphonejack":1 },' +
+    '{ "name":"Moto G6" , "brand":"Motorola", "imagelink":"https://images-na.ssl-images-amazon.com/images/I/51vzBwamDqL._SX679_.jpg", 	"price":269, 	"display":5.9, "length":154, "width":72, "processor":3, "updates":4, "camera":3, "battery":3, "storage":32, "memory":3, "sdslot":1, "simcards":2, "headphonejack":1 },' +
+    '{ "name":"Nokia 6" , "brand":"Nokia", "imagelink":"https://images-na.ssl-images-amazon.com/images/I/7188sNVT5uL._SX679_.jpg", 	"price":279, 	"display":5.5, "length":149, "width":76, "processor":3, "updates":5, "camera":3, "battery":3, "storage":32, "memory":3, "sdslot":1, "simcards":2, "headphonejack":1 },' +
+    '{ "name":"Nokia 7 Plus" , "brand":"Nokia", "imagelink":"https://images-na.ssl-images-amazon.com/images/I/91BiN3djtSL._SX679_.jpg", 	"price":299, 	"display":6, "length":158, "width":76, "processor":4, "updates":5, "camera":4, "battery":5, "storage":64, "memory":4, "sdslot":1, "simcards":2, "headphonejack":1 },' +
+    '{ "name":"Nokia 8 Sirocco" , "brand":"Motorola", "imagelink":"https://images-na.ssl-images-amazon.com/images/I/818jGmLJypL._SX679_.jpg", 	"price":749, 	"display":5.5, "length":141, "width":73, "processor":5, "updates":5, "camera":5, "battery":3, "storage":128, "memory":6, "sdslot":1, "simcards":1, "headphonejack":0 },' +
+    '{ "name":"Mi A1" , "brand":"Xiamoi", "imagelink":"https://images-na.ssl-images-amazon.com/images/I/51FH1tXHxyL._SX679_.jpg", 	"price":185, 	"display":5.5, "length":155, "width":76, "processor":3, "updates":5, "camera":3, "battery":3, "storage":64, "memory":4, "sdslot":1, "simcards":2, "headphonejack":1 },' +
+
+    '{ "name":"Galaxy A5"     , "brand":"Samsung", 	"imagelink":"https://images-na.ssl-images-amazon.com/images/I/51iAzTjAzdL._SY879_.jpg",	"price":236, 	"display":5.2, "length":146, "width":71, "processor":3, "updates":3, "camera":3, "battery":3, "storage":32, "memory":3, "sdslot":1, "simcards":1, "headphonejack":1 }, ' +
+    '{ "name":"Galaxy S8"     , "brand":"Samsung", 	"imagelink":"https://images-na.ssl-images-amazon.com/images/I/41v6wu3u3vL.jpg",	"price":476, 	"display":5.8, "length":148, "width":68, "processor":4, "updates":3, "camera":4, "battery":4, "storage":64, "memory":4, "sdslot":1, "simcards":1, "headphonejack":1 } ' +
     ']}';
   var obj;
   var listOfFilteredObjects;
@@ -111,19 +117,12 @@ window.onload = function() {
 
         if (listOfFilteredAndScoredObjects.length == 0) {
           listOfFilteredAndScoredObjects.push(listOfFilteredObjects[i]);
-          console.log("Drin1");
-          console.log(listOfFilteredObjects[i]);
-          console.log(listOfFilteredAndScoredObjects.join());
           break;
         } else if (e == listOfFilteredAndScoredObjects.length) {
           listOfFilteredAndScoredObjects.splice(listOfFilteredAndScoredObjects.length, 0, listOfFilteredObjects[i]);
-          console.log("Drin2");
           break;
         } else if (score[i] > calculateScore(obj.smartphones[listOfFilteredAndScoredObjects[e]])) {
           listOfFilteredAndScoredObjects.splice(e, 0, listOfFilteredObjects[i]);
-          console.log("Drin3");
-          console.log(score[i]);
-          console.log(calculateScore(obj.smartphones[listOfFilteredObjects[e]]));
 
           break;
         }
@@ -183,7 +182,7 @@ window.onload = function() {
           if (table.rows[e + 1].cells.length < 10) { //Only 10 phones per row should be shown
             var cell = table.rows[e + 1].insertCell(table.rows[e + 1].length);
             cell.innerHTML = "";
-            cell.innerHTML += '<img class="qtip-img" height="250" src="https://images-na.ssl-images-amazon.com/images/I/81LLHSiufpL._SY879_.jpg">';
+            cell.innerHTML += '<img class="qtip-img" src="' + obj.smartphones[listOfFilteredAndScoredObjects[i]].imagelink + '">';
             cell.innerHTML += '<p style="text-align:center">' + obj.smartphones[listOfFilteredAndScoredObjects[i]].name + '</p>'
           }
 

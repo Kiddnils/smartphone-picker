@@ -33,6 +33,13 @@ body {
   margin-bottom: 50px;
 }
 
+.qtip-img {
+  height: auto;
+  width: auto;
+  max-width: 300px;
+  max-height: 400px;
+}
+
 .settingsdiv {
   border: 1px solid #F0F0F0;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
