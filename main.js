@@ -3,12 +3,13 @@ window.onload = function() {
   var table = document.getElementById("myTable").getElementsByTagName('tbody')[0];
 
   var json = '{ "smartphones" : [' +
-    '{ "name":"Iphone" , 	"price":999, 	"display":4.5, "length":150, "width":50, "camera":5, "battery":5 },' +
     '{ "name":"Huawei" , 	"price":231, 	"display":5.5, "length":150, "width":50, "camera":1, "battery":1 },' +
     '{ "name":"MI A1" , 	"price":201, 	"display":2.5, "length":150, "width":50, "camera":2, "battery":3 },' +
+    '{ "name":"Iphone" , 	"price":229, 	"display":4.5, "length":150, "width":50, "camera":5, "battery":5 },' +
     '{ "name":"LG" , 			"price":203, 	"display":5.3, "length":150, "width":50, "camera":3, "battery":4 } ]}';
   var obj;
   var listOfFilteredObjects;
+  var listOfFilteredAndScoredObjects;
 
   function filterJSON() {
     obj = JSON.parse(json);
@@ -88,7 +89,42 @@ window.onload = function() {
   }
 
   function sortListOfFilteredObjects() {
+    var score = [];
+    listOfFilteredAndScoredObjects = [];
+    //first score stuff
+    for (var i = 0; i < listOfFilteredObjects.length; i++) {
+      score.push(calculateScore(obj.smartphones[listOfFilteredObjects[i]]));
+      //then sort it into listOfFilteredAndScoredObjects
+      for (var e = 0; e < listOfFilteredObjects.length; e++) {
 
+        if (listOfFilteredAndScoredObjects.length == 0) {
+          listOfFilteredAndScoredObjects.push(listOfFilteredObjects[i]);
+          console.log("Drin1");
+          console.log(listOfFilteredObjects[i]);
+          console.log(listOfFilteredAndScoredObjects.join());
+          break;
+        } else if (e == listOfFilteredAndScoredObjects.length) {
+          listOfFilteredAndScoredObjects.splice(listOfFilteredAndScoredObjects.length, 0, listOfFilteredObjects[i]);
+          console.log("Drin2");
+          break;
+        } else if (score[i] > calculateScore(obj.smartphones[listOfFilteredAndScoredObjects[e]])) {
+          listOfFilteredAndScoredObjects.splice(e, 0, listOfFilteredObjects[i]);
+          console.log("Drin3");
+          console.log(score[i]);
+          console.log(calculateScore(obj.smartphones[listOfFilteredObjects[e]]));
+
+          break;
+        }
+      }
+
+    }
+    console.log(score.join());
+    console.log(listOfFilteredObjects.join());
+    console.log(listOfFilteredAndScoredObjects.join());
+  }
+
+  function calculateScore(smartphone) {
+    return smartphone.camera + smartphone.battery;
   }
 
   function deleteTable() {
@@ -133,14 +169,14 @@ window.onload = function() {
     buildTableStructure();
     filterJSON();
     sortListOfFilteredObjects();
-    for (var i = 0; i < listOfFilteredObjects.length; i++) {
+    for (var i = 0; i < listOfFilteredAndScoredObjects.length; i++) {
       for (var e = 0; e < 20; e++) {
-        if (obj.smartphones[listOfFilteredObjects[i]].price > (e) * 50 && obj.smartphones[listOfFilteredObjects[i]].price < (e + 1) * 50) {
+        if (obj.smartphones[listOfFilteredAndScoredObjects[i]].price > (e) * 50 && obj.smartphones[listOfFilteredAndScoredObjects[i]].price < (e + 1) * 50) {
           if (table.rows[e + 1].cells.length < 10) { //Only 10 phones per row should be shown
-            var cell = table.rows[e + 1].insertCell(1);
+            var cell = table.rows[e + 1].insertCell(table.rows[e + 1].length);
             cell.innerHTML = "";
             cell.innerHTML += '<img class="qtip-img" height="250" src="https://images-na.ssl-images-amazon.com/images/I/81LLHSiufpL._SY879_.jpg">';
-            cell.innerHTML += '<p style="text-align:center">' + obj.smartphones[listOfFilteredObjects[i]].name + '</p>'
+            cell.innerHTML += '<p style="text-align:center">' + obj.smartphones[listOfFilteredAndScoredObjects[i]].name + '</p>'
           }
 
         }
