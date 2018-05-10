@@ -3,10 +3,11 @@ window.onload = function() {
   var table = document.getElementById("myTable").getElementsByTagName('tbody')[0];
 
   var json = '{ "smartphones" : [' +
-    '{ "name":"Huawei" , 	"price":231, 	"display":5.5, "length":150, "width":50, "camera":1, "battery":1 },' +
-    '{ "name":"MI A1" , 	"price":201, 	"display":2.5, "length":150, "width":50, "camera":2, "battery":3 },' +
-    '{ "name":"Iphone" , 	"price":229, 	"display":4.5, "length":150, "width":50, "camera":5, "battery":5 },' +
-    '{ "name":"LG" , 			"price":203, 	"display":5.3, "length":150, "width":50, "camera":3, "battery":4 } ]}';
+    '{ "name":"Huawei" , 	"price":231, 	"display":5.5, "length":150, "width":50, "processor":2, "updates":2, "camera":1, "battery":1 },' +
+    '{ "name":"MI A1" , 	"price":251, 	"display":2.5, "length":150, "width":50, "processor":3, "updates":5,"camera":2, "battery":3 },' +
+    '{ "name":"Iphone" , 	"price":229, 	"display":4.5, "length":150, "width":50, "processor":5, "updates":5, "camera":5, "battery":5 },' +
+    '{ "name":"LG" , 			"price":193, 	"display":5.3, "length":150, "width":50, "processor":3, "updates":3, "camera":3, "battery":4 } ' +
+    ']}';
   var obj;
   var listOfFilteredObjects;
   var listOfFilteredAndScoredObjects;
@@ -70,16 +71,27 @@ window.onload = function() {
       }
 
 
-
-      //camera
-      if (document.querySelector('input[name="rating-input-1"]:checked')) {
-        if (obj.smartphones[i].camera < document.querySelector('input[name="rating-input-1"]:checked').value) {
+      //processor
+      if (document.querySelector('input[name="processor-input-1"]:checked')) {
+        if (obj.smartphones[i].processor < document.querySelector('input[name="processor-input-1"]:checked').value) {
+          continue;
+        }
+      }
+      //software updates
+      if (document.querySelector('input[name="updates-input-1"]:checked')) {
+        if (obj.smartphones[i].updates < document.querySelector('input[name="updates-input-1"]:checked').value) {
           continue;
         }
       }
       //camera
-      if (document.querySelector('input[name="rating-input-2"]:checked')) {
-        if (obj.smartphones[i].battery < document.querySelector('input[name="rating-input-2"]:checked').value) {
+      if (document.querySelector('input[name="camera-input-1"]:checked')) {
+        if (obj.smartphones[i].camera < document.querySelector('input[name="camera-input-1"]:checked').value) {
+          continue;
+        }
+      }
+      //camera
+      if (document.querySelector('input[name="battery-input-2"]:checked')) {
+        if (obj.smartphones[i].battery < document.querySelector('input[name="battery-input-2"]:checked').value) {
           continue;
         }
       }
@@ -116,11 +128,7 @@ window.onload = function() {
           break;
         }
       }
-
     }
-    console.log(score.join());
-    console.log(listOfFilteredObjects.join());
-    console.log(listOfFilteredAndScoredObjects.join());
   }
 
   function calculateScore(smartphone) {
