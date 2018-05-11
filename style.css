@@ -1,6 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 body {
-  font-family: 'Open Sans', sans-serif !important;
+  font-family: 'Open Sans', sans-serif;
   color: #666;
 }
 
@@ -15,22 +14,30 @@ thead {
 
 th {
   padding-right: 10px;
-  padding-left: 0px;
+  padding-left: 0;
   color: #666;
   border-bottom: 1px solid #F0F0F0;
   border-bottom-color: rgb(240, 240, 240);
   text-align: left;
-  font-family: 'Open Sans', sans-serif !important;
+  font-family: 'Open Sans', sans-serif;
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: .0px;
+  letter-spacing: 0;
 }
 
-body {
-  margin-left: 50px;
-  margin-top: 20px;
-  margin-right: 50px;
-  margin-bottom: 50px;
+@media only screen and (min-width: 768px) {
+  body {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+.smartphone-name {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 900;
 }
 
 .qtip-img {
@@ -38,6 +45,9 @@ body {
   width: auto;
   max-width: 300px;
   max-height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .settingsdiv {
@@ -56,10 +66,9 @@ body {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
 }
 
-.itemsTable {}
-
 .itemsTable td {
   vertical-align: top;
+  padding-bottom: 15px;
 }
 
 .itemsTable thead tr th {
@@ -70,7 +79,7 @@ body {
 .priceTiers {
   font-size: 13px;
   font-weight: 700;
-  font-family: 'Open Sans',  !sans-serif important;
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: .1px;
   text-rendering: optimizeLegibility;
   padding: 8px;
@@ -91,17 +100,12 @@ body {
 }
 
 .padding-none {
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
+  padding: 0;
 }
 
 p {
   display: block;
-  -webkit-margin-before: 0px;
-  -webkit-margin-after: 0px;
-  font-family: 'Open Sans', sans-serif !important;
+  font-family: 'Open Sans', sans-serif;
   font-size: 11px;
   font-weight: 500;
   letter-spacing: .1px;
@@ -121,8 +125,6 @@ p {
   padding: 0;
   opacity: 0;
 }
-
-.rating_updater {}
 
 radio {
   width: 16px;
