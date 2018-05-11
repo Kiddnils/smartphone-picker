@@ -206,16 +206,34 @@ window.onload = function() {
     console.log(listOfFilteredAndScoredObjects.join());
     for (var i = 0; i < listOfFilteredAndScoredObjects.length; i++) {
       for (var e = 0; e < 24; e++) {
-        console.log(obj.smartphones[listOfFilteredAndScoredObjects[i]].price);
-        console.log((e) * 50);
-        console.log((e + 1) * 50);
         if (obj.smartphones[listOfFilteredAndScoredObjects[i]].price > (e) * 50 && obj.smartphones[listOfFilteredAndScoredObjects[i]].price <= (e + 1) * 50) {
 
           if (table.rows[e + 1].cells.length < 10) { //Only 10 phones per row should be shown
-            var cell = table.rows[e + 1].insertCell(table.rows[e + 1].length);
-            cell.innerHTML = "";
-            cell.innerHTML += '<img class="qtip-img" src="' + obj.smartphones[listOfFilteredAndScoredObjects[i]].imagelink + '">';
-            cell.innerHTML += '<p class="smartphone-name">' + obj.smartphones[listOfFilteredAndScoredObjects[i]].brand + ' ' + obj.smartphones[listOfFilteredAndScoredObjects[i]].name + '</p>'
+            var cell = table.rows[e + 1].insertCell(table.rows[e + 1].cells.length);
+
+            cell.innerHTML = '<input type="checkbox">' +
+              '<label for="toggle" id="picture' + (e + 1) + '-' + table.rows[e + 1].cells.length + '">' +
+              '<div class="float">' +
+              '<img  class="qtip-img" src="' + obj.smartphones[listOfFilteredAndScoredObjects[i]].imagelink + '">' +
+              '<p class="smartphone-name">' + obj.smartphones[listOfFilteredAndScoredObjects[i]].brand + ' ' + obj.smartphones[listOfFilteredAndScoredObjects[i]].name + '</p>' +
+              '</div>' +
+              '</label>' +
+              '<div class="float" id="hiddenpicture' + (e + 1) + '-' + table.rows[e + 1].cells.length + '" style ="display:none" >' +
+              '<h1>Price    : ' + obj.smartphones[listOfFilteredAndScoredObjects[i]].price + '</h1>' +
+              '<br>' +
+              '<h1>Processor: ' + obj.smartphones[listOfFilteredAndScoredObjects[i]].processor + '</h1>' +
+              '<h1>Software : ' + obj.smartphones[listOfFilteredAndScoredObjects[i]].updates + '</h1>' +
+              '<h1>Camera   : ' + obj.smartphones[listOfFilteredAndScoredObjects[i]].camera + '</h1>' +
+              '<h1>Battery  : ' + obj.smartphones[listOfFilteredAndScoredObjects[i]].battery + '</h1>' +
+              '</div > ';
+
+            document.getElementById('picture' + (e + 1) + '-' + table.rows[e + 1].cells.length).addEventListener('click', function(e) {
+              if (document.getElementById('hidden' + e.target.parentElement.parentElement.id).style.display === "none") {
+                document.getElementById('hidden' + e.target.parentElement.parentElement.id).style.display = "block";
+              } else {
+                document.getElementById('hidden' + e.target.parentElement.parentElement.id).style.display = "none";
+              }
+            });
             break;
           }
 

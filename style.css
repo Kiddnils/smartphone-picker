@@ -34,6 +34,12 @@ th {
   }
 }
 
+input[type=checkbox] {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
 .smartphone-name {
   text-align: center;
   font-size: 11px;
@@ -46,8 +52,6 @@ th {
   max-width: 300px;
   max-height: 400px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .settingsdiv {
