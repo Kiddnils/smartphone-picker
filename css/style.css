@@ -25,19 +25,8 @@ th {
   letter-spacing: 0;
 }
 
-body {
-  margin: 0;
-}
-
-.bodydiv {
-  margin-top: 5px;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-bottom: 50px;
-}
-
 @media only screen and (min-width: 768px) {
-  bodydiv {
+  body {
     margin-top: 5px;
     margin-left: 150px;
     margin-right: 150px;
@@ -72,12 +61,15 @@ body {
 }
 
 .main-menu-text a {
+  text-align: center;
   padding-right: 20px;
 }
 
 .description {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 50px;
+  margin-bottom: 20px;
   font-size: 12px;
 }
 
@@ -107,7 +99,6 @@ input[type=checkbox] {
 }
 
 .settingsdiv {
-  margin-top: 20px;
   border: 1px solid #F0F0F0;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
   padding-bottom: 10px;
@@ -115,10 +106,6 @@ input[type=checkbox] {
 
 .settingsdiv thead tr th {
   vertical-align: top;
-  padding: 8px;
-}
-
-.settingsdiv tbody tr td {
   padding: 8px;
 }
 
