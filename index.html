@@ -17,8 +17,8 @@
 
 <body>
   <div style="text-align:left; margin-left: 15%;">
-    <a class="btn btn-link" href="index.html" style="font-size: 43.2px; text-decoration: none; color: #666;">
-                      smartphone-picker
+    <a class="" href="index.html" style="font-size: 43.2px; text-decoration: none; color: #666;">
+                      Smartphone-picker
                   </a>
   </div>
   <div class="main-menu">
@@ -38,27 +38,28 @@
 
     </div>
   </div>
+  <div class="description">
+    <p><span style="">Smartphone-picker helps you choose your next smartphone in this crowded market. Filter the hand-curated list to your liking and click a smartphone to show it's specs.</span></p>
+  </div>
   <div class="bodydiv">
-    <div class="description">
-      <p>smartphone-picker helps you choose your next smartphone in this crowded market. Filter the hand-curated list to your liking and click a smartphone to show it's specs.</p>
-    </div>
+
     <div class="float">
       <p>
         Strict Filtering
       </p>
       <select id="filterInput" class="rating_updater">
-    <option value="1" selected="selected">No</option>
-    <option value="2">Yes</option>
-  </select>
+        <option value="1" selected="selected">No</option>
+        <option value="2">Yes</option>
+      </select>
     </div>
     <div class="float">
       <p>
         Scale smartphones
       </p>
       <select id="filterInput" class="rating_updater">
-    <option value="1" selected="selected">No</option>
-    <option value="2">Yes</option>
-  </select>
+        <option value="1" selected="selected">No</option>
+        <option value="2">Yes</option>
+      </select>
     </div>
     <div style="clear:both;">
     </div>
@@ -67,7 +68,7 @@
         <thead class="settingsTable">
           <tr>
             <th style="min-width: 70px">Price</th>
-            <th style="min-width: 160px">Size</th>
+            <th style="min-width: 140px">Size</th>
             <th style="min-width: 0px">Processor</th>
             <th style="min-width: 0px">Software Updates</th>
             <th style="min-width: 0px">Camera</th>
@@ -83,80 +84,65 @@
         <tbody>
           <tr>
             <td>
-              <div class="float">
-                <input id="price_minimum_1" name="price_minimum_1" class="smallInput rating_updater" size="2" type="text">
-                <br>
-              </div>
-              <div class="float">
-                <p>-</p>
-              </div>
-              <div class="float">
-                <input id="price_maximum_1" name="price_maximum_1" class="smallInput rating_updater" size="2" type="text">
-                <br>
-              </div>
+              <table>
+                <tbody>
+                  <tr>
+                    <td style="padding-left:0px; padding-top:0;">
+                      <input id="price_minimum_1" name="price_minimum_1" class="smallInput rating_updater" size="2" type="text">
+                    </td>
+                    <td style="padding-left:0px; padding-top:0;">
+                      <p>-</p>
+                    </td>
+                    <td style="padding-left:0px; padding-top:0;">
+                      <input id="price_maximum_1" name="price_maximum_1" class="smallInput rating_updater" size="2" type="text">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </td>
             <td>
               <table>
                 <tbody>
                   <tr>
-
                     <td style="padding-left:0px; padding-top:0;">
-                      <div class="float">
-                        <p>Display</p>
-                      </div>
+                      <p>Display</p>
                     </td>
                     <td style="padding-left:0px; padding-top:0;">
-                      <div class="float">
-                        <input id="size_minimum_1" name="size_minimum_1" class="smallInput rating_updater" size="2" type="text">
-                        <br>
-                      </div>
-                      <div class="float">
-                        <p>-</p>
-                      </div>
-                      <div class="float">
-                        <input id="size_maximum_1" name="size_maximum_1" class="smallInput rating_updater" size="2" type="text">
-                        <br>
-                      </div>
+                      <input id="size_minimum_1" name="size_minimum_1" class="smallInput rating_updater" size="2" type="text">
+                    </td>
+                    <td style="padding-left:0px; padding-top:0;">
+                      <p>-</p>
+                    </td>
+                    <td style="padding-left:0px; padding-top:0;">
+                      <input id="size_maximum_1" name="size_maximum_1" class="smallInput rating_updater" size="2" type="text">
                     </td>
                   </tr>
                   <tr>
                     <td style="padding-left:0px; padding-top:0;">
-                      <div class="float">
-                        <p>Length</p>
-                      </div>
+                      <p>Length</p>
                     </td>
                     <td style="padding-left:0px; padding-top:0;">
-                      <div class="float">
-                        <input id="size_minimum_2" name="size_minimum_2" class="smallInput rating_updater" size="2" type="text">
-                        <br>
-                      </div>
-                      <div class="float">
-                        <p>-</p>
-                      </div>
-                      <div class="float">
-                        <input id="size_maximum_2" name="size_maximum_2" class="smallInput rating_updater" size="2" type="text">
-                        <br>
-                      </div>
+                      <input id="size_minimum_2" name="size_minimum_2" class="smallInput rating_updater" size="2" type="text">
+                    </td>
+                    <td style="padding-left:0px; padding-top:0;">
+                      <p>-</p>
+                    </td>
+                    <td style="padding-left:0px; padding-top:0;">
+                      <input id="size_maximum_2" name="size_maximum_2" class="smallInput rating_updater" size="2" type="text">
                     </td>
                   </tr>
                   <tr>
                     <td style="padding-left:0px; padding-top:0;">
-                      <div class="float">
-                        <p>Width</p>
-                      </div>
+                      <p>Width</p>
                     </td>
                     <td style="padding-left:0px; padding-top:0;">
-                      <div class="float">
-                        <input id="size_minimum_3" name="size_minimum_3" class="smallInput rating_updater" size="2" type="text">
-                        <br>
-                      </div>
-                      <div class="float">
-                        <p>-</p>
-                      </div>
-                      <div class="float">
-                        <input id="size_maximum_3" name="size_maximum_3" class="smallInput rating_updater" size="2" type="text">
-                        <br>
-                      </div>
+                      <input id="size_minimum_3" name="size_minimum_3" class="smallInput rating_updater" size="2" type="text">
+                    </td>
+                    <td style="padding-left:0px; padding-top:0;">
+                      <p>-</p>
+                    </td>
+                    <td style="padding-left:0px; padding-top:0;">
+                      <input id="size_maximum_3" name="size_maximum_3" class="smallInput rating_updater" size="2" type="text">
                     </td>
                   </tr>
                 </tbody>
