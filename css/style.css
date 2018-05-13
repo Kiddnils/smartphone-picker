@@ -181,6 +181,15 @@ p {
   margin: auto;
 }
 
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+hr {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .rating {
   display: inline-block;
   overflow: hidden;
