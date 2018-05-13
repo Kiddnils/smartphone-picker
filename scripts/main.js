@@ -9,7 +9,10 @@ window.onload = function() {
     '{ "name":"6" , "brand":"Nokia", "imagelink":"https://images.ctfassets.net/wcfotm6rrl7u/QHJzVZHv2KSCQ8cIkgYo2/ae6c4ef77c7d6021890efa60b21c0cc3/TheNewNokia6_hardware-phone.png?fm=png", 	"price":279, 	"display":5.5, "length":149, "width":76, "processor":3, "updates":5, "camera":3, "battery":3, "storage":32, "memory":3, "sdslot":1, "simcards":2, "headphonejack":1 },' +
     '{ "name":"7 Plus" , "brand":"Nokia", "imagelink":"https://images.ctfassets.net/wcfotm6rrl7u/342egUgbI4QaC4wgKseYuk/6cbec796565c8bd2eca2b873b50f47da/Nokia7plus_ROW_hardware-phone.png?fm=png", 	"price":299, 	"display":6, "length":158, "width":76, "processor":4, "updates":5, "camera":4, "battery":5, "storage":64, "memory":4, "sdslot":1, "simcards":2, "headphonejack":1 },' +
     '{ "name":"8 Sirocco" , "brand":"Nokia", "imagelink":"https://images.ctfassets.net/wcfotm6rrl7u/BQQ8NVkKqGWAe4Am8UWO4/980e40489a147ff4e9abbd5e30274d1a/Nokia8Sirocco_ROW__power-phone.png?fm=png", 	"price":749, 	"display":5.5, "length":141, "width":73, "processor":5, "updates":5, "camera":5, "battery":3, "storage":128, "memory":6, "sdslot":1, "simcards":1, "headphonejack":0 },' +
+
     '{ "name":"Mi A1" , "brand":"Xiamoi", "imagelink":"https://i.imgur.com/y74WpwR.png", 	"price":185, 	"display":5.5, "length":155, "width":76, "processor":3, "updates":5, "camera":3, "battery":3, "storage":64, "memory":4, "sdslot":1, "simcards":2, "headphonejack":1 },' +
+    '{ "name":"Mi MIX 2" , "brand":"Xiamoi", "imagelink":"https://i.imgur.com/7EIAsGt.png", 	"price":377, 	"display":6, "length":152, "width":76, "processor":5, "updates":2, "camera":4, "battery":4, "storage":64, "memory":6, "sdslot":0, "simcards":2, "headphonejack":0 },' +
+
 
     '{ "name":"U11 life" , "brand":"HTC", "imagelink":"https://images-na.ssl-images-amazon.com/images/I/61iBTjkp3yL._SY741_.jpg", 	"price":229, 	"display":5.2, "length":149, "width":73, "processor":3, "updates":5, "camera":3, "battery":3, "storage":32, "memory":3, "sdslot":2, "simcards":2, "headphonejack":0 },' +
     '{ "name":"U11 +" , "brand":"HTC", "imagelink":"https://images-na.ssl-images-amazon.com/images/I/51XltEAiihL._SY879_.jpg", 	"price":641, 	"display":6, "length":159, "width":75, "processor":5, "updates":4, "camera":4, "battery":5, "storage":128, "memory":6, "sdslot":1, "simcards":2, "headphonejack":0 },' +
@@ -268,7 +271,7 @@ window.onload = function() {
               '<h3 >Battery: <span style="float:right">' + obj.smartphones[listOfFilteredAndScoredObjects[i]].battery + '</span></h3>' +
               '<hr>' +
               '<h3 ><span style="float:right; color: green;">' + calculateScore(obj.smartphones[listOfFilteredAndScoredObjects[i]]) + '</span></h3>' +
-              '<h3 ><span style="float:right; color: white;">________________________</span></h3>' +
+              '<h3 ><span style="float:right; color: white;">______________________</span></h3>' +
               '</div > ';
 
             document.getElementById('picture' + (e + 1) + '-' + table.rows[e + 1].cells.length).addEventListener('click', function(e) {
