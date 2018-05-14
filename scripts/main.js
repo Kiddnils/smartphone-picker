@@ -33,6 +33,7 @@ window.onload = function() {
 
     '{ "name":"G6", "brand":"LG", "imagelink":"images/814YBWa7gGL._SY879_.png", 	"price":324, 	"display":5.7, "length":149, "width":72, "processor":4, "updates":4, "camera":4, "battery":4, "storage":32, "memory":4, "sdslot":1, "simcards":1, "headphonejack":1 },' +
     '{ "name":"V30", "brand":"LG", "imagelink":"images/715GbwmYJjL._SY879_.png", 	"price":512, 	"display":6, "length":152, "width":75, "processor":5, "updates":4, "camera":4, "battery":4, "storage":32, "memory":4, "sdslot":2, "simcards":2, "headphonejack":1 },' +
+    '{ "name":"V30", "brand":"LG", "imagelink":"images/715GbwmYJjL._SY879_.png", 	"price":512, 	"display":6, "length":152, "width":75, "processor":5, "updates":4, "camera":4, "battery":4, "storage":32, "memory":4, "sdslot":2, "simcards":2, "headphonejack":1 },' +
 
 
     '{ "name":"Xperia XZ2", "brand":"Sony", "imagelink":"images/lis9AWg.png", 	"price":623, 	"display":5.7, "length":153, "width":72, "processor":5, "updates":4, "camera":4, "battery":4, "storage":64, "memory":4, "sdslot":1, "simcards":2, "headphonejack":0 },' +
@@ -260,16 +261,16 @@ window.onload = function() {
 
           if (table.rows[e + 1].cells.length < 10) { //Only 10 phones per row should be shown
             var cell = table.rows[e + 1].insertCell(table.rows[e + 1].cells.length);
-
             cell.innerHTML = '<input type="checkbox">' +
               '<label for="toggle" id="picture' + (e + 1) + '-' + table.rows[e + 1].cells.length + '">' +
               '<div class="float">' +
-              '<img  class="qtip-img" src="' + obj.smartphones[listOfFilteredAndScoredObjects[i]].imagelink + '">' +
+              '<img  class="qtip-img" style="vertical-align: bottom; max-height:' + document.getElementById("scaleInput").options[document.getElementById("scaleInput").selectedIndex].value * obj.smartphones[listOfFilteredAndScoredObjects[i]].length + 'px;"" src="' + obj.smartphones[listOfFilteredAndScoredObjects[i]].imagelink + '">' +
               '<p class="smartphone-name">' + obj.smartphones[listOfFilteredAndScoredObjects[i]].brand + ' ' + obj.smartphones[listOfFilteredAndScoredObjects[i]].name + '</p>' +
               '</div>' +
               '</label>' +
               '<div class="float" id="hiddenpicture' + (e + 1) + '-' + table.rows[e + 1].cells.length + '" style ="display:none" >' +
               '<h3>' + obj.smartphones[listOfFilteredAndScoredObjects[i]].display + '"<span style="float:right;" class="accentColor">' + obj.smartphones[listOfFilteredAndScoredObjects[i]].price + '€</span></h3>' +
+              '<h3>' + obj.smartphones[listOfFilteredAndScoredObjects[i]].width + ' * ' + obj.smartphones[listOfFilteredAndScoredObjects[i]].length + 'mm</h3>' +
               '<table >' +
               '<tr style="height:110px;">' +
               '<td style="vertical-align: bottom;">' +
