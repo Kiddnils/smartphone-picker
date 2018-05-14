@@ -16,33 +16,40 @@
 </head>
 
 <body>
-  <div style="text-align:left; margin-left: 15%;">
+  <div class="logo">
     <a class="" href="index.html" style="font-size: 43.2px; text-decoration: none; color: #666;">
-                      smartphone-picker
+                      <span class="accentColor">smartphone</span>-picker
                   </a>
   </div>
   <div class="main-menu">
     <div class="main-menu-text">
 
-      <div class="btn-group float">
-        <a class="btn btn-link" href="mailto:admin@smartphone-picker.com">
+      <div class="float">
+        <a class="main-menu-link" href="mailto:admin@smartphone-picker.com">
                           Contact
                       </a>
       </div>
 
-      <div class="btn-group float">
-        <a class="btn btn-link" href="sites/about.html">
+      <div class="float">
+        <a class="main-menu-link" href="sites/about.html">
                           About
                       </a>
       </div>
 
     </div>
   </div>
-  <div class="description">
-    <p><span style="">smartphone-picker helps you choose your next smartphone in this crowded market. Filter the hand-curated list to your liking and click a smartphone to show it's specs.</span></p>
+  <div class="description float">
+    <p><span class="accentColor heavy">smartphone</span>-picker helps you choose your next smartphone in this crowded market. </p>
+    <p><span class="accentColor heavy">Filter</span> the hand-curated list to your liking and <span class="accentColor heavy">click</span> a smartphone to show it's specs.</p>
+  </div>
+  <div class="description" stlye="float:right">
+    <select id="filterInput" class="rating_updater accentColor heavy">
+      <option value="de" selected="selected">GERMANY</option>
+      <option value="2">More Countries coming soon</option>
+    </select>
   </div>
   <div class="bodydiv">
-
+    <!--
     <div class="float">
       <p>
         Strict Filtering
@@ -61,6 +68,7 @@
         <option value="2">Yes</option>
       </select>
     </div>
+    -->
     <div style="clear:both;">
     </div>
     <div style="overflow-x:auto;" class="settingsdiv">
@@ -88,13 +96,13 @@
                 <tbody>
                   <tr>
                     <td style="padding-left:0px; padding-top:0;">
-                      <input id="price_minimum_1" name="price_minimum_1" class="smallInput rating_updater" size="2" type="text">
+                      <input id="price_minimum_1" name="price_minimum_1" class="smallInput rating_updater" maxlength="4" type="text" placeholder="0">
                     </td>
                     <td style="padding-left:0px; padding-top:0;">
                       <p>-</p>
                     </td>
                     <td style="padding-left:0px; padding-top:0;">
-                      <input id="price_maximum_1" name="price_maximum_1" class="smallInput rating_updater" size="2" type="text">
+                      <input id="price_maximum_1" name="price_maximum_1" class="smallInput rating_updater" size="2" type="text" placeholder="1200">
                     </td>
                   </tr>
                 </tbody>
@@ -215,32 +223,17 @@
               <table>
                 <tbody>
                   <tr>
-
-                    <td style="padding-left:0px; padding-top:0;">
-                      <div class="float">
-                        <input id="storage_minimum_1" name="size_minimum_1" class="smallInput rating_updater" size="2" type="text">
-                        <br>
-                      </div>
-                    </td>
-                    <td style="padding-left:0px; padding-top:0;">
-                      <div class="float">
-                        <p>-</p>
-                      </div>
-                    </td>
-                    <td style="padding-left:0px; padding-top:0;">
-                      <div class="float">
-                        <input id="storage_maximum_1" name="size_maximum_1" class="smallInput rating_updater" size="2" type="text">
-                        <br>
-                      </div>
-                    </td>
-                    <td style="padding-left:0px; padding-top:0;">
-                      <div class="float">
-                        <p>GB</p>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                    <select id="storageInput" class="rating_updater">
+                    <option value="16" selected="selected">16GB -> ∞</option>
+                    <option value="32" >32GB -> ∞</option>
+                    <option value="64" >64GB -> ∞</option>
+                    <option value="128">128GB -> ∞</option>
+                    <option value="256">256GB -> ∞</option>
+                    </select>
+            </td>
+            </tr>
+            </tbody>
+            </table>
             </td>
             <td>
               <select id="sdSlotInput" class="rating_updater">
@@ -258,8 +251,7 @@
             </td>
             <td>
               <select id="simCardInput" class="rating_updater">
-              <option value="" selected="selected"></option>
-              <option value="1">1 SIM</option>
+              <option value="1" selected="selected">1 SIM</option>
               <option value="2">2 SIM</option>
             </select>
             </td>

@@ -22,7 +22,7 @@ th {
   text-align: left;
   font-family: 'Open Sans', sans-serif;
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 0;
 }
 
@@ -69,13 +69,20 @@ th {
   padding-bottom: 5px;
 }
 
+.main-menu-link {
+  text-decoration: none;
+  color: #666;
+}
+
 .main-menu {
+  margin-top: 20px;
   padding-bottom: 20px;
   padding-top: 20px;
   outline-color: rgb(102, 102, 102);
   background-color: rgb(249, 249, 249);
   border-top-color: rgb(220, 220, 220);
   border-top: 1px solid #DCDCDC;
+  border-bottom: 1px solid #DCDCDC;
   text-align: center;
 }
 
@@ -100,8 +107,9 @@ input[type=checkbox] {
 }
 
 .smartphone-name {
-  text-align: center;
-  font-size: 11px;
+  margin-top: 4px;
+  text-align: left;
+  font-size: 12px;
   font-weight: 900;
 }
 
@@ -111,6 +119,21 @@ input[type=checkbox] {
   max-width: 300px;
   max-height: 350px;
   display: block;
+  cursor: pointer;
+}
+
+.accentColor {
+  color: #12709e;
+}
+
+.heavy {
+  font-weight: bold;
+}
+
+.logo {
+  text-align: left;
+  margin-left: 15%;
+  margin-top: 10px;
 }
 
 .settingsdiv {
@@ -123,6 +146,7 @@ input[type=checkbox] {
 .settingsdiv thead tr th {
   vertical-align: top;
   padding: 8px;
+  font-size: 18px;
 }
 
 .settingsdiv tbody tr td {
@@ -138,21 +162,35 @@ input[type=checkbox] {
 .itemsTable td {
   vertical-align: top;
   padding-bottom: 15px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .itemsTable thead tr th {
   vertical-align: top;
   padding: 8px;
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.americanexpress {
+  height: auto;
+  width: auto;
+  max-height: 50px;
+  display: block;
 }
 
 .priceTiers {
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 700;
   font-family: 'Open Sans', sans-serif;
   letter-spacing: .1px;
   text-rendering: optimizeLegibility;
   padding: 8px;
-  color: #2196F3;
 }
 
 .smallInput {
@@ -232,5 +270,5 @@ radio {
   position: relative;
   width: 16px;
   height: 16px;
-  background: url('https://www.everythingfrontend.com/samples/star-rating/star.png') 0 -16px;
+  background: url('../images/star.png') 0 -16px;
 }
