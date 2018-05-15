@@ -178,6 +178,11 @@ input[type=checkbox] {
   background: #FAFAFA;
 }
 
+.detailwindow {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
 h3 {
   font-size: 16px;
   font-weight: 900;

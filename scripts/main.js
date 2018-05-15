@@ -216,7 +216,7 @@ window.onload = function() {
           }
         }
       }
-    } else if (filterType === "Size") {
+    } else if (filterType === "Body-Size") {
       for (var i = 0; i < listOfFilteredObjects.length; i++) {
         //then sort it into listOfFilteredAndScoredObjects
         for (var e = 0; e < listOfFilteredObjects.length; e++) {
@@ -231,6 +231,26 @@ window.onload = function() {
             listOfFilteredAndScoredObjects.splice(e, 0, listOfFilteredObjects[i]);
             break;
           } else if (listOfFilteredObjects[i].length === listOfFilteredAndScoredObjects[e].length && listOfFilteredObjects[i].width > listOfFilteredAndScoredObjects[e].width) {
+            listOfFilteredAndScoredObjects.splice(e, 0, listOfFilteredObjects[i]);
+            break;
+          }
+        }
+      }
+    } else if (filterType === "Screen-Size") {
+      for (var i = 0; i < listOfFilteredObjects.length; i++) {
+        //then sort it into listOfFilteredAndScoredObjects
+        for (var e = 0; e < listOfFilteredObjects.length; e++) {
+
+          if (listOfFilteredAndScoredObjects.length == 0) {
+            listOfFilteredAndScoredObjects.push(listOfFilteredObjects[i]);
+            break;
+          } else if (e == listOfFilteredAndScoredObjects.length) {
+            listOfFilteredAndScoredObjects.splice(listOfFilteredAndScoredObjects.length, 0, listOfFilteredObjects[i]);
+            break;
+          } else if (listOfFilteredObjects[i].display < listOfFilteredAndScoredObjects[e].display) {
+            listOfFilteredAndScoredObjects.splice(e, 0, listOfFilteredObjects[i]);
+            break;
+          } else if (listOfFilteredObjects[i].display === listOfFilteredAndScoredObjects[e].display && listOfFilteredObjects[i].length < listOfFilteredAndScoredObjects[e].length) {
             listOfFilteredAndScoredObjects.splice(e, 0, listOfFilteredObjects[i]);
             break;
           }
@@ -255,7 +275,7 @@ window.onload = function() {
     var cell1;
     var leftBoundary;
     var rightBoundary;
-
+    console.log(filterType);
     if (filterType === "Price") {
       for (var i = 0; i < 24; i++) {
         leftBoundary = i * 50;
@@ -279,7 +299,7 @@ window.onload = function() {
           cell1.innerHTML = leftBoundary + "-" + rightBoundary;
         }
       }
-    } else if (filterType === 'Size') {
+    } else if (filterType === 'Body-Size' || filterType === 'Screen-Size') {
       var row = table.insertRow();
       row.insertCell(0);
     }
@@ -291,11 +311,13 @@ window.onload = function() {
     buildTableStructure(tableType);
     filterJSON();
     sortListOfFilteredObjects(tableType);
+    console.log(listOfFilteredAndScoredObjects.join());
     switch (tableType) {
       case "Price":
         fillPrice();
         break;
-      case "Size":
+      case "Body-Size":
+      case "Screen-Size":
         fillSize();
         break;
       default:
@@ -335,7 +357,7 @@ window.onload = function() {
 
   function getInnerHTMLSmartphone(e, i) {
     var innerHtml = '<table>' +
-      '<tr style="height:360px;">' +
+      '<tr style="height:425px;">' +
       '<td style="vertical-align: bottom;">' +
       '<input type="checkbox">' +
       '<label for="toggle" id="picture' + (e + 1) + '-' + table.rows[e + 1].cells.length + '">' +
@@ -347,26 +369,17 @@ window.onload = function() {
       '<p class="smartphone-name">' + listOfFilteredAndScoredObjects[i].brand + ' ' + listOfFilteredAndScoredObjects[i].name + '</p>' +
       '</div>' +
       '</label>' +
-      '<div class="float" id="hiddenpicture' + (e + 1) + '-' + table.rows[e + 1].cells.length + '" style ="display:none" >' +
+      '<div class="detailwindow float" id="hiddenpicture' + (e + 1) + '-' + table.rows[e + 1].cells.length + '" style ="display:none" >' +
       '<h3>' + listOfFilteredAndScoredObjects[i].display + '"<span style="float:right;" class="accentColor">' + listOfFilteredAndScoredObjects[i].price + '€</span></h3>' +
       '<h3>' + listOfFilteredAndScoredObjects[i].width + ' * ' + listOfFilteredAndScoredObjects[i].length + 'mm</h3>' +
-      '<table >' +
-      '<tr style="height:110px;">' +
-      '<td style="vertical-align: bottom;">' +
-      '<img  class="americanexpress" style="vertical-align: bottom; display:inline-block;" src="images/americanexpress.png">' +
-      '</td>' +
-      '<td style="vertical-align: bottom; ">' +
-      '<img  class="qtip-img" style="vertical-align: bottom; max-height:' + 0.5841 * listOfFilteredAndScoredObjects[i].length + 'px; display:inline-block;" src="' + listOfFilteredAndScoredObjects[i].imagelink + '">' +
-      '</td>' +
-      '</tr>' +
-      '</table>' +
+      '<br>' +
       '<h3 >Processor: <span style="float:right";>' + listOfFilteredAndScoredObjects[i].processor + '</span></h3>' +
       '<h3 >Software: <span style="float:right">' + listOfFilteredAndScoredObjects[i].updates + '</span></h3>' +
       '<h3 >Camera: <span style="float:right">' + listOfFilteredAndScoredObjects[i].camera + '</span></h3>' +
       '<h3 >Battery: <span style="float:right">' + listOfFilteredAndScoredObjects[i].battery + '</span></h3>' +
       '<hr>' +
       '<h3 ><span style="float:right; color: green;">' + listOfFilteredAndScoredObjects[i].totalscore + '</span></h3>' +
-      '<h3 ><span style="float:right; color: white;">_______________________</span></h3>' +
+      '<h3 ><span style="float:right; color: white;">_____________________</span></h3>' +
       '</div > ';
 
 
