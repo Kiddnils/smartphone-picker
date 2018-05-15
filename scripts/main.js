@@ -256,6 +256,26 @@ window.onload = function() {
           }
         }
       }
+    } else if (filterType === "Total-Score") {
+      for (var i = 0; i < listOfFilteredObjects.length; i++) {
+        //then sort it into listOfFilteredAndScoredObjects
+        for (var e = 0; e < listOfFilteredObjects.length; e++) {
+
+          if (listOfFilteredAndScoredObjects.length == 0) {
+            listOfFilteredAndScoredObjects.push(listOfFilteredObjects[i]);
+            break;
+          } else if (e == listOfFilteredAndScoredObjects.length) {
+            listOfFilteredAndScoredObjects.splice(listOfFilteredAndScoredObjects.length, 0, listOfFilteredObjects[i]);
+            break;
+          } else if (listOfFilteredObjects[i].totalscore < listOfFilteredAndScoredObjects[e].totalscore) {
+            listOfFilteredAndScoredObjects.splice(e, 0, listOfFilteredObjects[i]);
+            break;
+          } else if (listOfFilteredObjects[i].totalscore === listOfFilteredAndScoredObjects[e].totalscore && listOfFilteredObjects[i].price > listOfFilteredAndScoredObjects[e].price) {
+            listOfFilteredAndScoredObjects.splice(e, 0, listOfFilteredObjects[i]);
+            break;
+          }
+        }
+      }
     }
   }
 
@@ -275,7 +295,6 @@ window.onload = function() {
     var cell1;
     var leftBoundary;
     var rightBoundary;
-    console.log(filterType);
     if (filterType === "Price") {
       for (var i = 0; i < 24; i++) {
         leftBoundary = i * 50;
@@ -302,6 +321,13 @@ window.onload = function() {
     } else if (filterType === 'Body-Size' || filterType === 'Screen-Size') {
       var row = table.insertRow();
       row.insertCell(0);
+    } else if (filterType === "Total-Score") {
+      for (var i = 0; i <= 25; i++) {
+        var row = table.insertRow();
+        cell1 = row.insertCell(0);
+        cell1.className += "priceTiers accentColor";
+        cell1.innerHTML = i;
+      }
     }
   }
 
@@ -311,7 +337,6 @@ window.onload = function() {
     buildTableStructure(tableType);
     filterJSON();
     sortListOfFilteredObjects(tableType);
-    console.log(listOfFilteredAndScoredObjects.join());
     switch (tableType) {
       case "Price":
         fillPrice();
@@ -319,6 +344,9 @@ window.onload = function() {
       case "Body-Size":
       case "Screen-Size":
         fillSize();
+        break;
+      case "Total-Score":
+        fillScore();
         break;
       default:
         fillPrice();
@@ -337,7 +365,7 @@ window.onload = function() {
             var cell = table.rows[e + 1].insertCell(table.rows[e + 1].cells.length);
             cell.className += "smartphonecells";
             cell.innerHTML = getInnerHTMLSmartphone(e, i);
-            registerEventForDetails(e);
+            registerEventForDetails(listOfFilteredAndScoredObjects[i].name);
             break;
           }
 
@@ -351,25 +379,34 @@ window.onload = function() {
       var cell = table.rows[1].insertCell(table.rows[1].cells.length);
       cell.className += "smartphonecells";
       cell.innerHTML = getInnerHTMLSmartphone(0, i);
-      registerEventForDetails(0);
+      registerEventForDetails(listOfFilteredAndScoredObjects[i].name);
     }
   }
 
-  function getInnerHTMLSmartphone(e, i) {
+  function fillScore() {
+    for (var i = 0; i < listOfFilteredAndScoredObjects.length; i++) {
+      var cell = table.rows[listOfFilteredAndScoredObjects[i].totalscore].insertCell(table.rows[1].cells.length);
+      cell.className += "smartphonecells";
+      cell.innerHTML = getInnerHTMLSmartphone(listOfFilteredAndScoredObjects[i].totalscore, i);
+      registerEventForDetails(listOfFilteredAndScoredObjects[i].name);
+    }
+  }
+
+  function getInnerHTMLSmartphone(currentRow, i) {
     var innerHtml = '<table>' +
       '<tr style="height:425px;">' +
       '<td style="vertical-align: bottom;">' +
       '<input type="checkbox">' +
-      '<label for="toggle" id="picture' + (e + 1) + '-' + table.rows[e + 1].cells.length + '">' +
+      '<label for="toggle" id="picture' + listOfFilteredAndScoredObjects[i].name + '">' +
       '<div class="float">' +
-      '<img  class="qtip-img" style="vertical-align: bottom; max-height:' + document.getElementById("scaleInput").options[document.getElementById("scaleInput").selectedIndex].value * listOfFilteredAndScoredObjects[i].length + 'px;"" src="' + listOfFilteredAndScoredObjects[i].imagelink + '">' +
+      '<img class="qtip-img" id="picture' + listOfFilteredAndScoredObjects[i].name + '" style="vertical-align: bottom; max-height:' + document.getElementById("scaleInput").options[document.getElementById("scaleInput").selectedIndex].value * listOfFilteredAndScoredObjects[i].length + 'px;"" src="' + listOfFilteredAndScoredObjects[i].imagelink + '">' +
       '</td>' +
       '</tr>' +
       '</table>' +
       '<p class="smartphone-name">' + listOfFilteredAndScoredObjects[i].brand + ' ' + listOfFilteredAndScoredObjects[i].name + '</p>' +
       '</div>' +
       '</label>' +
-      '<div class="detailwindow float" id="hiddenpicture' + (e + 1) + '-' + table.rows[e + 1].cells.length + '" style ="display:none" >' +
+      '<div class="detailwindow float" id="hiddenpicture' + listOfFilteredAndScoredObjects[i].name + '" style ="display:none" >' +
       '<h3>' + listOfFilteredAndScoredObjects[i].display + '"<span style="float:right;" class="accentColor">' + listOfFilteredAndScoredObjects[i].price + '€</span></h3>' +
       '<h3>' + listOfFilteredAndScoredObjects[i].width + ' * ' + listOfFilteredAndScoredObjects[i].length + 'mm</h3>' +
       '<br>' +
@@ -386,8 +423,8 @@ window.onload = function() {
     return innerHtml;
   }
 
-  function registerEventForDetails(e) {
-    document.getElementById('picture' + (e + 1) + '-' + table.rows[e + 1].cells.length).addEventListener('click', function(e) {
+  function registerEventForDetails(name) {
+    document.getElementById('picture' + name).addEventListener('click', function(e) {
       if (document.getElementById('hidden' + e.target.parentElement.parentElement.id).style.display === "none") {
         document.getElementById('hidden' + e.target.parentElement.parentElement.id).style.display = "block";
       } else {
@@ -399,8 +436,25 @@ window.onload = function() {
   document.getElementById("size_minimum_1").addEventListener("input", function() {
     updateTable();
   });
-  var elems = document.getElementsByClassName("rating_updater");
 
+
+  //Set Scale Smartphones to true when case "Body-Size": oder case "Screen-Size":
+  document.getElementById("filterInput").addEventListener("input", function() {
+    switch (document.getElementById("filterInput").options[document.getElementById("filterInput").selectedIndex].value) {
+      case "Price":
+        break;
+      case "Body-Size":
+      case "Screen-Size":
+        document.getElementById("scaleInput").value = "2.6";
+        break;
+      case "Total-Score":
+        break;
+      default:
+    }
+    updateTable();
+  });
+
+  var elems = document.getElementsByClassName("rating_updater");
   for (var i = 0, len = elems.length; i < len; i++) {
     elems[i].onchange = function() {
       updateTable();

@@ -118,7 +118,7 @@ input[type=checkbox] {
   height: auto;
   width: auto;
   max-width: 300px;
-  max-height: 350px;
+  max-height: 400px;
   display: block;
   cursor: pointer;
 }
@@ -174,7 +174,7 @@ input[type=checkbox] {
   border: none;
   font-size: 18px;
   color: #666;
-  width: 5em;
+  width: 7em;
   background: #FAFAFA;
 }
 
@@ -201,7 +201,8 @@ h3 {
   font-family: 'Open Sans', sans-serif;
   letter-spacing: .1px;
   text-rendering: optimizeLegibility;
-  padding: 8px;
+  padding-left: 8px;
+  vertical-align: top;
 }
 
 .smartphonecells {
