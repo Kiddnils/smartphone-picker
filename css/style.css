@@ -109,7 +109,7 @@ input[type=checkbox] {
 
 .smartphone-name {
   margin-top: 4px;
-  text-align: left;
+  text-align: center;
   font-size: 12px;
   font-weight: 900;
 }
@@ -174,7 +174,7 @@ input[type=checkbox] {
   border: none;
   font-size: 18px;
   color: #666;
-  width: 7em;
+  width: 9.5em;
   background: #FAFAFA;
 }
 
