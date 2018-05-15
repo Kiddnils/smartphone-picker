@@ -160,17 +160,22 @@ input[type=checkbox] {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
 }
 
-.itemsTable td {
-  vertical-align: top;
-  padding-bottom: 15px;
-  padding-left: 0;
-  padding-right: 0;
+.itemsTable>tbody>tr {
+  padding: 0;
 }
 
 .itemsTable thead tr th {
   vertical-align: top;
   padding: 8px;
   font-size: 18px;
+}
+
+.filterselect {
+  border: none;
+  font-size: 18px;
+  color: #666;
+  width: 5em;
+  background: #FAFAFA;
 }
 
 h3 {
@@ -192,6 +197,13 @@ h3 {
   letter-spacing: .1px;
   text-rendering: optimizeLegibility;
   padding: 8px;
+}
+
+.smartphonecells {
+  vertical-align: top;
+  padding-bottom: 15px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .smallInput {
