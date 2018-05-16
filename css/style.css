@@ -194,7 +194,6 @@ th {
   border-top-color: rgb(220, 220, 220);
   border-top: 1px solid #DCDCDC;
   border-bottom: 1px solid #DCDCDC;
-  text-align: center;
 }
 
 .main-menu-text {
@@ -202,7 +201,6 @@ th {
   padding-bottom: 10px;
   padding-top: 10px;
   vertical-align: middle;
-  text-align: center;
   line-height: 1px;
   /* the same as your div height */
 }
@@ -221,6 +219,7 @@ input[type=checkbox] {
   margin-top: 4px;
   text-align: center;
   font-size: 12px;
+  font-weight: bold;
 }
 
 .qtip-img {
@@ -310,9 +309,12 @@ input[type=checkbox] {
 }
 
 h3 {
+  color: #5b5b5b;
   font-size: 16px;
-  font-weight: 900;
+  font-weight: normal;
   margin: 0;
+  letter-spacing: .1px;
+  font-family: 'Open Sans2', sans-serif;
 }
 
 .priceTiers {
@@ -332,8 +334,9 @@ h3 {
 }
 
 .smallInput {
-  width: 2em;
+  width: 35px;
   float: left;
+  border-width: 2px;
 }
 
 .rating {
