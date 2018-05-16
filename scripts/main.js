@@ -456,7 +456,7 @@ window.onload = function() {
       '<h3 >Battery: <span style="float:right">' + listOfFilteredAndScoredObjects[i].battery + '</span></h3>' +
       '<hr>' +
       '<h3 ><span style="float:right; color: green;">' + listOfFilteredAndScoredObjects[i].totalscore + '</span></h3>' +
-      '<h3 ><span style="float:right; color: white;">_____________________</span></h3>' +
+      '<h3 ><span style="float:right; color: white;">_______________________</span></h3>' +
 
       '</div> ';
 
