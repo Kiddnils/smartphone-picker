@@ -290,8 +290,14 @@ window.onload = function() {
 
   function deleteTable() {
     var rowCount = table.rows.length;
-    for (var i = rowCount - 1; i > 0; i--) {
+    for (var i = rowCount - 1; i >= 0; i--) {
       table.deleteRow(i);
+      console.log("rowsss");
+    }
+
+    rowCount = tableHead.rows[0].cells.length;
+    for (var i = rowCount - 1; i > 0; i--) {
+      tableHead.rows[0].deleteCell(i);
     }
   }
 
@@ -300,8 +306,17 @@ window.onload = function() {
     var cell1;
     var leftBoundary;
     var rightBoundary;
+    for (var i = 1; i <= 100; i++) {
+      cell1 = tableHead.rows[0].insertCell(i);
+      cell1.className += "priceTiers accentColor";
+      cell1.outerHTML = "<th></th>";
+
+    }
+
     if (filterType === "Price") {
+      tableHead.rows[0].cells[1].innerHTML = '<span style="color:red;">&#171 Try Filtering</span>'
       for (var i = 0; i < 24; i++) {
+
         leftBoundary = i * 50;
         rightBoundary = (i + 1) * 50;
 
@@ -317,7 +332,7 @@ window.onload = function() {
           cell1 = row.insertCell(0);
           cell1.classList.add('padding-none');
         } else {
-          var row = table.insertRow();
+          var row = table.insertRow(i);
           cell1 = row.insertCell(0);
           cell1.className += "priceTiers accentColor";
           cell1.innerHTML = leftBoundary + "-" + rightBoundary;
@@ -328,11 +343,10 @@ window.onload = function() {
       row.insertCell(0);
     } else if (filterType === "Total-Score") {
       var row = table.insertRow();
-      row.insertCell(i);
+      var row = table.rows[0];
+      row.insertCell();
       for (var i = 1; i <= 25; i++) {
-
-        cell1 = tableHead.rows[0].insertCell(i);
-        cell1.className += "priceTiers accentColor";
+        cell1 = tableHead.rows[0].cells[i];
         cell1.innerHTML = i;
         row.insertCell(i);
       }
@@ -343,6 +357,7 @@ window.onload = function() {
 
   function updateTable() {
     var tableType = document.getElementById("filterInput").options[document.getElementById("filterInput").selectedIndex].value;
+    console.log(tableType);
     deleteTable();
     buildTableStructure(tableType);
     filterJSON();
@@ -374,7 +389,7 @@ window.onload = function() {
           if (table.rows[e + 1].cells.length < 10) { //Only 10 phones per row should be shown
             var cell = table.rows[e + 1].insertCell(table.rows[e + 1].cells.length);
             cell.className += "smartphonecells";
-            cell.innerHTML = getInnerHTMLSmartphone(e, i);
+            cell.innerHTML = getInnerHTMLSmartphone(e, i, "none");
             registerEventForDetails(listOfFilteredAndScoredObjects[i].name);
             break;
           }
@@ -386,9 +401,9 @@ window.onload = function() {
 
   function fillSize() {
     for (var i = 0; i < listOfFilteredAndScoredObjects.length; i++) {
-      var cell = table.rows[1].insertCell(table.rows[1].cells.length);
+      var cell = table.rows[0].insertCell(table.rows[0].cells.length);
       cell.className += "smartphonecells";
-      cell.innerHTML = getInnerHTMLSmartphone(0, i);
+      cell.innerHTML = getInnerHTMLSmartphone(0, i, "block");
       registerEventForDetails(listOfFilteredAndScoredObjects[i].name);
     }
   }
@@ -399,19 +414,14 @@ window.onload = function() {
       for (var e = 1; i < tableHead.rows[0].cells.length; e++) {
 
         if (tableHead.rows[0].cells[e].innerHTML - 1 === listOfFilteredAndScoredObjects[i].totalscore) {
-          console.log(listOfFilteredAndScoredObjects[i].totalscore);
-          console.log(tableHead.rows[0].cells[e].innerHTML);
-          if (table.rows[1].cells[e].className === "smartphonecells") {
-            cell = table.rows[1].cells[e];
-            console.log("t");
+          if (table.rows[0].cells[e].className === "smartphonecells") {
+            cell = table.rows[0].cells[e];
           } else {
-            cell = table.rows[1].insertCell(e);
+            cell = table.rows[0].insertCell(e);
             tableHead.rows[0].insertCell(e)
-            console.log("b");
-            console.log(table.rows[1].cells[e].innerHTML);
           }
           cell.className += "smartphonecells";
-          cell.innerHTML = getInnerHTMLSmartphone(listOfFilteredAndScoredObjects[i].totalscore, i);
+          cell.innerHTML = getInnerHTMLSmartphone(listOfFilteredAndScoredObjects[i].totalscore, i, "block");
           registerEventForDetails(listOfFilteredAndScoredObjects[i].name);
           break;
         }
@@ -420,7 +430,7 @@ window.onload = function() {
     }
   }
 
-  function getInnerHTMLSmartphone(currentRow, i) {
+  function getInnerHTMLSmartphone(currentRow, i, isDetailsHidden) {
     var innerHtml =
       '<table>' +
       '<tr style="height:425px;">' +
@@ -435,7 +445,7 @@ window.onload = function() {
       '<p class="smartphone-name">' + listOfFilteredAndScoredObjects[i].brand + ' ' + listOfFilteredAndScoredObjects[i].name + '</p>' +
 
       '</label>' +
-      '<div class="detailwindow float" id="hiddenpicture' + listOfFilteredAndScoredObjects[i].name + '" style ="display:none" >' +
+      '<div class="detailwindow float" id="hiddenpicture' + listOfFilteredAndScoredObjects[i].name + '" style ="display:' + isDetailsHidden + '" >' +
       '<h3>' + listOfFilteredAndScoredObjects[i].display + '"<span style="float:right;" class="accentColor">' + listOfFilteredAndScoredObjects[i].price + '€</span></h3>' +
       '<h3>' + listOfFilteredAndScoredObjects[i].width + ' * ' + listOfFilteredAndScoredObjects[i].length + 'mm</h3>' +
       '<br>' +
@@ -475,6 +485,8 @@ window.onload = function() {
       case "Price":
         break;
       case "Body-Size":
+        document.getElementById("scaleInput").value = "2.6";
+        break;
       case "Screen-Size":
         document.getElementById("scaleInput").value = "2.6";
         break;
@@ -482,6 +494,7 @@ window.onload = function() {
         break;
       default:
     }
+    console.log("DSRIN");
     updateTable();
   });
 
