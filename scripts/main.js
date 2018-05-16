@@ -1,66 +1,67 @@
 window.onload = function() {
 
+  var tableHead = document.getElementById("myTable").getElementsByTagName('thead')[0];
   var table = document.getElementById("myTable").getElementsByTagName('tbody')[0];
 
 
 
   var json = '{ "smartphones" : [' +
 
-    '{ "name":"6" , "brand":"Nokia", "imagelink":"images/TheNewNokia6_hardware-phone.png?fm=png", 	"price":279, 	"design":4, "display ":5.5, "length":149, "width":76, "processor":3, "updates":5, "camera":3, "battery":3, "storage":32, "memory":3, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0,"totalscore":0},' +
-    '{ "name":"7 Plus" , "brand":"Nokia", "imagelink":"images/Nokia7plus_ROW_hardware-phone.png?fm=png", 	"price":399, 	"design":4, "display ":6, "length":158, "width":76, "processor":4, "updates":5, "camera":4, "battery":5, "storage":64, "memory":4, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
-    '{ "name":"8 Sirocco" , "brand":"Nokia", "imagelink":"images/Nokia8Sirocco_ROW__power-phone.png?fm=png", 	"price":749, 	"design":5, "display ":5.5, "length":141, "width":73, "processor":5, "updates":5, "camera":5, "battery":3, "storage":128, "memory":6, "sdslot":1, "simcards":1, "headphonejack":0 ,"totalscore":0},' +
+    '{ "name":"6" , "brand":"Nokia", "imagelink":"images/TheNewNokia6_hardware-phone.png?fm=png", 	"price":279, 	"design":4, "display":5.5, "length":149, "width":76, "processor":3, "updates":5, "camera":3, "battery":3, "storage":32, "memory":3, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0,"totalscore":0},' +
+    '{ "name":"7 Plus" , "brand":"Nokia", "imagelink":"images/Nokia7plus_ROW_hardware-phone.png?fm=png", 	"price":399, 	"design":4, "display":6, "length":158, "width":76, "processor":4, "updates":5, "camera":4, "battery":5, "storage":64, "memory":4, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
+    '{ "name":"8 Sirocco" , "brand":"Nokia", "imagelink":"images/Nokia8Sirocco_ROW__power-phone.png?fm=png", 	"price":749, 	"design":5, "display":5.5, "length":141, "width":73, "processor":5, "updates":5, "camera":5, "battery":3, "storage":128, "memory":6, "sdslot":1, "simcards":1, "headphonejack":0 ,"totalscore":0},' +
 
-    '{ "name":"Mi A1" , "brand":"Xiamoi", "imagelink":"images/y74WpwR.png", 	"price":185, 	"design":4, "display ":5.5, "length":155, "width":76, "processor":3, "updates":5, "camera":3, "battery":3, "storage":64, "memory":4, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
-    '{ "name":"Mi MIX 2" , "brand":"Xiamoi", "imagelink":"images/7EIAsGt.png", 	"price":377, 	"design":5, "display ":6, "length":152, "width":76, "processor":5, "updates":2, "camera":4, "battery":4, "storage":64, "memory":6, "sdslot":0, "simcards":2, "headphonejack":0 ,"totalscore":0},' +
-
-
-    '{ "name":"U11 life" , "brand":"HTC", "imagelink":"images/61iBTjkp3yL._SY741_.png", 	"price":229, 	"design":4, "display ":5.2, "length":149, "width":73, "processor":3, "updates":5, "camera":3, "battery":3, "storage":32, "memory":3, "sdslot":2, "simcards":2, "headphonejack":0 ,"totalscore":0},' +
-    '{ "name":"U11 +" , "brand":"HTC", "imagelink":"images/51XltEAiihL._SY879_.png", 	"price":641, 	"design":5, "display ":6, "length":159, "width":75, "processor":5, "updates":4, "camera":4, "battery":5, "storage":128, "memory":6, "sdslot":1, "simcards":2, "headphonejack":0 ,"totalscore":0},' +
-
-    '{ "name":"Pixel 2", "brand":"Google", "imagelink":"images/81Ea5V2MehL._SY879_.png", 	"price":669, 	"design":4, "display ":5, "length":146, "width":70, "processor":5, "updates":5, "camera":5, "battery":4, "storage":64, "memory":4, "sdslot":0, "simcards":1, "headphonejack":0 ,"totalscore":0},' +
-    '{ "name":"Pixel 2 XL" , "brand":"Google", "imagelink":"images/pixel2xl.png", 	"price":731, 	"design":4, "display ":6, "length":158, "width":77, "processor":5, "updates":5, "camera":5, "battery":4, "storage":64, "memory":4, "sdslot":0, "simcards":1, "headphonejack":0 ,"totalscore":0},' +
-
-    '{ "name":"5t (64GB)", "brand":"OnePlus", "imagelink":"images/qPbTGxu.png", 	"price":499, 	"design":5, "display ":6, "length":156, "width":75, "processor":5, "updates":4, "camera":4, "battery":4, "storage":64, "memory":6, "sdslot":0, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
-    '{ "name":"5t (128GB)", "brand":"OnePlus", "imagelink":"images/qPbTGxu.png", 	"price":559, 	"design":5, "display ":6, "length":156, "width":75, "processor":5, "updates":4, "camera":4, "battery":4, "storage":128, "memory":8, "sdslot":0, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
-
-    '{ "name":"Honor 7X", "brand":"Huawei", "imagelink":"images/9chGwId.png", 	"price":236, 	"design":4, "display ":5.9, "length":157, "width":75, "processor":3, "updates":4, "camera":3, "battery":4, "storage":64, "memory":4, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
-    '{ "name":"P20", "brand":"Huawei", "imagelink":"images/vqPQcia.png", 	"price":539, 	"design":5, "display ":5.8, "length":149, "width":71, "processor":4, "updates":4, "camera":5, "battery":4, "storage":128, "memory":4, "sdslot":0, "simcards":2, "headphonejack":0 ,"totalscore":0},' +
-    '{ "name":"P20 lite", "brand":"Huawei", "imagelink":"images/5wTSOmp.png", 	"price":318, 	"design":4, "display ":5.8, "length":149, "width":71, "processor":4, "updates":4, "camera":3, "battery":4, "storage":64, "memory":4, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
-    '{ "name":"P20 Pro", "brand":"Huawei", "imagelink":"images/Vc0thgM.png", 	"price":787, 	"design":5, "display ":6.1, "length":155, "width":74, "processor":5, "updates":4, "camera":5, "battery":5, "storage":128, "memory":6, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
+    '{ "name":"Mi A1" , "brand":"Xiamoi", "imagelink":"images/y74WpwR.png", 	"price":185, 	"design":4, "display":5.5, "length":155, "width":76, "processor":3, "updates":5, "camera":3, "battery":3, "storage":64, "memory":4, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
+    '{ "name":"Mi MIX 2" , "brand":"Xiamoi", "imagelink":"images/7EIAsGt.png", 	"price":377, 	"design":5, "display":6, "length":152, "width":76, "processor":5, "updates":2, "camera":4, "battery":4, "storage":64, "memory":6, "sdslot":0, "simcards":2, "headphonejack":0 ,"totalscore":0},' +
 
 
-    '{ "name":"Phone", "brand":"Essential", "imagelink":"images/OGr1dfB.png", 	"price":560, 	"design":5, "display ":5.7, "length":142, "width":71, "processor":5, "updates":5, "camera":5, "battery":4, "storage":128, "memory":4, "sdslot":0, "simcards":1, "headphonejack":0 ,"totalscore":0},' +
+    '{ "name":"U11 life" , "brand":"HTC", "imagelink":"images/61iBTjkp3yL._SY741_.png", 	"price":229, 	"design":4, "display":5.2, "length":149, "width":73, "processor":3, "updates":5, "camera":3, "battery":3, "storage":32, "memory":3, "sdslot":2, "simcards":2, "headphonejack":0 ,"totalscore":0},' +
+    '{ "name":"U11 +" , "brand":"HTC", "imagelink":"images/51XltEAiihL._SY879_.png", 	"price":641, 	"design":5, "display":6, "length":159, "width":75, "processor":5, "updates":4, "camera":4, "battery":5, "storage":128, "memory":6, "sdslot":1, "simcards":2, "headphonejack":0 ,"totalscore":0},' +
 
-    '{ "name":"G6", "brand":"LG", "imagelink":"images/814YBWa7gGL._SY879_.png", 	"price":324, 	"design":3, "display ":5.7, "length":149, "width":72, "processor":4, "updates":4, "camera":4, "battery":4, "storage":32, "memory":4, "sdslot":1, "simcards":1, "headphonejack":1 ,"totalscore":0},' +
-    '{ "name":"V30", "brand":"LG", "imagelink":"images/715GbwmYJjL._SY879_.png", 	"price":512, 	"design":3, "display ":6, "length":152, "width":75, "processor":5, "updates":4, "camera":4, "battery":4, "storage":32, "memory":4, "sdslot":2, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
+    '{ "name":"Pixel 2", "brand":"Google", "imagelink":"images/81Ea5V2MehL._SY879_.png", 	"price":669, 	"design":4, "display":5, "length":146, "width":70, "processor":5, "updates":5, "camera":5, "battery":4, "storage":64, "memory":4, "sdslot":0, "simcards":1, "headphonejack":0 ,"totalscore":0},' +
+    '{ "name":"Pixel 2 XL" , "brand":"Google", "imagelink":"images/pixel2xl.png", 	"price":731, 	"design":4, "display":6, "length":158, "width":77, "processor":5, "updates":5, "camera":5, "battery":4, "storage":64, "memory":4, "sdslot":0, "simcards":1, "headphonejack":0 ,"totalscore":0},' +
 
+    '{ "name":"5t (64GB)", "brand":"OnePlus", "imagelink":"images/qPbTGxu.png", 	"price":499, 	"design":5, "display":6, "length":156, "width":75, "processor":5, "updates":4, "camera":4, "battery":4, "storage":64, "memory":6, "sdslot":0, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
+    '{ "name":"5t (128GB)", "brand":"OnePlus", "imagelink":"images/qPbTGxu.png", 	"price":559, 	"design":5, "display":6, "length":156, "width":75, "processor":5, "updates":4, "camera":4, "battery":4, "storage":128, "memory":8, "sdslot":0, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
 
-    '{ "name":"Xperia XZ2", "brand":"Sony", "imagelink":"images/lis9AWg.png", 	"price":623, 	"design":3, "display ":5.7, "length":153, "width":72, "processor":5, "updates":4, "camera":4, "battery":4, "storage":64, "memory":4, "sdslot":1, "simcards":2, "headphonejack":0 ,"totalscore":0},' +
-    '{ "name":"Xperia XZ2 Compact", "brand":"Sony", "imagelink":"images/ExuzR25.png", 	"price":585, 	"design":3, "display ":5, "length":135, "width":65, "processor":5, "updates":4, "camera":4, "battery":3, "storage":64, "memory":4, "sdslot":1, "simcards":2, "headphonejack":0 ,"totalscore":0},' +
-
-    '{ "name":"iPhone 8 (64GB)" , "brand":"Apple", "imagelink":"images/xGEFWor.png", 	"price":665, 	"design":3, "display ":4.7, "length":138, "width":67, "processor":5, "updates":5, "camera":5, "battery":4, "storage":64, "memory":2, "sdslot":0, "simcards":1, "headphonejack":0 ,"totalscore":0},' +
-    '{ "name":"iPhone 8 (256GB)" , "brand":"Apple", "imagelink":"images/xGEFWor.png", 	"price":760, 	"design":3, "display ":4.7, "length":138, "width":67, "processor":5, "updates":5, "camera":5, "battery":4, "storage":256, "memory":2, "sdslot":0, "simcards":1, "headphonejack":0 ,"totalscore":0},' +
-    '{ "name":"iPhone 8 Plus (64GB)" , "brand":"Apple", "imagelink":"images/lq2EmJG.png", 	"price":783, 	"design":3, "display ":5.5, "length":158, "width":78, "processor":5, "updates":5, "camera":5, "battery":4, "storage":64, "memory":3, "sdslot":0, "simcards":1, "headphonejack":0 ,"totalscore":0},' +
-    '{ "name":"iPhone 8 Plus (256GB)" , "brand":"Apple", "imagelink":"images/lq2EmJG.png", 	"price":926, 	"design":3, "display ":5.5, "length":158, "width":78, "processor":5, "updates":5, "camera":5, "battery":4, "storage":256, "memory":3, "sdslot":0, "simcards":1, "headphonejack":0 ,"totalscore":0},' +
-    '{ "name":"iPhone X (64GB)" , "brand":"Apple", "imagelink":"images/UDV8YUp.png", 	"price":995, 	"design":5, "display ":5.8, "length":144, "width":77, "processor":5, "updates":5, "camera":5, "battery":4, "storage":64, "memory":3, "sdslot":0, "simcards":1, "headphonejack":0 ,"totalscore":0},' +
-    '{ "name":"iPhone X (256GB)" , "brand":"Apple", "imagelink":"images/UDV8YUp.png", 	"price":1150, 	"design":5, "display ":5.8, "length":144, "width":77, "processor":5, "updates":5, "camera":5, "battery":4, "storage":256, "memory":3, "sdslot":0, "simcards":1, "headphonejack":0 ,"totalscore":0},' +
+    '{ "name":"Honor 7X", "brand":"Huawei", "imagelink":"images/9chGwId.png", 	"price":236, 	"design":4, "display":5.9, "length":157, "width":75, "processor":3, "updates":4, "camera":3, "battery":4, "storage":64, "memory":4, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
+    '{ "name":"P20", "brand":"Huawei", "imagelink":"images/vqPQcia.png", 	"price":539, 	"design":5, "display":5.8, "length":149, "width":71, "processor":4, "updates":4, "camera":5, "battery":4, "storage":128, "memory":4, "sdslot":0, "simcards":2, "headphonejack":0 ,"totalscore":0},' +
+    '{ "name":"P20 lite", "brand":"Huawei", "imagelink":"images/5wTSOmp.png", 	"price":318, 	"design":4, "display":5.8, "length":149, "width":71, "processor":4, "updates":4, "camera":3, "battery":4, "storage":64, "memory":4, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
+    '{ "name":"P20 Pro", "brand":"Huawei", "imagelink":"images/Vc0thgM.png", 	"price":787, 	"design":5, "display":6.1, "length":155, "width":74, "processor":5, "updates":4, "camera":5, "battery":5, "storage":128, "memory":6, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
 
 
-    '{ "name":"Moto X4", "brand":"Motorola", "imagelink":"images/61eEr3fsroL._SY879_.png", 	"price":289, 	"design":3, "display ":5.2, "length":148, "width":73, "processor":3, "updates":5, "camera":4, "battery":5, "storage":32, "memory":3, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
-    '{ "name":"Moto G6" , "brand":"Motorola", "imagelink":"images/v3WB6HT.png", 	"price":249, 	"design":3, "display ":5.7, "length":154, "width":72, "processor":3, "updates":3, "camera":3, "battery":3, "storage":32, "memory":3, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
-    '{ "name":"Moto G6 Plus" , "brand":"Motorola", "imagelink":"images/phQJx7z.png", 	"price":299, 	"design":3, "display ":5.9, "length":160, "width":76, "processor":3, "updates":3, "camera":4, "battery":3, "storage":64, "memory":3, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
-    '{ "name":"Moto G6 Play" , "brand":"Motorola", "imagelink":"images/JQ7Vnzc.png", 	"price":199, 	"design":3, "display ":5.7, "length":154, "width":72, "processor":2, "updates":2, "camera":3, "battery":5, "storage":32, "memory":3, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
-    '{ "name":"Moto E4" , "brand":"Motorola", "imagelink":"images/71r21xr50KL._SY879_.png", 	"price":110, 	"design":2, "display ":5, "length":144, "width":73, "processor":2, "updates":2, "camera":2, "battery":2, "storage":16, "memory":2, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
-    '{ "name":"Moto E4 Plus" , "brand":"Motorola", "imagelink":"images/motoe4plus.png", 	"price":139, 	"design":2, "display ":5.5, "length":155, "width":78, "processor":2, "updates":2, "camera":2, "battery":4, "storage":16, "memory":3, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
-    '{ "name":"Moto G5S" , "brand":"Motorola", "imagelink":"images/S9FO30n.png", 	"price":147, 	"design":3, "display ":5.2, "length":150, "width":74, "processor":3, "updates":2, "camera":3, "battery":3, "storage":32, "memory":3, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
-    '{ "name":"Moto G5S Plus" , "brand":"Motorola", "imagelink":"images/tdlPqFG.png", 	"price":200, 	"design":3, "display ":5.5, "length":154, "width":76, "processor":3, "updates":2, "camera":3, "battery":3, "storage":32, "memory":3, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
+    '{ "name":"Phone", "brand":"Essential", "imagelink":"images/OGr1dfB.png", 	"price":560, 	"design":5, "display":5.7, "length":142, "width":71, "processor":5, "updates":5, "camera":5, "battery":4, "storage":128, "memory":4, "sdslot":0, "simcards":1, "headphonejack":0 ,"totalscore":0},' +
+
+    '{ "name":"G6", "brand":"LG", "imagelink":"images/814YBWa7gGL._SY879_.png", 	"price":324, 	"design":3, "display":5.7, "length":149, "width":72, "processor":4, "updates":4, "camera":4, "battery":4, "storage":32, "memory":4, "sdslot":1, "simcards":1, "headphonejack":1 ,"totalscore":0},' +
+    '{ "name":"V30", "brand":"LG", "imagelink":"images/715GbwmYJjL._SY879_.png", 	"price":512, 	"design":3, "display":6, "length":152, "width":75, "processor":5, "updates":4, "camera":4, "battery":4, "storage":32, "memory":4, "sdslot":2, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
 
 
-    '{ "name":"Galaxy A5"     , "brand":"Samsung", 	"imagelink":"images/wrIcHyN.png",	"price":236, 	"design":1, "display ":5.2, "length":146, "width":71, "processor":3, "updates":3, "camera":3, "battery":3, "storage":32, "memory":3, "sdslot":1, "simcards":1, "headphonejack":1 ,"totalscore":0},' +
-    '{ "name":"Galaxy S9"     , "brand":"Samsung", 	"imagelink":"images/71uI%2BnAzruL._SY879_.png",	"price":629, 	"design":5, "display ":5.8, "length":148, "width":68, "processor":5, "updates":4, "camera":5, "battery":4, "storage":64, "memory":4, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
-    '{ "name":"Galaxy S9+"    , "brand":"Samsung", 	"imagelink":"images/71dd-elhT7L._SY879_.png",	"price":769, 	"design":5, "display ":6.2, "length":158, "width":74, "processor":5, "updates":4, "camera":5, "battery":4, "storage":64, "memory":6, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
-    '{ "name":"Galaxy S8 Note"    , "brand":"Samsung", 	"imagelink":"images/PQYBIud.png",	"price":643, 	"design":5, "display ":6.3, "length":163, "width":75, "processor":5, "updates":4, "camera":5, "battery":4, "storage":64, "memory":6, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
-    '{ "name":"Galaxy S8"     , "brand":"Samsung", 	"imagelink":"images/6gY3U53.png",	"price":476, 	"design":5, "display ":5.8, "length":148, "width":68, "processor":5, "updates":3, "camera":4, "battery":4, "storage":64, "memory":4, "sdslot":1, "simcards":1, "headphonejack":1 ,"totalscore":0}' +
+    '{ "name":"Xperia XZ2", "brand":"Sony", "imagelink":"images/lis9AWg.png", 	"price":623, 	"design":3, "display":5.7, "length":153, "width":72, "processor":5, "updates":4, "camera":4, "battery":4, "storage":64, "memory":4, "sdslot":1, "simcards":2, "headphonejack":0 ,"totalscore":0},' +
+    '{ "name":"Xperia XZ2 Compact", "brand":"Sony", "imagelink":"images/ExuzR25.png", 	"price":585, 	"design":3, "display":5, "length":135, "width":65, "processor":5, "updates":4, "camera":4, "battery":3, "storage":64, "memory":4, "sdslot":1, "simcards":2, "headphonejack":0 ,"totalscore":0},' +
+
+    '{ "name":"iPhone 8 (64GB)" , "brand":"Apple", "imagelink":"images/xGEFWor.png", 	"price":665, 	"design":3, "display":4.7, "length":138, "width":67, "processor":5, "updates":5, "camera":5, "battery":4, "storage":64, "memory":2, "sdslot":0, "simcards":1, "headphonejack":0 ,"totalscore":0},' +
+    '{ "name":"iPhone 8 (256GB)" , "brand":"Apple", "imagelink":"images/xGEFWor.png", 	"price":760, 	"design":3, "display":4.7, "length":138, "width":67, "processor":5, "updates":5, "camera":5, "battery":4, "storage":256, "memory":2, "sdslot":0, "simcards":1, "headphonejack":0 ,"totalscore":0},' +
+    '{ "name":"iPhone 8 Plus (64GB)" , "brand":"Apple", "imagelink":"images/lq2EmJG.png", 	"price":783, 	"design":3, "display":5.5, "length":158, "width":78, "processor":5, "updates":5, "camera":5, "battery":4, "storage":64, "memory":3, "sdslot":0, "simcards":1, "headphonejack":0 ,"totalscore":0},' +
+    '{ "name":"iPhone 8 Plus (256GB)" , "brand":"Apple", "imagelink":"images/lq2EmJG.png", 	"price":926, 	"design":3, "display":5.5, "length":158, "width":78, "processor":5, "updates":5, "camera":5, "battery":4, "storage":256, "memory":3, "sdslot":0, "simcards":1, "headphonejack":0 ,"totalscore":0},' +
+    '{ "name":"iPhone X (64GB)" , "brand":"Apple", "imagelink":"images/UDV8YUp.png", 	"price":995, 	"design":5, "display":5.8, "length":144, "width":77, "processor":5, "updates":5, "camera":5, "battery":4, "storage":64, "memory":3, "sdslot":0, "simcards":1, "headphonejack":0 ,"totalscore":0},' +
+    '{ "name":"iPhone X (256GB)" , "brand":"Apple", "imagelink":"images/UDV8YUp.png", 	"price":1150, 	"design":5, "display":5.8, "length":144, "width":77, "processor":5, "updates":5, "camera":5, "battery":4, "storage":256, "memory":3, "sdslot":0, "simcards":1, "headphonejack":0 ,"totalscore":0},' +
+
+
+    '{ "name":"Moto X4", "brand":"Motorola", "imagelink":"images/61eEr3fsroL._SY879_.png", 	"price":289, 	"design":3, "display":5.2, "length":148, "width":73, "processor":3, "updates":5, "camera":4, "battery":5, "storage":32, "memory":3, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
+    '{ "name":"Moto G6" , "brand":"Motorola", "imagelink":"images/v3WB6HT.png", 	"price":249, 	"design":3, "display":5.7, "length":154, "width":72, "processor":3, "updates":3, "camera":3, "battery":3, "storage":32, "memory":3, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
+    '{ "name":"Moto G6 Plus" , "brand":"Motorola", "imagelink":"images/phQJx7z.png", 	"price":299, 	"design":3, "display":5.9, "length":160, "width":76, "processor":3, "updates":3, "camera":4, "battery":3, "storage":64, "memory":3, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
+    '{ "name":"Moto G6 Play" , "brand":"Motorola", "imagelink":"images/JQ7Vnzc.png", 	"price":199, 	"design":3, "display":5.7, "length":154, "width":72, "processor":2, "updates":2, "camera":3, "battery":5, "storage":32, "memory":3, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
+    '{ "name":"Moto E4" , "brand":"Motorola", "imagelink":"images/71r21xr50KL._SY879_.png", 	"price":110, 	"design":2, "display":5, "length":144, "width":73, "processor":2, "updates":2, "camera":2, "battery":2, "storage":16, "memory":2, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
+    '{ "name":"Moto E4 Plus" , "brand":"Motorola", "imagelink":"images/motoe4plus.png", 	"price":139, 	"design":2, "display":5.5, "length":155, "width":78, "processor":2, "updates":2, "camera":2, "battery":4, "storage":16, "memory":3, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
+    '{ "name":"Moto G5S" , "brand":"Motorola", "imagelink":"images/S9FO30n.png", 	"price":147, 	"design":3, "display":5.2, "length":150, "width":74, "processor":3, "updates":2, "camera":3, "battery":3, "storage":32, "memory":3, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
+    '{ "name":"Moto G5S Plus" , "brand":"Motorola", "imagelink":"images/tdlPqFG.png", 	"price":200, 	"design":3, "display":5.5, "length":154, "width":76, "processor":3, "updates":2, "camera":3, "battery":3, "storage":32, "memory":3, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
+
+
+    '{ "name":"Galaxy A5"     , "brand":"Samsung", 	"imagelink":"images/wrIcHyN.png",	"price":236, 	"design":1, "display":5.2, "length":146, "width":71, "processor":3, "updates":3, "camera":3, "battery":3, "storage":32, "memory":3, "sdslot":1, "simcards":1, "headphonejack":1 ,"totalscore":0},' +
+    '{ "name":"Galaxy S9"     , "brand":"Samsung", 	"imagelink":"images/71uI%2BnAzruL._SY879_.png",	"price":629, 	"design":5, "display":5.8, "length":148, "width":68, "processor":5, "updates":4, "camera":5, "battery":4, "storage":64, "memory":4, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
+    '{ "name":"Galaxy S9+"    , "brand":"Samsung", 	"imagelink":"images/71dd-elhT7L._SY879_.png",	"price":769, 	"design":5, "display":6.2, "length":158, "width":74, "processor":5, "updates":4, "camera":5, "battery":4, "storage":64, "memory":6, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
+    '{ "name":"Galaxy S8 Note"    , "brand":"Samsung", 	"imagelink":"images/PQYBIud.png",	"price":643, 	"design":5, "display":6.3, "length":163, "width":75, "processor":5, "updates":4, "camera":5, "battery":4, "storage":64, "memory":6, "sdslot":1, "simcards":2, "headphonejack":1 ,"totalscore":0},' +
+    '{ "name":"Galaxy S8"     , "brand":"Samsung", 	"imagelink":"images/6gY3U53.png",	"price":476, 	"design":5, "display":5.8, "length":148, "width":68, "processor":5, "updates":3, "camera":4, "battery":4, "storage":64, "memory":4, "sdslot":1, "simcards":1, "headphonejack":1 ,"totalscore":0}' +
     ']}';
   var obj;
   var listOfFilteredObjects;
@@ -274,7 +275,7 @@ window.onload = function() {
           } else if (listOfFilteredObjects[i].totalscore < listOfFilteredAndScoredObjects[e].totalscore) {
             listOfFilteredAndScoredObjects.splice(e, 0, listOfFilteredObjects[i]);
             break;
-          } else if (listOfFilteredObjects[i].totalscore === listOfFilteredAndScoredObjects[e].totalscore && listOfFilteredObjects[i].price > listOfFilteredAndScoredObjects[e].price) {
+          } else if (listOfFilteredObjects[i].totalscore === listOfFilteredAndScoredObjects[e].totalscore && listOfFilteredObjects[i].price < listOfFilteredAndScoredObjects[e].price) {
             listOfFilteredAndScoredObjects.splice(e, 0, listOfFilteredObjects[i]);
             break;
           }
@@ -326,12 +327,17 @@ window.onload = function() {
       var row = table.insertRow();
       row.insertCell(0);
     } else if (filterType === "Total-Score") {
-      for (var i = 0; i <= 25; i++) {
-        var row = table.insertRow();
-        cell1 = row.insertCell(0);
+      var row = table.insertRow();
+      row.insertCell(i);
+      for (var i = 1; i <= 25; i++) {
+
+        cell1 = tableHead.rows[0].insertCell(i);
         cell1.className += "priceTiers accentColor";
         cell1.innerHTML = i;
+        row.insertCell(i);
       }
+
+
     }
   }
 
@@ -388,16 +394,35 @@ window.onload = function() {
   }
 
   function fillScore() {
+    var cell;
     for (var i = 0; i < listOfFilteredAndScoredObjects.length; i++) {
-      var cell = table.rows[listOfFilteredAndScoredObjects[i].totalscore + 1].insertCell(table.rows[1].cells.length);
-      cell.className += "smartphonecells";
-      cell.innerHTML = getInnerHTMLSmartphone(listOfFilteredAndScoredObjects[i].totalscore, i);
-      registerEventForDetails(listOfFilteredAndScoredObjects[i].name);
+      for (var e = 1; i < tableHead.rows[0].cells.length; e++) {
+
+        if (tableHead.rows[0].cells[e].innerHTML - 1 === listOfFilteredAndScoredObjects[i].totalscore) {
+          console.log(listOfFilteredAndScoredObjects[i].totalscore);
+          console.log(tableHead.rows[0].cells[e].innerHTML);
+          if (table.rows[1].cells[e].className === "smartphonecells") {
+            cell = table.rows[1].cells[e];
+            console.log("t");
+          } else {
+            cell = table.rows[1].insertCell(e);
+            tableHead.rows[0].insertCell(e)
+            console.log("b");
+            console.log(table.rows[1].cells[e].innerHTML);
+          }
+          cell.className += "smartphonecells";
+          cell.innerHTML = getInnerHTMLSmartphone(listOfFilteredAndScoredObjects[i].totalscore, i);
+          registerEventForDetails(listOfFilteredAndScoredObjects[i].name);
+          break;
+        }
+      }
+
     }
   }
 
   function getInnerHTMLSmartphone(currentRow, i) {
-    var innerHtml = '<table>' +
+    var innerHtml =
+      '<table>' +
       '<tr style="height:425px;">' +
       '<td style="vertical-align: bottom;">' +
       '<input type="checkbox">' +
@@ -408,7 +433,7 @@ window.onload = function() {
       '</tr>' +
       '</table>' +
       '<p class="smartphone-name">' + listOfFilteredAndScoredObjects[i].brand + ' ' + listOfFilteredAndScoredObjects[i].name + '</p>' +
-      '</div>' +
+
       '</label>' +
       '<div class="detailwindow float" id="hiddenpicture' + listOfFilteredAndScoredObjects[i].name + '" style ="display:none" >' +
       '<h3>' + listOfFilteredAndScoredObjects[i].display + '"<span style="float:right;" class="accentColor">' + listOfFilteredAndScoredObjects[i].price + '€</span></h3>' +
@@ -422,7 +447,8 @@ window.onload = function() {
       '<hr>' +
       '<h3 ><span style="float:right; color: green;">' + listOfFilteredAndScoredObjects[i].totalscore + '</span></h3>' +
       '<h3 ><span style="float:right; color: white;">_____________________</span></h3>' +
-      '</div > ';
+
+      '</div> ';
 
 
     return innerHtml;
