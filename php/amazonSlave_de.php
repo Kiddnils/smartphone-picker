@@ -131,7 +131,7 @@ if($response === FALSE)
     foreach ( $items->getElementsByTagName("Item") as $item )    {
     $json['smartphones'][$x]['amazon_de'] = $item->getElementsByTagName("DetailPageURL")[0]->nodeValue.PHP_EOL;
 
-    $json['smartphones'][$x]['price_de'] = substr($item->getElementsByTagName("Amount")[0]->nodeValue.PHP_EOL, 0, -3);
+    $json['smartphones'][$x]['price_de'] = (int)substr($item->getElementsByTagName("Amount")[0]->nodeValue.PHP_EOL, 0, -3);
     }
     sleep(4);
 
