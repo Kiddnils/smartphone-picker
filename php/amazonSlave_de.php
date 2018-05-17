@@ -1,16 +1,18 @@
 <?php if($_SERVER['QUERY_STRING'] != "Schulze-Beckendorf"){ exit(); }
 
+$fileKeys = "../scripts/keys.js";
+$jsonKeys = json_decode(file_get_contents($fileKeys),TRUE);
 
 
 // Your Access Key ID, as taken from the Your Account page
 
-$access_key_id = "AKIAJ37QGA6ELGKIL5TQ";
+$access_key_id = $jsonKeys['access_key_id'];
 
 
 
 // Your Secret Key corresponding to the above ID, as taken from the Your Account page
 
-$secret_key = "WO02DV+U9qlyv7JtUxxnO6QPoDZaLX+b20n4cvNd";
+$secret_key = $jsonKeys['secret_key'];;
 
 
 
@@ -21,7 +23,6 @@ $endpoint = "webservices.amazon.de";
 
 
 $uri = "/onca/xml";
-
 
 
 
@@ -46,7 +47,7 @@ for ($x = 0; $x <= count($json['smartphones']); $x++) {
 
     "Operation" => "ItemLookup",
 
-    "AWSAccessKeyId" => "AKIAJ37QGA6ELGKIL5TQ",
+    "AWSAccessKeyId" => $access_key_id,
 
     "AssociateTag" => "smartphonep08-21",
 
