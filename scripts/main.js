@@ -55,14 +55,14 @@ window.onload = function() {
 
       //prize minimum
       if (document.getElementById("price_minimum_1").value !== "") {
-        if (obj.smartphones[i].price < document.getElementById("price_minimum_1").value) {
+        if (obj.smartphones[i].price_de < document.getElementById("price_minimum_1").value) {
           continue;
         }
       }
 
       //prize maximum
       if (document.getElementById("price_maximum_1").value !== "") {
-        if (obj.smartphones[i].price > document.getElementById("price_maximum_1").value) {
+        if (obj.smartphones[i].price_de > document.getElementById("price_maximum_1").value) {
           continue;
         }
       }
@@ -187,7 +187,7 @@ window.onload = function() {
           } else if (listOfFilteredObjects[i].totalscore > listOfFilteredAndScoredObjects[e].totalscore) {
             listOfFilteredAndScoredObjects.splice(e, 0, listOfFilteredObjects[i]);
             break;
-          } else if (listOfFilteredObjects[i].totalscore === listOfFilteredAndScoredObjects[e].totalscore && listOfFilteredObjects[i].price < listOfFilteredAndScoredObjects[e].price) {
+          } else if (listOfFilteredObjects[i].totalscore === listOfFilteredAndScoredObjects[e].totalscore && listOfFilteredObjects[i].price_de < listOfFilteredAndScoredObjects[e].price_de) {
             listOfFilteredAndScoredObjects.splice(e, 0, listOfFilteredObjects[i]);
             break;
           }
@@ -247,7 +247,7 @@ window.onload = function() {
           } else if (listOfFilteredObjects[i].totalscore < listOfFilteredAndScoredObjects[e].totalscore) {
             listOfFilteredAndScoredObjects.splice(e, 0, listOfFilteredObjects[i]);
             break;
-          } else if (listOfFilteredObjects[i].totalscore === listOfFilteredAndScoredObjects[e].totalscore && listOfFilteredObjects[i].price < listOfFilteredAndScoredObjects[e].price) {
+          } else if (listOfFilteredObjects[i].totalscore === listOfFilteredAndScoredObjects[e].totalscore && listOfFilteredObjects[i].price_de < listOfFilteredAndScoredObjects[e].price_de) {
             listOfFilteredAndScoredObjects.splice(e, 0, listOfFilteredObjects[i]);
             break;
           }
@@ -355,7 +355,7 @@ window.onload = function() {
   function fillPrice() {
     for (var i = 0; i < listOfFilteredAndScoredObjects.length; i++) {
       for (var e = 0; e < 24; e++) {
-        if (listOfFilteredAndScoredObjects[i].price > (e) * 50 && listOfFilteredAndScoredObjects[i].price <= (e + 1) * 50) {
+        if (listOfFilteredAndScoredObjects[i].price_de > (e) * 50 && listOfFilteredAndScoredObjects[i].price_de <= (e + 1) * 50) {
 
           if (table.rows[e + 1].cells.length < 10) { //Only 10 phones per row should be shown
             var cell = table.rows[e + 1].insertCell(table.rows[e + 1].cells.length);
@@ -408,16 +408,15 @@ window.onload = function() {
       '<td style="vertical-align: bottom;">' +
       '<input type="checkbox">' +
       '<label for="toggle" id="picture' + listOfFilteredAndScoredObjects[i].name + '">' +
-      '<div class="float">' +
+
       '<img class="qtip-img" id="picture' + listOfFilteredAndScoredObjects[i].name + '" style="vertical-align: bottom; max-height:' + document.getElementById("scaleInput").options[document.getElementById("scaleInput").selectedIndex].value * listOfFilteredAndScoredObjects[i].length + 'px;"" src="' + listOfFilteredAndScoredObjects[i].imagelink + '">' +
       '</td>' +
       '</tr>' +
       '</table>' +
       '<p class="smartphone-name">' + listOfFilteredAndScoredObjects[i].brand + ' ' + listOfFilteredAndScoredObjects[i].name + '</p>' +
-
       '</label>' +
       '<div class="detailwindow float" id="hiddenpicture' + listOfFilteredAndScoredObjects[i].name + '" style ="display:' + isDetailsHidden + '" >' +
-      '<h3><span style="font-weight: bold;">' + listOfFilteredAndScoredObjects[i].display + '"</span><span style="float:right; font-weight: bold;" class="accentColor">' + listOfFilteredAndScoredObjects[i].price + '€</span></h3>' +
+      '<h3><span style="font-weight: bold;">' + listOfFilteredAndScoredObjects[i].display + '"</span><span style="float:right; font-weight: bold;" class="accentColor">' + listOfFilteredAndScoredObjects[i].price_de + '€</span></h3>' +
       '<h3>' + listOfFilteredAndScoredObjects[i].width + ' * ' + listOfFilteredAndScoredObjects[i].length + 'mm</h3>' +
       '<br>' +
       '<h3 >Design: <span style="float:right";>' + listOfFilteredAndScoredObjects[i].design + '</span></h3>' +
@@ -428,8 +427,18 @@ window.onload = function() {
       '<hr>' +
       '<h3 ><span style="float:right; color: green; font-weight: bold;">' + listOfFilteredAndScoredObjects[i].totalscore + '</span></h3>' +
       '<h3 ><span style="float:right; color: white;">_______________________</span></h3>' +
-
-      '</div> ';
+      '<div id="wrapper">' +
+      '<span class="a-button a-button-primary">' +
+      ' <a target="_blank" href="' + listOfFilteredAndScoredObjects[i].amazon_de + '">' +
+      '<span class="a-button-inner">' +
+      '<img src="images/Amazon-Favicon-64x64.png" class="a-icon a-icon-shop-now">' +
+      '<input class="a-button-input" type="submit" value="Add to cart">' +
+      '<span class="a-button-text">Shop Now</span>' +
+      '</span>' +
+      ' </a>' +
+      '</span>' +
+      '</div> ' +
+      ' </div>';
 
 
     return innerHtml;
@@ -437,10 +446,10 @@ window.onload = function() {
 
   function registerEventForDetails(name) {
     document.getElementById('picture' + name).addEventListener('click', function(e) {
-      if (document.getElementById('hidden' + e.target.parentElement.parentElement.id).style.display === "none") {
-        document.getElementById('hidden' + e.target.parentElement.parentElement.id).style.display = "block";
+      if (document.getElementById('hidden' + e.target.id).style.display === "none") {
+        document.getElementById('hidden' + e.target.id).style.display = "block";
       } else {
-        document.getElementById('hidden' + e.target.parentElement.parentElement.id).style.display = "none";
+        document.getElementById('hidden' + e.target.id).style.display = "none";
       }
     });
   }

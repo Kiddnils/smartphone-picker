@@ -120,19 +120,25 @@ echo "Signed URL: \"".$request_url."\"";
 
 $response = file_get_contents($request_url);
 
-$xml = new DOMDocument();
-$xml->loadXML($response);
-$items = $xml->getElementsByTagName("Items")[0];
-foreach ( $items->getElementsByTagName("Item") as $item )    {
-$json['smartphones'][$x]['amazon_de'] = $item->getElementsByTagName("DetailPageURL")[0]->nodeValue.PHP_EOL;
+if($response === FALSE)
+{
+  echo "Amazon blocked";
+}else {
+    $xml = new DOMDocument();
+    $xml->loadXML($response);
+    $items = $xml->getElementsByTagName("Items")[0];
+    foreach ( $items->getElementsByTagName("Item") as $item )    {
+    $json['smartphones'][$x]['amazon_de'] = $item->getElementsByTagName("DetailPageURL")[0]->nodeValue.PHP_EOL;
 
-$json['smartphones'][$x]['price_de'] = $item->getElementsByTagName("FormattedPrice")[0]->nodeValue.PHP_EOL;
-}
-sleep(12);
+    $json['smartphones'][$x]['price_de'] = substr($item->getElementsByTagName("Amount")[0]->nodeValue.PHP_EOL, 0, -3);
+    }
+    sleep(4);
+
+  }
 }
 }
 file_put_contents("../scripts/smartphones.js", json_encode($json));
-
+echo "Files should be updated";
 
 
 
