@@ -7,7 +7,7 @@ $jsonKeys = json_decode(file_get_contents($fileKeys),TRUE);
 $access_key_id = $jsonKeys['access_key_id'];
 
 // Your Secret Key corresponding to the above ID, as taken from the Your Account page
-$secret_key = $jsonKeys['secret_key'];;
+$secret_key = $jsonKeys['secret_key'];
 
 // Amazon marketplace/region
 $endpoint = "webservices.amazon.de";
