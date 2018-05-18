@@ -72,13 +72,16 @@ for ($x = 0; $x <= count($json['smartphones']); $x++) {
       $items = $xml->getElementsByTagName("Items")[0];
       foreach ( $items->getElementsByTagName("Item") as $item )    {
         $json['smartphones'][$x]['amazon_de'] = $item->getElementsByTagName("DetailPageURL")[0]->nodeValue.PHP_EOL;
-        $json['smartphones'][$x]['price_de'] = (int)substr($item->getElementsByTagName("Amount")[0]->nodeValue.PHP_EOL, 0, -3);
+        $json['smartphones'][$x]['price_de'] = (int)substr($item->getElementsByTagName("LowestNewPrice")[0]->getElementsByTagName("Amount")[0]->nodeValue.PHP_EOL, 0, -3);
+echo "apple";
+echo substr($item->getElementsByTagName("LowestNewPrice")[0]->getElementsByTagName("Amount")[0]->nodeValue.PHP_EOL, 0, -3);
+echo "dragonsbehere";
       }
-      sleep(4);
+      sleep(2);
     }
   }
 }
 
-file_put_contents("../scripts/smartphones.js", json_encode($json));
+file_put_contents("../scripts/smartphones1.js", json_encode($json));
 echo "Files should be updated";
 ?>

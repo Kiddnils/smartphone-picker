@@ -26,7 +26,7 @@ window.onload = function() {
 
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'scripts/smartphones.js', true); // Replace 'my_data' with the path to your file
+    xobj.open('GET', 'scripts/smartphones1.js', true); // Replace 'my_data' with the path to your file
 
     xobj.onreadystatechange = function() {
       if (xobj.readyState == 4 && xobj.status == 200) {
@@ -429,7 +429,7 @@ window.onload = function() {
       '<h3 ><span style="float:right; color: white;">_______________________</span></h3>' +
       '<div id="wrapper">' +
       '<span class="a-button a-button-primary">' +
-      ' <a target="_blank" href="' + listOfFilteredAndScoredObjects[i].amazon_de + '">' +
+      ' <a target="_blank" href="' + listOfFilteredAndScoredObjects[i].amazon_de + '" style="text-decoration:none;">' +
       '<span class="a-button-inner">' +
       '<img src="images/Amazon-Favicon-64x64.png" class="a-icon a-icon-shop-now">' +
       '<input class="a-button-input" type="submit" value="Add to cart">' +
