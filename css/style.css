@@ -123,14 +123,14 @@ table p {
   margin: auto;
 }
 
-thead {
-  background: #FAFAFA;
+.settingsTable {
+  background: #12709e;
 }
 
 th {
   padding-right: 10px;
   padding-left: 0;
-  color: #5b5b5b;
+  color: white;
   text-align: left;
   font-family: 'Open Sans2', sans-serif;
   font-size: 11px;
@@ -246,7 +246,6 @@ input[type=checkbox] {
 }
 
 .settingsdiv {
-  border: 1px solid #F0F0F0;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
   padding-bottom: 10px;
   margin-top: 20px;
@@ -265,13 +264,32 @@ input[type=checkbox] {
   padding: 8px;
 }
 
+.filterdiv {
+  border: 2px solid #12709e;
+  margin-top: 20px;
+  position: fixed;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+}
+
 .itemsdiv {
   margin-top: 20px;
+  margin-left: 180px;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+}
+
+.subHeader {
+  background: #12709e;
+  color: white;
 }
 
 .itemsTable>tbody>tr {
   padding: 0;
+}
+
+.itemsTable>tbody>tr>td:first-child {
+  color: #5b5b5b;
+  font-weight: bold;
+  border-right: 1px solid #F0F0F0;
 }
 
 .itemsTable>thead>tr>th {
@@ -279,7 +297,8 @@ input[type=checkbox] {
   vertical-align: top;
   padding: 8px;
   font-size: 18px;
-  background: #FAFAFA;
+  font-weight: bold;
+  color: #5b5b5b;
 }
 
 .tryFiltering {
@@ -299,7 +318,7 @@ input[type=checkbox] {
   border-width: 0;
   background-color: #FAFAFA;
   font-size: 18px;
-  width: 120px;
+  width: 100%;
   color: #5b5b5b;
 }
 
