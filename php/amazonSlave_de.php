@@ -1,27 +1,30 @@
-<?php if($_SERVER['QUERY_STRING'] != "Schulze-Beckendorf"){ exit(); }
+<?php
+  if($_SERVER['QUERY_STRING'] != "Schulze-Beckendorf"){
+    exit();
+  }
+
+  ignore_user_abort(true);
+  set_time_limit(0);
+
   require_once "logger.php";
-$fileKeys = "../scripts/keys.js";
-$jsonKeys = json_decode(file_get_contents($fileKeys),TRUE);
+  $fileKeys = "../scripts/keys.js";
+  $jsonKeys = json_decode(file_get_contents($fileKeys),TRUE);
 
-// Your Access Key ID, as taken from the Your Account page
-$access_key_id = $jsonKeys['access_key_id'];
+  // Your Access Key ID, as taken from the Your Account page
+  $access_key_id = $jsonKeys['access_key_id'];
 
-// Your Secret Key corresponding to the above ID, as taken from the Your Account page
-$secret_key = $jsonKeys['secret_key'];
+  // Your Secret Key corresponding to the above ID, as taken from the Your Account page
+  $secret_key = $jsonKeys['secret_key'];
 
-// Amazon marketplace/region
-$endpoint = "webservices.amazon.de";
+  // Amazon marketplace/region
+  $endpoint = "webservices.amazon.de";
 
-$uri = "/onca/xml";
+  $uri = "/onca/xml";
 
-$file = "../scripts/smartphones.js";
-$json = json_decode(file_get_contents($file),TRUE);
+  $file = "../scripts/smartphones.js";
+  $json = json_decode(file_get_contents($file),TRUE);
 
-for ($x = 0; $x <= count($json['smartphones']); $x++) {
-    logToFile("amazonSlave_de", "The number is: $x");
-    echo "The number is: $x <br>";
-
-    $params = array(
+  $params = array(
     "Service" => "AWSECommerceService",
     "Operation" => "ItemLookup",
     "AWSAccessKeyId" => $access_key_id,
@@ -29,17 +32,19 @@ for ($x = 0; $x <= count($json['smartphones']); $x++) {
     "ItemId" => "B07CHQHFDZ",
     "IdType" => "ASIN",
     "ResponseGroup" => "Medium"
-    );
+  );
 
-  if ($json['smartphones'][$x]['asin_de'] != '') {
+  for ($x = 0; $x <= count($json['smartphones']); $x++) {
+      logToFile("amazonSlave_de", "Smartphonenumber is: " . ($x+1));
+      echo "Smartphonenumber is: $x <br>";
+
+    if ($json['smartphones'][$x]['asin_de'] != '') {
       $params["ItemId"] = $json['smartphones'][$x]['asin_de'];
-      logToFile("amazonSlave_de", $params["ItemId"]);
-      echo $params["ItemId"];
+      logToFile("amazonSlave_de", "ASIN: " . $params["ItemId"]);
+      echo "ASIN: " . $params["ItemId"] . "<br>";
 
-      // Set current timestamp if not set
-      if (!isset($params["Timestamp"])) {
-        $params["Timestamp"] = gmdate('Y-m-d\TH:i:s\Z');
-      }
+      // Set current timestamp
+      $params["Timestamp"] = gmdate('Y-m-d\TH:i:s\Z');
 
       // Sort the parameters by key
       ksort($params);
@@ -62,32 +67,28 @@ for ($x = 0; $x <= count($json['smartphones']); $x++) {
       $request_url = 'http://'.$endpoint.$uri.'?'.$canonical_query_string.'&Signature='.rawurlencode($signature);
 
       logToFile("amazonSlave_de", "Signed URL: \"".$request_url."\"");
-  echo "Signed URL: \"".$request_url."\"";
+      echo "Signed URL: \"".$request_url."\" <br>";
 
-  $response = file_get_contents($request_url);
+      sleep(5);
+      $response = file_get_contents($request_url);
 
-  if($response === FALSE)
-  {
-    logToFile("amazonSlave_de", "Amazon blocked");
-    echo "Amazon blocked";
-  }else {
-      $xml = new DOMDocument();
-      $xml->loadXML($response);
-      $items = $xml->getElementsByTagName("Items")[0];
-      foreach ( $items->getElementsByTagName("Item") as $item )    {
-        $json['smartphones'][$x]['amazon_de'] = $item->getElementsByTagName("DetailPageURL")[0]->nodeValue.PHP_EOL;
+      if($response === FALSE)
+      {
+        logToFile("amazonSlave_de", "Amazon blocked");
+        echo "Amazon blocked <br>";
+      }else {
+        $xml = new DOMDocument();
+        $xml->loadXML($response);
+        $item = $xml->getElementsByTagName("Item")[0];
+        $json['smartphones'][$x]['amazon_de'] = $item->getElementsByTagName("DetailPageURL")[0]->nodeValue . PHP_EOL;
         $json['smartphones'][$x]['price_de'] = (int)substr($item->getElementsByTagName("LowestNewPrice")[0]->getElementsByTagName("Amount")[0]->nodeValue.PHP_EOL, 0, -3);
-echo "apple";
-      logToFile("amazonSlave_de", substr($item->getElementsByTagName("LowestNewPrice")[0]->getElementsByTagName("Amount")[0]->nodeValue.PHP_EOL, 0, -3));
-echo substr($item->getElementsByTagName("LowestNewPrice")[0]->getElementsByTagName("Amount")[0]->nodeValue.PHP_EOL, 0, -3);
-echo "dragonsbehere";
+        logToFile("amazonSlave_de", "New Price: " . $json['smartphones'][$x]['price_de']);
+        echo "New Price: " . $json['smartphones'][$x]['price_de'] . "<br>";
       }
-      sleep(2);
     }
   }
-}
 
-file_put_contents("../scripts/smartphones.js", json_encode($json));
-logToFile("amazonSlave_de", "Prices should be updated");
-echo "Files should be updated";
+  file_put_contents("../scripts/smartphones.js", json_encode($json));
+  logToFile("amazonSlave_de", "Prices should be updated");
+  echo "Files should be updated <br>";
 ?>
