@@ -59,15 +59,9 @@
       </select>
     </div>
     -->
-    <div class="float">
-      <p>
-        Scale smartphones
-      </p>
-      <select id="scaleInput" class="rating_updater">
-        <option value="1x" selected="selected">No</option>
-        <option value="2.6">Yes</option>
-      </select>
-    </div>
+
+
+
 
     <div style="clear:both;">
     </div>
@@ -77,7 +71,7 @@
           <tr>
             <th style="min-width: 70px">Price</th>
             <th style="min-width: 140px">Size</th>
-            <th style="min-width: 0px">Design &<span style="color:white">_</span>Display</th>
+            <th style="min-width: 0px">Design &<span style="color:#12709e">_</span>Display</th>
             <th style="min-width: 0px">Processor</th>
             <th style="min-width: 0px">Software Updates</th>
             <th style="min-width: 0px">Camera</th>
@@ -277,16 +271,34 @@
       </table>
     </div>
 
+    <div class="filterdiv settingsdiv">
+      <div class="subHeader" style="margin-top:0;">
+        <span class="">Sort Table by</span>
+      </div>
+      <div style="clear:both;"></div>
+      <select id="filterInput" class="filterselect">
+      <option value="Price" selected="selected">Price</option>
+      <option value="Body-Size">Body-Size</option>
+      <option value="Screen-Size">Screen-Size</option>
+      <option value="Total-Score">Total Score</option>
+    </select>
+
+      <div style="clear:both;"></div>
+      <div class="subHeader">
+        <span class="">Scale smartphones </span>
+      </div>
+      <div style="clear:both;"></div>
+      <select id="scaleInput" class="rating_updater filterselect">
+      <option value="1x" selected="selected">No</option>
+      <option value="2.6">Yes</option>
+    </select>
+    </div>
+
     <div style="overflow-x:auto;" class="itemsdiv">
       <table id="myTable" class="itemsTable">
         <thead>
           <tr>
-            <th style="min-width:85px; ">
-              <select id="filterInput" class="filterselect">
-              <option value="Price" selected="selected">Price</option>
-              <option value="Body-Size">Body-Size</option>
-              <option value="Screen-Size">Screen-Size</option>
-              <option value="Total-Score">Total Score</option>
+            <th style="min-width:85px;">
             </th>
             <th></th>
             <th></th>

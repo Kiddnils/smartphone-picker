@@ -26,7 +26,7 @@ window.onload = function() {
 
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'scripts/smartphones1.js', true); // Replace 'my_data' with the path to your file
+    xobj.open('GET', 'scripts/smartphones.js', true); // Replace 'my_data' with the path to your file
 
     xobj.onreadystatechange = function() {
       if (xobj.readyState == 4 && xobj.status == 200) {
@@ -285,8 +285,6 @@ window.onload = function() {
     }
 
     if (filterType === "Price") {
-      tableHead.rows[0].cells[1].innerHTML = '<img class="float" style="height:24px;" src = "images/arrow.png">' +
-        '<span class="float" style="color:red; padding-left: 5px;">Try Filtering</span>';
       for (var i = 0; i < 24; i++) {
 
         leftBoundary = i * 50;
@@ -357,8 +355,8 @@ window.onload = function() {
       for (var e = 0; e < 24; e++) {
         if (listOfFilteredAndScoredObjects[i].price_de > (e) * 50 && listOfFilteredAndScoredObjects[i].price_de <= (e + 1) * 50) {
 
-          if (table.rows[e + 1].cells.length < 10) { //Only 10 phones per row should be shown
-            var cell = table.rows[e + 1].insertCell(table.rows[e + 1].cells.length);
+          if (table.rows[e].cells.length < 10) { //Only 10 phones per row should be shown
+            var cell = table.rows[e].insertCell(table.rows[e].cells.length);
             cell.className += "smartphonecells";
             cell.innerHTML = getInnerHTMLSmartphone(e, i, "none");
             registerEventForDetails(listOfFilteredAndScoredObjects[i].name);
@@ -388,8 +386,11 @@ window.onload = function() {
           if (table.rows[0].cells[e].className === "smartphonecells") {
             cell = table.rows[0].cells[e];
           } else {
+            cell = tableHead.rows[0].insertCell(e);
+            cell.outerHTML = "<th></th>";
             cell = table.rows[0].insertCell(e);
-            tableHead.rows[0].insertCell(e)
+
+
           }
           cell.className += "smartphonecells";
           cell.innerHTML = getInnerHTMLSmartphone(listOfFilteredAndScoredObjects[i].totalscore, i, "block");
