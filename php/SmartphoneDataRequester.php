@@ -27,7 +27,7 @@
         "AssociateTag" => "smartphonep08-21",
         "ItemId" => "B07CHQHFDZ",
         "IdType" => "ASIN",
-        "ResponseGroup" => "Medium"
+        "ResponseGroup" => "OfferListings,Small"
       );
     }
 
@@ -77,7 +77,13 @@
         $xml->loadXML($response);
         $item = $xml->getElementsByTagName("Item")[0];
         $smartphoneData[1] = $item->getElementsByTagName("DetailPageURL")[0]->nodeValue . PHP_EOL;
-        $smartphoneData[2] = (int)substr($item->getElementsByTagName("LowestNewPrice")[0]->getElementsByTagName("Amount")[0]->nodeValue.PHP_EOL, 0, -3);
+        $priceItem = $item->getElementsByTagName("Price")[0];
+        if(is_null($priceItem)) {
+          //TODO Workaround lösen
+          $smartphoneData[2] = 0;
+        } else {
+          $smartphoneData[2] = (int)substr($item->getElementsByTagName("Price")[0]->getElementsByTagName("Amount")[0]->nodeValue.PHP_EOL, 0, -3);
+        }
       }
 
       //Array mit 3 Objekten, 0 = Failed?, 1 = Link, 2 = Preis
