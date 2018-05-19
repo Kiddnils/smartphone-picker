@@ -87,7 +87,7 @@ echo "dragonsbehere";
   }
 }
 
-file_put_contents("../scripts/smartphones1.js", json_encode($json));
+file_put_contents("../scripts/smartphones.js", json_encode($json));
 logToFile("amazonSlave_de", "Prices should be updated");
 echo "Files should be updated";
 ?>
