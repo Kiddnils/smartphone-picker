@@ -7,85 +7,64 @@
   set_time_limit(0);
 
   require_once "logger.php";
-  $fileKeys = "../scripts/keys.js";
-  $jsonKeys = json_decode(file_get_contents($fileKeys),TRUE);
+  require_once "SmartphoneDataRequester.php";
 
-  // Your Access Key ID, as taken from the Your Account page
-  $access_key_id = $jsonKeys['access_key_id'];
+  $json = json_decode(file_get_contents("../scripts/smartphones.js"),TRUE);
 
-  // Your Secret Key corresponding to the above ID, as taken from the Your Account page
-  $secret_key = $jsonKeys['secret_key'];
+  $smartphoneDataRequester = new SmartphoneDataRequester("webservices.amazon.de");
+  $failedAsinsIDs = [];
 
-  // Amazon marketplace/region
-  $endpoint = "webservices.amazon.de";
-
-  $uri = "/onca/xml";
-
-  $file = "../scripts/smartphones.js";
-  $json = json_decode(file_get_contents($file),TRUE);
-
-  $params = array(
-    "Service" => "AWSECommerceService",
-    "Operation" => "ItemLookup",
-    "AWSAccessKeyId" => $access_key_id,
-    "AssociateTag" => "smartphonep08-21",
-    "ItemId" => "B07CHQHFDZ",
-    "IdType" => "ASIN",
-    "ResponseGroup" => "Medium"
-  );
-
-  for ($x = 0; $x <= count($json['smartphones']); $x++) {
+  for ($x = 0; $x < count($json['smartphones']); $x++) {
       logToFile("amazonSlave_de", "Smartphonenumber is: " . ($x+1));
       echo "Smartphonenumber is: $x <br>";
 
     if ($json['smartphones'][$x]['asin_de'] != '') {
-      $params["ItemId"] = $json['smartphones'][$x]['asin_de'];
-      logToFile("amazonSlave_de", "ASIN: " . $params["ItemId"]);
-      echo "ASIN: " . $params["ItemId"] . "<br>";
+      logToFile("amazonSlave_de", "ASIN: " . $json['smartphones'][$x]['asin_de']);
+      echo "ASIN: " . $json['smartphones'][$x]['asin_de'] . "<br>";
 
-      // Set current timestamp
-      $params["Timestamp"] = gmdate('Y-m-d\TH:i:s\Z');
-
-      // Sort the parameters by key
-      ksort($params);
-
-      $pairs = array();
-      foreach ($params as $key => $value) {
-        array_push($pairs, rawurlencode($key)."=".rawurlencode($value));
-      }
-
-      // Generate the canonical query
-      $canonical_query_string = join("&", $pairs);
-
-      // Generate the string to be signed
-      $string_to_sign = "GET\n".$endpoint."\n".$uri."\n".$canonical_query_string;
-
-      // Generate the signature required by the Product Advertising API
-      $signature = base64_encode(hash_hmac("sha256", $string_to_sign, $secret_key, true));
-
-      // Generate the signed URL
-      $request_url = 'http://'.$endpoint.$uri.'?'.$canonical_query_string.'&Signature='.rawurlencode($signature);
-
-      logToFile("amazonSlave_de", "Signed URL: \"".$request_url."\"");
-      echo "Signed URL: \"".$request_url."\" <br>";
-
-      sleep(5);
-      $response = file_get_contents($request_url);
-
-      if($response === FALSE)
-      {
-        logToFile("amazonSlave_de", "Amazon blocked");
+      $smartphoneData = $smartphoneDataRequester->getSmartPhoneData($json['smartphones'][$x]['asin_de']);
+      if($smartphoneData[0] === TRUE) {
+        $failedAsinsIDs[] = $x;
+        logToFile("amazonSlave_de", "Amazon blocked Request with ASIN " . $json['smartphones'][$x]['asin_de']);
         echo "Amazon blocked <br>";
-      }else {
-        $xml = new DOMDocument();
-        $xml->loadXML($response);
-        $item = $xml->getElementsByTagName("Item")[0];
-        $json['smartphones'][$x]['amazon_de'] = $item->getElementsByTagName("DetailPageURL")[0]->nodeValue . PHP_EOL;
-        $json['smartphones'][$x]['price_de'] = (int)substr($item->getElementsByTagName("LowestNewPrice")[0]->getElementsByTagName("Amount")[0]->nodeValue.PHP_EOL, 0, -3);
-        logToFile("amazonSlave_de", "New Price: " . $json['smartphones'][$x]['price_de']);
-        echo "New Price: " . $json['smartphones'][$x]['price_de'] . "<br>";
+      } else {
+        $json['smartphones'][$x]['amazon_de'] = $smartphoneData[1];
+        $json['smartphones'][$x]['price_de'] = $smartphoneData[2];
+        logToFile("amazonSlave_de", "New Price: " . $smartphoneData[2]);
+        echo "New Price: " . $smartphoneData[2] . "<br>";
       }
     }
+  }
+
+  //Alle Einträge in der smartphones.js welche nicht geupdatet werden konnten so oft wiederholen, bis alles aktualisiert wurde
+  while (count($failedAsinsIDs) !== 0) {
+    logToFile("amazonSlave_de", "Die folgenden ASINs wurden im letzten Try von Amazon blockiert und müssen nochmal requested werden");
+    echo "Die folgenden ASINs wurden im letzten Try von Amazon blockiert und müssen nochmal requested werden <br>";
+    for ($x = 0; $x < count($failedAsinsIDs); $x++) {
+      logToFile("amazonSlave_de", "Failed ASIN:" . $json['smartphones'][$failedAsinsIDs[$x]]['asin_de']);
+      echo "Failed ASIN:" . $json['smartphones'][$failedAsinsIDs[$x]]['asin_de'] . "<br>";
+    }
+
+    //Hier drin temporär die wieder gescheiterten Speichern
+    $failedAsinsIDsTMP = [];
+    for ($x = 0; $x < count($failedAsinsIDs); $x++) {
+      logToFile("amazonSlave_de", $json['smartphones'][$failedAsinsIDs[$x]]['asin_de']);
+      echo $json['smartphones'][$failedAsinsIDs[$x]]['asin_de'] . "<br>";
+
+      $smartphoneData = $smartphoneDataRequester->getSmartPhoneData($json['smartphones'][$failedAsinsIDs[$x]]['asin_de']);
+      if($smartphoneData[0] === TRUE) {
+        $failedAsinsIDsTMP[] = $failedAsinsIDs[$x];
+        logToFile("amazonSlave_de", "Amazon blocked Request with ASIN " . $json['smartphones'][$failedAsinsIDs[$x]]['asin_de']);
+        echo "Amazon blocked <br>";
+      } else {
+        $json['smartphones'][$failedAsinsIDs[$x]]['amazon_de'] = $smartphoneData[1];
+        $json['smartphones'][$failedAsinsIDs[$x]]['price_de'] = $smartphoneData[2];
+        logToFile("amazonSlave_de", "New Price: " . $smartphoneData[2]);
+        echo "New Price: " . $smartphoneData[2] . "<br>";
+      }
+    }
+    //Die wieder gescheiterten zurückspielen in die while Schleife
+    $failedAsinsIDs = $failedAsinsIDsTMP;
   }
 
   file_put_contents("../scripts/smartphones.js", json_encode($json));
