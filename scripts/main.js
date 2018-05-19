@@ -355,8 +355,8 @@ window.onload = function() {
       for (var e = 0; e < 24; e++) {
         if (listOfFilteredAndScoredObjects[i].price_de > (e) * 50 && listOfFilteredAndScoredObjects[i].price_de <= (e + 1) * 50) {
 
-          if (table.rows[e + 1].cells.length < 10) { //Only 10 phones per row should be shown
-            var cell = table.rows[e + 1].insertCell(table.rows[e + 1].cells.length);
+          if (table.rows[e].cells.length < 10) { //Only 10 phones per row should be shown
+            var cell = table.rows[e].insertCell(table.rows[e].cells.length);
             cell.className += "smartphonecells";
             cell.innerHTML = getInnerHTMLSmartphone(e, i, "none");
             registerEventForDetails(listOfFilteredAndScoredObjects[i].name);
