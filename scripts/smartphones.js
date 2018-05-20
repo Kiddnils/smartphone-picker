@@ -308,6 +308,28 @@
     "price_de": 199,
     "amazon_de": "https:\/\/www.amazon.de\/Honor-Smartphone-Display-interner-Speicher-Grau\/dp\/B0779STLGF?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0779STLGF\n"
   }, {
+    "name": "Mate 10 Pro",
+    "brand": "Huawei",
+    "imagelink": "images\\\\\/huawei-mate10-pro.jpg",
+    "price": 559,
+    "design": 4,
+    "display": 6,
+    "length": 157,
+    "width": 75,
+    "processor": 3,
+    "updates": 3,
+    "camera": 4,
+    "battery": 5,
+    "storage": 128,
+    "memory": 6,
+    "sdslot": 0,
+    "simcards": 2,
+    "headphonejack": 0,
+    "totalscore": 0,
+    "asin_de": "B076CNDP4J",
+    "price_de": 0,
+    "amazon_de": ""
+  }, {
     "name": "P20",
     "brand": "Huawei",
     "imagelink": "images\\\\\/vqPQcia.jpg",

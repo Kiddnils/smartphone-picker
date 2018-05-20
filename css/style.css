@@ -207,6 +207,17 @@ th {
   /* the same as your div height */
 }
 
+.main-menu-text ul {
+  list-style: none;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.main-menu-text li {
+  float: Left;
+}
+
 .main-menu-text a {
   padding-right: 20px;
 }
