@@ -128,12 +128,10 @@ table p {
 }
 
 th {
-  padding-right: 10px;
+  padding-right: 0;
   padding-left: 0;
   color: white;
   text-align: left;
-  font-family: 'Open Sans2', sans-serif;
-  font-size: 11px;
   letter-spacing: 0;
 }
 
@@ -247,6 +245,7 @@ input[type=checkbox] {
   text-align: left;
   margin-left: 15%;
   margin-top: 10px;
+  font-weight: bold;
 }
 
 .settingsdiv {
@@ -295,13 +294,20 @@ input[type=checkbox] {
   border-right: 1px solid #F0F0F0;
 }
 
-.itemsTable>thead>tr>th {
-  border-bottom: 1px solid #F0F0F0;
+.itemsTable>thead>tr>th:not(:empty) {
   vertical-align: top;
   padding: 8px;
   font-size: 18px;
   font-weight: bold;
   color: #5b5b5b;
+}
+
+.itemsTable>thead>tr>th {
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.itemsTable>thead>tr>th:first-child {
+  border-right: 1px solid #F0F0F0;
 }
 
 .tryFiltering {
