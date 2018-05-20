@@ -53,6 +53,13 @@ window.onload = function() {
     listOfFilteredObjects = [];
     for (var i = 0; i < obj.smartphones.length; i++) {
 
+      //prize not 0
+      if (obj.smartphones[i].price_de === 0) {
+        continue;
+      }
+
+
+
       //prize minimum
       if (document.getElementById("price_minimum_1").value !== "") {
         if (obj.smartphones[i].price_de < document.getElementById("price_minimum_1").value) {

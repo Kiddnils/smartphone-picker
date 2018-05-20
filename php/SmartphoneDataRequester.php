@@ -76,8 +76,13 @@
         $xml = new DOMDocument();
         $xml->loadXML($response);
         $item = $xml->getElementsByTagName("Item")[0];
-        $smartphoneData[1] = $item->getElementsByTagName("DetailPageURL")[0]->nodeValue . PHP_EOL;
-        $priceItem = $item->getElementsByTagName("Price")[0];
+        if(is_null($item)) {
+            $smartphoneData[1] = "";
+        }
+        else{
+            $smartphoneData[1] = $item->getElementsByTagName("DetailPageURL")[0]->nodeValue . PHP_EOL;
+            $priceItem = $item->getElementsByTagName("Price")[0];
+        }
         if(is_null($priceItem)) {
           //TODO Workaround lösen
           $smartphoneData[2] = 0;
