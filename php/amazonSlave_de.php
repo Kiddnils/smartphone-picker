@@ -4,7 +4,7 @@
   }
 
   ignore_user_abort(true);
-  set_time_limit(0);
+  set_time_limit(100);
 
   require_once "logger.php";
   require_once "SmartphoneDataRequester.php";

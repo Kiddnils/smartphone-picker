@@ -27,7 +27,7 @@
         "AssociateTag" => "smartphonep08-21",
         "ItemId" => "B07CHQHFDZ",
         "IdType" => "ASIN",
-        "ResponseGroup" => "OfferListings,Small"
+        "ResponseGroup" => "OfferSummary,Small"
       );
     }
 
@@ -80,14 +80,14 @@
             $smartphoneData[1] = "";
         }
         else{
-            $smartphoneData[1] = $item->getElementsByTagName("DetailPageURL")[0]->nodeValue . PHP_EOL;
-            $priceItem = $item->getElementsByTagName("Price")[0];
+            $smartphoneData[1] = $item->getElementsByTagName("DetailPageURL")[0]->nodeValue;
+            $priceItem = $item->getElementsByTagName("LowestNewPrice")[0];
         }
         if(is_null($priceItem)) {
           //TODO Workaround lösen
           $smartphoneData[2] = 0;
         } else {
-          $smartphoneData[2] = (int)substr($item->getElementsByTagName("Price")[0]->getElementsByTagName("Amount")[0]->nodeValue.PHP_EOL, 0, -3);
+          $smartphoneData[2] = (int)substr($priceItem->getElementsByTagName("Amount")[0]->nodeValue, 0, -2);
         }
       }
 
