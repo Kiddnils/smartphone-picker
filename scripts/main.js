@@ -427,6 +427,16 @@ window.onload = function() {
       '<h3><span style="font-weight: bold;">' + listOfFilteredAndScoredObjects[i].display + '"</span><span style="float:right; font-weight: bold;" class="accentColor">' + listOfFilteredAndScoredObjects[i].price_de + '€</span></h3>' +
       '<h3>' + listOfFilteredAndScoredObjects[i].width + ' * ' + listOfFilteredAndScoredObjects[i].length + 'mm</h3>' +
       '<br>' +
+      '<div style="width:20px; height:20px; float:left;"><img style="max-width:20px; max-height:20px; float:left;" src="images/ram_icon.png"></div>' +
+      '<h3 style="float:left;">' + listOfFilteredAndScoredObjects[i].memory + 'GB</h3>' +
+
+      '<div style="width:20px; height:20px; float:right;"><img style="max-width:20px; max-height:20px; float:right;" src="images/charging-battery.png"></div>' +
+      '<h3 style="float:right;">' + listOfFilteredAndScoredObjects[i].batterysize + '</h3>' +
+      '<div style="clear:both;"></div>' +
+      '<div style="width:20px; height:20px; float:left;"><img style="max-width:20px; max-height:20px; " src="images/sd_storage.png"></div>' +
+      '<h3 style="float:left;">' + listOfFilteredAndScoredObjects[i].storage + 'GB</h3>' +
+      '<br>' +
+      '<br>' +
       '<h3 >Design: <span style="float:right";>' + listOfFilteredAndScoredObjects[i].design + '</span></h3>' +
       '<h3 >Processor: <span style="float:right";>' + listOfFilteredAndScoredObjects[i].processor + '</span></h3>' +
       '<h3 >Software: <span style="float:right">' + listOfFilteredAndScoredObjects[i].updates + '</span></h3>' +
