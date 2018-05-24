@@ -15,7 +15,6 @@ window.onload = function() {
     loadJSON(function(response) {
       // Parse JSON string into object
       obj = JSON.parse(response);
-      console.log(response);
       calculateAllScores();
       buildTableStructure();
       updateTable();
@@ -179,7 +178,7 @@ window.onload = function() {
   function sortListOfFilteredObjects(filterType) {
     listOfFilteredAndScoredObjects = [];
 
-    if (filterType === "Price") {
+    if (filterType === "price") {
       //first score stuff
       for (var i = 0; i < listOfFilteredObjects.length; i++) {
         //then sort it into listOfFilteredAndScoredObjects
@@ -200,7 +199,7 @@ window.onload = function() {
           }
         }
       }
-    } else if (filterType === "Body-Size") {
+    } else if (filterType === "length") {
       for (var i = 0; i < listOfFilteredObjects.length; i++) {
         //then sort it into listOfFilteredAndScoredObjects
         for (var e = 0; e < listOfFilteredObjects.length; e++) {
@@ -220,7 +219,7 @@ window.onload = function() {
           }
         }
       }
-    } else if (filterType === "Screen-Size") {
+    } else if (filterType === "display") {
       for (var i = 0; i < listOfFilteredObjects.length; i++) {
         //then sort it into listOfFilteredAndScoredObjects
         for (var e = 0; e < listOfFilteredObjects.length; e++) {
@@ -240,7 +239,7 @@ window.onload = function() {
           }
         }
       }
-    } else if (filterType === "Total-Score") {
+    } else if (filterType === "totalscore") {
       for (var i = 0; i < listOfFilteredObjects.length; i++) {
         //then sort it into listOfFilteredAndScoredObjects
         for (var e = 0; e < listOfFilteredObjects.length; e++) {
@@ -291,7 +290,7 @@ window.onload = function() {
 
     }
 
-    if (filterType === "Price") {
+    if (filterType === "price") {
       for (var i = 0; i < 24; i++) {
 
         leftBoundary = i * 50;
@@ -315,22 +314,17 @@ window.onload = function() {
           cell1.innerHTML = leftBoundary + "-" + rightBoundary;
         }
       }
-    } else if (filterType === 'Body-Size' || filterType === 'Screen-Size') {
+    } else if (filterType === 'length' || filterType === 'display') {
       var row = table.insertRow();
       row.insertCell(0);
-    } else if (filterType === "Total-Score") {
+    } else if (filterType === "totalscore") {
       var row = table.insertRow();
-      var row = table.rows[0];
-      row.insertCell();
-      for (var i = 1; i <= 25; i++) {
-        cell1 = tableHead.rows[0].cells[i];
-        cell1.innerHTML = i;
-        row.insertCell(i);
-      }
-
-
+      row.insertCell(0);
     }
+
+
   }
+
 
   function updateTable() {
     var tableType = document.getElementById("filterInput").options[document.getElementById("filterInput").selectedIndex].value;
@@ -339,25 +333,25 @@ window.onload = function() {
     filterJSON();
     sortListOfFilteredObjects(tableType);
     switch (tableType) {
-      case "Price":
-        fillPrice();
+      case "price":
+        fillPrice(tableType);
         break;
-      case "Body-Size":
-      case "Screen-Size":
-        fillSize();
+      case "length":
+      case "display":
+        fillHorizontally(tableType);
         break;
-      case "Total-Score":
-        fillScore();
+      case "totalscore":
+        fillHorizontally(tableType);
         break;
       default:
-        fillPrice();
+        fillPrice(tableType);
         break;
     }
 
   }
 
 
-  function fillPrice() {
+  function fillPrice(type) {
     for (var i = 0; i < listOfFilteredAndScoredObjects.length; i++) {
       for (var e = 0; e < 24; e++) {
         if (listOfFilteredAndScoredObjects[i].price_de > (e) * 50 && listOfFilteredAndScoredObjects[i].price_de <= (e + 1) * 50) {
@@ -365,7 +359,7 @@ window.onload = function() {
           if (table.rows[e].cells.length < 10) { //Only 10 phones per row should be shown
             var cell = table.rows[e].insertCell(table.rows[e].cells.length);
             cell.className += "smartphonecells";
-            cell.innerHTML = getInnerHTMLSmartphone(e, i, "none");
+            cell.innerHTML = getInnerHTMLSmartphone(i, "none");
             registerEventForDetails(listOfFilteredAndScoredObjects[i].name);
             break;
           }
@@ -375,41 +369,32 @@ window.onload = function() {
     }
   }
 
-  function fillSize() {
+
+  function fillHorizontally(type) {
+    var cell;
     for (var i = 0; i < listOfFilteredAndScoredObjects.length; i++) {
-      var cell = table.rows[0].insertCell(table.rows[0].cells.length);
+      cell = tableHead.rows[0].insertCell(e);
+      cell.outerHTML.innerHTML = listOfFilteredAndScoredObjects[i][type];
+      cell.outerHTML = "<th></th>";
+
+      cell = table.rows[0].insertCell(table.rows[0].cells.length);
       cell.className += "smartphonecells";
-      cell.innerHTML = getInnerHTMLSmartphone(0, i, "block");
+      cell.innerHTML = getInnerHTMLSmartphone(i, "block");
       registerEventForDetails(listOfFilteredAndScoredObjects[i].name);
     }
   }
 
-  function fillScore() {
-    var cell;
-    for (var i = 0; i < listOfFilteredAndScoredObjects.length; i++) {
-      for (var e = 1; i < tableHead.rows[0].cells.length; e++) {
+  function getColumn(type) {
+    switch (expression) {
+      case expression:
 
-        if (tableHead.rows[0].cells[e].innerHTML - 1 === listOfFilteredAndScoredObjects[i].totalscore) {
-          if (table.rows[0].cells[e].className === "smartphonecells") {
-            cell = table.rows[0].cells[e];
-          } else {
-            cell = tableHead.rows[0].insertCell(e);
-            cell.outerHTML = "<th></th>";
-            cell = table.rows[0].insertCell(e);
-
-
-          }
-          cell.className += "smartphonecells";
-          cell.innerHTML = getInnerHTMLSmartphone(listOfFilteredAndScoredObjects[i].totalscore, i, "block");
-          registerEventForDetails(listOfFilteredAndScoredObjects[i].name);
-          break;
-        }
-      }
+        break;
+      default:
 
     }
   }
 
-  function getInnerHTMLSmartphone(currentRow, i, isDetailsHidden) {
+  function getInnerHTMLSmartphone(i, isDetailsHidden) {
     var innerHtml =
       '<table>' +
       '<tr style="height:425px;">' +
@@ -477,22 +462,21 @@ window.onload = function() {
   });
 
 
-  //Set Scale Smartphones to true when case "Body-Size": oder case "Screen-Size":
+  //Set Scale Smartphones to true when case "length": oder case "display":
   document.getElementById("filterInput").addEventListener("input", function() {
     switch (document.getElementById("filterInput").options[document.getElementById("filterInput").selectedIndex].value) {
-      case "Price":
+      case "price":
         break;
-      case "Body-Size":
+      case "length":
         document.getElementById("scaleInput").value = "2.6";
         break;
-      case "Screen-Size":
+      case "display":
         document.getElementById("scaleInput").value = "2.6";
         break;
-      case "Total-Score":
+      case "totalscore":
         break;
       default:
     }
-    console.log("DSRIN");
     updateTable();
   });
 
