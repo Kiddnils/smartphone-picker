@@ -372,10 +372,11 @@ window.onload = function() {
 
   function fillHorizontally(type) {
     var cell;
+    var cell1;
     for (var i = 0; i < listOfFilteredAndScoredObjects.length; i++) {
-      cell = tableHead.rows[0].insertCell(e);
-      cell.outerHTML.innerHTML = listOfFilteredAndScoredObjects[i][type];
-      cell.outerHTML = "<th></th>";
+      cell1 = tableHead.rows[0].cells[i + 1];
+      cell1.innerHTML = i;
+      cell1.innerHTML = listOfFilteredAndScoredObjects[i][type];
 
       cell = table.rows[0].insertCell(table.rows[0].cells.length);
       cell.className += "smartphonecells";
