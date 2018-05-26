@@ -295,8 +295,11 @@ window.onload = function() {
         fillPrice(tableType);
         break;
       case "length":
+        fillHorizontally(tableType, 'mm');
+        activateHorizontalScrolling(true);
+        break;
       case "display":
-        fillHorizontally(tableType);
+        fillHorizontally(tableType, '"');
         activateHorizontalScrolling(true);
         break;
       case "totalscore":
@@ -330,13 +333,13 @@ window.onload = function() {
   }
 
 
-  function fillHorizontally(type) {
+  function fillHorizontally(type, suffix) {
     var cell;
     var cell1;
     for (var i = 0; i < listOfFilteredAndScoredObjects.length; i++) {
       cell1 = tableHead.rows[0].cells[i + 1];
       cell1.innerHTML = i;
-      cell1.innerHTML = listOfFilteredAndScoredObjects[i][type];
+      cell1.innerHTML = listOfFilteredAndScoredObjects[i][type] + suffix;
 
       cell = table.rows[0].insertCell(table.rows[0].cells.length);
       cell.className += "smartphonecells";
