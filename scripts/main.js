@@ -176,91 +176,47 @@ window.onload = function() {
   }
 
   function sortListOfFilteredObjects(filterType) {
+    switch (filterType) {
+      case "price":
+      case "totalscore":
+        sortBy("totalscore", "price_de");
+        break;
+      case "length":
+        sortBy("length", "width");
+        break;
+      case "display":
+        sortBy("display", "length");
+        break;
+      default:
+        break;
+    }
+  }
+
+  function sortBy(first, second) {
     listOfFilteredAndScoredObjects = [];
 
-    if (filterType === "price") {
-      //first score stuff
-      for (var i = 0; i < listOfFilteredObjects.length; i++) {
-        //then sort it into listOfFilteredAndScoredObjects
-        for (var e = 0; e < listOfFilteredObjects.length; e++) {
+    //first score stuff
+    for (var i = 0; i < listOfFilteredObjects.length; i++) {
+      //then sort it into listOfFilteredAndScoredObjects
+      for (var e = 0; e < listOfFilteredObjects.length; e++) {
 
-          if (listOfFilteredAndScoredObjects.length == 0) {
-            listOfFilteredAndScoredObjects.push(listOfFilteredObjects[i]);
-            break;
-          } else if (e == listOfFilteredAndScoredObjects.length) {
-            listOfFilteredAndScoredObjects.splice(listOfFilteredAndScoredObjects.length, 0, listOfFilteredObjects[i]);
-            break;
-          } else if (listOfFilteredObjects[i].totalscore > listOfFilteredAndScoredObjects[e].totalscore) {
-            listOfFilteredAndScoredObjects.splice(e, 0, listOfFilteredObjects[i]);
-            break;
-          } else if (listOfFilteredObjects[i].totalscore === listOfFilteredAndScoredObjects[e].totalscore && listOfFilteredObjects[i].price_de < listOfFilteredAndScoredObjects[e].price_de) {
-            listOfFilteredAndScoredObjects.splice(e, 0, listOfFilteredObjects[i]);
-            break;
-          }
-        }
-      }
-    } else if (filterType === "length") {
-      for (var i = 0; i < listOfFilteredObjects.length; i++) {
-        //then sort it into listOfFilteredAndScoredObjects
-        for (var e = 0; e < listOfFilteredObjects.length; e++) {
-
-          if (listOfFilteredAndScoredObjects.length == 0) {
-            listOfFilteredAndScoredObjects.push(listOfFilteredObjects[i]);
-            break;
-          } else if (e == listOfFilteredAndScoredObjects.length) {
-            listOfFilteredAndScoredObjects.splice(listOfFilteredAndScoredObjects.length, 0, listOfFilteredObjects[i]);
-            break;
-          } else if (listOfFilteredObjects[i].length < listOfFilteredAndScoredObjects[e].length) {
-            listOfFilteredAndScoredObjects.splice(e, 0, listOfFilteredObjects[i]);
-            break;
-          } else if (listOfFilteredObjects[i].length === listOfFilteredAndScoredObjects[e].length && listOfFilteredObjects[i].width > listOfFilteredAndScoredObjects[e].width) {
-            listOfFilteredAndScoredObjects.splice(e, 0, listOfFilteredObjects[i]);
-            break;
-          }
-        }
-      }
-    } else if (filterType === "display") {
-      for (var i = 0; i < listOfFilteredObjects.length; i++) {
-        //then sort it into listOfFilteredAndScoredObjects
-        for (var e = 0; e < listOfFilteredObjects.length; e++) {
-
-          if (listOfFilteredAndScoredObjects.length == 0) {
-            listOfFilteredAndScoredObjects.push(listOfFilteredObjects[i]);
-            break;
-          } else if (e == listOfFilteredAndScoredObjects.length) {
-            listOfFilteredAndScoredObjects.splice(listOfFilteredAndScoredObjects.length, 0, listOfFilteredObjects[i]);
-            break;
-          } else if (listOfFilteredObjects[i].display < listOfFilteredAndScoredObjects[e].display) {
-            listOfFilteredAndScoredObjects.splice(e, 0, listOfFilteredObjects[i]);
-            break;
-          } else if (listOfFilteredObjects[i].display === listOfFilteredAndScoredObjects[e].display && listOfFilteredObjects[i].length < listOfFilteredAndScoredObjects[e].length) {
-            listOfFilteredAndScoredObjects.splice(e, 0, listOfFilteredObjects[i]);
-            break;
-          }
-        }
-      }
-    } else if (filterType === "totalscore") {
-      for (var i = 0; i < listOfFilteredObjects.length; i++) {
-        //then sort it into listOfFilteredAndScoredObjects
-        for (var e = 0; e < listOfFilteredObjects.length; e++) {
-
-          if (listOfFilteredAndScoredObjects.length == 0) {
-            listOfFilteredAndScoredObjects.push(listOfFilteredObjects[i]);
-            break;
-          } else if (e == listOfFilteredAndScoredObjects.length) {
-            listOfFilteredAndScoredObjects.splice(listOfFilteredAndScoredObjects.length, 0, listOfFilteredObjects[i]);
-            break;
-          } else if (listOfFilteredObjects[i].totalscore < listOfFilteredAndScoredObjects[e].totalscore) {
-            listOfFilteredAndScoredObjects.splice(e, 0, listOfFilteredObjects[i]);
-            break;
-          } else if (listOfFilteredObjects[i].totalscore === listOfFilteredAndScoredObjects[e].totalscore && listOfFilteredObjects[i].price_de < listOfFilteredAndScoredObjects[e].price_de) {
-            listOfFilteredAndScoredObjects.splice(e, 0, listOfFilteredObjects[i]);
-            break;
-          }
+        if (listOfFilteredAndScoredObjects.length == 0) {
+          listOfFilteredAndScoredObjects.push(listOfFilteredObjects[i]);
+          break;
+        } else if (e == listOfFilteredAndScoredObjects.length) {
+          listOfFilteredAndScoredObjects.splice(listOfFilteredAndScoredObjects.length, 0, listOfFilteredObjects[i]);
+          break;
+        } else if (listOfFilteredObjects[i][first] > listOfFilteredAndScoredObjects[e][first]) {
+          listOfFilteredAndScoredObjects.splice(e, 0, listOfFilteredObjects[i]);
+          break;
+        } else if (listOfFilteredObjects[i][first] === listOfFilteredAndScoredObjects[e][first] && listOfFilteredObjects[i][second] < listOfFilteredAndScoredObjects[e][second]) {
+          listOfFilteredAndScoredObjects.splice(e, 0, listOfFilteredObjects[i]);
+          break;
         }
       }
     }
   }
+
 
   function calculateScore(smartphone) {
     return smartphone.design + smartphone.processor + smartphone.updates + smartphone.camera + smartphone.battery;
@@ -332,6 +288,8 @@ window.onload = function() {
     buildTableStructure(tableType);
     filterJSON();
     sortListOfFilteredObjects(tableType);
+
+    activateHorizontalScrolling(false);
     switch (tableType) {
       case "price":
         fillPrice(tableType);
@@ -339,9 +297,11 @@ window.onload = function() {
       case "length":
       case "display":
         fillHorizontally(tableType);
+        activateHorizontalScrolling(true);
         break;
       case "totalscore":
         fillHorizontally(tableType);
+        activateHorizontalScrolling(true);
         break;
       default:
         fillPrice(tableType);
@@ -385,15 +345,6 @@ window.onload = function() {
     }
   }
 
-  function getColumn(type) {
-    switch (expression) {
-      case expression:
-
-        break;
-      default:
-
-    }
-  }
 
   function getInnerHTMLSmartphone(i, isDetailsHidden) {
     var innerHtml =
@@ -477,6 +428,7 @@ window.onload = function() {
       case "totalscore":
         break;
       default:
+        break;
     }
     updateTable();
   });
@@ -492,6 +444,42 @@ window.onload = function() {
 
   }
 
+
+  function scrollHorizontally(e) {
+    e = window.event || e;
+    var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+    elems[0].scrollLeft -= (delta * 40); // Multiplied by 40
+    elems[0].scrollLeft -= (delta * 40); // Multiplied by 40
+    e.preventDefault();
+    console.log("teeeee");
+  }
+
+  var elems = document.getElementsByClassName("itemsdiv");
+
+  function activateHorizontalScrolling(activate) {
+    if (activate) {
+      if (elems[0].addEventListener) {
+        // IE9, Chrome, Safari, Opera
+        elems[0].addEventListener("mousewheel", scrollHorizontally, false);
+        // Firefox
+        elems[0].addEventListener("DOMMouseScroll", scrollHorizontally, false);
+      } else {
+        // IE 6/7/8
+        elems[0].attachEvent("onmousewheel", scrollHorizontally);
+      }
+    } else {
+      if (elems[0].addEventListener) {
+        // IE9, Chrome, Safari, Opera
+        elems[0].removeEventListener("mousewheel", scrollHorizontally, false);
+        // Firefox
+        elems[0].removeEventListener("DOMMouseScroll", scrollHorizontally, false);
+      } else {
+        // IE 6/7/8
+        elems[0].removeEventListener("onmousewheel", scrollHorizontally);
+      }
+    }
+
+  }
 
 
 

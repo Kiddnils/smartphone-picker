@@ -165,8 +165,8 @@ th {
 
 @media only screen and (min-width: 1000px) {
   .description {
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-left: 15%;
     margin-right: 15%;
   }
@@ -188,9 +188,9 @@ th {
 }
 
 .main-menu {
-  margin-top: 20px;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  margin-top: 0px;
+  padding-bottom: 30px;
+  padding-top: 10px;
   outline-color: rgb(102, 102, 102);
   background-color: rgb(249, 249, 249);
   border-top-color: rgb(220, 220, 220);
@@ -200,10 +200,10 @@ th {
 
 .main-menu-text {
   margin-left: 15%;
+  margin-right: 15%;
   padding-bottom: 10px;
   padding-top: 10px;
   vertical-align: middle;
-  line-height: 1px;
   /* the same as your div height */
 }
 
@@ -215,7 +215,7 @@ th {
 }
 
 .main-menu-text li {
-  float: Left;
+  display: inline-block;
 }
 
 .main-menu-text a {
@@ -287,6 +287,7 @@ input[type=checkbox] {
 .itemsdiv {
   margin-top: 20px;
   margin-left: 180px;
+  height: 870px;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
 }
 
