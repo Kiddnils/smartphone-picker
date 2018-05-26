@@ -6,6 +6,7 @@ window.onload = function() {
   init();
 
   var obj;
+  var scale;
   var listOfFilteredObjects;
   var listOfFilteredAndScoredObjects;
 
@@ -350,6 +351,12 @@ window.onload = function() {
 
 
   function getInnerHTMLSmartphone(i, isDetailsHidden) {
+    if (document.getElementById("scaleInput").checked) {
+      scale = 2.7;
+    } else {
+      scale = '1x';
+    }
+
     var innerHtml =
       '<table>' +
       '<tr style="height:425px;">' +
@@ -357,7 +364,7 @@ window.onload = function() {
       '<input type="checkbox">' +
       '<label for="toggle" id="picture' + listOfFilteredAndScoredObjects[i].name + '">' +
 
-      '<img class="qtip-img" id="picture' + listOfFilteredAndScoredObjects[i].name + '" style="vertical-align: bottom; max-height:' + document.getElementById("scaleInput").options[document.getElementById("scaleInput").selectedIndex].value * listOfFilteredAndScoredObjects[i].length + 'px;"" src="' + listOfFilteredAndScoredObjects[i].imagelink + '">' +
+      '<img class="qtip-img" id="picture' + listOfFilteredAndScoredObjects[i].name + '" style="vertical-align: bottom; max-height:' + scale * listOfFilteredAndScoredObjects[i].length + 'px;"" src="' + listOfFilteredAndScoredObjects[i].imagelink + '">' +
       '</td>' +
       '</tr>' +
       '</table>' +
@@ -454,7 +461,6 @@ window.onload = function() {
     elems[0].scrollLeft -= (delta * 40); // Multiplied by 40
     elems[0].scrollLeft -= (delta * 40); // Multiplied by 40
     e.preventDefault();
-    console.log("teeeee");
   }
 
   var elems = document.getElementsByClassName("itemsdiv");
