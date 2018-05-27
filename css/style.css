@@ -142,15 +142,6 @@ th {
   margin-bottom: 10px;
 }
 
-@media only screen and (min-width: 1000px) {
-  .bodydiv {
-    margin-top: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 20px;
-  }
-}
-
 .description {
   margin-top: 40px;
   margin-bottom: 30px;
@@ -163,12 +154,18 @@ th {
   margin-top: 0;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1300px) {
   .description {
     margin-top: 40px;
     margin-bottom: 10px;
     margin-left: 15%;
     margin-right: 15%;
+  }
+  .bodydiv {
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
   }
 }
 
@@ -277,7 +274,6 @@ input[type=checkbox] {
 
 .filterdiv {
   float: left;
-  height: 842px;
   overflow-y: auto;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
 }
@@ -296,7 +292,7 @@ input[type=checkbox] {
 
 .itemsdiv {
   margin-left: 295px;
-  height: 842px;
+  height: 1000px;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
 }
 
@@ -657,6 +653,15 @@ radio {
 .cbx:checked~label:after {
   left: 30px;
   background: #12709e;
+}
+
+.cbx:disabled~label {
+  background: #d5d5d5;
+  pointer-events: none;
+}
+
+.cbx:disabled~label:after {
+  background: #bcbdbc;
 }
 
 .hidden {

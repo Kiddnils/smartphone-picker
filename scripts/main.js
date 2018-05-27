@@ -358,7 +358,7 @@ window.onload = function() {
     var innerHtml =
       '<table>' +
       '<tr style="height:425px;">' +
-      '<td style="vertical-align: bottom;">' +
+      '<td style="vertical-align: bottom; height: 440px;">' +
       '<input type="checkbox">' +
       '<label for="toggle" id="picture' + listOfFilteredAndScoredObjects[i].name + '">' +
 
