@@ -37,9 +37,6 @@
       </div>
       <div style="float: right;">
         <ul>
-          <li style="margin-right: 20px;">
-            <p style="font-size: 16px; margin:0;"><span class="accentColor heavy">Filter</span> the hand-curated list to your liking and <span class="accentColor heavy">click</span> a smartphone to show it's specs.</p>
-          </li>
           <li>
             <select id="countryInput" class="rating_updater accentColor heavy">
               <option value="de" selected="selected">GERMANY</option>
@@ -54,97 +51,115 @@
 
   <div class="bodydiv">
 
-    <div style="clear:both;">
-    </div>
-    <div style="overflow-x:auto;" class="settingsdiv">
+
+
+    <div class="filterdiv settingsdiv">
       <table>
         <thead class="settingsTable">
           <tr>
-            <th style="min-width: 70px">Price</th>
-            <th style="min-width: 140px">Size</th>
-            <th style="min-width: 0px">Design &<span style="color:#12709e">_</span>Display</th>
-            <th style="min-width: 0px">Processor</th>
-            <th style="min-width: 0px">Software &<span style="color:#12709e">_</span>Updates</th>
-            <th style="min-width: 0px">Camera</th>
-            <th style="min-width: 0px">Battery</th>
-            <th style="min-width: 120px">Storage Size</th>
-            <th style="min-width: 0px">SD-Slot</th>
-            <th style="min-width: 0px">Headphone Jack</th>
-            <th style="min-width: 0px">SIM-Cards</th>
-            <th style="width: 100%;"></th>
-
+            <th></th>
+            <th style="background-color: #12709e;"></th>
           </tr>
-        </thead>
-        <tbody>
           <tr>
-            <td>
-              <table>
-                <tbody>
-                  <tr>
-                    <td style="padding-left:0px; padding-top:0;">
-                      <input id="price_minimum_1" name="price_minimum_1" class="smallInput rating_updater" maxlength="4" type="text" placeholder="0">
-                    </td>
-                    <td style="padding-left:0px; padding-top:0;">
-                      <p>-</p>
-                    </td>
-                    <td style="padding-left:0px; padding-top:0;">
-                      <input id="price_maximum_1" name="price_maximum_1" class="smallInput rating_updater" size="2" type="text" placeholder="1200">
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-            <td>
-              <table>
-                <tbody>
-                  <tr>
-                    <td style="padding-left:0px; padding-top:0;">
-                      <p>Display</p>
-                    </td>
-                    <td style="padding-left:0px; padding-top:0;">
-                      <input id="size_minimum_1" name="size_minimum_1" class="smallInput rating_updater" size="2" type="text">
-                    </td>
-                    <td style="padding-left:0px; padding-top:0;">
-                      <p>-</p>
-                    </td>
-                    <td style="padding-left:0px; padding-top:0;">
-                      <input id="size_maximum_1" name="size_maximum_1" class="smallInput rating_updater" size="2" type="text">
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="padding-left:0px; padding-top:0;">
-                      <p>Length</p>
-                    </td>
-                    <td style="padding-left:0px; padding-top:0;">
-                      <input id="size_minimum_2" name="size_minimum_2" class="smallInput rating_updater" size="2" type="text">
-                    </td>
-                    <td style="padding-left:0px; padding-top:0;">
-                      <p>-</p>
-                    </td>
-                    <td style="padding-left:0px; padding-top:0;">
-                      <input id="size_maximum_2" name="size_maximum_2" class="smallInput rating_updater" size="2" type="text">
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="padding-left:0px; padding-top:0;">
-                      <p>Width</p>
-                    </td>
-                    <td style="padding-left:0px; padding-top:0;">
-                      <input id="size_minimum_3" name="size_minimum_3" class="smallInput rating_updater" size="2" type="text">
-                    </td>
-                    <td style="padding-left:0px; padding-top:0;">
-                      <p>-</p>
-                    </td>
-                    <td style="padding-left:0px; padding-top:0;">
-                      <input id="size_maximum_3" name="size_maximum_3" class="smallInput rating_updater" size="2" type="text">
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-            <td>
+            <th>Sort table by</th>
+            <th>
+              <select id="filterInput" class="filterselect">
+            <option value="price" selected="selected">Price</option>
+            <option value="length">Body-Size</option>
+            <option value="display">Screen-Size</option>
+            <option value="totalscore">Total Score</option>
+            </select>
+            </th>
+          </tr>
+          <tr>
+            <th>Scale phones</th>
+            <th>
+              <input type="checkbox" id="scaleInput" class="cbx hidden rating_updater" />
+              <label for="scaleInput" class="lbl rating_updater filterselect"></label>
+            </th>
+          </tr>
 
-              <span class="rating">
+          <tr>
+            <th></th>
+            <th style="background-color: #12709e;"></th>
+          </tr>
+
+          <tr>
+            <th>Price</th>
+            <th>
+              <div style="float:right; margin-right: 2px; margin-left: 2px;">
+                <input id="price_maximum_1" name="price_maximum_1" class="smallInput rating_updater" size="2" type="text" placeholder="1200">
+              </div>
+              <div style="float:right; margin-right: 2px; margin-left: 2px; color: black">
+                <p>-</p>
+              </div>
+              <div style="float:right; margin-right: 2px; margin-left: 2px;">
+                <input id="price_minimum_1" name="price_minimum_1" class="smallInput rating_updater" maxlength="4" type="text" placeholder="0">
+              </div>
+            </th>
+          </tr>
+
+          <tr>
+            <th>Size</th>
+            <th>
+
+              <div style="float:right; margin-right: 2px; margin-left: 2px;">
+                <input id="size_maximum_1" name="size_maximum_1" class="smallInput rating_updater" size="2" type="text">
+              </div>
+              <div style="float:right; margin-right: 2px; margin-left: 2px; color: black;">
+                <p>-</p>
+              </div>
+              <div style="float:right; margin-right: 2px; margin-left: 2px;">
+                <input id="size_minimum_1" name="size_minimum_1" class="smallInput rating_updater" size="2" type="text">
+              </div>
+
+              <div style="float:right; margin-right: 2px; margin-left: 2px; color: black;">
+                <p>Display</p>
+              </div>
+
+              <br>
+
+              <div style="float:right; margin-right: 2px; margin-left: 2px;">
+                <input id="size_maximum_2" name="size_maximum_2" class="smallInput rating_updater" size="2" type="text">
+              </div>
+              <div style="float:right; margin-right: 2px; margin-left: 2px; color: black;">
+                <p>-</p>
+              </div>
+              <div style="float:right; margin-right: 2px; margin-left: 2px;">
+                <input id="size_minimum_2" name="size_minimum_2" class="smallInput rating_updater" size="2" type="text">
+              </div>
+
+              <div style="float:right; margin-right: 2px; margin-left: 2px; color: black;">
+                <p>Length</p>
+              </div>
+
+              <br>
+
+              <div style="float:right; margin-right: 2px; margin-left: 2px;">
+                <input id="size_maximum_3" name="size_maximum_3" class="smallInput rating_updater" size="2" type="text">
+              </div>
+              <div style="float:right; margin-right: 2px; margin-left: 2px; color: black;">
+                <p>-</p>
+              </div>
+              <div style="float:right; margin-right: 2px; margin-left: 2px;">
+                <input id="size_minimum_3" name="size_minimum_3" class="smallInput rating_updater" size="2" type="text">
+              </div>
+
+              <div style="float:right; margin-right: 2px; margin-left: 2px; color: black;">
+                <p>Width</p>
+              </div>
+            </th>
+
+
+            <tr>
+              <th></th>
+              <th style="background-color: #12709e;"></th>
+            </tr>
+
+            <tr>
+              <th>Design</th>
+              <th>
+                <span class="rating">
               <input class="rating-input rating_updater" id="design-input-1-5" name="design-input-1" value="5" type="radio">
               <label for="design-input-1-5" class="rating-star"></label>
               <input class="rating-input rating_updater" id="design-input-1-4" name="design-input-1" value="4" type="radio">
@@ -155,12 +170,13 @@
               <label for="design-input-1-2" class="rating-star"></label>
               <input class="rating-input rating_updater" id="design-input-1-1" name="design-input-1" value="1" type="radio" checked="checked">
               <label for="design-input-1-1" class="rating-star"></label>
-            </span>
-
-            </td>
-            <td>
-
-              <span class="rating">
+              </span>
+              </th>
+            </tr>
+            <tr>
+              <th>Processor</th>
+              <th>
+                <span class="rating">
               <input class="rating-input rating_updater" id="processor-input-1-5" name="processor-input-1" value="5" type="radio">
               <label for="processor-input-1-5" class="rating-star"></label>
               <input class="rating-input rating_updater" id="processor-input-1-4" name="processor-input-1" value="4" type="radio">
@@ -172,11 +188,12 @@
               <input class="rating-input rating_updater" id="processor-input-1-1" name="processor-input-1" value="1" type="radio" checked="checked">
               <label for="processor-input-1-1" class="rating-star"></label>
             </span>
-
-            </td>
-            <td>
-
-              <span class="rating">
+              </th>
+            </tr>
+            <tr>
+              <th>Software</th>
+              <th>
+                <span class="rating">
               <input class="rating-input rating_updater" id="updates-input-1-5" name="updates-input-1" value="5" type="radio">
               <label for="updates-input-1-5" class="rating-star"></label>
               <input class="rating-input rating_updater" id="updates-input-1-4" name="updates-input-1" value="4" type="radio">
@@ -188,10 +205,12 @@
               <input class="rating-input rating_updater" id="updates-input-1-1" name="updates-input-1" value="1" type="radio" checked="checked">
               <label for="updates-input-1-1" class="rating-star"></label>
             </span>
-            </td>
-            <td>
-
-              <span class="rating">
+              </th>
+            </tr>
+            <tr>
+              <th>Camera</th>
+              <th>
+                <span class="rating">
               <input class="rating-input rating_updater" id="camera-input-1-5" name="camera-input-1" value="5" type="radio">
               <label for="camera-input-1-5" class="rating-star"></label>
               <input class="rating-input rating_updater" id="camera-input-1-4" name="camera-input-1" value="4" type="radio">
@@ -203,11 +222,12 @@
               <input class="rating-input rating_updater" id="camera-input-1-1" name="camera-input-1" value="1" type="radio" checked="checked">
               <label for="camera-input-1-1" class="rating-star"></label>
             </span>
-
-            </td>
-            <td>
-
-              <span class="rating">
+              </th>
+            </tr>
+            <tr>
+              <th>Battery</th>
+              <th>
+                <span class="rating">
               <input class="rating-input rating_updater" id="battery-input-1-5" name="battery-input-2" value="5" type="radio">
               <label for="battery-input-1-5" class="rating-star"></label>
               <input class="rating-input rating_updater" id="battery-input-1-4" name="battery-input-2" value="4" type="radio">
@@ -218,71 +238,76 @@
               <label for="battery-input-1-2" class="rating-star"></label>
               <input class="rating-input rating_updater" id="battery-input-1-1" name="battery-input-2" value="1" type="radio" checked="checked">
               <label for="battery-input-1-1" class="rating-star"></label>
-            </span>
-
-            </td>
-            <td>
-              <table>
-                <tbody>
-                  <tr>
-                    <select id="storageInput" class="rating_updater">
-                    <option value="16" selected="selected">16GB -> ∞</option>
-                    <option value="32" >32GB -> ∞</option>
-                    <option value="64" >64GB -> ∞</option>
-                    <option value="128">128GB -> ∞</option>
-                    <option value="256">256GB -> ∞</option>
-                    </select>
-            </td>
+              </span>
+              </th>
             </tr>
-            </tbody>
-            </table>
-            </td>
-            <td>
-              <select id="sdSlotInput" class="rating_updater">
-              <option value="" selected="selected"></option>
-              <option value="1">Yes</option>
-              <option value="0">No</option>
-            </select>
-            </td>
-            <td>
-              <select id="jackInput" class="rating_updater">
-              <option value="" selected="selected"></option>
-              <option value="1">Yes</option>
-              <option value="0">No</option>
-            </select>
-            </td>
-            <td>
-              <select id="simCardInput" class="rating_updater">
-              <option value="1" selected="selected">1 SIM</option>
-              <option value="2">2 SIM</option>
-            </select>
-            </td>
-          </tr>
-        </tbody>
+
+            <tr>
+              <th></th>
+              <th style="background-color: #12709e;"></th>
+            </tr>
+
+            <tr>
+              <th>Storage</th>
+              <th>
+                <select id="storageInput" class="rating_updater">
+                <option value="16" selected="selected">16GB -> ∞</option>
+                <option value="32" >32GB -> ∞</option>
+                <option value="64" >64GB -> ∞</option>
+                <option value="128">128GB -> ∞</option>
+                <option value="256">256GB -> ∞</option>
+                </select>
+              </th>
+            </tr>
+
+
+            <tr>
+              <th>Headphone-<br>Jack</th>
+              <th>
+                <input type="checkbox" id="jackInput" class="cbx hidden rating_updater" />
+                <label for="jackInput" class="lbl rating_updater filterselect"></label>
+                </select>
+              </th>
+            </tr>
+            <tr>
+              <th>2 SIMs</th>
+              <th>
+                <input type="checkbox" id="simCardInput" class="cbx hidden rating_updater" />
+                <label for="simCardInput" class="lbl rating_updater filterselect"></label>
+
+              </th>
+            </tr>
+            <tr>
+              <th>SD Slot</th>
+              <th>
+                <input type="checkbox" id="sdSlotInput" class="cbx hidden rating_updater" />
+                <label for="sdSlotInput" class="lbl rating_updater filterselect"></label>
+
+              </th>
+            </tr>
+
+            <tr>
+              <th>SD Slot</th>
+              <th>
+                <input type="checkbox" id="sdSlotInput" class="cbx hidden rating_updater" />
+                <label for="sdSlotInput" class="lbl rating_updater filterselect"></label>
+
+              </th>
+            </tr>
+
+            <tr>
+              <th>SD Slot</th>
+              <th>
+                <input type="checkbox" id="sdSlotInput" class="cbx hidden rating_updater" />
+                <label for="sdSlotInput" class="lbl rating_updater filterselect"></label>
+
+              </th>
+            </tr>
+
+
+
+        </thead>
       </table>
-    </div>
-
-    <div class="filterdiv settingsdiv">
-      <div class="subHeader" style="margin-top:0;">
-        <span class="">Sort Table by</span>
-      </div>
-      <div style="clear:both;"></div>
-      <select id="filterInput" class="filterselect">
-      <option value="price" selected="selected">Price</option>
-      <option value="length">Body-Size</option>
-      <option value="display">Screen-Size</option>
-      <option value="totalscore">Total Score</option>
-    </select>
-
-      <div style="clear:both;"></div>
-      <div class="subHeader">
-        <span class="">Scale smartphones </span>
-      </div>
-      <div style="clear:both;"></div>
-      <input type="checkbox" id="scaleInput" class="cbx hidden rating_updater" />
-      <label for="scaleInput" class="lbl rating_updater filterselect"></label>
-
-      </select>
     </div>
 
     <div style="overflow-x:auto;" class="itemsdiv">

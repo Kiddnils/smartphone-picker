@@ -151,25 +151,23 @@ window.onload = function() {
         }
       }
 
-      //sdSLot
-      if (document.getElementById("sdSlotInput").options[document.getElementById("sdSlotInput").selectedIndex].value !== "") {
-        if (obj.smartphones[i].sdSLot < document.getElementById("sdSlotInput").options[document.getElementById("sdSlotInput").selectedIndex].value) {
-          continue;
-        }
-      }
+
 
       //headphonejack
-      if (document.getElementById("jackInput").options[document.getElementById("jackInput").selectedIndex].value !== "") {
-        if (obj.smartphones[i].headphonejack < document.getElementById("jackInput").options[document.getElementById("jackInput").selectedIndex].value) {
-          continue;
-        }
+      if (document.getElementById("jackInput").checked && (obj.smartphones[i].headphonejack === 0)) {
+        continue;
+
       }
 
       //simCardInput
-      if (document.getElementById("simCardInput").options[document.getElementById("simCardInput").selectedIndex].value !== "") {
-        if (obj.smartphones[i].simcards < document.getElementById("simCardInput").options[document.getElementById("simCardInput").selectedIndex].value) {
-          continue;
-        }
+      if (document.getElementById("simCardInput").checked && (obj.smartphones[i].simcards === 1)) {
+        continue;
+      }
+
+      //sdSLot
+      if (document.getElementById("sdSlotInput").checked && (obj.smartphones[i].sdslot === 0)) {
+        continue;
+
       }
 
       listOfFilteredObjects.push(obj.smartphones[i]);
@@ -383,7 +381,7 @@ window.onload = function() {
       '<div style="width:20px; height:20px; float:left;"><img style="max-width:20px; max-height:20px; " src="images/sd_storage.png"></div>' +
       '<h3 style="float:left;">' + listOfFilteredAndScoredObjects[i].storage + 'GB</h3>' +
       '<br>' +
-      '<br>' +
+      '<h3 ><span style="float:right; color: white;">_______________________</span></h3>' +
       '<h3 >Design: <span style="float:right";>' + listOfFilteredAndScoredObjects[i].design + '</span></h3>' +
       '<h3 >Processor: <span style="float:right";>' + listOfFilteredAndScoredObjects[i].processor + '</span></h3>' +
       '<h3 >Software: <span style="float:right">' + listOfFilteredAndScoredObjects[i].updates + '</span></h3>' +
@@ -391,7 +389,6 @@ window.onload = function() {
       '<h3 >Battery: <span style="float:right">' + listOfFilteredAndScoredObjects[i].battery + '</span></h3>' +
       '<hr>' +
       '<h3 ><span style="float:right; color: green; font-weight: bold;">' + listOfFilteredAndScoredObjects[i].totalscore + '</span></h3>' +
-      '<h3 ><span style="float:right; color: white;">_______________________</span></h3>' +
       '<div id="wrapper">' +
       '<span class="a-button a-button-primary">' +
       ' <a target="_blank" href="' + listOfFilteredAndScoredObjects[i].amazon_de + '" style="text-decoration:none;">' +
