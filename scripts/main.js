@@ -302,7 +302,7 @@ window.onload = function() {
         activateHorizontalScrolling(true);
         break;
       case "totalscore":
-        fillHorizontally(tableType);
+        fillHorizontally(tableType, '');
         activateHorizontalScrolling(true);
         break;
       default:
@@ -339,7 +339,7 @@ window.onload = function() {
     for (var i = 0; i < listOfFilteredAndScoredObjects.length; i++) {
       cell1 = tableHead.rows[0].cells[i + 1];
       cell1.innerHTML = i;
-      cell1.innerHTML = listOfFilteredAndScoredObjects[i][type] + suffix;
+      cell1.innerHTML = listOfFilteredAndScoredObjects[i][type] + "" + suffix;
 
       cell = table.rows[0].insertCell(table.rows[0].cells.length);
       cell.className += "smartphonecells";
@@ -372,7 +372,7 @@ window.onload = function() {
       '<div class="detailwindow float" id="hiddenpicture' + listOfFilteredAndScoredObjects[i].name + '" style ="display:' + isDetailsHidden + '" >' +
       '<h3><span style="font-weight: bold;">' + listOfFilteredAndScoredObjects[i].display + '"</span><span style="float:right; font-weight: bold;" class="accentColor">' + listOfFilteredAndScoredObjects[i].price_de + '€</span></h3>' +
       '<h3>' + listOfFilteredAndScoredObjects[i].width + ' * ' + listOfFilteredAndScoredObjects[i].length + 'mm</h3>' +
-      '<br>' +
+
       '<div style="width:20px; height:20px; float:left;"><img style="max-width:20px; max-height:20px; float:left;" src="images/ram_icon.png"></div>' +
       '<h3 style="float:left;">' + listOfFilteredAndScoredObjects[i].memory + 'GB</h3>' +
 
