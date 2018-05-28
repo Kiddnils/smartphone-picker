@@ -288,10 +288,10 @@ window.onload = function() {
     filterJSON();
     sortListOfFilteredObjects(tableType);
 
-    activateHorizontalScrolling(false);
     switch (tableType) {
       case "price":
         fillPrice(tableType);
+        activateHorizontalScrolling(false);
         break;
       case "length":
         fillHorizontally(tableType, 'mm');
@@ -307,6 +307,7 @@ window.onload = function() {
         break;
       default:
         fillPrice(tableType);
+        activateHorizontalScrolling(false);
         break;
     }
 
@@ -463,6 +464,12 @@ window.onload = function() {
   var elems = document.getElementsByClassName("itemsdiv");
 
   function activateHorizontalScrolling(activate) {
+    if (activate) {
+      document.getElementsByClassName("itemsdiv")[0].style.height = '860px';
+    } else {
+      document.getElementsByClassName("itemsdiv")[0].style.height = 'calc(100vh - 180px)';
+    }
+
     if (activate) {
       if (elems[0].addEventListener) {
         // IE9, Chrome, Safari, Opera
