@@ -6,6 +6,7 @@ window.onload = function() {
   init();
 
   var obj;
+  var isDescending = true;
   var scale;
   var listOfFilteredObjects;
   var listOfFilteredAndScoredObjects;
@@ -178,20 +179,20 @@ window.onload = function() {
     switch (filterType) {
       case "price":
       case "totalscore":
-        sortBy("totalscore", "price_de");
+        sortBy("totalscore", "price_de", isDescending);
         break;
       case "length":
-        sortBy("length", "width");
+        sortBy("length", "width", isDescending);
         break;
       case "display":
-        sortBy("display", "length");
+        sortBy("display", "length", isDescending);
         break;
       default:
         break;
     }
   }
 
-  function sortBy(first, second) {
+  function sortBy(first, second, isDescending) {
     listOfFilteredAndScoredObjects = [];
 
     //first score stuff
@@ -205,7 +206,10 @@ window.onload = function() {
         } else if (e == listOfFilteredAndScoredObjects.length) {
           listOfFilteredAndScoredObjects.splice(listOfFilteredAndScoredObjects.length, 0, listOfFilteredObjects[i]);
           break;
-        } else if (listOfFilteredObjects[i][first] > listOfFilteredAndScoredObjects[e][first]) {
+        } else if (listOfFilteredObjects[i][first] > listOfFilteredAndScoredObjects[e][first] && isDescending) {
+          listOfFilteredAndScoredObjects.splice(e, 0, listOfFilteredObjects[i]);
+          break;
+        } else if (listOfFilteredObjects[i][first] < listOfFilteredAndScoredObjects[e][first] && !isDescending) {
           listOfFilteredAndScoredObjects.splice(e, 0, listOfFilteredObjects[i]);
           break;
         } else if (listOfFilteredObjects[i][first] === listOfFilteredAndScoredObjects[e][first] && listOfFilteredObjects[i][second] < listOfFilteredAndScoredObjects[e][second]) {
@@ -428,10 +432,10 @@ window.onload = function() {
       case "price":
         break;
       case "length":
-        document.getElementById("scaleInput").value = "2.6";
+        document.getElementById("scaleInput").checked = true;
         break;
       case "display":
-        document.getElementById("scaleInput").value = "2.6";
+        document.getElementById("scaleInput").value = true;
         break;
       case "totalscore":
         break;
@@ -449,7 +453,17 @@ window.onload = function() {
     elems[i].oninput = function() {
       updateTable();
     }
+  }
 
+  document.getElementById("sorting_order").onclick = function() {
+    if (isDescending) {
+      console.log("desc1");
+      isDescending = false;
+    } else {
+      console.log("desc2");
+      isDescending = true;
+    }
+    updateTable();
   }
 
 
