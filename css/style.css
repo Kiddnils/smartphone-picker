@@ -627,7 +627,6 @@ radio {
 }
 
 .sorting_order:hover {
-  transform: rotate(180deg);
   background-color: #e1e1e1;
 }
 

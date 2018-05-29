@@ -6,7 +6,7 @@ window.onload = function() {
   init();
 
   var obj;
-  var isDescending = true;
+  var isDescending = false;
   var scale;
   var listOfFilteredObjects;
   var listOfFilteredAndScoredObjects;
@@ -457,11 +457,11 @@ window.onload = function() {
 
   document.getElementById("sorting_order").onclick = function() {
     if (isDescending) {
-      console.log("desc1");
       isDescending = false;
+      document.getElementById("sorting_order").style.transform = "rotate(0deg)";
     } else {
-      console.log("desc2");
       isDescending = true;
+      document.getElementById("sorting_order").style.transform = "rotate(180deg)";
     }
     updateTable();
   }
