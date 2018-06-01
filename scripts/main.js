@@ -355,7 +355,7 @@ window.onload = function() {
 
   function getInnerHTMLSmartphone(i, isDetailsHidden) {
     if (document.getElementById("scaleInput").checked) {
-      scale = 2.7;
+      scale = 2.6;
     } else {
       scale = '1x';
     }
@@ -363,7 +363,7 @@ window.onload = function() {
     var innerHtml =
       '<table>' +
       '<tr style="height:425px;">' +
-      '<td style="vertical-align: bottom; height: 440px;">' +
+      '<td style="vertical-align: bottom; height: 420px;">' +
       '<input type="checkbox">' +
       '<label for="toggle" id="picture' + listOfFilteredAndScoredObjects[i].name + '">' +
 

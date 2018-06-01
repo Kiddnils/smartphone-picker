@@ -66,7 +66,7 @@
     "headphonejack": 0,
     "totalscore": 0,
     "asin_de": "B07B69SLMB",
-    "price_de": 749,
+    "price_de": 744,
     "amazon_de": "https:\/\/www.amazon.de\/Nokia-Sirocco-Hauptkamera-Frontkamera-spritzgesch%C3%BCtzt-Schwarz\/dp\/B07B69SLMB?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B69SLMB"
   }, {
     "name": "Mi A1",
@@ -89,7 +89,7 @@
     "headphonejack": 1,
     "totalscore": 0,
     "asin_de": "B076493W9X",
-    "price_de": 184,
+    "price_de": 188,
     "amazon_de": "https:\/\/www.amazon.de\/Xiaomi-A1-black-Global-Version-schwarz\/dp\/B076493W9X?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076493W9X"
   }, {
     "name": "Mi MIX 2",
@@ -112,7 +112,7 @@
     "headphonejack": 0,
     "totalscore": 0,
     "asin_de": "B0784RQR88",
-    "price_de": 371,
+    "price_de": 353,
     "amazon_de": "https:\/\/www.amazon.de\/Xiaomi-Mi-Mix-black-EU-Ware-schwarz\/dp\/B0784RQR88?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0784RQR88"
   }, {
     "name": "U11 life",
@@ -135,7 +135,7 @@
     "headphonejack": 0,
     "totalscore": 0,
     "asin_de": "B076HSNZ8H",
-    "price_de": 249,
+    "price_de": 286,
     "amazon_de": "https:\/\/www.amazon.de\/HTC-Smartphone-Display-Speicher-Sapphire-Blue\/dp\/B076HSNZ8H?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076HSNZ8H"
   }, {
     "name": "U11 \\+",
@@ -158,7 +158,7 @@
     "headphonejack": 0,
     "totalscore": 0,
     "asin_de": "B077PMJM3M",
-    "price_de": 640,
+    "price_de": 629,
     "amazon_de": "https:\/\/www.amazon.de\/HTC-Smartphone-Display-Speicher-Android-Ceramic-Black\/dp\/B077PMJM3M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B077PMJM3M"
   }, {
     "name": "Pixel 2",
@@ -181,7 +181,7 @@
     "headphonejack": 0,
     "totalscore": 0,
     "asin_de": "B076L5FQ23",
-    "price_de": 635,
+    "price_de": 679,
     "amazon_de": "https:\/\/www.amazon.de\/Google-Pixel-64GB-Android-black-Schwarz\/dp\/B076L5FQ23?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076L5FQ23"
   }, {
     "name": "Pixel 2 XL",
@@ -204,7 +204,7 @@
     "headphonejack": 0,
     "totalscore": 0,
     "asin_de": "B076KT8HT2",
-    "price_de": 729,
+    "price_de": 719,
     "amazon_de": "https:\/\/www.amazon.de\/Google-Pixel-XL-64GB-schwarz\/dp\/B076KT8HT2?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076KT8HT2"
   }, {
     "name": "5t (64GB)",
@@ -296,7 +296,7 @@
     "headphonejack": 1,
     "totalscore": 0,
     "asin_de": "B07CK7KB95",
-    "price_de": 604,
+    "price_de": 619,
     "amazon_de": "https:\/\/www.amazon.de\/OnePlus-Smartphone-15-Zoll-Touch-Display-Spiegel-Schwarz\/dp\/B07CK7KB95?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CK7KB95"
   }, {
     "name": "Honor 7X",
@@ -319,7 +319,7 @@
     "headphonejack": 1,
     "totalscore": 0,
     "asin_de": "B0779STLGF",
-    "price_de": 239,
+    "price_de": 244,
     "amazon_de": "https:\/\/www.amazon.de\/Honor-Smartphone-Display-interner-Speicher-Grau\/dp\/B0779STLGF?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0779STLGF"
   }, {
     "name": "Mate 10 Pro",
@@ -365,7 +365,7 @@
     "headphonejack": 0,
     "totalscore": 0,
     "asin_de": "B07BHD7MHL",
-    "price_de": 529,
+    "price_de": 518,
     "amazon_de": "https:\/\/www.amazon.de\/Smartphone-interner-Speicher-Android-Schwarz\/dp\/B07BHD7MHL?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BHD7MHL"
   }, {
     "name": "P20 lite",
@@ -388,7 +388,7 @@
     "headphonejack": 1,
     "totalscore": 0,
     "asin_de": "B07BHDC9V6",
-    "price_de": 300,
+    "price_de": 292,
     "amazon_de": "https:\/\/www.amazon.de\/P20-Smartphone-interner-Speicher-Android-Schwarz\/dp\/B07BHDC9V6?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BHDC9V6"
   }, {
     "name": "P20 Pro",
@@ -411,7 +411,7 @@
     "headphonejack": 1,
     "totalscore": 0,
     "asin_de": "B07BHDMHR1",
-    "price_de": 742,
+    "price_de": 736,
     "amazon_de": "https:\/\/www.amazon.de\/Smartphone-interner-Speicher-Android-Schwarz\/dp\/B07BHDMHR1?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BHDMHR1"
   }, {
     "name": "Phone",
@@ -434,7 +434,7 @@
     "headphonejack": 0,
     "totalscore": 0,
     "asin_de": "B074BWGRKH",
-    "price_de": 559,
+    "price_de": 549,
     "amazon_de": "https:\/\/www.amazon.de\/Essential-Phone-Black-Edge-Edge-Moon\/dp\/B074BWGRKH?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074BWGRKH"
   }, {
     "name": "G6",
@@ -458,7 +458,7 @@
     "totalscore": 0,
     "asin_de": "B06XFRBM26",
     "price_de": 315,
-    "amazon_de": "https:\/\/www.amazon.de\/LG-Smartphone-Display-Speicher-Android-Schwarz\/dp\/B06XFRBM26?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B06XFRBM26"
+    "amazon_de": "https:\/\/www.amazon.de\/LG-G6-Smartphone-Display-Speicher-Schwarz\/dp\/B06XFRBM26?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B06XFRBM26"
   }, {
     "name": "V30",
     "brand": "LG",
@@ -480,7 +480,7 @@
     "headphonejack": 1,
     "totalscore": 0,
     "asin_de": "B075GYD539",
-    "price_de": 497,
+    "price_de": 492,
     "amazon_de": "https:\/\/www.amazon.de\/LG-Smartphone-Display-Speicher-Android-Cloud-Silver\/dp\/B075GYD539?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075GYD539"
   }, {
     "name": "Xperia XZ2",
@@ -503,7 +503,7 @@
     "headphonejack": 0,
     "totalscore": 0,
     "asin_de": "B079YSBTY7",
-    "price_de": 608,
+    "price_de": 698,
     "amazon_de": "https:\/\/www.amazon.de\/Sony-Smartphone-interner-Speicher-Dual-SIM-Liquid-Black\/dp\/B079YSBTY7?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079YSBTY7"
   }, {
     "name": "Xperia XZ2 Compact",
@@ -526,7 +526,7 @@
     "headphonejack": 0,
     "totalscore": 0,
     "asin_de": "B079YZ7ZS4",
-    "price_de": 528,
+    "price_de": 559,
     "amazon_de": "https:\/\/www.amazon.de\/Sony-Smartphone-interner-Speicher-Dual-SIM-Black\/dp\/B079YZ7ZS4?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079YZ7ZS4"
   }, {
     "name": "iPhone 8 (64GB)",
@@ -549,7 +549,7 @@
     "headphonejack": 0,
     "totalscore": 0,
     "asin_de": "B075LXNGFH",
-    "price_de": 629,
+    "price_de": 649,
     "amazon_de": "https:\/\/www.amazon.de\/Apple-MQ6G2ZD-iPhone-Kamera-Space-Grau\/dp\/B075LXNGFH?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LXNGFH"
   }, {
     "name": "iPhone 8 (256GB)",
@@ -572,7 +572,7 @@
     "headphonejack": 0,
     "totalscore": 0,
     "asin_de": "B075LX5T7P",
-    "price_de": 895,
+    "price_de": 929,
     "amazon_de": "https:\/\/www.amazon.de\/Apple-MQ7C2ZD-iPhone-Zoll-space-Grau\/dp\/B075LX5T7P?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LX5T7P"
   }, {
     "name": "iPhone 8 Plus (64GB)",
@@ -595,7 +595,7 @@
     "headphonejack": 0,
     "totalscore": 0,
     "asin_de": "B075LZ4VQW",
-    "price_de": 778,
+    "price_de": 760,
     "amazon_de": "https:\/\/www.amazon.de\/Apple-MQ8L2ZD-iPhone-Kamera-Aufl%C3%B6sung-Space-Grey\/dp\/B075LZ4VQW?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LZ4VQW"
   }, {
     "name": "iPhone 8 Plus (256GB)",
@@ -618,7 +618,7 @@
     "headphonejack": 0,
     "totalscore": 0,
     "asin_de": "B075LY524V",
-    "price_de": 938,
+    "price_de": 1044,
     "amazon_de": "https:\/\/www.amazon.de\/Apple-MQ8P2ZD-iPhone-Kamera-Aufl%C3%B6sung-Space-Grey\/dp\/B075LY524V?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LY524V"
   }, {
     "name": "iPhone X (64GB)",
@@ -641,7 +641,7 @@
     "headphonejack": 0,
     "totalscore": 0,
     "asin_de": "B075LXNK24",
-    "price_de": 989,
+    "price_de": 968,
     "amazon_de": "https:\/\/www.amazon.de\/Apple-MQAC2ZD-iPhone-Kamera-Aufl%C3%B6sung-Space-Grey\/dp\/B075LXNK24?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LXNK24"
   }, {
     "name": "iPhone X (256GB)",
@@ -664,7 +664,7 @@
     "headphonejack": 0,
     "totalscore": 0,
     "asin_de": "B075LWF4C3",
-    "price_de": 1089,
+    "price_de": 1167,
     "amazon_de": "https:\/\/www.amazon.de\/Apple-MQAF2ZD-iPhone-Kamera-Aufl%C3%B6sung-Space-Grey\/dp\/B075LWF4C3?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LWF4C3"
   }, {
     "name": "Moto X4",
@@ -687,7 +687,7 @@
     "headphonejack": 1,
     "totalscore": 0,
     "asin_de": "B074MHFGFS",
-    "price_de": 283,
+    "price_de": 255,
     "amazon_de": "https:\/\/www.amazon.de\/Motorola-Smartphone-Kamera-Android-schwarz\/dp\/B074MHFGFS?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074MHFGFS"
   }, {
     "name": "Moto Z2 Play",
@@ -710,7 +710,7 @@
     "headphonejack": 1,
     "totalscore": 0,
     "asin_de": "B0747WYLTX",
-    "price_de": 302,
+    "price_de": 385,
     "amazon_de": "https:\/\/www.amazon.de\/Motorola-Smartphone-Android-SoundBoost-Speaker-Black-Lunar-Gray\/dp\/B0747WYLTX?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0747WYLTX"
   }, {
     "name": "Moto Z2 Force",
@@ -733,7 +733,7 @@
     "headphonejack": 0,
     "totalscore": 0,
     "asin_de": "B074MH8DJ5",
-    "price_de": 568,
+    "price_de": 518,
     "amazon_de": "https:\/\/www.amazon.de\/Motorola-Smartphone-Speicher-Android-schwarz-Super-Black\/dp\/B074MH8DJ5?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074MH8DJ5"
   }, {
     "name": "Moto G6",
@@ -894,7 +894,7 @@
     "headphonejack": 1,
     "totalscore": 0,
     "asin_de": "B074MGP8GJ",
-    "price_de": 137,
+    "price_de": 129,
     "amazon_de": "https:\/\/www.amazon.de\/Motorola-Moto-Smartphone-Android-Mondgrau\/dp\/B074MGP8GJ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074MGP8GJ"
   }, {
     "name": "Moto G5S Plus",
@@ -940,7 +940,7 @@
     "headphonejack": 1,
     "totalscore": 0,
     "asin_de": "B01N6M3K34",
-    "price_de": 228,
+    "price_de": 230,
     "amazon_de": "https:\/\/www.amazon.de\/Samsung-Galaxy-A5-Smartphone-Touch-Display-schwarz\/dp\/B01N6M3K34?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B01N6M3K34"
   }, {
     "name": "Galaxy S9",
@@ -963,8 +963,8 @@
     "headphonejack": 1,
     "totalscore": 0,
     "asin_de": "B079SQ5VHX",
-    "price_de": 614,
-    "amazon_de": "https:\/\/www.amazon.de\/Samsung-Smartphone-Touch-Display-interner-Speicher-Midnight-Black\/dp\/B079SQ5VHX?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079SQ5VHX"
+    "price_de": 660,
+    "amazon_de": "https:\/\/www.amazon.de\/Samsung-S9-Smartphone-Touch-Display-interner-Midnight-Black\/dp\/B079SQ5VHX?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079SQ5VHX"
   }, {
     "name": "Galaxy S9 \\+",
     "brand": "Samsung",
@@ -986,7 +986,7 @@
     "headphonejack": 1,
     "totalscore": 0,
     "asin_de": "B079SNGV9P",
-    "price_de": 784,
+    "price_de": 739,
     "amazon_de": "https:\/\/www.amazon.de\/Samsung-Smartphone-Touch-Display-interner-Speicher-Midnight-Black\/dp\/B079SNGV9P?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079SNGV9P"
   }, {
     "name": "Galaxy S8 Note",
@@ -1009,7 +1009,7 @@
     "headphonejack": 1,
     "totalscore": 0,
     "asin_de": "B074PBH2P4",
-    "price_de": 618,
+    "price_de": 601,
     "amazon_de": "https:\/\/www.amazon.de\/Samsung-Smartphone-Touch-Display-Midnight-Black\/dp\/B074PBH2P4?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074PBH2P4"
   }, {
     "name": "Galaxy S8",
@@ -1032,7 +1032,7 @@
     "headphonejack": 1,
     "totalscore": 0,
     "asin_de": "B06XJ49G5B",
-    "price_de": 437,
+    "price_de": 489,
     "amazon_de": "https:\/\/www.amazon.de\/Samsung-Galaxy-S8-Touch-Display-64GB-midnight-black\/dp\/B06XJ49G5B?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B06XJ49G5B"
   }]
 }

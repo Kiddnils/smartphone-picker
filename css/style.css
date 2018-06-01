@@ -263,7 +263,7 @@ input[type=checkbox] {
 .settingsdiv thead>tr>th {
   font-weight: normal;
   padding: 8px;
-  font-size: 18px;
+  font-size: 16px;
   border-bottom: 1px solid #F0F0F0;
 }
 
@@ -336,7 +336,11 @@ input[type=checkbox] {
 
 .filterselect {
   background-color: white;
-  font-size: 18px;
+  font-size: 16px;
+  color: #5b5b5b;
+}
+
+#storageInput {
   color: #5b5b5b;
 }
 
@@ -355,7 +359,7 @@ h3 {
 }
 
 .priceTiers {
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Open Sans2', sans-serif;
   letter-spacing: .1px;
   text-rendering: optimizeLegibility;
