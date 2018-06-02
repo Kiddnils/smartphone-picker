@@ -152,12 +152,18 @@ window.onload = function() {
         }
       }
 
+      //waterproofing
+      if (document.getElementById("waterproofInput").options[document.getElementById("waterproofInput").selectedIndex].value !== "") {
+        if (obj.smartphones[i].waterproof < document.getElementById("waterproofInput").options[document.getElementById("waterproofInput").selectedIndex].value) {
+          continue;
+        }
+      }
+
 
 
       //headphonejack
       if (document.getElementById("jackInput").checked && (obj.smartphones[i].headphonejack === 0)) {
         continue;
-
       }
 
       //simCardInput
@@ -168,7 +174,11 @@ window.onload = function() {
       //sdSLot
       if (document.getElementById("sdSlotInput").checked && (obj.smartphones[i].sdslot === 0)) {
         continue;
+      }
 
+      //notch
+      if (document.getElementById("notchInput").checked && (obj.smartphones[i].notch === 1)) {
+        continue;
       }
 
       listOfFilteredObjects.push(obj.smartphones[i]);
