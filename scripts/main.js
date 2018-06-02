@@ -10,6 +10,7 @@ window.onload = function() {
   var scale;
   var listOfFilteredObjects;
   var listOfFilteredAndScoredObjects;
+  var country;
 
 
 
@@ -55,7 +56,7 @@ window.onload = function() {
     for (var i = 0; i < obj.smartphones.length; i++) {
 
       //prize not 0
-      if (obj.smartphones[i].price_de === 0) {
+      if (obj.smartphones[i]["price_" + country] === 0) {
         continue;
       }
 
@@ -63,14 +64,14 @@ window.onload = function() {
 
       //prize minimum
       if (document.getElementById("price_minimum_1").value !== "") {
-        if (obj.smartphones[i].price_de < document.getElementById("price_minimum_1").value) {
+        if (obj.smartphones[i]["price_" + country] < document.getElementById("price_minimum_1").value) {
           continue;
         }
       }
 
       //prize maximum
       if (document.getElementById("price_maximum_1").value !== "") {
-        if (obj.smartphones[i].price_de > document.getElementById("price_maximum_1").value) {
+        if (obj.smartphones[i]["price_" + country] > document.getElementById("price_maximum_1").value) {
           continue;
         }
       }
@@ -189,7 +190,7 @@ window.onload = function() {
     switch (filterType) {
       case "price":
       case "totalscore":
-        sortBy("totalscore", "price_de", isDescending);
+        sortBy("totalscore", "price_" + country, isDescending);
         break;
       case "length":
         sortBy("length", "width", isDescending);
@@ -331,7 +332,7 @@ window.onload = function() {
   function fillPrice(type) {
     for (var i = 0; i < listOfFilteredAndScoredObjects.length; i++) {
       for (var e = 0; e < 24; e++) {
-        if (listOfFilteredAndScoredObjects[i].price_de > (e) * 50 && listOfFilteredAndScoredObjects[i].price_de <= (e + 1) * 50) {
+        if (listOfFilteredAndScoredObjects[i]["price_" + country] > (e) * 50 && listOfFilteredAndScoredObjects[i]["price_" + country] <= (e + 1) * 50) {
 
           if (table.rows[e].cells.length < 10) { //Only 10 phones per row should be shown
             var cell = table.rows[e].insertCell(table.rows[e].cells.length);
@@ -384,7 +385,7 @@ window.onload = function() {
       '<p class="smartphone-name">' + listOfFilteredAndScoredObjects[i].brand + ' ' + listOfFilteredAndScoredObjects[i].name + '</p>' +
       '</label>' +
       '<div class="detailwindow float" id="hiddenpicture' + listOfFilteredAndScoredObjects[i].name + '" style ="display:' + isDetailsHidden + '" >' +
-      '<h3><span style="font-weight: bold;">' + listOfFilteredAndScoredObjects[i].display + '"</span><span style="float:right; font-weight: bold;" class="accentColor">' + listOfFilteredAndScoredObjects[i].price_de + '€</span></h3>' +
+      '<h3><span style="font-weight: bold;">' + listOfFilteredAndScoredObjects[i].display + '"</span><span style="float:right; font-weight: bold;" class="accentColor">' + listOfFilteredAndScoredObjects[i]["price_" + country] + '€</span></h3>' +
       '<h3>' + listOfFilteredAndScoredObjects[i].width + ' * ' + listOfFilteredAndScoredObjects[i].length + 'mm</h3>' +
 
       '<div style="width:20px; height:20px; float:left;"><img style="max-width:20px; max-height:20px; float:left;" src="images/ram_icon.png"></div>' +
@@ -476,6 +477,10 @@ window.onload = function() {
     updateTable();
   }
 
+  country = document.getElementById("countryInput").value;
+  document.getElementById("countryInput").onclick = function() {
+    country = document.getElementById("countryInput").value;
+  }
 
   function scrollHorizontally(e) {
     e = window.event || e;
