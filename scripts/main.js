@@ -407,7 +407,7 @@ window.onload = function() {
       '<h3 ><span style="float:right; color: green; font-weight: bold;">' + listOfFilteredAndScoredObjects[i].totalscore + '</span></h3>' +
       '<div id="wrapper">' +
       '<span class="a-button a-button-primary">' +
-      ' <a target="_blank" href="' + listOfFilteredAndScoredObjects[i].amazon_de + '" style="text-decoration:none;">' +
+      ' <a target="_blank" href="' + listOfFilteredAndScoredObjects[i]['amazon_' + country] + '" style="text-decoration:none;">' +
       '<span class="a-button-inner">' +
       '<img src="images/Amazon-Favicon-64x64.png" class="a-icon a-icon-shop-now">' +
       '<input class="a-button-input" type="submit" value="Add to cart">' +
@@ -478,8 +478,9 @@ window.onload = function() {
   }
 
   country = document.getElementById("countryInput").value;
-  document.getElementById("countryInput").onclick = function() {
+  document.getElementById("countryInput").onchange = function() {
     country = document.getElementById("countryInput").value;
+    updateTable();
   }
 
   function scrollHorizontally(e) {

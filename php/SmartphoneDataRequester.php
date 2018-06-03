@@ -11,7 +11,7 @@
     private $secret_key;
     private $params;
 
-    function __construct($endpoint) {
+    function __construct($endpoint, $associateTag) {
       $jsonKeys = json_decode(file_get_contents("../scripts/keys.js"),TRUE);
 
       // Your Secret Key corresponding to the above ID, as taken from the Your Account page
@@ -24,7 +24,7 @@
         "Service" => "AWSECommerceService",
         "Operation" => "ItemLookup",
         "AWSAccessKeyId" => $jsonKeys['access_key_id'],
-        "AssociateTag" => "smartphonep08-21",
+        "AssociateTag" => $associateTag,
         "ItemId" => "B07CHQHFDZ",
         "IdType" => "ASIN",
         "ResponseGroup" => "OfferSummary, OfferListings, Small"
