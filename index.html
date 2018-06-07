@@ -38,7 +38,7 @@
       <div style="float: right;">
         <ul>
           <li>
-            <select id="countryInput" class="accentColor heavy">
+            <select id="countryInput" class="heavy">
               <option value="de" selected>GERMANY</option>
               <option value="com">UNITED STATES</option>
             </select>
@@ -54,35 +54,36 @@
 
 
     <div class="filterdiv settingsdiv">
-      <table>
+      <table style="width: 100%;">
         <thead class="settingsTable">
           <tr>
             <th></th>
-            <th style="background-color: #12709e;"></th>
+            <th ></th>
           </tr>
           <tr>
             <th>Sort table by</th>
             <th>
+              <input type="image" src="images/sort_arrows.png" id="sorting_order" class="sorting_order" height="22px" width="22px" border="0" alt="Submit" />
+
               <select id="filterInput" class="filterselect">
             <option value="price" selected="selected">Price</option>
             <option value="length">Body-Size</option>
             <option value="display">Screen-Size</option>
             <option value="totalscore">Total Score</option>
             </select>
-              <input type="image" src="images/sort_arrows.png" id="sorting_order" class="sorting_order" height="22px" width="22px" border="0" alt="Submit" />
-            </th>
+              </th>
           </tr>
           <tr>
             <th>Scale phones</th>
             <th>
               <input type="checkbox" id="scaleInput" class="cbx hidden rating_updater" checked="" />
-              <label for="scaleInput" class="lbl rating_updater filterselect"></label>
+              <label for="scaleInput" class="lbl rating_updater"></label>
             </th>
           </tr>
 
           <tr>
             <th></th>
-            <th style="background-color: #12709e;"></th>
+            <th ></th>
           </tr>
 
           <tr>
@@ -91,7 +92,7 @@
               <div style="float:right; margin-right: 2px; margin-left: 2px;">
                 <input id="price_maximum_1" name="price_maximum_1" class="smallInput rating_updater" size="2" type="text" placeholder="1200">
               </div>
-              <div style="float:right; margin-right: 2px; margin-left: 2px; color: #5b5b5b;">
+              <div style="float:right; margin-right: 2px; margin-left: 2px; color: #fefefe;">
                 <p>-</p>
               </div>
               <div style="float:right; margin-right: 2px; margin-left: 2px;">
@@ -107,14 +108,14 @@
               <div style="float:right; margin-right: 2px; margin-left: 2px;">
                 <input id="size_maximum_1" name="size_maximum_1" class="smallInput rating_updater" size="2" type="text">
               </div>
-              <div style="float:right; margin-right: 2px; margin-left: 2px; color: #5b5b5b;">
+              <div style="float:right; margin-right: 2px; margin-left: 2px; color: #fefefe;">
                 <p>-</p>
               </div>
               <div style="float:right; margin-right: 2px; margin-left: 2px;">
                 <input id="size_minimum_1" name="size_minimum_1" class="smallInput rating_updater" size="2" type="text">
               </div>
 
-              <div style="float:right; margin-right: 2px; margin-left: 2px; color: #5b5b5b;">
+              <div style="float:right; margin-right: 2px; margin-left: 2px; color: #fefefe;">
                 <p>Display</p>
               </div>
 
@@ -123,14 +124,14 @@
               <div style="float:right; margin-right: 2px; margin-left: 2px;">
                 <input id="size_maximum_2" name="size_maximum_2" class="smallInput rating_updater" size="2" type="text">
               </div>
-              <div style="float:right; margin-right: 2px; margin-left: 2px; color: #5b5b5b;">
+              <div style="float:right; margin-right: 2px; margin-left: 2px; color: #fefefe;">
                 <p>-</p>
               </div>
               <div style="float:right; margin-right: 2px; margin-left: 2px;">
                 <input id="size_minimum_2" name="size_minimum_2" class="smallInput rating_updater" size="2" type="text">
               </div>
 
-              <div style="float:right; margin-right: 2px; margin-left: 2px; color: #5b5b5b;">
+              <div style="float:right; margin-right: 2px; margin-left: 2px; color: #fefefe;">
                 <p>Length</p>
               </div>
 
@@ -139,14 +140,14 @@
               <div style="float:right; margin-right: 2px; margin-left: 2px;">
                 <input id="size_maximum_3" name="size_maximum_3" class="smallInput rating_updater" size="2" type="text">
               </div>
-              <div style="float:right; margin-right: 2px; margin-left: 2px; color: #5b5b5b;">
+              <div style="float:right; margin-right: 2px; margin-left: 2px; color: #fefefe;">
                 <p>-</p>
               </div>
               <div style="float:right; margin-right: 2px; margin-left: 2px;">
                 <input id="size_minimum_3" name="size_minimum_3" class="smallInput rating_updater" size="2" type="text">
               </div>
 
-              <div style="float:right; margin-right: 2px; margin-left: 2px; color: #5b5b5b;">
+              <div style="float:right; margin-right: 2px; margin-left: 2px; color: #fefefe;">
                 <p>Width</p>
               </div>
             </th>
@@ -154,7 +155,7 @@
 
             <tr>
               <th></th>
-              <th style="background-color: #12709e;"></th>
+              <th ></th>
             </tr>
 
             <tr>
@@ -245,7 +246,7 @@
 
             <tr>
               <th></th>
-              <th style="background-color: #12709e;"></th>
+              <th ></th>
             </tr>
 
             <tr>
@@ -294,7 +295,7 @@
             <tr>
               <th>Waterproof</th>
               <th>
-                <select id="waterproofInput" class="rating_updater" style="width:130px;">
+                <select id="waterproofInput" class="rating_updater" style="width:80%;">
                 <option value="" selected="selected"></option>
                 <option value="4">IP X4 Splashing water</option>
                 <option value="7">IP X7 Immersion up to 1m</option>

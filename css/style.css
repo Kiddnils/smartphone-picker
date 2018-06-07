@@ -124,7 +124,7 @@ table p {
 }
 
 .settingsTable {
-  background: #12709e;
+  background: #3367d5;
 }
 
 th {
@@ -181,7 +181,7 @@ th {
 
 .main-menu-link {
   text-decoration: none;
-  color: #5b5b5b;
+  color: #fefefe;
 }
 
 .main-menu {
@@ -189,10 +189,9 @@ th {
   padding-bottom: 30px;
   padding-top: 10px;
   outline-color: rgb(102, 102, 102);
-  background-color: rgb(249, 249, 249);
-  border-top-color: rgb(220, 220, 220);
+  background-color: #3367d5;
   border-top: 1px solid #DCDCDC;
-  border-bottom: 1px solid #DCDCDC;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
 }
 
 .main-menu-text {
@@ -242,7 +241,7 @@ input[type=checkbox] {
 }
 
 .accentColor {
-  color: #12709e;
+  color: #3367d5;
 }
 
 .heavy {
@@ -264,7 +263,6 @@ input[type=checkbox] {
   font-weight: normal;
   padding: 8px;
   font-size: 16px;
-  border-bottom: 1px solid #F0F0F0;
 }
 
 .settingsdiv tbody tr td {
@@ -280,14 +278,16 @@ input[type=checkbox] {
   float: left;
   overflow-y: auto;
   height: calc(-180px + 100vh);
-  width: 290px;
+  width: 280px;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
 }
 
-.filterdiv thead th:first-child {}
+.filterdiv thead th:first-child {
+  width: 100px;
+}
 
 .filterdiv thead th:nth-child(2) {
-  background-color: white;
+  background-color: #4286f5;
 }
 
 .filterdiv thead th {}
@@ -341,13 +341,14 @@ input[type=checkbox] {
 }
 
 .filterselect {
-  background-color: white;
-  font-size: 16px;
-  color: #5b5b5b;
+  background-color: #4286f5;
+  color: white;
+  width: 100px;
 }
 
 #storageInput {
-  color: #5b5b5b;
+  color: #fefefe;
+  width: 80%
 }
 
 .detailwindow {
@@ -386,7 +387,7 @@ h3 {
 }
 
 .rating {
-  float: left;
+  float: right;
 }
 
 .float {
@@ -519,7 +520,7 @@ radio {
   width: 100%;
   left: 0;
   top: 0;
-  background-color: #fff;
+  background-color: #fefefe;
   outline: 0;
   border: 0;
   overflow: visible;
@@ -611,28 +612,54 @@ radio {
   justify-content: center;
 }
 
-.settingsdiv input[type=text], .settingsdiv input[type=date], .settingsdiv input[type=datetime], .settingsdiv input[type=number], .settingsdiv input[type=search], .settingsdiv input[type=time], .settingsdiv input[type=url], .settingsdiv input[type=email], textarea, select {
+ input[type=text],  input[type=date],  input[type=datetime],  input[type=number],  input[type=search],  input[type=time],  input[type=url],  input[type=email], textarea, select {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  border: 1px solid #BEBEBE;
+  border: 1px solid #fefefe;
   padding: 1px;
   -webkit-transition: all 0.30s ease-in-out;
   -moz-transition: all 0.30s ease-in-out;
   -ms-transition: all 0.30s ease-in-out;
   -o-transition: all 0.30s ease-in-out;
   outline: none;
+  background-color: #4286f5;
+  color: #fefefe;
+  float: right;
 }
 
-.settingsdiv input[type=text]:focus, .settingsdiv input[type=date]:focus, .settingsdiv input[type=datetime]:focus, .settingsdiv input[type=number]:focus, .settingsdiv input[type=search]:focus, .settingsdiv input[type=time]:focus, .settingsdiv input[type=url]:focus, .settingsdiv input[type=email]:focus, .settingsdiv textarea:focus, .settingsdiv select:focus {
+input[type=text]:focus,  input[type=date]:focus,  input[type=datetime]:focus,  input[type=number]:focus,  input[type=search]:focus,  input[type=time]:focus,  input[type=url]:focus,  input[type=email]:focus,  textarea:focus,  select:focus {
   -moz-box-shadow: 0 0 8px #12709e;
   -webkit-box-shadow: 0 0 8px #12709e;
-  box-shadow: 0 0 8px #12709e;
-  border: 1px solid #12709e;
+  box-shadow: 0 0 10px #fefefe;
+  border: 1px solid #fefefe;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #fefefe;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fefefe;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fefefe;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #fefefe;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #fefefe;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color:    #fefefe;
 }
 
 .sorting_order {
   vertical-align: middle;
+  float: right;
   transition: transform .8s ease;
 }
 
@@ -647,40 +674,44 @@ radio {
   display: block;
   height: 20px;
   width: 50px;
-  background: #ccc;
   border-radius: 100px;
   cursor: pointer;
+  border: 1px solid #fefefe;
 }
 
 .lbl:after {
   position: absolute;
   left: -2px;
-  top: -3px;
+  top: -4px;
   display: block;
   width: 26px;
   height: 26px;
   border-radius: 100px;
-  background: #999999;
+  background: #fefefe;
   content: '';
   transition: all 0.1s linear;
+  border: 1px solid #fefefe;
 }
 
 .cbx:checked~label {
-  background: #599abb;
+  background: #4286f5;
+  border: 1px solid #fefefe;
+
 }
 
 .cbx:checked~label:after {
   left: 30px;
-  background: #12709e;
+  background: #3367d5;
+  border: 1px solid #fefefe;
 }
 
 .cbx:disabled~label {
-  background: #d5d5d5;
+  background: #4286f5;
   pointer-events: none;
 }
 
 .cbx:disabled~label:after {
-  background: #bcbdbc;
+  background: #4286f5;
 }
 
 .hidden {
