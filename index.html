@@ -15,12 +15,13 @@
 </head>
 
 <body>
-  <div class="logo">
-    <a class="" href="index.html" style="font-size: 43.2px; text-decoration: none; color: #666;">
+<div class="box">
+  <div class="logo row header">
+    <a class="" href="index.html" style="font-size: 43.2px; text-decoration: none; color: #fefefe;">
                       <span class="accentColor">smartphone</span>-picker
                   </a>
   </div>
-  <div class="main-menu">
+  <div class="main-menu row header">
     <div class="main-menu-text">
       <div style="float: left;">
         <ul>
@@ -49,18 +50,19 @@
   </div>
 
 
-  <div class="bodydiv">
+  <div class="bodydiv row content">
 
 
 
-    <div class="filterdiv settingsdiv">
-      <div style="overflow-y: auto; height: calc(100vh - 190px);">
-      <table style="width: 100%;">
-        <thead class="settingsTable">
+    <div class="filterdiv settingsdiv" style="overflow-y: auto;">
+      <div >
+      <table style="width: 100%;" class="settingsTable">
+        <thead >
+
           <tr>
-            <th></th>
-            <th style="background-color: #3367d5;"></th>
+            <th colspan="2">Sorting Options</th>
           </tr>
+
           <tr>
             <th>Sort table by</th>
             <th>
@@ -82,37 +84,43 @@
             </th>
           </tr>
 
+        </thead>
+      </table>
+      <table style="width: 100%;" class="settingsTable">
+        <thead >
+
           <tr>
-            <th></th>
-            <th style="background-color: #3367d5;"></th>
+            <th colspan="2">Budget and Size</th>
           </tr>
 
           <tr>
             <th>Price</th>
             <th>
-              <div style="float:right; margin-right: 2px; margin-left: 2px;">
+              <div style="float:right; margin: 2px;">
                 <input id="price_maximum_1" name="price_maximum_1" class="smallInput rating_updater" size="2" type="text" placeholder="1200">
               </div>
               <div style="float:right; margin-right: 2px; margin-left: 2px; color: #fefefe;">
                 <p>-</p>
               </div>
-              <div style="float:right; margin-right: 2px; margin-left: 2px;">
+              <div style="float:right; margin: 2px;">
                 <input id="price_minimum_1" name="price_minimum_1" class="smallInput rating_updater" maxlength="4" type="text" placeholder="0">
               </div>
             </th>
           </tr>
 
+
+
           <tr>
             <th>Size</th>
             <th>
 
-              <div style="float:right; margin-right: 2px; margin-left: 2px;">
+              <div style="float:right; margin: 2px;">
                 <input id="size_maximum_1" name="size_maximum_1" class="smallInput rating_updater" size="2" type="text">
               </div>
               <div style="float:right; margin-right: 2px; margin-left: 2px; color: #fefefe;">
                 <p>-</p>
               </div>
-              <div style="float:right; margin-right: 2px; margin-left: 2px;">
+              <div style="float:right; margin: 2px;">
                 <input id="size_minimum_1" name="size_minimum_1" class="smallInput rating_updater" size="2" type="text">
               </div>
 
@@ -121,14 +129,14 @@
               </div>
 
               <br>
-
-              <div style="float:right; margin-right: 2px; margin-left: 2px;">
+  <br>
+              <div style="float:right; margin: 2px;">
                 <input id="size_maximum_2" name="size_maximum_2" class="smallInput rating_updater" size="2" type="text">
               </div>
               <div style="float:right; margin-right: 2px; margin-left: 2px; color: #fefefe;">
                 <p>-</p>
               </div>
-              <div style="float:right; margin-right: 2px; margin-left: 2px;">
+              <div style="float:right; margin: 2px;">
                 <input id="size_minimum_2" name="size_minimum_2" class="smallInput rating_updater" size="2" type="text">
               </div>
 
@@ -137,14 +145,15 @@
               </div>
 
               <br>
+                <br>
 
-              <div style="float:right; margin-right: 2px; margin-left: 2px;">
+              <div style="float:right; margin: 2px;">
                 <input id="size_maximum_3" name="size_maximum_3" class="smallInput rating_updater" size="2" type="text">
               </div>
               <div style="float:right; margin-right: 2px; margin-left: 2px; color: #fefefe;">
                 <p>-</p>
               </div>
-              <div style="float:right; margin-right: 2px; margin-left: 2px;">
+              <div style="float:right; margin: 2px;">
                 <input id="size_minimum_3" name="size_minimum_3" class="smallInput rating_updater" size="2" type="text">
               </div>
 
@@ -154,9 +163,13 @@
             </th>
 
 
+          </thead>
+          </table>
+          <table style="width: 100%;" class="settingsTable">
+          <thead >
+
             <tr>
-              <th></th>
-              <th style="background-color: #3367d5;"></th>
+              <th colspan="2">Ratings</th>
             </tr>
 
             <tr>
@@ -245,9 +258,13 @@
               </th>
             </tr>
 
+          </thead>
+          </table>
+          <table style="width: 100%;" class="settingsTable">
+          <thead >
+
             <tr>
-              <th></th>
-              <th style="background-color: #3367d5;"></th>
+              <th colspan="2">Personal Preferences</th>
             </tr>
 
             <tr>
@@ -304,11 +321,6 @@
                 </select>
               </th>
             </tr>
-            <tr>
-              <th></th>
-              <th style="background-color: #3367d5;"></th>
-            </tr>
-
 
 
         </thead>
@@ -374,7 +386,6 @@
     </div>
 
   </div>
-
 
 
 </body>

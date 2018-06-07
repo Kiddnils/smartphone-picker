@@ -111,11 +111,18 @@
 body {
   font-family: 'Open Sans2', sans-serif;
   margin: 0;
+  background-color: #fefefe;
   min-width: 1000px;
+
+}
+
+.box{
+  display: flex;
+  flex-flow: column;
+  height: 100%;
 }
 
 table {
-  table-layout: fixed;
   border-spacing: 0;
 }
 
@@ -124,7 +131,14 @@ table p {
 }
 
 .settingsTable {
-  background: #3367d5;
+margin-bottom: 20px;
+  background: #1976d2;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+
+}
+
+.settingsTable thead tr:first-child th{
+  background: #004ba0;
 }
 
 th {
@@ -135,12 +149,7 @@ th {
   letter-spacing: 0;
 }
 
-.bodydiv {
-  margin-top: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-bottom: 10px;
-}
+
 
 .description {
   margin-top: 40px;
@@ -161,12 +170,6 @@ th {
     margin-left: 15%;
     margin-right: 15%;
   }
-  .bodydiv {
-    margin-top: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 20px;
-  }
 }
 
 .description p {
@@ -181,15 +184,20 @@ th {
 
 .main-menu-link {
   text-decoration: none;
-  color: #fefefe;
+  color: #004ba0;
+}
+
+.footer{
+  flex: 0 1 40px;
 }
 
 .main-menu {
+  flex: 0 1 auto;
   margin-top: 0px;
   padding-bottom: 30px;
   padding-top: 10px;
   outline-color: rgb(102, 102, 102);
-  background-color: #3367d5;
+  background-color: #fefefe;
   border-top: 1px solid #DCDCDC;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
 }
@@ -245,8 +253,10 @@ input[type=checkbox] {
 }
 
 .accentColor {
-  color: #3367d5;
+  color: #63a4ff;
 }
+
+
 
 .heavy {
   font-weight: bold;
@@ -254,19 +264,30 @@ input[type=checkbox] {
 
 .logo {
   text-align: left;
-  margin-left: 15%;
-  margin-top: 10px;
+  padding-left: 15%;
+  padding-top: 10px;
   font-weight: bold;
+  background-color: #004ba0;
+  flex: 0 1 auto;
+  z-index: 20;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+
 }
 
-.settingsdiv {
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
-}
 
 .settingsdiv thead>tr>th {
   font-weight: normal;
-  padding: 8px;
+  padding-left: 8px;
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-bottom: 4px;
   font-size: 16px;
+}
+
+.settingsdiv thead>tr>th:nth-child(2)
+{
+  padding: 0;
+  padding-right: 4px;
 }
 
 .settingsdiv tbody tr td {
@@ -280,19 +301,16 @@ input[type=checkbox] {
 
 .filterdiv {
   float: left;
-  background-color: #3367d5;
-  padding: 5px;
+  background-color: #fefefe;
+  width: 290px;
+  height: 100%;
+  overflow-y: auto;
+  }
 
-  width: 280px;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
-}
 
-.filterdiv thead th:first-child {
-  width: 100px;
-}
 
 .filterdiv thead th:nth-child(2) {
-  background-color: #4286f5;
+  background-color: #1976d2;
 }
 
 .filterdiv thead th {}
@@ -302,8 +320,9 @@ input[type=checkbox] {
 }
 
 .itemsdiv {
-  margin-left: 315px;
-  height: calc(100vh - 180px);
+  margin-left: 15px;
+  width: 70%;
+  flex: 1;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
 }
 
@@ -346,7 +365,7 @@ input[type=checkbox] {
 }
 
 .filterselect {
-  background-color: #4286f5;
+  background-color: #1976d2;
   color: white;
   width: 100px;
 }
@@ -387,8 +406,9 @@ h3 {
 }
 
 .smallInput {
-  width: 35px;
+  width: 40px;
   float: left;
+
 }
 
 .rating {
@@ -401,6 +421,26 @@ h3 {
 
 .padding-none {
   padding: 0;
+}
+
+html, body{
+  height: 100%;
+  margin: 0;
+}
+
+.box .row.header {
+  flex: 0 1 auto;
+}
+
+.box .row.content {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+
+.box .row.footer {
+  flex: 0 1 40px;
 }
 
 p {
@@ -642,9 +682,10 @@ radio {
   -ms-transition: all 0.30s ease-in-out;
   -o-transition: all 0.30s ease-in-out;
   outline: none;
-  background-color: #4286f5;
+  background-color: #1976d2;
   color: #fefefe;
   float: right;
+  font-size: 16px;
 }
 
  input[type=text]:focus,  input[type=date]:focus,  input[type=datetime]:focus,  input[type=number]:focus,  input[type=search]:focus,  input[type=time]:focus,  input[type=url]:focus,  input[type=email]:focus,  textarea:focus,  select:focus {
@@ -713,24 +754,24 @@ radio {
 }
 
 .cbx:checked~label {
-  background: #4286f5;
+  background: #1976d2;
   border: 1px solid #fefefe;
 
 }
 
 .cbx:checked~label:after {
   left: 30px;
-  background: #3367d5;
+  background: #004ba0;
   border: 1px solid #fefefe;
 }
 
 .cbx:disabled~label {
-  background: #4286f5;
+  background: #1976d2;
   pointer-events: none;
 }
 
 .cbx:disabled~label:after {
-  background: #4286f5;
+  background: #1976d2;
 }
 
 .hidden {
