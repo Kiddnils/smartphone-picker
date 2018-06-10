@@ -194,7 +194,7 @@ th {
 .main-menu {
   flex: 0 1 auto;
   margin-top: 0px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   padding-top: 10px;
   outline-color: rgb(102, 102, 102);
   background-color: #fefefe;
@@ -304,6 +304,7 @@ input[type=checkbox] {
   background-color: #fefefe;
   width: 290px;
   height: 100%;
+  margin-left: 20px;
   overflow-y: auto;
   }
 
