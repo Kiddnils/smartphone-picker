@@ -404,7 +404,7 @@ window.onload = function() {
       '<h3 >Camera: <span style="float:right">' + listOfFilteredAndScoredObjects[i].camera + '</span></h3>' +
       '<h3 >Battery: <span style="float:right">' + listOfFilteredAndScoredObjects[i].battery + '</span></h3>' +
       '<hr>' +
-      '<h3 ><span style="float:right; color: green; font-weight: bold;">' + listOfFilteredAndScoredObjects[i].totalscore + '</span></h3>' +
+      '<h3 ><span style="float:right; color: #129e41; font-weight: bold;">' + listOfFilteredAndScoredObjects[i].totalscore + '</span></h3>' +
       '<div id="wrapper">' +
       '<span class="a-button a-button-primary">' +
       ' <a target="_blank" href="' + listOfFilteredAndScoredObjects[i]['amazon_' + country] + '" style="text-decoration:none;">' +
@@ -495,9 +495,9 @@ window.onload = function() {
 
   function activateHorizontalScrolling(activate) {
     if (activate) {
-      document.getElementsByClassName("itemsdiv")[0].style.height = '860px';
+      //document.getElementsByClassName("itemsdiv")[0].style.height = '860px';
     } else {
-      document.getElementsByClassName("itemsdiv")[0].style.height = 'calc(100vh - 180px)';
+      //document.getElementsByClassName("itemsdiv")[0].style.height = 'calc(100vh - 180px)';
     }
 
     if (activate) {
