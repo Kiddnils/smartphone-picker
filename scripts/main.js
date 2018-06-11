@@ -330,18 +330,17 @@ window.onload = function() {
 
 
   function fillPrice(type) {
+    var cell;
     for (var i = 0; i < listOfFilteredAndScoredObjects.length; i++) {
       for (var e = 0; e < 24; e++) {
         if (listOfFilteredAndScoredObjects[i]["price_" + country] > (e) * 50 && listOfFilteredAndScoredObjects[i]["price_" + country] <= (e + 1) * 50) {
-
           if (table.rows[e].cells.length < 10) { //Only 10 phones per row should be shown
-            var cell = table.rows[e].insertCell(table.rows[e].cells.length);
+            cell = table.rows[e].insertCell(table.rows[e].cells.length);
             cell.className += "smartphonecells";
             cell.innerHTML = getInnerHTMLSmartphone(i, "none");
             registerEventForDetails(listOfFilteredAndScoredObjects[i].name);
             break;
           }
-
         }
       }
     }

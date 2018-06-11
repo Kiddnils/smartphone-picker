@@ -111,13 +111,11 @@
 body {
   font-family: 'Open Sans2', sans-serif;
   margin: 0;
-  background-color: #fefefe;
-  min-width: 1000px;
+  background-color: rgb(249, 249, 249);
+  min-width: 800px;
 }
 
 .box {
-  display: flex;
-  flex-flow: column;
   height: 100%;
 }
 
@@ -131,7 +129,7 @@ table p {
 
 .settingsTable {
   margin-bottom: 15px;
-  background: #fefefe;
+  background: rgb(249, 249, 249);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -187,6 +185,7 @@ th {
 .main-menu-link {
   text-decoration: none;
   color: #12709e;
+  font-weight: bold;
 }
 
 .footer {
@@ -194,7 +193,9 @@ th {
 }
 
 .main-menu {
+  height: 40px;
   z-index: 10;
+  position: relative;
   margin-top: 0px;
   padding-bottom: 10px;
   padding-top: 10px;
@@ -241,6 +242,7 @@ input[type=checkbox] {
   text-align: center;
   font-size: 12px;
   font-weight: bold;
+  color: #08080a;
 }
 
 .qtip-img {
@@ -261,6 +263,8 @@ input[type=checkbox] {
 }
 
 .logo {
+  position: relative;
+  height: 60px;
   text-align: left;
   padding-left: 15%;
   padding-top: 10px;
@@ -268,6 +272,24 @@ input[type=checkbox] {
   background-color: #12709e;
   z-index: 20;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.logo-text {
+  font-size: 43.2px;
+  text-decoration: none;
+  color: #fefefe;
+}
+
+.logo-bottom {
+  position: relative;
+  height: 10px;
+  text-align: left;
+  padding-left: 15%;
+  padding-top: 10px;
+  font-weight: bold;
+  background-color: #12709e;
+  z-index: 20;
+  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.19), 0 -6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .settingsdiv thead>tr>th {
@@ -294,12 +316,11 @@ input[type=checkbox] {
 }
 
 .filterdiv {
-  z-index: 1;
   float: left;
-  background-color: #fefefe;
+  position: relative;
+  background-color: rgb(249, 249, 249);
   width: 290px;
-  max-height: 805px;
-  margin-top: 15px;
+  padding-top: 15px;
   margin-left: 10px;
   padding-right: 10px;
   padding-left: 10px;
@@ -307,7 +328,7 @@ input[type=checkbox] {
 }
 
 .filterdiv thead th:nth-child(2) {
-  background-color: #fefefe;
+  background-color: rgb(249, 249, 249);
 }
 
 .filterdiv thead th {}
@@ -317,8 +338,7 @@ input[type=checkbox] {
 }
 
 .itemsdiv {
-  z-index: 0;
-  max-height: 805px;
+  position: relative;
   float: right;
   flex: 1;
   /* grow */
@@ -333,9 +353,9 @@ input[type=checkbox] {
 }
 
 .itemsTable>tbody>tr>td:first-child {
-  color: #5b5b5b;
+  color: #12709e;
   font-weight: bold;
-  border-right: 1px solid #F0F0F0;
+  border-right: 1px solid #a3a3a3;
 }
 
 .itemsTable>thead>tr>th:not(:empty) {
@@ -343,15 +363,19 @@ input[type=checkbox] {
   padding: 8px;
   font-size: 18px;
   font-weight: bold;
-  color: #5b5b5b;
+  color: #12709e;
 }
 
 .itemsTable>thead>tr>th {
-  border-bottom: 1px solid #F0F0F0;
+  border-bottom: 1px solid #a3a3a3;
 }
 
 .itemsTable>thead>tr>th:first-child {
-  border-right: 1px solid #F0F0F0;
+  border-right: 1px solid #a3a3a3;
+}
+
+.itemsTable>thead>tr>th:last-child {
+  width: 100%;
 }
 
 .tryFiltering {
@@ -367,7 +391,7 @@ input[type=checkbox] {
 }
 
 .filterselect {
-  background-color: #fefefe;
+  background-color: rgb(249, 249, 249);
   color: #12709e;
   width: 100px;
 }
@@ -382,7 +406,7 @@ input[type=checkbox] {
 }
 
 h3 {
-  color: #5b5b5b;
+  color: #12709e;
   font-size: 16px;
   font-weight: normal;
   margin: 0;
@@ -429,14 +453,9 @@ html, body {
 }
 
 .bodydiv {
+  z-index: 0;
   display: flex;
-}
-
-p {
-  display: block;
-  font-family: 'Open Sans2', sans-serif;
-  font-size: 11px;
-  letter-spacing: .1px;
+  height: calc(100% - 150px);
 }
 
 h1, h2, h4 {
@@ -554,7 +573,7 @@ radio {
   width: 100%;
   left: 0;
   top: 0;
-  background-color: #fefefe;
+  background-color: rgb(249, 249, 249);
   outline: 0;
   border: 0;
   overflow: visible;
@@ -671,7 +690,7 @@ input[type=text], input[type=date], input[type=datetime], input[type=number], in
   -ms-transition: all 0.30s ease-in-out;
   -o-transition: all 0.30s ease-in-out;
   outline: none;
-  background-color: #fefefe;
+  background-color: rgb(249, 249, 249);
   color: #12709e;
   float: right;
   font-size: 16px;
@@ -686,34 +705,34 @@ input[type=text]:focus, input[type=date]:focus, input[type=datetime]:focus, inpu
 
 ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
-  color: #fefefe;
+  color: #12709e;
 }
 
 :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
-  color: #fefefe;
+  color: #12709e;
   opacity: 1;
 }
 
 ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
-  color: #fefefe;
+  color: #12709e;
   opacity: 1;
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #fefefe;
+  color: #12709e;
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: #fefefe;
+  color: #12709e;
 }
 
 ::placeholder {
   /* Most modern browsers support this now. */
-  color: #fefefe;
+  color: #12709e;
 }
 
 .sorting_order {
@@ -746,7 +765,7 @@ input[type=text]:focus, input[type=date]:focus, input[type=datetime]:focus, inpu
   width: 26px;
   height: 26px;
   border-radius: 100px;
-  background: #fefefe;
+  background: rgb(249, 249, 249);
   content: '';
   transition: all 0.1s linear;
   border: 1px solid #12709e;
@@ -754,13 +773,13 @@ input[type=text]:focus, input[type=date]:focus, input[type=datetime]:focus, inpu
 
 .cbx:checked~label {
   background: #12709e;
-  border: 1px solid #fefefe;
+  border: 1px solid #12709e;
 }
 
 .cbx:checked~label:after {
   left: 30px;
-  background: #12709e;
-  border: 1px solid #fefefe;
+  background: rgb(249, 249, 249);
+  border: 1px solid #12709e;
 }
 
 .cbx:disabled~label {
