@@ -6,7 +6,7 @@ window.onload = function() {
   init();
 
   var obj;
-  var isDescending = false;
+  var isDescending = true;
   var scale;
   var listOfFilteredObjects;
   var listOfFilteredAndScoredObjects;
@@ -475,6 +475,13 @@ window.onload = function() {
     }
     updateTable();
   }
+
+  if (isDescending) {
+    document.getElementById("sorting_order").style.transform = "rotate(180deg)";
+  } else {
+    document.getElementById("sorting_order").style.transform = "rotate(0deg)";
+  }
+
 
   country = document.getElementById("countryInput").value;
   document.getElementById("countryInput").onchange = function() {
