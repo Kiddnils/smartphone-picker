@@ -6,13 +6,12 @@ window.onload = function() {
   init();
 
   var obj;
-  var isDescending = true;
+  var isDescending = false;
   var scale;
   var listOfFilteredObjects;
   var listOfFilteredAndScoredObjects;
   var country;
-
-
+  var elems;
 
   function init() {
     loadJSON(function(response) {
@@ -59,8 +58,6 @@ window.onload = function() {
       if (obj.smartphones[i]["price_" + country] === 0) {
         continue;
       }
-
-
 
       //prize minimum
       if (document.getElementById("price_minimum_1").value !== "") {
@@ -160,8 +157,6 @@ window.onload = function() {
         }
       }
 
-
-
       //headphonejack
       if (document.getElementById("jackInput").checked && (obj.smartphones[i].headphonejack === 0)) {
         continue;
@@ -188,9 +183,9 @@ window.onload = function() {
 
   function sortListOfFilteredObjects(filterType) {
     switch (filterType) {
-      case "price":
+      case "price_":
       case "totalscore":
-        sortBy("totalscore", "price_" + country, isDescending);
+        sortBy("price_" + country, "totalscore", isDescending);
         break;
       case "length":
         sortBy("length", "width", isDescending);
@@ -243,52 +238,28 @@ window.onload = function() {
     }
 
     rowCount = tableHead.rows[0].cells.length;
-    for (var i = rowCount - 1; i > 0; i--) {
-      tableHead.rows[0].deleteCell(i);
+    for (var e = rowCount - 1; e > 0; e--) {
+      tableHead.rows[0].deleteCell(e);
     }
   }
 
   function buildTableStructure(filterType) {
-    var rowCount = table.rows.length;
     var cell1;
-    var leftBoundary;
-    var rightBoundary;
+    var row;
     for (var i = 1; i <= 100; i++) {
       cell1 = tableHead.rows[0].insertCell(i);
       cell1.className += "priceTiers accentColor";
       cell1.outerHTML = "<th></th>";
-
     }
 
-    if (filterType === "price") {
-      for (var i = 0; i < 24; i++) {
-
-        leftBoundary = i * 50;
-        rightBoundary = (i + 1) * 50;
-
-        if (leftBoundary < document.getElementById("price_minimum_1").value && rightBoundary > document.getElementById("price_minimum_1").value) {
-          leftBoundary = document.getElementById("price_minimum_1").value;
-        }
-        if (leftBoundary < document.getElementById("price_maximum_1").value && rightBoundary > document.getElementById("price_maximum_1").value) {
-          rightBoundary = document.getElementById("price_maximum_1").value;
-        }
-
-        if (leftBoundary < document.getElementById("price_minimum_1").value || (rightBoundary > document.getElementById("price_maximum_1").value && document.getElementById("price_maximum_1").value != 0)) {
-          var row = table.insertRow();
-          cell1 = row.insertCell(0);
-          cell1.classList.add('padding-none');
-        } else {
-          var row = table.insertRow(i);
-          cell1 = row.insertCell(0);
-          cell1.className += "priceTiers accentColor";
-          cell1.innerHTML = leftBoundary + "-" + rightBoundary;
-        }
-      }
+    if (filterType === "price_") {
+      row = table.insertRow();
+      row.insertCell(0);
     } else if (filterType === 'length' || filterType === 'display') {
-      var row = table.insertRow();
+      row = table.insertRow();
       row.insertCell(0);
     } else if (filterType === "totalscore") {
-      var row = table.insertRow();
+      row = table.insertRow();
       row.insertCell(0);
     }
 
@@ -304,9 +275,9 @@ window.onload = function() {
     sortListOfFilteredObjects(tableType);
 
     switch (tableType) {
-      case "price":
-        fillPrice(tableType);
-        activateHorizontalScrolling(false);
+      case "price_":
+        fillHorizontally(tableType + country, '');
+        activateHorizontalScrolling(true);
         break;
       case "length":
         fillHorizontally(tableType, 'mm');
@@ -321,29 +292,11 @@ window.onload = function() {
         activateHorizontalScrolling(true);
         break;
       default:
-        fillPrice(tableType);
+        fillHorizontally(tableType, "");
         activateHorizontalScrolling(false);
         break;
     }
 
-  }
-
-
-  function fillPrice(type) {
-    var cell;
-    for (var i = 0; i < listOfFilteredAndScoredObjects.length; i++) {
-      for (var e = 0; e < 24; e++) {
-        if (listOfFilteredAndScoredObjects[i]["price_" + country] > (e) * 50 && listOfFilteredAndScoredObjects[i]["price_" + country] <= (e + 1) * 50) {
-          if (table.rows[e].cells.length < 10) { //Only 10 phones per row should be shown
-            cell = table.rows[e].insertCell(table.rows[e].cells.length);
-            cell.className += "smartphonecells";
-            cell.innerHTML = getInnerHTMLSmartphone(i, "none");
-            registerEventForDetails(listOfFilteredAndScoredObjects[i].name);
-            break;
-          }
-        }
-      }
-    }
   }
 
 
@@ -439,7 +392,7 @@ window.onload = function() {
   //Set Scale Smartphones to true when case "length": oder case "display":
   document.getElementById("filterInput").addEventListener("input", function() {
     switch (document.getElementById("filterInput").options[document.getElementById("filterInput").selectedIndex].value) {
-      case "price":
+      case "price_":
         break;
       case "length":
         document.getElementById("scaleInput").checked = true;
@@ -455,14 +408,14 @@ window.onload = function() {
     updateTable();
   });
 
-  var elems = document.getElementsByClassName("rating_updater");
+  elems = document.getElementsByClassName("rating_updater");
   for (var i = 0, len = elems.length; i < len; i++) {
     elems[i].onchange = function() {
       updateTable();
-    }
+    };
     elems[i].oninput = function() {
       updateTable();
-    }
+    };
   }
 
   document.getElementById("sorting_order").onclick = function() {
@@ -474,7 +427,7 @@ window.onload = function() {
       document.getElementById("sorting_order").style.transform = "rotate(180deg)";
     }
     updateTable();
-  }
+  };
 
   if (isDescending) {
     document.getElementById("sorting_order").style.transform = "rotate(180deg)";
@@ -487,7 +440,7 @@ window.onload = function() {
   document.getElementById("countryInput").onchange = function() {
     country = document.getElementById("countryInput").value;
     updateTable();
-  }
+  };
 
   function scrollHorizontally(e) {
     e = window.event || e;
@@ -497,7 +450,7 @@ window.onload = function() {
     e.preventDefault();
   }
 
-  var elems = document.getElementsByClassName("itemsdiv");
+  elems = document.getElementsByClassName("itemsdiv");
 
   function activateHorizontalScrolling(activate) {
     if (activate) {
@@ -532,4 +485,4 @@ window.onload = function() {
 
 
 
-}
+};
