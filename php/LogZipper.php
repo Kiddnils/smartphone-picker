@@ -1,7 +1,7 @@
 <?php
   // Wöchentlich per Cronjob aufrufen
-  // Alle Dateien im /log Verzeichnis durchgehen und prüfen, ob das letzte Änderungsdatum länger als 1 Woche her ist, dann löschen
-  // filetime()  date()
+  // Alle Dateien im /logs Verzeichnis durchgehen und prüfen, ob das letzte Änderungsdatum länger als 1 Woche her ist
+  // identifizierte Datein unter /archive zippen und Orginal löschen
 
   if($_SERVER['QUERY_STRING'] != "EXECUTE"){
     echo "Nothing to see here <br>";
@@ -13,7 +13,8 @@
 
   require_once "logger.php";
 
-  echo "br>Starting to zip Logs of last Week <br>";
+  logToFile("LogZipper", "Starting to zip Logs of last Week");
+  echo "br>Starting to zip Logs of last Week<br>";
 
   //Create archive directory if not existing
   if (!file_exists('logs/archive')) {
@@ -22,29 +23,53 @@
 
   //Create a new zip file
   $zip = new ZipArchive();
-  $filename = "logs/archive/logs_week_" . date("W")-1 . ".zip";
+  $filename = "logs/archive/logs_week_" . (intval(date("W"))-1) . ".zip";
   $zip->open($filename, ZipArchive::CREATE);
 
+  $date_current = new DateTime();
+  $date_current->setTimestamp(mktime(0,0,0));
+  logToFile("LogZipper", "Current date start time" . $date_current->format('d.m.Y H:i:s'));
+  echo "<br>Current date start time" . $date_current->format('d.m.Y H:i:s') . "<br>";
+  logToFile("LogZipper", "Current date timestamp " . $date_current->getTimestamp());
+  echo "Current date timestamp " . $date_current->getTimestamp() . "<br>";
+
+  $date_before = new DateTime();
+  $date_before->setTimestamp(mktime(0,0,0));
+  $date_before->modify('-7 day');
+  logToFile("LogZipper", "Startdate start time of last week: " . $date_before->format('d.m.Y H:i:s'));
+  echo "<br>Startdate start time of last week: " . $date_before->format('d.m.Y H:i:s') . "<br>";
+  logToFile("LogZipper", "Startdate timestamp: " . $date_before->getTimestamp());
+  echo "Startdate timestamp: " . $date_before->getTimestamp() . "<br>";
+
   $dir = new DirectoryIterator('logs');
-
-  $date = new DateTime('2018-06-11');
-  echo "Current date " . $date->format('d.m.Y') . "<br>";
-  $date->modify('-7 day');
-  echo "Startdate of last week: " . $date->format('d.m.Y') . "<br>";
-  echo "Startdate timestamp: " . $date->getTimestamp() . "<br>";
-
-  echo "Logfiles<br>";
+  $logfiles = [];
   foreach ($dir as $fileinfo) {
-    if (!$fileinfo->isDot() AND !$fileinfo->isDir()) {
-        #$zip->addFile($fileinfo->getPathname());
-        echo $fileinfo->getMTime() . "<br>";
+    if (!$fileinfo->isDot() AND !$fileinfo->isDir() AND $fileinfo->getMTime() >= $date_before->getTimestamp() AND $fileinfo->getMTime() < $date_current->getTimestamp()) {
+        $zip->addFile($fileinfo->getPathName(), $fileinfo->getFileName());
+        //Solange die zip nocht nicht geclosed wurde sind die Dateien die in die zip sollen gelocked
+        //und müssen daher nachträglich gelöscht werden und dafür zwischengespeichert werden
+        $logfiles[] = $fileinfo->getFileName();
     }
   }
 
-  echo "Number of logfiles: " . $zip->numFiles . "<br>";
+  logToFile("LogZipper", "Number of logfiles: " . $zip->numFiles);
+  echo "<br>Number of logfiles: " . $zip->numFiles . "<br>";
+  logToFile("LogZipper", "Status of the new zip file:" . $zip->status);
   echo "Status of the new zip file:" . $zip->status . "<br>";
 
-  $zip->close();
+  $ret = $zip->close();
+  logToFile("LogZipper", "Closed zipfile with result: " . ($ret ? "true" : "false"));
+  echo "Closed zipfile with result: " . ($ret ? "true" : "false") . "<br>";
 
-  echo "Successfully zipped logs of last week";
+  logToFile("LogZipper", "Logfiles");
+  echo "<br>Logfiles<br>";
+  asort($logfiles);
+  foreach ($logfiles as $i => $logfile) {
+    logToFile("LogZipper", $logfile);
+    echo $logfile . "<br>";
+    unlink('logs/' . $logfile);
+  }
+
+  logToFile("LogZipper", "Deleted original log files after saving them in the archive zip");
+  echo "<br>Deleted original log files after saving them in the archive zip<br>";
  ?>
