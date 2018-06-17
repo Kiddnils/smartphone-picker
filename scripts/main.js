@@ -324,19 +324,19 @@ window.onload = function() {
     }
 
     var innerHtml =
-      '<table>' +
-      '<tr style="height:425px;">' +
-      '<td style="vertical-align: bottom; height: 420px;">' +
+      '<div style="display:flex; justify-content: flex-end; flex-direction: column; height: 425px;">' +
+      '<div style="text-align: center;">' +
       '<input type="checkbox">' +
       '<label for="toggle" id="picture' + listOfFilteredAndScoredObjects[i].name + '">' +
 
-      '<img class="qtip-img" id="picture' + listOfFilteredAndScoredObjects[i].name + '" style="vertical-align: bottom; max-height:' + scale * listOfFilteredAndScoredObjects[i].length + 'px;"" src="' + listOfFilteredAndScoredObjects[i].imagelink + '">' +
-      '</td>' +
-      '</tr>' +
-      '</table>' +
-      '<p class="smartphone-name">' + listOfFilteredAndScoredObjects[i].brand + ' ' + listOfFilteredAndScoredObjects[i].name + '</p>' +
+      '<img class="qtip-img" id="picture' + listOfFilteredAndScoredObjects[i].name + '" style="max-height:' + scale * listOfFilteredAndScoredObjects[i].length + 'px;"" src="' + listOfFilteredAndScoredObjects[i].imagelink + '">' +
       '</label>' +
+      '</div>' +
+      '</div>' +
+
       '<div class="detailwindow float" id="hiddenpicture' + listOfFilteredAndScoredObjects[i].name + '" style ="display:' + isDetailsHidden + '" >' +
+      '<p class="smartphone-name">' + listOfFilteredAndScoredObjects[i].brand + ' ' + listOfFilteredAndScoredObjects[i].name + '</p>' +
+
       '<h3><span style="font-weight: bold;">' + listOfFilteredAndScoredObjects[i].display + '"</span><span style="float:right; font-weight: bold;" class="accentColor">' + listOfFilteredAndScoredObjects[i]["price_" + country] + '€</span></h3>' +
       '<h3>' + listOfFilteredAndScoredObjects[i].width + ' * ' + listOfFilteredAndScoredObjects[i].length + 'mm</h3>' +
 
@@ -349,7 +349,7 @@ window.onload = function() {
       '<div style="width:20px; height:20px; float:left;"><img style="max-width:20px; max-height:20px; " src="images/sd_storage.png"></div>' +
       '<h3 style="float:left;">' + listOfFilteredAndScoredObjects[i].storage + 'GB</h3>' +
       '<br>' +
-      '<h3 ><span style="float:right; color: white;">_______________________</span></h3>' +
+      '<br>' +
       '<h3 >Design: <span style="float:right";>' + listOfFilteredAndScoredObjects[i].design + '</span></h3>' +
       '<h3 >Processor: <span style="float:right";>' + listOfFilteredAndScoredObjects[i].processor + '</span></h3>' +
       '<h3 >Software: <span style="float:right">' + listOfFilteredAndScoredObjects[i].updates + '</span></h3>' +
@@ -357,7 +357,7 @@ window.onload = function() {
       '<h3 >Battery: <span style="float:right">' + listOfFilteredAndScoredObjects[i].battery + '</span></h3>' +
       '<hr>' +
       '<h3 ><span style="float:right; color: #129e41; font-weight: bold;">' + listOfFilteredAndScoredObjects[i].totalscore + '</span></h3>' +
-      '<div id="wrapper">' +
+      '<div class="wrapper">' +
       '<span class="a-button a-button-primary">' +
       ' <a target="_blank" href="' + listOfFilteredAndScoredObjects[i]['amazon_' + country] + '" style="text-decoration:none;">' +
       '<span class="a-button-inner">' +

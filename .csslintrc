@@ -1,0 +1,7 @@
+{
+  "ignore": [
+    "order-alphabetical",
+    "bulletproof-font-face",
+    "box-sizing"
+  ]
+}
