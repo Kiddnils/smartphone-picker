@@ -350,11 +350,16 @@ window.onload = function() {
       '<h3 style="float:left;">' + listOfFilteredAndScoredObjects[i].storage + 'GB</h3>' +
       '<br>' +
       '<br>' +
-      '<h3 >Design: <span style="float:right";>' + listOfFilteredAndScoredObjects[i].design + '</span></h3>' +
-      '<h3 >Processor: <span style="float:right";>' + listOfFilteredAndScoredObjects[i].processor + '</span></h3>' +
-      '<h3 >Software: <span style="float:right">' + listOfFilteredAndScoredObjects[i].updates + '</span></h3>' +
-      '<h3 >Camera: <span style="float:right">' + listOfFilteredAndScoredObjects[i].camera + '</span></h3>' +
-      '<h3 >Battery: <span style="float:right">' + listOfFilteredAndScoredObjects[i].battery + '</span></h3>' +
+      '<div class="detailratingdescription">Design</div><div class="detailrating">' + listOfFilteredAndScoredObjects[i].design + '</span></div>' +
+      '<div style="clear: both"></div>' +
+      '<div class="detailratingdescription">Processor</div><div class="detailrating">' + listOfFilteredAndScoredObjects[i].processor + '</span></div>' +
+      '<div style="clear: both"></div>' +
+      '<div class="detailratingdescription">Software</div><div class="detailrating">' + listOfFilteredAndScoredObjects[i].updates + '</span></div>' +
+      '<div style="clear: both"></div>' +
+      '<div class="detailratingdescription">Camera</div><div class="detailrating">' + listOfFilteredAndScoredObjects[i].camera + '</span></div>' +
+      '<div style="clear: both"></div>' +
+      '<div class="detailratingdescription">Battery</div><div class="detailrating">' + listOfFilteredAndScoredObjects[i].battery + '</span></div>' +
+      '<div style="clear: both"></div>' +
       '<hr>' +
       '<h3 ><span style="float:right; color: #129e41; font-weight: bold;">' + listOfFilteredAndScoredObjects[i].totalscore + '</span></h3>' +
       '<div class="wrapper">' +
@@ -453,12 +458,6 @@ window.onload = function() {
   elems = document.getElementsByClassName("itemsdiv");
 
   function activateHorizontalScrolling(activate) {
-    if (activate) {
-      //document.getElementsByClassName("itemsdiv")[0].style.height = '860px';
-    } else {
-      //document.getElementsByClassName("itemsdiv")[0].style.height = 'calc(100vh - 180px)';
-    }
-
     if (activate) {
       if (elems[0].addEventListener) {
         // IE9, Chrome, Safari, Opera

@@ -366,6 +366,19 @@ margin-top : 15px;
 box-shadow : 0 0 4px rgba(0, 0, 0, .12), 0 0 3px rgba(0, 0, 0, .24);
 }
 
+.detailrating
+{
+float : right;
+color : #129E41;
+width : 15px;
+}
+
+.detailratingdescription
+{
+color : #12709E;
+float : left;
+}
+
 h3
 {
 font-family : "Open Sans2", sans-serif;
