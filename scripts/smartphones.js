@@ -110,12 +110,19 @@
       "totalscore": 0,
       "asin": {
         "de": [
-          ["white", ""],
-          ["white", ""]
+          ["glossy blue", "B0756RCPBZ"],
+          ["copper", "B0756RGSVH"],
+          ["stainless steel", "B074SRNB6S"],
+          ["tempered blue", "B074SJJBY2"],
+          ["tempered blue", "B0759NLL2T"]
+
         ],
         "com": [
-          ["white", ""],
-          ["black", ""]
+          ["glossy blue", "B0779KPR73"],
+          ["copper", "B077YTNBQY"],
+          ["stainless steel", "B075M97YNW"],
+          ["tempered blue", "B075MC8D1T"],
+          ["tempered blue", "B074SJJBY2"]
         ]
       },
       "price": {
@@ -151,12 +158,10 @@
       "totalscore": 0,
       "asin": {
         "de": [
-          ["white", ""],
-          ["white", ""]
+          ["black", "B07B69SLMB"]
         ],
         "com": [
-          ["white", ""],
-          ["black", ""]
+          ["black", "B07B69SLMB"]
         ]
       },
       "price": {
@@ -192,12 +197,15 @@
       "totalscore": 0,
       "asin": {
         "de": [
-          ["white", ""],
-          ["white", ""]
+          ["gold", "B076FTDYFY", ""],
+          ["gold", "B0787LD1VS", "EU-Version"],
+          ["rose gold", "B075V2TCLH"],
+          ["black", "B076493W9X"]
         ],
         "com": [
-          ["white", ""],
-          ["black", ""]
+          ["gold", "B076MBXX2R"],
+          ["rose gold", "B075V2TCLH"],
+          ["black", "B076HQ6FSY"]
         ]
       },
       "price": {
@@ -233,12 +241,13 @@
       "totalscore": 0,
       "asin": {
         "de": [
-          ["white", ""],
-          ["white", ""]
+          ["black", "B0784RQR88"],
+          ["black", "B076VLN14J"],
+          ["white", "B0792TXZ46"]
         ],
         "com": [
-          ["white", ""],
-          ["black", ""]
+          ["black", "B075SBJ3T2"],
+          ["black", "B079816Y5T"]
         ]
       },
       "price": {
@@ -274,12 +283,11 @@
       "totalscore": 0,
       "asin": {
         "de": [
-          ["white", ""],
-          ["white", ""]
+          ["brilliant black", "B076HWW5HN"],
+          ["sapphire blue", "B076HSNZ8H"]
         ],
         "com": [
-          ["white", ""],
-          ["black", ""]
+          ["sapphire blue", "B075GH2QP8"]
         ]
       },
       "price": {
@@ -315,12 +323,16 @@
       "totalscore": 0,
       "asin": {
         "de": [
-          ["white", ""],
-          ["white", ""]
+          ["amazing silver", "B077PJXZFK"],
+          ["ceramic black", "B077PMJM3M"],
+          ["solar red", "B079RCFMTB"],
+          ["translucent oil", "B077PG7JD3"]
         ],
         "com": [
-          ["white", ""],
-          ["black", ""]
+          ["amazing silver", "B077PJXZFK"],
+          ["ceramic black", "B07849L28F"],
+          ["solar red", "B079RCFMTB"],
+          ["translucent oil", "B077TMKPTQ"]
         ]
       },
       "price": {
@@ -356,12 +368,14 @@
       "totalscore": 0,
       "asin": {
         "de": [
-          ["white", ""],
-          ["white", ""]
+          ["ceramic black", "B07D4Q89NG"],
+          ["flame red", "B07D4RG7QQ"],
+          ["translucent blue", "B07D4RN2WQ"]
         ],
         "com": [
-          ["white", ""],
-          ["black", ""]
+          ["ceramic black", "B07D2RC1YF"],
+          ["flame red", "B07DPLW1X6"],
+          ["translucent blue", "B07D2Q65ZM"]
         ]
       },
       "price": {
@@ -397,12 +411,16 @@
       "totalscore": 0,
       "asin": {
         "de": [
-          ["white", ""],
-          ["white", ""]
+          ["clearly white", "B076KLKZ23"],
+          ["just black", "B076KSTG53"],
+          ["just black", "B076L5FQ23"],
+          ["kinda blue", "B076KM3PYP"]
         ],
         "com": [
-          ["white", ""],
-          ["black", ""]
+          ["clearly white", "B076VTWX5G"],
+          ["just black", "B0766GHWM6"],
+          ["kinda blue", "B078KGP5K5"],
+          ["kinda blue", "B076KM3PYP"]
         ]
       },
       "price": {
@@ -438,12 +456,15 @@
       "totalscore": 0,
       "asin": {
         "de": [
-          ["white", ""],
-          ["white", ""]
+          ["just black", "B077H28GFX"],
+          ["just black", "B076KT8HT2"],
+          ["black/white", "B077WSVG4Z"],
+          ["black/white", "B076L5ZZK1"]
         ],
         "com": [
-          ["white", ""],
-          ["black", ""]
+          ["just black", "B0766TPHSH"],
+          ["black/white", "B077WSVG4Z"],
+          ["black/white", "B079J5FD54"]
         ]
       },
       "price": {
@@ -479,12 +500,12 @@
       "totalscore": 0,
       "asin": {
         "de": [
-          ["white", ""],
-          ["white", ""]
+          ["midnight black", "B078WSQ4SC"],
+          ["red", ""],
+          ["star wars white", ""]
         ],
         "com": [
-          ["white", ""],
-          ["black", ""]
+          ["midnight black", "B0787NNSK9"]
         ]
       },
       "price": {
@@ -520,12 +541,13 @@
       "totalscore": 0,
       "asin": {
         "de": [
-          ["white", ""],
-          ["white", ""]
+          ["midnight black", "B078WSFXPW"],
+          ["star wars white", "B0789MN114"]
         ],
         "com": [
-          ["white", ""],
-          ["black", ""]
+          ["midnight black", "B077TQN1BC"],
+          ["red", "B078PCLXM8"],
+          ["white", "B07917BQWC"]
         ]
       },
       "price": {
@@ -561,12 +583,14 @@
       "totalscore": 0,
       "asin": {
         "de": [
-          ["white", ""],
-          ["white", ""]
+          ["mirror black", "B07CHQHFDZ"],
+          ["midnight black", ""],
+          ["silk white", ""]
         ],
         "com": [
-          ["white", ""],
-          ["black", ""]
+          ["mirror black", "B07D9CSTQQ"],
+          ["midnight black", ""],
+          ["silk white", ""]
         ]
       },
       "price": {
@@ -602,12 +626,14 @@
       "totalscore": 0,
       "asin": {
         "de": [
-          ["white", ""],
-          ["white", ""]
+          ["mirror black", "B07CK7KB95"],
+          ["midnight black", "B07CHL6XN6"],
+          ["silk white", "B07D5LXXG3"]
         ],
         "com": [
-          ["white", ""],
-          ["black", ""]
+          ["mirror black", "B07D6FVKX6"],
+          ["midnight black", "B07DDJQH9T"],
+          ["silk white", "B078BNQ2ZS"]
         ]
       },
       "price": {
@@ -643,12 +669,14 @@
       "totalscore": 0,
       "asin": {
         "de": [
-          ["white", ""],
-          ["white", ""]
+          ["grey", "B0779STLGF"],
+          ["midnight black", "B0779SG4ZN"],
+          ["phoenix red", "B079SDRNJM"],
+          ["sapphire blue", "B0779RWX11"]
         ],
         "com": [
-          ["white", ""],
-          ["black", ""]
+          ["midnight black", "B078NCL7GK"],
+          ["sapphire blue", "B078NCL7GJ"]
         ]
       },
       "price": {
@@ -684,12 +712,16 @@
       "totalscore": 0,
       "asin": {
         "de": [
-          ["white", ""],
-          ["white", ""]
+          ["midnight black", "B07CMSTFKQ"],
+          ["glacier grey", "B07CN24WB3"],
+          ["phantom blue", "B07CMXSHGH"],
+          ["phantom green", "B07D83JHPB"]
         ],
         "com": [
-          ["white", ""],
-          ["black", ""]
+          ["midnight black", "B07CTG8GF3"],
+          ["glacier grey", "B07CTGLBPN"],
+          ["phantom blue", "B07CTFJVQC"],
+          ["phantom green", "B07CTF3B98"]
         ]
       },
       "price": {
@@ -725,12 +757,14 @@
       "totalscore": 0,
       "asin": {
         "de": [
-          ["white", ""],
-          ["white", ""]
+          ["midnight blue", "B076CHQGV9"],
+          ["titanium grey", "B076CNDP4J"]
         ],
         "com": [
-          ["white", ""],
-          ["black", ""]
+          ["mocha brown", "B07C6FCC8G"],
+          ["diamond black", "B078T23Q22"],
+          ["midnight blue", "B078T2T2FL"],
+          ["titanium grey", "B078T3D547"]
         ]
       },
       "price": {
@@ -766,8 +800,8 @@
       "totalscore": 0,
       "asin": {
         "de": [
-          ["white", ""],
-          ["white", ""]
+          ["black", "B07BHD7MHL"],
+          ["blue", "B07BHDC33K"]
         ],
         "com": [
           ["white", ""],
@@ -807,8 +841,10 @@
       "totalscore": 0,
       "asin": {
         "de": [
-          ["white", ""],
-          ["white", ""]
+          ["black", "B07BHDC9V6"],
+          ["pink", "B07BHDQPD9"],
+          ["blue", "B07BHDDDHB"],
+          ["gold", "B07BLYRC9M"]
         ],
         "com": [
           ["white", ""],
@@ -848,8 +884,9 @@
       "totalscore": 0,
       "asin": {
         "de": [
-          ["white", ""],
-          ["white", ""]
+          ["blue", "B07BHD3L23"],
+          ["black", "B07BHDMHR1"],
+          ["twilight", "B07BHDDDHJ"]
         ],
         "com": [
           ["white", ""],
@@ -889,8 +926,9 @@
       "totalscore": 0,
       "asin": {
         "de": [
-          ["white", ""],
-          ["white", ""]
+          ["black moon", "B074BWGRKH"],
+          ["halo grey", "B078SQ7GWK"],
+          ["pure white", "B0748TWQHK"]
         ],
         "com": [
           ["white", ""],
@@ -930,8 +968,11 @@
       "totalscore": 0,
       "asin": {
         "de": [
-          ["white", ""],
-          ["white", ""]
+          ["black", "B06XFRBM26"],
+          ["blue", "B077KDDQLV"],
+          ["gold", "B075SJ6LL4"],
+          ["platinum", "B06XFGMDKN"],
+          ["white", "B06XFS8F1Z"]
         ],
         "com": [
           ["white", ""],
@@ -971,8 +1012,8 @@
       "totalscore": 0,
       "asin": {
         "de": [
-          ["white", ""],
-          ["white", ""]
+          ["cloud silver", "B075GYD539"],
+          ["moroccan blue", "B075GTJYSV"]
         ],
         "com": [
           ["white", ""],

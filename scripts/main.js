@@ -276,23 +276,23 @@ window.onload = function() {
 
     switch (tableType) {
       case "price":
-        fillHorizontally(tableType + country, '');
+        fillHorizontally(getLowestParameter, tableType, '');
         activateHorizontalScrolling(true);
         break;
       case "length":
-        fillHorizontally(tableType, 'mm');
+        fillHorizontally(getNormalParameter, tableType, 'mm');
         activateHorizontalScrolling(true);
         break;
       case "display":
-        fillHorizontally(tableType, '"');
+        fillHorizontally(getNormalParameter, tableType, '"');
         activateHorizontalScrolling(true);
         break;
       case "totalscore":
-        fillHorizontally(tableType, '');
+        fillHorizontally(getNormalParameter, tableType, '');
         activateHorizontalScrolling(true);
         break;
       default:
-        fillHorizontally(tableType, "");
+        fillHorizontally(getNormalParameter, tableType, "");
         activateHorizontalScrolling(false);
         break;
     }
@@ -300,19 +300,27 @@ window.onload = function() {
   }
 
 
-  function fillHorizontally(type, suffix) {
+  function fillHorizontally(functioncall, type, suffix) {
     var cell;
     var cell1;
     for (var i = 0; i < listOfFilteredAndScoredObjects.length; i++) {
       cell1 = tableHead.rows[0].cells[i + 1];
       cell1.innerHTML = i;
-      cell1.innerHTML = listOfFilteredAndScoredObjects[i][type] + "" + suffix;
+      cell1.innerHTML = functioncall(i, type) + "" + suffix;
 
       cell = table.rows[0].insertCell(table.rows[0].cells.length);
       cell.className += "smartphonecells";
       cell.innerHTML = getInnerHTMLSmartphone(i, "block");
       registerEventForDetails(listOfFilteredAndScoredObjects[i].name);
     }
+  }
+
+  function getNormalParameter(i, type) {
+    return listOfFilteredAndScoredObjects[i][type];
+  }
+
+  function getLowestParameter(i, type) {
+    return listOfFilteredAndScoredObjects[i][type][country][listOfFilteredAndScoredObjects[i]["smallestPrice"]];
   }
 
 
@@ -335,9 +343,17 @@ window.onload = function() {
       '</div>' +
 
       '<div class="detailwindow float" id="hiddenpicture' + listOfFilteredAndScoredObjects[i].name + '" style ="display:' + isDetailsHidden + '" >' +
-      '<p class="smartphone-name">' + listOfFilteredAndScoredObjects[i].brand + ' ' + listOfFilteredAndScoredObjects[i].name + '</p>' +
+      '<div>' +
+      '<p class="smartphone-name">' + listOfFilteredAndScoredObjects[i].brand + ' ' + listOfFilteredAndScoredObjects[i].name + '</p></div>' +
+      '<div style="clear:both;"></div>' +
+      '<div><span style="font-weight: bold;">' + listOfFilteredAndScoredObjects[i].display + '"</span>' +
+      '<span style="float:right; font-weight: bold;" class="accentColor">' + getLowestParameter(i, "price") + '€</span>' +
+      '<button class="btn-color dropdown-toggle">' +
+      '<div class="colorpicker"></div>' +
+      '<span class="caret"></span>' +
+      '</button>' +
+      '</div>' +
 
-      '<h3><span style="font-weight: bold;">' + listOfFilteredAndScoredObjects[i].display + '"</span><span style="float:right; font-weight: bold;" class="accentColor">' + listOfFilteredAndScoredObjects[i]["price"][country] + '€</span></h3>' +
       '<h3>' + listOfFilteredAndScoredObjects[i].width + ' * ' + listOfFilteredAndScoredObjects[i].length + 'mm</h3>' +
 
       '<div style="width:20px; height:20px; float:left;"><img style="max-width:20px; max-height:20px; float:left;" src="images/ram_icon.png"></div>' +
@@ -364,7 +380,7 @@ window.onload = function() {
       '<h3 ><span style="float:right; color: #129e41; font-weight: bold;">' + listOfFilteredAndScoredObjects[i].totalscore + '</span></h3>' +
       '<div class="wrapper">' +
       '<span class="a-button a-button-primary">' +
-      ' <a target="_blank" href="' + listOfFilteredAndScoredObjects[i]['amazon'][country] + '" style="text-decoration:none;">' +
+      ' <a target="_blank" href="' + getLowestParameter(i, "amazon") + '" style="text-decoration:none;">' +
       '<span class="a-button-inner">' +
       '<img src="images/Amazon-Favicon-64x64.png" class="a-icon a-icon-shop-now">' +
       '<input class="a-button-input" type="submit" value="Add to cart">' +

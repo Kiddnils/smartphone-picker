@@ -34,7 +34,7 @@
 $x = 0;
 while (count($counter) > 0) {
     logToFile("amazonSlave_de", "Smartphonenumber is: " . $counter[$x][0]);
-    echo "Smartphonenumber is: $x <br>";
+    echo "Smartphonenumber is: . $x . <br>";
     if ($json['smartphones'][$counter[$x][0]]['asin'][$counter[$x][1]][$counter[$x][3]][1] != '') {
       logToFile("amazonSlave_de", "ASIN: " . $json['smartphones'][$counter[$x][0]]['asin'][$counter[$x][1]][$counter[$x][3]][1]);
       echo "ASIN: " . $json['smartphones'][$counter[$x][0]]['asin'][$counter[$x][1]][$counter[$x][3]][1] . "<br>";
