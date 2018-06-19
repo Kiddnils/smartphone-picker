@@ -1,1431 +1,2099 @@
 {
   "smartphones": [{
-    "name": "6.1",
-    "brand": "Nokia",
-    "imagelink": "images\\\\\/TheNewNokia6_hardware-phone.jpg?fm=png",
-    "price": 279,
-    "design": 4,
-    "display": 5.5,
-    "length": 149,
-    "width": 76,
-    "processor": 3,
-    "updates": 5,
-    "camera": 3,
-    "battery": 3,
-    "batterysize": 3000,
-    "storage": 32,
-    "memory": 3,
-    "sdslot": 1,
-    "simcards": 2,
-    "notch": 0,
-    "waterproof": "",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "B07B6C32JX",
-    "price_de": 279,
-    "amazon_de": "https:\/\/www.amazon.de\/Nokia-Smartphone-VERSION-Schnellladefunktion-Displayschutzfolie-schwarz-kupfer\/dp\/B07B6C32JX?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B6C32JX",
-    "asin_com": "B07BVDG8P1",
-    "price_com": 245,
-    "amazon_com": "https:\/\/www.amazon.com\/Nokia-TA-1068-Unlocked-International-Warranty\/dp\/B07BVDG8P1?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BVDG8P1"
-  }, {
-    "name": "7 plus",
-    "brand": "Nokia",
-    "imagelink": "images\\\\\/Nokia7plus_ROW_hardware-phone.jpg?fm=png",
-    "price": 399,
-    "design": 4,
-    "display": 6,
-    "length": 158,
-    "width": 76,
-    "processor": 4,
-    "updates": 5,
-    "camera": 4,
-    "battery": 5,
-    "batterysize": 3800,
-    "storage": 64,
-    "memory": 4,
-    "sdslot": 1,
-    "simcards": 2,
-    "notch": 0,
-    "waterproof": "0",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "B07B6DMZN6",
-    "price_de": 393,
-    "amazon_de": "https:\/\/www.amazon.de\/Nokia-Plus-Nano-Smartphone-Displayschutzfolie-Schwarz-Kupfer\/dp\/B07B6DMZN6?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B6DMZN6",
-    "asin_com": "B07BVS4LMN",
-    "price_com": 335,
-    "amazon_com": "https:\/\/www.amazon.com\/Nokia-TA-1062-Unlocked-International-Warranty\/dp\/B07BVS4LMN?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BVS4LMN"
-  }, {
-    "name": "8",
-    "brand": "Nokia",
-    "imagelink": "images\\\\\/nokia8normal.jpg",
-    "price": 383,
-    "design": 4,
-    "display": 5.3,
-    "length": 152,
-    "width": 74,
-    "processor": 5,
-    "updates": 4,
-    "camera": 4,
-    "battery": 3,
-    "batterysize": 3090,
-    "storage": 64,
-    "memory": 4,
-    "sdslot": 1,
-    "simcards": 1,
-    "notch": 0,
-    "waterproof": "4",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "B0756RCPBZ",
-    "price_de": 374,
-    "amazon_de": "https:\/\/www.amazon.de\/Nokia-13-Zoll-Smartphone-spritzgesch%C3%BCtzt-glossy-blue-64GB-4GB-RAM\/dp\/B0756RCPBZ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0756RCPBZ",
-    "asin_com": "B077YTNBQY",
-    "price_com": 359,
-    "amazon_com": "https:\/\/www.amazon.com\/Nokia-Polished-Unlocked-International-Warranty\/dp\/B077YTNBQY?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B077YTNBQY"
-  }, {
-    "name": "8 Sirocco",
-    "brand": "Nokia",
-    "imagelink": "images\\\\\/Nokia8Sirocco_ROW__power-phone.jpg?fm=png",
-    "price": 749,
-    "design": 5,
-    "display": 5.5,
-    "length": 141,
-    "width": 73,
-    "processor": 5,
-    "updates": 5,
-    "camera": 4,
-    "battery": 4,
-    "batterysize": 3260,
-    "storage": 128,
-    "memory": 6,
-    "sdslot": 1,
-    "simcards": 1,
-    "notch": 0,
-    "waterproof": "7",
-    "headphonejack": 0,
-    "totalscore": 0,
-    "asin_de": "B07B69SLMB",
-    "price_de": 703,
-    "amazon_de": "https:\/\/www.amazon.de\/Nokia-Sirocco-Hauptkamera-Frontkamera-spritzgesch%C3%BCtzt-Schwarz\/dp\/B07B69SLMB?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B69SLMB",
-    "asin_com": "B07CZ2P32C",
-    "price_com": 699,
-    "amazon_com": "https:\/\/www.amazon.com\/Nokia-Sirocco-TA-1005-Single-International\/dp\/B07CZ2P32C?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CZ2P32C"
-  }, {
-    "name": "Mi A1",
-    "brand": "Xiamoi",
-    "imagelink": "images\\\\\/y74WpwR.jpg",
-    "price": 185,
-    "design": 4,
-    "display": 5.5,
-    "length": 155,
-    "width": 76,
-    "processor": 3,
-    "updates": 5,
-    "camera": 3,
-    "battery": 3,
-    "batterysize": 3080,
-    "storage": 64,
-    "memory": 4,
-    "sdslot": 1,
-    "simcards": 2,
-    "notch": 0,
-    "waterproof": "0",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "B076493W9X",
-    "price_de": 188,
-    "amazon_de": "https:\/\/www.amazon.de\/Xiaomi-A1-black-Global-Version-schwarz\/dp\/B076493W9X?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076493W9X",
-    "asin_com": "B076HQ6FSY",
-    "price_com": 203,
-    "amazon_com": "https:\/\/www.amazon.com\/Xiaomi-Android-Cameras-Unlocked-Warranty\/dp\/B076HQ6FSY?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076HQ6FSY"
-  }, {
-    "name": "Mi MIX 2",
-    "brand": "Xiamoi",
-    "imagelink": "images\\\\\/7EIAsGt.jpg",
-    "price": 377,
-    "design": 5,
-    "display": 6,
-    "length": 152,
-    "width": 76,
-    "processor": 5,
-    "updates": 2,
-    "camera": 4,
-    "battery": 4,
-    "batterysize": 3400,
-    "storage": 64,
-    "memory": 6,
-    "sdslot": 0,
-    "simcards": 2,
-    "notch": 0,
-    "waterproof": "0",
-    "headphonejack": 0,
-    "totalscore": 0,
-    "asin_de": "B0784RQR88",
-    "price_de": 356,
-    "amazon_de": "https:\/\/www.amazon.de\/Xiaomi-Mi-Mix-black-EU-Ware-schwarz\/dp\/B0784RQR88?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0784RQR88",
-    "asin_com": "B079816Y5T",
-    "price_com": 409,
-    "amazon_com": "https:\/\/www.amazon.com\/Xiaomi-Black-Unlocked-Global-Warranty\/dp\/B079816Y5T?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079816Y5T"
-  }, {
-    "name": "U11 life",
-    "brand": "HTC",
-    "imagelink": "images\\\\\/61iBTjkp3yL._SY741_.jpg",
-    "price": 229,
-    "design": 4,
-    "display": 5.2,
-    "length": 149,
-    "width": 73,
-    "processor": 3,
-    "updates": 5,
-    "camera": 3,
-    "battery": 3,
-    "batterysize": 2600,
-    "storage": 32,
-    "memory": 3,
-    "sdslot": 2,
-    "simcards": 2,
-    "notch": 0,
-    "waterproof": "7",
-    "headphonejack": 0,
-    "totalscore": 0,
-    "asin_de": "B076HSNZ8H",
-    "price_de": 249,
-    "amazon_de": "https:\/\/www.amazon.de\/HTC-Smartphone-Display-Speicher-Sapphire-Blue\/dp\/B076HSNZ8H?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076HSNZ8H",
-    "asin_com": "B075GH2QP8",
-    "price_com": 389,
-    "amazon_com": "https:\/\/www.amazon.com\/HTC-U11-life-Unlocked-Sapphire\/dp\/B075GH2QP8?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075GH2QP8"
-  }, {
-    "name": "U11 Plus",
-    "brand": "HTC",
-    "imagelink": "images\\\\\/51XltEAiihL._SY879_.jpg",
-    "price": 641,
-    "design": 5,
-    "display": 6,
-    "length": 159,
-    "width": 75,
-    "processor": 5,
-    "updates": 4,
-    "camera": 4,
-    "battery": 5,
-    "batterysize": 3930,
-    "storage": 128,
-    "memory": 6,
-    "sdslot": 1,
-    "simcards": 2,
-    "notch": 0,
-    "waterproof": "8",
-    "headphonejack": 0,
-    "totalscore": 0,
-    "asin_de": "B077PMJM3M",
-    "price_de": 619,
-    "amazon_de": "https:\/\/www.amazon.de\/HTC-Smartphone-Display-Speicher-Android-Ceramic-Black\/dp\/B077PMJM3M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B077PMJM3M",
-    "asin_com": "B07849L28F",
-    "price_com": 654,
-    "amazon_com": "https:\/\/www.amazon.com\/HTC-U11-2Q4D100-6-0-inches-Unlocked\/dp\/B07849L28F?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07849L28F"
-  }, {
-    "name": "U12 Plus",
-    "brand": "HTC",
-    "imagelink": "images\\\\\/htcu12+.jpg",
-    "price": 797,
-    "design": 5,
-    "display": 6,
-    "length": 157,
-    "width": 74,
-    "processor": 5,
-    "updates": 4,
-    "camera": 4,
-    "battery": 4,
-    "batterysize": 3500,
-    "storage": 64,
-    "memory": 6,
-    "sdslot": 1,
-    "simcards": 2,
-    "notch": 0,
-    "waterproof": "8",
-    "headphonejack": 0,
-    "totalscore": 0,
-    "asin_de": "B07D4RN2WQ",
-    "price_de": 0,
-    "amazon_de": "",
-    "asin_com": "B07D2RC1YF",
-    "price_com": 0,
-    "amazon_com": ""
-  }, {
-    "name": "Pixel 2",
-    "brand": "Google",
-    "imagelink": "images\\\\\/81Ea5V2MehL._SY879_.jpg",
-    "price": 669,
-    "design": 4,
-    "display": 5,
-    "length": 146,
-    "width": 70,
-    "processor": 5,
-    "updates": 5,
-    "camera": 5,
-    "battery": 3,
-    "batterysize": 2700,
-    "storage": 64,
-    "memory": 4,
-    "sdslot": 0,
-    "simcards": 1,
-    "notch": 0,
-    "waterproof": "7",
-    "headphonejack": 0,
-    "totalscore": 0,
-    "asin_de": "B076L5FQ23",
-    "price_de": 679,
-    "amazon_de": "https:\/\/www.amazon.de\/Google-Pixel-64GB-Android-black-Schwarz\/dp\/B076L5FQ23?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076L5FQ23",
-    "asin_com": "B0766GHWM6",
-    "price_com": 654,
-    "amazon_com": "https:\/\/www.amazon.com\/Google-Pixel-Unlocked-64gb-Black\/dp\/B0766GHWM6?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0766GHWM6"
-  }, {
-    "name": "Pixel 2 XL",
-    "brand": "Google",
-    "imagelink": "images\\\\\/pixel2xl.jpg",
-    "price": 731,
-    "design": 4,
-    "display": 6,
-    "length": 158,
-    "width": 77,
-    "processor": 5,
-    "updates": 5,
-    "camera": 5,
-    "battery": 4,
-    "batterysize": 3520,
-    "storage": 64,
-    "memory": 4,
-    "sdslot": 0,
-    "simcards": 1,
-    "notch": 0,
-    "waterproof": "7",
-    "headphonejack": 0,
-    "totalscore": 0,
-    "asin_de": "B076KT8HT2",
-    "price_de": 724,
-    "amazon_de": "https:\/\/www.amazon.de\/Google-Pixel-XL-64GB-schwarz\/dp\/B076KT8HT2?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076KT8HT2",
-    "asin_com": "B0766TPHSH",
-    "price_com": 839,
-    "amazon_com": "https:\/\/www.amazon.com\/Google-Pixel-Unlocked-GSM-CDMA\/dp\/B0766TPHSH?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0766TPHSH"
-  }, {
-    "name": "5t (64GB)",
-    "brand": "OnePlus",
-    "imagelink": "images\\\\\/qPbTGxu.jpg",
-    "price": 499,
-    "design": 5,
-    "display": 6,
-    "length": 156,
-    "width": 75,
-    "processor": 5,
-    "updates": 4,
-    "camera": 4,
-    "battery": 4,
-    "batterysize": 3300,
-    "storage": 64,
-    "memory": 6,
-    "sdslot": 0,
-    "simcards": 2,
-    "notch": 0,
-    "waterproof": "0",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "B078WSQ4SC",
-    "price_de": 499,
-    "amazon_de": "https:\/\/www.amazon.de\/A5010-Smartphone-Touch-Display-interner-Speicher-Midnight-Schwarz\/dp\/B078WSQ4SC?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B078WSQ4SC",
-    "asin_com": "B0787NNSK9",
-    "price_com": 500,
-    "amazon_com": "https:\/\/www.amazon.com\/OnePlus-5T-A5010-64GB-International\/dp\/B0787NNSK9?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0787NNSK9"
-  }, {
-    "name": "5t (128GB)",
-    "brand": "OnePlus",
-    "imagelink": "images\\\\\/qPbTGxu.jpg",
-    "price": 559,
-    "design": 5,
-    "display": 6,
-    "length": 156,
-    "width": 75,
-    "processor": 5,
-    "updates": 4,
-    "camera": 4,
-    "battery": 4,
-    "batterysize": 3300,
-    "storage": 128,
-    "memory": 8,
-    "sdslot": 0,
-    "simcards": 2,
-    "notch": 0,
-    "waterproof": "0",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "B078WSFXPW",
-    "price_de": 559,
-    "amazon_de": "https:\/\/www.amazon.de\/A5010-Smartphone-Touch-Display-interner-Speicher-Midnight-Schwarz\/dp\/B078WSFXPW?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B078WSFXPW",
-    "asin_com": "B077TQN1BC",
-    "price_com": 617,
-    "amazon_com": "https:\/\/www.amazon.com\/OnePlus-5T-A5010-International-Warranty\/dp\/B077TQN1BC?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B077TQN1BC"
-  }, {
-    "name": "6 (64GB)",
-    "brand": "OnePlus",
-    "imagelink": "images\\\\\/oneplus6.jpg",
-    "price": 569,
-    "design": 5,
-    "display": 6.3,
-    "length": 156,
-    "width": 75,
-    "processor": 5,
-    "updates": 4,
-    "camera": 5,
-    "battery": 4,
-    "batterysize": 3300,
-    "storage": 64,
-    "memory": 6,
-    "sdslot": 0,
-    "simcards": 2,
-    "notch": 1,
-    "waterproof": "0",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "B07CHQHFDZ",
-    "price_de": 519,
-    "amazon_de": "https:\/\/www.amazon.de\/OnePlus-Smartphone-15-Zoll-Touch-Display-Mirror-Black\/dp\/B07CHQHFDZ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CHQHFDZ",
-    "asin_com": "B07CHQHFDZ",
-    "price_com": 628,
-    "amazon_com": "https:\/\/www.amazon.com\/OnePlus-A6003-Dual-SIM-Unlocked-Smartphone\/dp\/B07CHQHFDZ?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CHQHFDZ"
-  }, {
-    "name": "6 (128GB)",
-    "brand": "OnePlus",
-    "imagelink": "images\\\\\/oneplus6.jpg",
-    "price": 569,
-    "design": 5,
-    "display": 6,
-    "length": 156,
-    "width": 75,
-    "processor": 5,
-    "updates": 4,
-    "camera": 4,
-    "battery": 4,
-    "batterysize": 3300,
-    "storage": 128,
-    "memory": 8,
-    "sdslot": 0,
-    "simcards": 2,
-    "notch": 1,
-    "waterproof": "0",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "B07CK7KB95",
-    "price_de": 569,
-    "amazon_de": "https:\/\/www.amazon.de\/OnePlus-Smartphone-15-Zoll-Touch-Display-Mirror-Black\/dp\/B07CK7KB95?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CK7KB95",
-    "asin_com": "B07D6FVKX6",
-    "price_com": 699,
-    "amazon_com": "https:\/\/www.amazon.com\/OnePlus-Storage-Factory-Unlocked-Display\/dp\/B07D6FVKX6?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07D6FVKX6"
-  }, {
-    "name": "Honor 7X",
-    "brand": "Huawei",
-    "imagelink": "images\\\\\/9chGwId.jpg",
-    "price": 236,
-    "design": 4,
-    "display": 5.9,
-    "length": 157,
-    "width": 75,
-    "processor": 3,
-    "updates": 4,
-    "camera": 3,
-    "battery": 4,
-    "batterysize": 3340,
-    "storage": 64,
-    "memory": 4,
-    "sdslot": 1,
-    "simcards": 2,
-    "notch": 0,
-    "waterproof": "0",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "B0779STLGF",
-    "price_de": 242,
-    "amazon_de": "https:\/\/www.amazon.de\/Honor-Smartphone-Display-interner-Speicher-Grau\/dp\/B0779STLGF?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0779STLGF",
-    "asin_com": "B078NCL7GK",
-    "price_com": 199,
-    "amazon_com": "https:\/\/www.amazon.com\/Honor-7X-full-view-Dual-lens-Smartphone\/dp\/B078NCL7GK?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B078NCL7GK"
-  }, {
-    "name": "Honor 10",
-    "brand": "Huawei",
-    "imagelink": "images\\\\\/honor10.jpg",
-    "price": 388,
-    "design": 4,
-    "display": 5.8,
-    "length": 150,
-    "width": 71,
-    "processor": 5,
-    "updates": 4,
-    "camera": 4,
-    "battery": 4,
-    "batterysize": 3400,
-    "storage": 64,
-    "memory": 4,
-    "sdslot": 0,
-    "simcards": 2,
-    "notch": 1,
-    "waterproof": "0",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "B07CMSTFKQ",
-    "price_de": 368,
-    "amazon_de": "https:\/\/www.amazon.de\/Honor-Smartphone-Touch-Display-interner-Frontkamera-Schwarz\/dp\/B07CMSTFKQ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CMSTFKQ",
-    "asin_com": "B07CTFJVQC",
-    "price_com": 599,
-    "amazon_com": "https:\/\/www.amazon.com\/Huawei-Honor-10-COL-AL10-128GB\/dp\/B07CTFJVQC?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CTFJVQC"
-  }, {
-    "name": "Mate 10 Pro",
-    "brand": "Huawei",
-    "imagelink": "images\\\\\/huawei-mate10-pro.jpg",
-    "price": 559,
-    "design": 4,
-    "display": 6,
-    "length": 157,
-    "width": 75,
-    "processor": 3,
-    "updates": 3,
-    "camera": 4,
-    "battery": 5,
-    "batterysize": 4000,
-    "storage": 128,
-    "memory": 6,
-    "sdslot": 0,
-    "simcards": 2,
-    "notch": 0,
-    "waterproof": "7",
-    "headphonejack": 0,
-    "totalscore": 0,
-    "asin_de": "B076CHQGV9",
-    "price_de": 0,
-    "amazon_de": "",
-    "asin_com": "B077RYY3W5",
-    "price_com": 0,
-    "amazon_com": ""
-  }, {
-    "name": "P20",
-    "brand": "Huawei",
-    "imagelink": "images\\\\\/vqPQcia.jpg",
-    "price": 539,
-    "design": 5,
-    "display": 5.8,
-    "length": 149,
-    "width": 71,
-    "processor": 4,
-    "updates": 4,
-    "camera": 5,
-    "battery": 4,
-    "batterysize": 3400,
-    "storage": 128,
-    "memory": 4,
-    "sdslot": 0,
-    "simcards": 2,
-    "notch": 1,
-    "waterproof": "4",
-    "headphonejack": 0,
-    "totalscore": 0,
-    "asin_de": "B07BHD7MHL",
-    "price_de": 509,
-    "amazon_de": "https:\/\/www.amazon.de\/Smartphone-interner-Speicher-Android-Schwarz\/dp\/B07BHD7MHL?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BHD7MHL",
-    "asin_com": "B07CB315Y7",
-    "price_com": 567,
-    "amazon_com": "https:\/\/www.amazon.com\/Huawei-EML-L29-Unlocked-International-Warranty\/dp\/B07CB315Y7?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CB315Y7"
-  }, {
-    "name": "P20 lite",
-    "brand": "Huawei",
-    "imagelink": "images\\\\\/5wTSOmp.jpg",
-    "price": 318,
-    "design": 4,
-    "display": 5.8,
-    "length": 149,
-    "width": 71,
-    "processor": 4,
-    "updates": 4,
-    "camera": 3,
-    "battery": 4,
-    "batterysize": 3000,
-    "storage": 64,
-    "memory": 4,
-    "sdslot": 1,
-    "simcards": 2,
-    "notch": 1,
-    "waterproof": "0",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "B07BHDC9V6",
-    "price_de": 294,
-    "amazon_de": "https:\/\/www.amazon.de\/P20-Smartphone-interner-Speicher-Android-Schwarz\/dp\/B07BHDC9V6?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BHDC9V6",
-    "asin_com": "B07C5B98V7",
-    "price_com": 297,
-    "amazon_com": "https:\/\/www.amazon.com\/Huawei-ANE-LX3-Factory-Unlocked-Smartphone\/dp\/B07C5B98V7?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07C5B98V7"
-  }, {
-    "name": "P20 Pro",
-    "brand": "Huawei",
-    "imagelink": "images\\\\\/Vc0thgM.jpg",
-    "price": 787,
-    "design": 5,
-    "display": 6.1,
-    "length": 155,
-    "width": 74,
-    "processor": 5,
-    "updates": 4,
-    "camera": 5,
-    "battery": 5,
-    "batterysize": 4000,
-    "storage": 128,
-    "memory": 6,
-    "sdslot": 1,
-    "simcards": 2,
-    "notch": 1,
-    "waterproof": "7",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "B07BHDMHR1",
-    "price_de": 723,
-    "amazon_de": "https:\/\/www.amazon.de\/Smartphone-interner-Speicher-Android-Schwarz\/dp\/B07BHDMHR1?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BHDMHR1",
-    "asin_com": "B07CMMGLL3",
-    "price_com": 869,
-    "amazon_com": "https:\/\/www.amazon.com\/Huawei-CLT-L29-6-1-inches-Factory-Unlocked\/dp\/B07CMMGLL3?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CMMGLL3"
-  }, {
-    "name": "Phone",
-    "brand": "Essential",
-    "imagelink": "images\\\\\/OGr1dfB.jpg",
-    "price": 560,
-    "design": 5,
-    "display": 5.7,
-    "length": 142,
-    "width": 71,
-    "processor": 5,
-    "updates": 5,
-    "camera": 5,
-    "battery": 4,
-    "batterysize": 3040,
-    "storage": 128,
-    "memory": 4,
-    "sdslot": 0,
-    "simcards": 1,
-    "notch": 1,
-    "waterproof": "0",
-    "headphonejack": 0,
-    "totalscore": 0,
-    "asin_de": "B074BWGRKH",
-    "price_de": 659,
-    "amazon_de": "https:\/\/www.amazon.de\/Essential-Phone-Black-Edge-Edge-Moon\/dp\/B074BWGRKH?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074BWGRKH",
-    "asin_com": "B074BWGRKH",
-    "price_com": 499,
-    "amazon_com": "https:\/\/www.amazon.com\/Essential-Phone-Black-Edge-Edge\/dp\/B074BWGRKH?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074BWGRKH"
-  }, {
-    "name": "G6",
-    "brand": "LG",
-    "imagelink": "images\\\\\/814YBWa7gGL._SY879_.jpg",
-    "price": 324,
-    "design": 3,
-    "display": 5.7,
-    "length": 149,
-    "width": 72,
-    "processor": 4,
-    "updates": 4,
-    "camera": 4,
-    "battery": 4,
-    "batterysize": 3300,
-    "storage": 32,
-    "memory": 4,
-    "sdslot": 1,
-    "simcards": 1,
-    "notch": 0,
-    "waterproof": "8",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "B06XFRBM26",
-    "price_de": 294,
-    "amazon_de": "https:\/\/www.amazon.de\/LG-G6-Smartphone-Display-Speicher-Schwarz\/dp\/B06XFRBM26?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B06XFRBM26",
-    "asin_com": "B06XYQGPKT",
-    "price_com": 419,
-    "amazon_com": "https:\/\/www.amazon.com\/LG-G6-Unlocked-T-Mobile-Platinum\/dp\/B06XYQGPKT?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B06XYQGPKT"
-  }, {
-    "name": "V30",
-    "brand": "LG",
-    "imagelink": "images\\\\\/715GbwmYJjL._SY879_.jpg",
-    "price": 512,
-    "design": 3,
-    "display": 6,
-    "length": 152,
-    "width": 75,
-    "processor": 5,
-    "updates": 4,
-    "camera": 4,
-    "battery": 4,
-    "batterysize": 3300,
-    "storage": 64,
-    "memory": 4,
-    "sdslot": 2,
-    "simcards": 2,
-    "notch": 0,
-    "waterproof": "8",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "B075GYD539",
-    "price_de": 489,
-    "amazon_de": "https:\/\/www.amazon.de\/LG-Smartphone-Display-Speicher-Android-Cloud-Silver\/dp\/B075GYD539?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075GYD539",
-    "asin_com": "B07BL3TPY4",
-    "price_com": 589,
-    "amazon_com": "https:\/\/www.amazon.com\/LG-Factory-Unlocked-Smartphone-International\/dp\/B07BL3TPY4?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BL3TPY4"
-  }, {
-    "name": "Xperia XZ2",
-    "brand": "Sony",
-    "imagelink": "images\\\\\/lis9AWg.jpg",
-    "price": 623,
-    "design": 3,
-    "display": 5.7,
-    "length": 153,
-    "width": 72,
-    "processor": 5,
-    "updates": 4,
-    "camera": 4,
-    "battery": 4,
-    "batterysize": 3180,
-    "storage": 64,
-    "memory": 4,
-    "sdslot": 1,
-    "simcards": 2,
-    "notch": 0,
-    "waterproof": "8",
-    "headphonejack": 0,
-    "totalscore": 0,
-    "asin_de": "B079YSBTY7",
-    "price_de": 679,
-    "amazon_de": "https:\/\/www.amazon.de\/Sony-Smartphone-interner-Speicher-Dual-SIM-Liquid-Black\/dp\/B079YSBTY7?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079YSBTY7",
-    "asin_com": "B07BGXVDZP",
-    "price_com": 654,
-    "amazon_com": "https:\/\/www.amazon.com\/Sony-Xperia-5-7-inches-Factory-Unlocked\/dp\/B07BGXVDZP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BGXVDZP"
-  }, {
-    "name": "Xperia XZ2 Compact",
-    "brand": "Sony",
-    "imagelink": "images\\\\\/ExuzR25.jpg",
-    "price": 585,
-    "design": 3,
-    "display": 5,
-    "length": 135,
-    "width": 65,
-    "processor": 5,
-    "updates": 4,
-    "camera": 4,
-    "battery": 3,
-    "batterysize": 2870,
-    "storage": 64,
-    "memory": 4,
-    "sdslot": 1,
-    "simcards": 2,
-    "notch": 0,
-    "waterproof": "8",
-    "headphonejack": 0,
-    "totalscore": 0,
-    "asin_de": "B079YZ7ZS4",
-    "price_de": 549,
-    "amazon_de": "https:\/\/www.amazon.de\/Sony-Smartphone-interner-Speicher-Dual-SIM-Black\/dp\/B079YZ7ZS4?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079YZ7ZS4",
-    "asin_com": "B07C63NJRD",
-    "price_com": 599,
-    "amazon_com": "https:\/\/www.amazon.com\/Sony-Compact-Unlocked-Smartphone-International\/dp\/B07C63NJRD?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07C63NJRD"
-  }, {
-    "name": "iPhone 8 (64GB)",
-    "brand": "Apple",
-    "imagelink": "images\\\\\/xGEFWor.jpg",
-    "price": 665,
-    "design": 3,
-    "display": 4.7,
-    "length": 138,
-    "width": 67,
-    "processor": 5,
-    "updates": 5,
-    "camera": 5,
-    "battery": 3,
-    "batterysize": 1821,
-    "storage": 64,
-    "memory": 2,
-    "sdslot": 0,
-    "simcards": 1,
-    "notch": 0,
-    "waterproof": "7",
-    "headphonejack": 0,
-    "totalscore": 0,
-    "asin_de": "B075LXNGFH",
-    "price_de": 648,
-    "amazon_de": "https:\/\/www.amazon.de\/Apple-MQ6G2ZD-iPhone-Kamera-Space-Grau\/dp\/B075LXNGFH?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LXNGFH",
-    "asin_com": "B075QNGDZ9",
-    "price_com": 762,
-    "amazon_com": "https:\/\/www.amazon.com\/Apple-iPhone-Unlocked-Space-Gray\/dp\/B075QNGDZ9?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075QNGDZ9"
-  }, {
-    "name": "iPhone 8 (256GB)",
-    "brand": "Apple",
-    "imagelink": "images\\\\\/xGEFWor.jpg",
-    "price": 760,
-    "design": 3,
-    "display": 4.7,
-    "length": 138,
-    "width": 67,
-    "processor": 5,
-    "updates": 5,
-    "camera": 5,
-    "battery": 3,
-    "batterysize": 1821,
-    "storage": 256,
-    "memory": 2,
-    "sdslot": 0,
-    "simcards": 1,
-    "notch": 0,
-    "waterproof": "7",
-    "headphonejack": 0,
-    "totalscore": 0,
-    "asin_de": "B075LX5T7P",
-    "price_de": 969,
-    "amazon_de": "https:\/\/www.amazon.de\/Apple-MQ7C2ZD-iPhone-Zoll-space-Grau\/dp\/B075LX5T7P?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LX5T7P",
-    "asin_com": "B075QMTB3L",
-    "price_com": 979,
-    "amazon_com": "https:\/\/www.amazon.com\/Apple-iPhone-Unlocked-Space-Gray\/dp\/B075QMTB3L?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075QMTB3L"
-  }, {
-    "name": "iPhone 8 Plus (64GB)",
-    "brand": "Apple",
-    "imagelink": "images\\\\\/lq2EmJG.jpg",
-    "price": 783,
-    "design": 3,
-    "display": 5.5,
-    "length": 158,
-    "width": 78,
-    "processor": 5,
-    "updates": 5,
-    "camera": 5,
-    "battery": 4,
-    "batterysize": 2691,
-    "storage": 64,
-    "memory": 3,
-    "sdslot": 0,
-    "simcards": 1,
-    "notch": 0,
-    "waterproof": "7",
-    "headphonejack": 0,
-    "totalscore": 0,
-    "asin_de": "B075LZ4VQW",
-    "price_de": 766,
-    "amazon_de": "https:\/\/www.amazon.de\/Apple-MQ8L2ZD-iPhone-Kamera-Aufl%C3%B6sung-Space-Grey\/dp\/B075LZ4VQW?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LZ4VQW",
-    "asin_com": "B075QL8GRH",
-    "price_com": 920,
-    "amazon_com": "https:\/\/www.amazon.com\/Apple-iPhone-Unlocked-Space-Gray\/dp\/B075QL8GRH?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075QL8GRH"
-  }, {
-    "name": "iPhone 8 Plus (256GB)",
-    "brand": "Apple",
-    "imagelink": "images\\\\\/lq2EmJG.jpg",
-    "price": 926,
-    "design": 3,
-    "display": 5.5,
-    "length": 158,
-    "width": 78,
-    "processor": 5,
-    "updates": 5,
-    "camera": 5,
-    "battery": 4,
-    "batterysize": 2691,
-    "storage": 256,
-    "memory": 3,
-    "sdslot": 0,
-    "simcards": 1,
-    "notch": 0,
-    "waterproof": "7",
-    "headphonejack": 0,
-    "totalscore": 0,
-    "asin_de": "B075LY524V",
-    "price_de": 1047,
-    "amazon_de": "https:\/\/www.amazon.de\/Apple-MQ8P2ZD-iPhone-Kamera-Aufl%C3%B6sung-Space-Grey\/dp\/B075LY524V?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LY524V",
-    "asin_com": "B075QM2W4Z",
-    "price_com": 1059,
-    "amazon_com": "https:\/\/www.amazon.com\/Apple-iPhone-Unlocked-Space-Gray\/dp\/B075QM2W4Z?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075QM2W4Z"
-  }, {
-    "name": "iPhone X (64GB)",
-    "brand": "Apple",
-    "imagelink": "images\\\\\/UDV8YUp.jpg",
-    "price": 995,
-    "design": 5,
-    "display": 5.8,
-    "length": 144,
-    "width": 77,
-    "processor": 5,
-    "updates": 5,
-    "camera": 5,
-    "battery": 4,
-    "batterysize": 2716,
-    "storage": 64,
-    "memory": 3,
-    "sdslot": 0,
-    "simcards": 1,
-    "notch": 1,
-    "waterproof": "7",
-    "headphonejack": 0,
-    "totalscore": 0,
-    "asin_de": "B075LXNK24",
-    "price_de": 979,
-    "amazon_de": "https:\/\/www.amazon.de\/Apple-MQAC2ZD-iPhone-Kamera-Aufl%C3%B6sung-Space-Grey\/dp\/B075LXNK24?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LXNK24",
-    "asin_com": "B075QN8NDH",
-    "price_com": 1138,
-    "amazon_com": "https:\/\/www.amazon.com\/Apple-iPhone-Fully-Unlocked-5-8\/dp\/B075QN8NDH?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075QN8NDH"
-  }, {
-    "name": "iPhone X (256GB)",
-    "brand": "Apple",
-    "imagelink": "images\\\\\/UDV8YUp.jpg",
-    "price": 1150,
-    "design": 5,
-    "display": 5.8,
-    "length": 144,
-    "width": 77,
-    "processor": 5,
-    "updates": 5,
-    "camera": 5,
-    "battery": 4,
-    "batterysize": 2716,
-    "storage": 256,
-    "memory": 3,
-    "sdslot": 0,
-    "simcards": 1,
-    "notch": 1,
-    "waterproof": "7",
-    "headphonejack": 0,
-    "totalscore": 0,
-    "asin_de": "B075LWF4C3",
-    "price_de": 1120,
-    "amazon_de": "https:\/\/www.amazon.de\/Apple-MQAF2ZD-iPhone-Kamera-Aufl%C3%B6sung-Space-Grey\/dp\/B075LWF4C3?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075LWF4C3",
-    "asin_com": "B075QLRSPK",
-    "price_com": 1323,
-    "amazon_com": "https:\/\/www.amazon.com\/Apple-iPhone-Fully-Unlocked-5-8\/dp\/B075QLRSPK?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B075QLRSPK"
-  }, {
-    "name": "Moto X4",
-    "brand": "Motorola",
-    "imagelink": "images\\\\\/61eEr3fsroL._SY879_.jpg",
-    "price": 289,
-    "design": 3,
-    "display": 5.2,
-    "length": 148,
-    "width": 73,
-    "processor": 3,
-    "updates": 3,
-    "camera": 4,
-    "battery": 3,
-    "batterysize": 3000,
-    "storage": 32,
-    "memory": 3,
-    "sdslot": 1,
-    "simcards": 2,
-    "notch": 0,
-    "waterproof": "7",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "B074MHFGFS",
-    "price_de": 256,
-    "amazon_de": "https:\/\/www.amazon.de\/Motorola-Smartphone-Kamera-Android-schwarz\/dp\/B074MHFGFS?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074MHFGFS",
-    "asin_com": "B07BDW3GV8",
-    "price_com": 349,
-    "amazon_com": "https:\/\/www.amazon.com\/Motorola-Moto-X4-XT1900-2-Unlocked\/dp\/B07BDW3GV8?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BDW3GV8"
-  }, {
-    "name": "Moto Z2 Play",
-    "brand": "Motorola",
-    "imagelink": "images\\\\\/motoz2play.jpg",
-    "price": 249,
-    "design": 3,
-    "display": 5.5,
-    "length": 156,
-    "width": 76,
-    "processor": 3,
-    "updates": 3,
-    "camera": 3,
-    "battery": 3,
-    "batterysize": 3000,
-    "storage": 64,
-    "memory": 4,
-    "sdslot": 1,
-    "simcards": 2,
-    "notch": 0,
-    "waterproof": "4",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "B0747WYLTX",
-    "price_de": 289,
-    "amazon_de": "https:\/\/www.amazon.de\/Motorola-Smartphone-Android-SoundBoost-Speaker-Black-Lunar-Gray\/dp\/B0747WYLTX?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0747WYLTX",
-    "asin_com": "B073SBYMK7",
-    "price_com": 368,
-    "amazon_com": "https:\/\/www.amazon.com\/Motorola-XT1710-06-Factory-Unlocked-Warranty\/dp\/B073SBYMK7?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B073SBYMK7"
-  }, {
-    "name": "Moto Z2 Force",
-    "brand": "Motorola",
-    "imagelink": "images\\\\\/motoz2force.jpg",
-    "price": 565,
-    "design": 3,
-    "display": 5.5,
-    "length": 156,
-    "width": 76,
-    "processor": 4,
-    "updates": 3,
-    "camera": 4,
-    "battery": 3,
-    "batterysize": 2730,
-    "storage": 64,
-    "memory": 6,
-    "sdslot": 1,
-    "simcards": 2,
-    "notch": 0,
-    "waterproof": "4",
-    "headphonejack": 0,
-    "totalscore": 0,
-    "asin_de": "B074MH8DJ5",
-    "price_de": 418,
-    "amazon_de": "https:\/\/www.amazon.de\/Motorola-Smartphone-Speicher-Android-schwarz-Super-Black\/dp\/B074MH8DJ5?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074MH8DJ5",
-    "asin_com": "B0782Z4YNG",
-    "price_com": 429,
-    "amazon_com": "https:\/\/www.amazon.com\/Motorola-Moto-XT178901-Certified-Refurbished\/dp\/B0782Z4YNG?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0782Z4YNG"
-  }, {
-    "name": "Moto G6",
-    "brand": "Motorola",
-    "imagelink": "images\\\\\/v3WB6HT.jpg",
-    "price": 249,
-    "design": 3,
-    "display": 5.7,
-    "length": 154,
-    "width": 72,
-    "processor": 3,
-    "updates": 3,
-    "camera": 3,
-    "battery": 3,
-    "batterysize": 3000,
-    "storage": 32,
-    "memory": 3,
-    "sdslot": 1,
-    "simcards": 2,
-    "notch": 0,
-    "waterproof": "4",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "B07BXWZ8ZG",
-    "price_de": 229,
-    "amazon_de": "https:\/\/www.amazon.de\/Motorola-Smartphone-interner-Speicher-Android-Deep-Indigo\/dp\/B07BXWZ8ZG?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BXWZ8ZG",
-    "asin_com": "B079Z792J7",
-    "price_com": 0,
-    "amazon_com": "https:\/\/www.amazon.com\/Motorola-Moto-Factory-Unlocked-Phone\/dp\/B079Z792J7?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079Z792J7"
-  }, {
-    "name": "Moto G6 [Amazon]",
-    "brand": "Motorola",
-    "imagelink": "images\\\\\/motog6amazonexclusive.jpg",
-    "price": 269,
-    "design": 3,
-    "display": 5.7,
-    "length": 154,
-    "width": 72,
-    "processor": 3,
-    "updates": 3,
-    "camera": 3,
-    "battery": 3,
-    "batterysize": 3000,
-    "storage": 64,
-    "memory": 4,
-    "sdslot": 1,
-    "simcards": 2,
-    "notch": 0,
-    "waterproof": "4",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "B079MT5K9N",
-    "price_de": 269,
-    "amazon_de": "https:\/\/www.amazon.de\/Motorola-Smartphone-interner-Speicher-Exklusiv-Deep-Indigo\/dp\/B079MT5K9N?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079MT5K9N",
-    "asin_com": "B079Z3DX1W",
-    "price_com": 234,
-    "amazon_com": "https:\/\/www.amazon.com\/Moto-G6-Unlocked-T-Mobile-Exclusive\/dp\/B079Z3DX1W?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079Z3DX1W"
-  }, {
-    "name": "Moto G6 Plus",
-    "brand": "Motorola",
-    "imagelink": "images\\\\\/phQJx7z.jpg",
-    "price": 299,
-    "design": 3,
-    "display": 5.9,
-    "length": 160,
-    "width": 76,
-    "processor": 3,
-    "updates": 3,
-    "camera": 4,
-    "battery": 3,
-    "batterysize": 3200,
-    "storage": 64,
-    "memory": 3,
-    "sdslot": 1,
-    "simcards": 2,
-    "notch": 0,
-    "waterproof": "4",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "B07CBC869D",
-    "price_de": 299,
-    "amazon_de": "https:\/\/www.amazon.de\/Motorola-Smartphone-interner-Speicher-Android-Deep-Indigo\/dp\/B07CBC869D?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CBC869D",
-    "asin_com": "B07CHWMYHP",
-    "price_com": 382,
-    "amazon_com": "https:\/\/www.amazon.com\/Motorola-XT1926-7-Unlocked-Smartphone-International\/dp\/B07CHWMYHP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CHWMYHP"
-  }, {
-    "name": "Moto G6 Play",
-    "brand": "Motorola",
-    "imagelink": "images\\\\\/JQ7Vnzc.jpg",
-    "price": 199,
-    "design": 3,
-    "display": 5.7,
-    "length": 154,
-    "width": 72,
-    "processor": 2,
-    "updates": 2,
-    "camera": 3,
-    "battery": 5,
-    "batterysize": 4000,
-    "storage": 32,
-    "memory": 3,
-    "sdslot": 1,
-    "simcards": 2,
-    "notch": 0,
-    "waterproof": "4",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "B07BXFRK2Q",
-    "price_de": 199,
-    "amazon_de": "https:\/\/www.amazon.de\/Motorola-Smartphone-interner-Speicher-Android-Deep-Indigo\/dp\/B07BXFRK2Q?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BXFRK2Q",
-    "asin_com": "B07CHWTWYP",
-    "price_com": 210,
-    "amazon_com": "https:\/\/www.amazon.com\/Motorola-XT1922-5-Unlocked-Smartphone-International\/dp\/B07CHWTWYP?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CHWTWYP"
-  }, {
-    "name": "Moto E4",
-    "brand": "Motorola",
-    "imagelink": "images\\\\\/71r21xr50KL._SY879_.jpg",
-    "price": 110,
-    "design": 2,
-    "display": 5,
-    "length": 144,
-    "width": 73,
-    "processor": 2,
-    "updates": 2,
-    "camera": 2,
-    "battery": 2,
-    "batterysize": 2800,
-    "storage": 16,
-    "memory": 2,
-    "sdslot": 1,
-    "simcards": 2,
-    "notch": 0,
-    "waterproof": "0",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "B073Q2D8RJ",
-    "price_de": 99,
-    "amazon_de": "https:\/\/www.amazon.de\/Motorola-Moto-Smartphone-Display-Android-Iron-Gray\/dp\/B073Q2D8RJ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B073Q2D8RJ",
-    "asin_com": "B077Y79RBY",
-    "price_com": 119,
-    "amazon_com": "https:\/\/www.amazon.com\/Moto-4th-Generation-Unlocked-Exclusive\/dp\/B077Y79RBY?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B077Y79RBY"
-  }, {
-    "name": "Moto E4 Plus",
-    "brand": "Motorola",
-    "imagelink": "images\\\\\/motoe4plus.jpg",
-    "price": 139,
-    "design": 2,
-    "display": 5.5,
-    "length": 155,
-    "width": 78,
-    "processor": 2,
-    "updates": 2,
-    "camera": 2,
-    "battery": 5,
-    "batterysize": 5000,
-    "storage": 16,
-    "memory": 3,
-    "sdslot": 1,
-    "simcards": 2,
-    "notch": 0,
-    "waterproof": "0",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "B072C8DPKW",
-    "price_de": 185,
-    "amazon_de": "https:\/\/www.amazon.de\/Motorola-Smartphone-Display-Speicher-Dual-SIM-Iron-Grau\/dp\/B072C8DPKW?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B072C8DPKW",
-    "asin_com": "B078HTK8SW",
-    "price_com": 133,
-    "amazon_com": "https:\/\/www.amazon.com\/Motorola-Moto-E4-Plus-International\/dp\/B078HTK8SW?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B078HTK8SW"
-  }, {
-    "name": "Moto G5S",
-    "brand": "Motorola",
-    "imagelink": "images\\\\\/S9FO30n.jpg",
-    "price": 147,
-    "design": 3,
-    "display": 5.2,
-    "length": 150,
-    "width": 74,
-    "processor": 3,
-    "updates": 2,
-    "camera": 3,
-    "battery": 3,
-    "batterysize": 3000,
-    "storage": 32,
-    "memory": 3,
-    "sdslot": 1,
-    "simcards": 2,
-    "notch": 0,
-    "waterproof": "4",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "B074MGP8GJ",
-    "price_de": 145,
-    "amazon_de": "https:\/\/www.amazon.de\/Motorola-Moto-Smartphone-Android-Mondgrau\/dp\/B074MGP8GJ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074MGP8GJ",
-    "asin_com": "",
-    "price_com": 0,
-    "amazon_com": ""
-  }, {
-    "name": "Moto G5S Plus",
-    "brand": "Motorola",
-    "imagelink": "images\\\\\/tdlPqFG.jpg",
-    "price": 200,
-    "design": 3,
-    "display": 5.5,
-    "length": 154,
-    "width": 76,
-    "processor": 3,
-    "updates": 2,
-    "camera": 3,
-    "battery": 3,
-    "batterysize": 3000,
-    "storage": 32,
-    "memory": 3,
-    "sdslot": 1,
-    "simcards": 2,
-    "notch": 0,
-    "waterproof": "4",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "B074SR2DVT",
-    "price_de": 194,
-    "amazon_de": "https:\/\/www.amazon.de\/Motorola-Smartphone-Kamera-Android-lunar-Gray\/dp\/B074SR2DVT?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074SR2DVT",
-    "asin_com": "B078RBVVCV",
-    "price_com": 211,
-    "amazon_com": "https:\/\/www.amazon.com\/Motorola-XT1805-Factory-Unlocked-International\/dp\/B078RBVVCV?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B078RBVVCV"
-  }, {
-    "name": "Galaxy A5",
-    "brand": "Samsung",
-    "imagelink": "images\\\\\/wrIcHyN.jpg",
-    "price": 236,
-    "design": 1,
-    "display": 5.2,
-    "length": 146,
-    "width": 71,
-    "processor": 3,
-    "updates": 3,
-    "camera": 3,
-    "battery": 3,
-    "batterysize": 3000,
-    "storage": 32,
-    "memory": 3,
-    "sdslot": 1,
-    "simcards": 1,
-    "notch": 0,
-    "waterproof": "8",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "B01N6M3K34",
-    "price_de": 225,
-    "amazon_de": "https:\/\/www.amazon.de\/Samsung-Smartphone-Touch-Display-Speicher-Android-schwarz\/dp\/B01N6M3K34?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B01N6M3K34",
-    "asin_com": "B01N4PYSDH",
-    "price_com": 307,
-    "amazon_com": "https:\/\/www.amazon.com\/Samsung-SM-A520F-Unlocked-America-Warranty\/dp\/B01N4PYSDH?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B01N4PYSDH"
-  }, {
-    "name": "Galaxy S9",
-    "brand": "Samsung",
-    "imagelink": "images\\\\\/71uI%2BnAzruL._SY879_.jpg",
-    "price": 629,
-    "design": 5,
-    "display": 5.8,
-    "length": 148,
-    "width": 68,
-    "processor": 5,
-    "updates": 4,
-    "camera": 5,
-    "battery": 4,
-    "batterysize": 3000,
-    "storage": 64,
-    "memory": 4,
-    "sdslot": 1,
-    "simcards": 2,
-    "notch": 0,
-    "waterproof": "8",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "B079SQ5VHX",
-    "price_de": 570,
-    "amazon_de": "https:\/\/www.amazon.de\/Samsung-Smartphone-Touch-Display-interner-Speicher-Midnight-Black\/dp\/B079SQ5VHX?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079SQ5VHX",
-    "asin_com": "",
-    "price_com": 0,
-    "amazon_com": ""
-  }, {
-    "name": "Galaxy S9",
-    "brand": "Samsung",
-    "imagelink": "images\\\\\/71uI%2BnAzruL._SY879_.jpg",
-    "price": 629,
-    "design": 5,
-    "display": 5.8,
-    "length": 148,
-    "width": 68,
-    "processor": 5,
-    "updates": 4,
-    "camera": 5,
-    "battery": 4,
-    "batterysize": 3000,
-    "storage": 64,
-    "memory": 4,
-    "sdslot": 1,
-    "simcards": 1,
-    "notch": 0,
-    "waterproof": "8",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "",
-    "price_de": 0,
-    "amazon_de": "",
-    "asin_com": "B079H6RLKQ",
-    "price_com": 719,
-    "amazon_com": "https:\/\/www.amazon.com\/Samsung-Galaxy-S9-Unlocked-Smartphone\/dp\/B079H6RLKQ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079H6RLKQ"
-  }, {
-    "name": "Galaxy S9 Plus",
-    "brand": "Samsung",
-    "imagelink": "images\\\\\/71dd-elhT7L._SY879_.jpg",
-    "price": 769,
-    "design": 5,
-    "display": 6.2,
-    "length": 158,
-    "width": 74,
-    "processor": 5,
-    "updates": 4,
-    "camera": 5,
-    "battery": 4,
-    "batterysize": 3500,
-    "storage": 64,
-    "memory": 6,
-    "sdslot": 1,
-    "simcards": 2,
-    "notch": 0,
-    "waterproof": "8",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "B079SNGV9P",
-    "price_de": 774,
-    "amazon_de": "https:\/\/www.amazon.de\/Samsung-Smartphone-Touch-Display-interner-Speicher-Midnight-Black\/dp\/B079SNGV9P?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079SNGV9P",
-    "asin_com": "",
-    "price_com": 0,
-    "amazon_com": ""
-  }, {
-    "name": "Galaxy S9 Plus",
-    "brand": "Samsung",
-    "imagelink": "images\\\\\/71dd-elhT7L._SY879_.jpg",
-    "price": 769,
-    "design": 5,
-    "display": 6.2,
-    "length": 158,
-    "width": 74,
-    "processor": 5,
-    "updates": 4,
-    "camera": 5,
-    "battery": 4,
-    "batterysize": 3500,
-    "storage": 64,
-    "memory": 6,
-    "sdslot": 1,
-    "simcards": 1,
-    "notch": 0,
-    "waterproof": "8",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "",
-    "price_de": 0,
-    "amazon_de": "",
-    "asin_com": "B079JXY4TJ",
-    "price_com": 819,
-    "amazon_com": "https:\/\/www.amazon.com\/Samsung-Galaxy-S9-Unlocked-Smartphone\/dp\/B079JXY4TJ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B079JXY4TJ"
-  }, {
-    "name": "Galaxy S8 Note",
-    "brand": "Samsung",
-    "imagelink": "images\\\\\/PQYBIud.jpg",
-    "price": 643,
-    "design": 5,
-    "display": 6.3,
-    "length": 163,
-    "width": 75,
-    "processor": 5,
-    "updates": 4,
-    "camera": 5,
-    "battery": 4,
-    "batterysize": 3300,
-    "storage": 64,
-    "memory": 6,
-    "sdslot": 1,
-    "simcards": 2,
-    "notch": 0,
-    "waterproof": "8",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "B074PBH2P4",
-    "price_de": 607,
-    "amazon_de": "https:\/\/www.amazon.de\/Samsung-Smartphone-Touch-Display-interner-Speicher-midnight-black\/dp\/B074PBH2P4?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B074PBH2P4",
-    "asin_com": "",
-    "price_com": 0,
-    "amazon_com": ""
-  }, {
-    "name": "Galaxy S8 Note",
-    "brand": "Samsung",
-    "imagelink": "images\\\\\/PQYBIud.jpg",
-    "price": 643,
-    "design": 5,
-    "display": 6.3,
-    "length": 163,
-    "width": 75,
-    "processor": 5,
-    "updates": 4,
-    "camera": 5,
-    "battery": 4,
-    "batterysize": 3300,
-    "storage": 64,
-    "memory": 6,
-    "sdslot": 1,
-    "simcards": 1,
-    "notch": 0,
-    "waterproof": "8",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "",
-    "price_de": 0,
-    "amazon_de": "",
-    "asin_com": "B07536MYBQ",
-    "price_com": 749,
-    "amazon_com": "https:\/\/www.amazon.com\/Samsung-SM-N950UZKAXAA-Version-Factory-Unlocked\/dp\/B07536MYBQ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07536MYBQ"
-  }, {
-    "name": "Galaxy S8",
-    "brand": "Samsung",
-    "imagelink": "images\\\\\/6gY3U53.jpg",
-    "price": 476,
-    "design": 5,
-    "display": 5.8,
-    "length": 148,
-    "width": 68,
-    "processor": 5,
-    "updates": 3,
-    "camera": 4,
-    "battery": 4,
-    "batterysize": 3000,
-    "storage": 64,
-    "memory": 4,
-    "sdslot": 1,
-    "simcards": 1,
-    "notch": 0,
-    "waterproof": "8",
-    "headphonejack": 1,
-    "totalscore": 0,
-    "asin_de": "B06XJ49G5B",
-    "price_de": 467,
-    "amazon_de": "https:\/\/www.amazon.de\/Samsung-Smartphone-Touch-Display-interner-Speicher-midnight-black\/dp\/B06XJ49G5B?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B06XJ49G5B",
-    "asin_com": "B06Y137TLR",
-    "price_com": 538,
-    "amazon_com": "https:\/\/www.amazon.com\/Samsung-Galaxy-64GB-Unlocked-Phone\/dp\/B06Y137TLR?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B06Y137TLR"
-  }]
+      "name": "6.1",
+      "brand": "Nokia",
+      "imagelink": "images\\\\\/TheNewNokia6_hardware-phone.jpg?fm=png",
+      "smallestPrice": 0,
+      "design": 4,
+      "display": 5.5,
+      "length": 149,
+      "width": 76,
+      "processor": 3,
+      "updates": 5,
+      "camera": 3,
+      "battery": 3,
+      "batterysize": 3000,
+      "storage": 32,
+      "memory": 3,
+      "sdslot": 1,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white/iron", "B07B6BBC35"],
+          ["white/iron", "B07B6DN2ZJ", "with screen protector"],
+          ["black/copper", "B07B6CMJ7K"],
+          ["black/copper", "B07B6C32JX", "with screen protector"]
+        ],
+        "com": [
+          ["white/iron", "B07BVQ66V6", "Unlocked"],
+          ["black/copper", "B07B4KPFKM", "AT&T/T-Mobile"],
+          ["black/copper", "B07BVDG8P1", "Unlocked"]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "7 plus",
+      "brand": "Nokia",
+      "imagelink": "images\\\\\/Nokia7plus_ROW_hardware-phone.jpg?fm=png",
+      "smallestPrice": 0,
+      "design": 4,
+      "display": 6,
+      "length": 158,
+      "width": 76,
+      "processor": 4,
+      "updates": 5,
+      "camera": 4,
+      "battery": 5,
+      "batterysize": 3800,
+      "storage": 64,
+      "memory": 4,
+      "sdslot": 1,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "0",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white/iron", "B07B68D9KP"],
+          ["white/iron", "B07B65SGKJ", "with screen protector"],
+          ["black/copper", "B07B68N35M"],
+          ["black/copper", "B07B6DMZN6", "with screen protector"]
+        ],
+        "com": [
+          ["white/iron", "B07BVQ92Q5", "Unlocked"],
+          ["black/copper", "B07BVS4LMN", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "8",
+      "brand": "Nokia",
+      "imagelink": "images\\\\\/nokia8normal.jpg",
+      "smallestPrice": 0,
+      "design": 4,
+      "display": 5.3,
+      "length": 152,
+      "width": 74,
+      "processor": 5,
+      "updates": 4,
+      "camera": 4,
+      "battery": 3,
+      "batterysize": 3090,
+      "storage": 64,
+      "memory": 4,
+      "sdslot": 1,
+      "simcards": 1,
+      "notch": 0,
+      "waterproof": "4",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "8 Sirocco",
+      "brand": "Nokia",
+      "imagelink": "images\\\\\/Nokia8Sirocco_ROW__power-phone.jpg?fm=png",
+      "smallestPrice": 0,
+      "design": 5,
+      "display": 5.5,
+      "length": 141,
+      "width": 73,
+      "processor": 5,
+      "updates": 5,
+      "camera": 4,
+      "battery": 4,
+      "batterysize": 3260,
+      "storage": 128,
+      "memory": 6,
+      "sdslot": 1,
+      "simcards": 1,
+      "notch": 0,
+      "waterproof": "7",
+      "headphonejack": 0,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "Mi A1",
+      "brand": "Xiamoi",
+      "imagelink": "images\\\\\/y74WpwR.jpg",
+      "smallestPrice": 0,
+      "design": 4,
+      "display": 5.5,
+      "length": 155,
+      "width": 76,
+      "processor": 3,
+      "updates": 5,
+      "camera": 3,
+      "battery": 3,
+      "batterysize": 3080,
+      "storage": 64,
+      "memory": 4,
+      "sdslot": 1,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "0",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "Mi MIX 2",
+      "brand": "Xiamoi",
+      "imagelink": "images\\\\\/7EIAsGt.jpg",
+      "smallestPrice": 0,
+      "design": 5,
+      "display": 6,
+      "length": 152,
+      "width": 76,
+      "processor": 5,
+      "updates": 2,
+      "camera": 4,
+      "battery": 4,
+      "batterysize": 3400,
+      "storage": 64,
+      "memory": 6,
+      "sdslot": 0,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "0",
+      "headphonejack": 0,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "U11 life",
+      "brand": "HTC",
+      "imagelink": "images\\\\\/61iBTjkp3yL._SY741_.jpg",
+      "smallestPrice": 0,
+      "design": 4,
+      "display": 5.2,
+      "length": 149,
+      "width": 73,
+      "processor": 3,
+      "updates": 5,
+      "camera": 3,
+      "battery": 3,
+      "batterysize": 2600,
+      "storage": 32,
+      "memory": 3,
+      "sdslot": 2,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "7",
+      "headphonejack": 0,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "U11 Plus",
+      "brand": "HTC",
+      "imagelink": "images\\\\\/51XltEAiihL._SY879_.jpg",
+      "smallestPrice": 0,
+      "design": 5,
+      "display": 6,
+      "length": 159,
+      "width": 75,
+      "processor": 5,
+      "updates": 4,
+      "camera": 5,
+      "battery": 5,
+      "batterysize": 3930,
+      "storage": 128,
+      "memory": 6,
+      "sdslot": 1,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "8",
+      "headphonejack": 0,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "U12 Plus",
+      "brand": "HTC",
+      "imagelink": "images\\\\\/htcu12+.jpg",
+      "smallestPrice": 0,
+      "design": 5,
+      "display": 6,
+      "length": 157,
+      "width": 74,
+      "processor": 5,
+      "updates": 4,
+      "camera": 5,
+      "battery": 4,
+      "batterysize": 3500,
+      "storage": 64,
+      "memory": 6,
+      "sdslot": 1,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "8",
+      "headphonejack": 0,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "Pixel 2",
+      "brand": "Google",
+      "imagelink": "images\\\\\/81Ea5V2MehL._SY879_.jpg",
+      "smallestPrice": 0,
+      "design": 4,
+      "display": 5,
+      "length": 146,
+      "width": 70,
+      "processor": 5,
+      "updates": 5,
+      "camera": 5,
+      "battery": 3,
+      "batterysize": 2700,
+      "storage": 64,
+      "memory": 4,
+      "sdslot": 0,
+      "simcards": 1,
+      "notch": 0,
+      "waterproof": "7",
+      "headphonejack": 0,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "Pixel 2 XL",
+      "brand": "Google",
+      "imagelink": "images\\\\\/pixel2xl.jpg",
+      "smallestPrice": 0,
+      "design": 4,
+      "display": 6,
+      "length": 158,
+      "width": 77,
+      "processor": 5,
+      "updates": 5,
+      "camera": 5,
+      "battery": 4,
+      "batterysize": 3520,
+      "storage": 64,
+      "memory": 4,
+      "sdslot": 0,
+      "simcards": 1,
+      "notch": 0,
+      "waterproof": "7",
+      "headphonejack": 0,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "5t (64GB)",
+      "brand": "OnePlus",
+      "imagelink": "images\\\\\/qPbTGxu.jpg",
+      "smallestPrice": 0,
+      "design": 5,
+      "display": 6,
+      "length": 156,
+      "width": 75,
+      "processor": 5,
+      "updates": 4,
+      "camera": 4,
+      "battery": 4,
+      "batterysize": 3300,
+      "storage": 64,
+      "memory": 6,
+      "sdslot": 0,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "0",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "5t (128GB)",
+      "brand": "OnePlus",
+      "imagelink": "images\\\\\/qPbTGxu.jpg",
+      "smallestPrice": 0,
+      "design": 5,
+      "display": 6,
+      "length": 156,
+      "width": 75,
+      "processor": 5,
+      "updates": 4,
+      "camera": 4,
+      "battery": 4,
+      "batterysize": 3300,
+      "storage": 128,
+      "memory": 8,
+      "sdslot": 0,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "0",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "6 (64GB)",
+      "brand": "OnePlus",
+      "imagelink": "images\\\\\/oneplus6.jpg",
+      "smallestPrice": 0,
+      "design": 5,
+      "display": 6.3,
+      "length": 156,
+      "width": 75,
+      "processor": 5,
+      "updates": 4,
+      "camera": 5,
+      "battery": 4,
+      "batterysize": 3300,
+      "storage": 64,
+      "memory": 6,
+      "sdslot": 0,
+      "simcards": 2,
+      "notch": 1,
+      "waterproof": "0",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "6 (128GB)",
+      "brand": "OnePlus",
+      "imagelink": "images\\\\\/oneplus6.jpg",
+      "smallestPrice": 0,
+      "design": 5,
+      "display": 6,
+      "length": 156,
+      "width": 75,
+      "processor": 5,
+      "updates": 4,
+      "camera": 4,
+      "battery": 4,
+      "batterysize": 3300,
+      "storage": 128,
+      "memory": 8,
+      "sdslot": 0,
+      "simcards": 2,
+      "notch": 1,
+      "waterproof": "0",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "Honor 7X",
+      "brand": "Huawei",
+      "imagelink": "images\\\\\/9chGwId.jpg",
+      "smallestPrice": 0,
+      "design": 4,
+      "display": 5.9,
+      "length": 157,
+      "width": 75,
+      "processor": 3,
+      "updates": 4,
+      "camera": 3,
+      "battery": 4,
+      "batterysize": 3340,
+      "storage": 64,
+      "memory": 4,
+      "sdslot": 1,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "0",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "Honor 10",
+      "brand": "Huawei",
+      "imagelink": "images\\\\\/honor10.jpg",
+      "smallestPrice": 0,
+      "design": 4,
+      "display": 5.8,
+      "length": 150,
+      "width": 71,
+      "processor": 5,
+      "updates": 4,
+      "camera": 4,
+      "battery": 4,
+      "batterysize": 3400,
+      "storage": 64,
+      "memory": 4,
+      "sdslot": 0,
+      "simcards": 2,
+      "notch": 1,
+      "waterproof": "0",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "Mate 10 Pro",
+      "brand": "Huawei",
+      "imagelink": "images\\\\\/huawei-mate10-pro.jpg",
+      "smallestPrice": 0,
+      "design": 4,
+      "display": 6,
+      "length": 157,
+      "width": 75,
+      "processor": 3,
+      "updates": 3,
+      "camera": 4,
+      "battery": 5,
+      "batterysize": 4000,
+      "storage": 128,
+      "memory": 6,
+      "sdslot": 0,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "7",
+      "headphonejack": 0,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "P20",
+      "brand": "Huawei",
+      "imagelink": "images\\\\\/vqPQcia.jpg",
+      "smallestPrice": 0,
+      "design": 5,
+      "display": 5.8,
+      "length": 149,
+      "width": 71,
+      "processor": 4,
+      "updates": 4,
+      "camera": 5,
+      "battery": 4,
+      "batterysize": 3400,
+      "storage": 128,
+      "memory": 4,
+      "sdslot": 0,
+      "simcards": 2,
+      "notch": 1,
+      "waterproof": "4",
+      "headphonejack": 0,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "P20 lite",
+      "brand": "Huawei",
+      "imagelink": "images\\\\\/5wTSOmp.jpg",
+      "smallestPrice": 0,
+      "design": 4,
+      "display": 5.8,
+      "length": 149,
+      "width": 71,
+      "processor": 4,
+      "updates": 3,
+      "camera": 3,
+      "battery": 4,
+      "batterysize": 3000,
+      "storage": 64,
+      "memory": 4,
+      "sdslot": 1,
+      "simcards": 2,
+      "notch": 1,
+      "waterproof": "0",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "P20 Pro",
+      "brand": "Huawei",
+      "imagelink": "images\\\\\/Vc0thgM.jpg",
+      "smallestPrice": 0,
+      "design": 5,
+      "display": 6.1,
+      "length": 155,
+      "width": 74,
+      "processor": 5,
+      "updates": 4,
+      "camera": 5,
+      "battery": 5,
+      "batterysize": 4000,
+      "storage": 128,
+      "memory": 6,
+      "sdslot": 1,
+      "simcards": 2,
+      "notch": 1,
+      "waterproof": "7",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "Phone",
+      "brand": "Essential",
+      "imagelink": "images\\\\\/OGr1dfB.jpg",
+      "smallestPrice": 0,
+      "design": 5,
+      "display": 5.7,
+      "length": 142,
+      "width": 71,
+      "processor": 5,
+      "updates": 5,
+      "camera": 5,
+      "battery": 4,
+      "batterysize": 3040,
+      "storage": 128,
+      "memory": 4,
+      "sdslot": 0,
+      "simcards": 1,
+      "notch": 1,
+      "waterproof": "0",
+      "headphonejack": 0,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "G6",
+      "brand": "LG",
+      "imagelink": "images\\\\\/814YBWa7gGL._SY879_.jpg",
+      "smallestPrice": 0,
+      "design": 3,
+      "display": 5.7,
+      "length": 149,
+      "width": 72,
+      "processor": 4,
+      "updates": 4,
+      "camera": 4,
+      "battery": 4,
+      "batterysize": 3300,
+      "storage": 32,
+      "memory": 4,
+      "sdslot": 1,
+      "simcards": 1,
+      "notch": 0,
+      "waterproof": "8",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "V30",
+      "brand": "LG",
+      "imagelink": "images\\\\\/715GbwmYJjL._SY879_.jpg",
+      "smallestPrice": 0,
+      "design": 4,
+      "display": 6,
+      "length": 152,
+      "width": 75,
+      "processor": 5,
+      "updates": 4,
+      "camera": 4,
+      "battery": 4,
+      "batterysize": 3300,
+      "storage": 64,
+      "memory": 4,
+      "sdslot": 2,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "8",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "Xperia XZ2",
+      "brand": "Sony",
+      "imagelink": "images\\\\\/lis9AWg.jpg",
+      "smallestPrice": 0,
+      "design": 3,
+      "display": 5.7,
+      "length": 153,
+      "width": 72,
+      "processor": 5,
+      "updates": 4,
+      "camera": 4,
+      "battery": 4,
+      "batterysize": 3180,
+      "storage": 64,
+      "memory": 4,
+      "sdslot": 1,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "8",
+      "headphonejack": 0,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "Xperia XZ2 Compact",
+      "brand": "Sony",
+      "imagelink": "images\\\\\/ExuzR25.jpg",
+      "smallestPrice": 0,
+      "design": 3,
+      "display": 5,
+      "length": 135,
+      "width": 65,
+      "processor": 5,
+      "updates": 4,
+      "camera": 4,
+      "battery": 3,
+      "batterysize": 2870,
+      "storage": 64,
+      "memory": 4,
+      "sdslot": 1,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "8",
+      "headphonejack": 0,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "iPhone 8 (64GB)",
+      "brand": "Apple",
+      "imagelink": "images\\\\\/xGEFWor.jpg",
+      "smallestPrice": 0,
+      "design": 3,
+      "display": 4.7,
+      "length": 138,
+      "width": 67,
+      "processor": 5,
+      "updates": 5,
+      "camera": 5,
+      "battery": 3,
+      "batterysize": 1821,
+      "storage": 64,
+      "memory": 2,
+      "sdslot": 0,
+      "simcards": 1,
+      "notch": 0,
+      "waterproof": "7",
+      "headphonejack": 0,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "iPhone 8 (256GB)",
+      "brand": "Apple",
+      "imagelink": "images\\\\\/xGEFWor.jpg",
+      "smallestPrice": 0,
+      "design": 3,
+      "display": 4.7,
+      "length": 138,
+      "width": 67,
+      "processor": 5,
+      "updates": 5,
+      "camera": 5,
+      "battery": 3,
+      "batterysize": 1821,
+      "storage": 256,
+      "memory": 2,
+      "sdslot": 0,
+      "simcards": 1,
+      "notch": 0,
+      "waterproof": "7",
+      "headphonejack": 0,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "iPhone 8 Plus (64GB)",
+      "brand": "Apple",
+      "imagelink": "images\\\\\/lq2EmJG.jpg",
+      "smallestPrice": 0,
+      "design": 3,
+      "display": 5.5,
+      "length": 158,
+      "width": 78,
+      "processor": 5,
+      "updates": 5,
+      "camera": 5,
+      "battery": 4,
+      "batterysize": 2691,
+      "storage": 64,
+      "memory": 3,
+      "sdslot": 0,
+      "simcards": 1,
+      "notch": 0,
+      "waterproof": "7",
+      "headphonejack": 0,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "iPhone 8 Plus (256GB)",
+      "brand": "Apple",
+      "imagelink": "images\\\\\/lq2EmJG.jpg",
+      "smallestPrice": 0,
+      "design": 3,
+      "display": 5.5,
+      "length": 158,
+      "width": 78,
+      "processor": 5,
+      "updates": 5,
+      "camera": 5,
+      "battery": 4,
+      "batterysize": 2691,
+      "storage": 256,
+      "memory": 3,
+      "sdslot": 0,
+      "simcards": 1,
+      "notch": 0,
+      "waterproof": "7",
+      "headphonejack": 0,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "iPhone X (64GB)",
+      "brand": "Apple",
+      "imagelink": "images\\\\\/UDV8YUp.jpg",
+      "smallestPrice": 0,
+      "design": 5,
+      "display": 5.8,
+      "length": 144,
+      "width": 77,
+      "processor": 5,
+      "updates": 5,
+      "camera": 5,
+      "battery": 4,
+      "batterysize": 2716,
+      "storage": 64,
+      "memory": 3,
+      "sdslot": 0,
+      "simcards": 1,
+      "notch": 1,
+      "waterproof": "7",
+      "headphonejack": 0,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "iPhone X (256GB)",
+      "brand": "Apple",
+      "imagelink": "images\\\\\/UDV8YUp.jpg",
+      "smallestPrice": 0,
+      "design": 5,
+      "display": 5.8,
+      "length": 144,
+      "width": 77,
+      "processor": 5,
+      "updates": 5,
+      "camera": 5,
+      "battery": 4,
+      "batterysize": 2716,
+      "storage": 256,
+      "memory": 3,
+      "sdslot": 0,
+      "simcards": 1,
+      "notch": 1,
+      "waterproof": "7",
+      "headphonejack": 0,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "Moto X4",
+      "brand": "Motorola",
+      "imagelink": "images\\\\\/61eEr3fsroL._SY879_.jpg",
+      "smallestPrice": 0,
+      "design": 3,
+      "display": 5.2,
+      "length": 148,
+      "width": 73,
+      "processor": 3,
+      "updates": 3,
+      "camera": 4,
+      "battery": 3,
+      "batterysize": 3000,
+      "storage": 32,
+      "memory": 3,
+      "sdslot": 1,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "7",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "Moto Z2 Play",
+      "brand": "Motorola",
+      "imagelink": "images\\\\\/motoz2play.jpg",
+      "smallestPrice": 0,
+      "design": 3,
+      "display": 5.5,
+      "length": 156,
+      "width": 76,
+      "processor": 3,
+      "updates": 3,
+      "camera": 3,
+      "battery": 3,
+      "batterysize": 3000,
+      "storage": 64,
+      "memory": 4,
+      "sdslot": 1,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "4",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "Moto Z2 Force",
+      "brand": "Motorola",
+      "imagelink": "images\\\\\/motoz2force.jpg",
+      "smallestPrice": 0,
+      "design": 3,
+      "display": 5.5,
+      "length": 156,
+      "width": 76,
+      "processor": 4,
+      "updates": 3,
+      "camera": 4,
+      "battery": 3,
+      "batterysize": 2730,
+      "storage": 64,
+      "memory": 6,
+      "sdslot": 1,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "4",
+      "headphonejack": 0,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "Moto G6",
+      "brand": "Motorola",
+      "imagelink": "images\\\\\/v3WB6HT.jpg",
+      "smallestPrice": 0,
+      "design": 3,
+      "display": 5.7,
+      "length": 154,
+      "width": 72,
+      "processor": 3,
+      "updates": 3,
+      "camera": 3,
+      "battery": 3,
+      "batterysize": 3000,
+      "storage": 32,
+      "memory": 3,
+      "sdslot": 1,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "4",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "Moto G6 [Amazon]",
+      "brand": "Motorola",
+      "imagelink": "images\\\\\/motog6amazonexclusive.jpg",
+      "smallestPrice": 0,
+      "design": 3,
+      "display": 5.7,
+      "length": 154,
+      "width": 72,
+      "processor": 3,
+      "updates": 3,
+      "camera": 3,
+      "battery": 3,
+      "batterysize": 3000,
+      "storage": 64,
+      "memory": 4,
+      "sdslot": 1,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "4",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "Moto G6 Plus",
+      "brand": "Motorola",
+      "imagelink": "images\\\\\/phQJx7z.jpg",
+      "smallestPrice": 0,
+      "design": 3,
+      "display": 5.9,
+      "length": 160,
+      "width": 76,
+      "processor": 3,
+      "updates": 3,
+      "camera": 4,
+      "battery": 3,
+      "batterysize": 3200,
+      "storage": 64,
+      "memory": 3,
+      "sdslot": 1,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "4",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "Moto G6 Play",
+      "brand": "Motorola",
+      "imagelink": "images\\\\\/JQ7Vnzc.jpg",
+      "smallestPrice": 0,
+      "design": 3,
+      "display": 5.7,
+      "length": 154,
+      "width": 72,
+      "processor": 2,
+      "updates": 2,
+      "camera": 3,
+      "battery": 5,
+      "batterysize": 4000,
+      "storage": 32,
+      "memory": 3,
+      "sdslot": 1,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "4",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "Moto E4",
+      "brand": "Motorola",
+      "imagelink": "images\\\\\/71r21xr50KL._SY879_.jpg",
+      "smallestPrice": 0,
+      "design": 2,
+      "display": 5,
+      "length": 144,
+      "width": 73,
+      "processor": 2,
+      "updates": 2,
+      "camera": 2,
+      "battery": 2,
+      "batterysize": 2800,
+      "storage": 16,
+      "memory": 2,
+      "sdslot": 1,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "0",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "Moto E4 Plus",
+      "brand": "Motorola",
+      "imagelink": "images\\\\\/motoe4plus.jpg",
+      "smallestPrice": 0,
+      "design": 2,
+      "display": 5.5,
+      "length": 155,
+      "width": 78,
+      "processor": 2,
+      "updates": 2,
+      "camera": 2,
+      "battery": 5,
+      "batterysize": 5000,
+      "storage": 16,
+      "memory": 3,
+      "sdslot": 1,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "0",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "Moto G5S",
+      "brand": "Motorola",
+      "imagelink": "images\\\\\/S9FO30n.jpg",
+      "smallestPrice": 0,
+      "design": 3,
+      "display": 5.2,
+      "length": 150,
+      "width": 74,
+      "processor": 3,
+      "updates": 2,
+      "camera": 3,
+      "battery": 3,
+      "batterysize": 3000,
+      "storage": 32,
+      "memory": 3,
+      "sdslot": 1,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "4",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "Moto G5S Plus",
+      "brand": "Motorola",
+      "imagelink": "images\\\\\/tdlPqFG.jpg",
+      "smallestPrice": 0,
+      "design": 3,
+      "display": 5.5,
+      "length": 154,
+      "width": 76,
+      "processor": 3,
+      "updates": 2,
+      "camera": 3,
+      "battery": 3,
+      "batterysize": 3000,
+      "storage": 32,
+      "memory": 3,
+      "sdslot": 1,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "4",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "Galaxy A5",
+      "brand": "Samsung",
+      "imagelink": "images\\\\\/wrIcHyN.jpg",
+      "smallestPrice": 0,
+      "design": 1,
+      "display": 5.2,
+      "length": 146,
+      "width": 71,
+      "processor": 3,
+      "updates": 3,
+      "camera": 3,
+      "battery": 3,
+      "batterysize": 3000,
+      "storage": 32,
+      "memory": 3,
+      "sdslot": 1,
+      "simcards": 1,
+      "notch": 0,
+      "waterproof": "8",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "Galaxy S9",
+      "brand": "Samsung",
+      "imagelink": "images\\\\\/71uI%2BnAzruL._SY879_.jpg",
+      "smallestPrice": 0,
+      "design": 5,
+      "display": 5.8,
+      "length": 148,
+      "width": 68,
+      "processor": 5,
+      "updates": 4,
+      "camera": 5,
+      "battery": 4,
+      "batterysize": 3000,
+      "storage": 64,
+      "memory": 4,
+      "sdslot": 1,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "8",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "Galaxy S9",
+      "brand": "Samsung",
+      "imagelink": "images\\\\\/71uI%2BnAzruL._SY879_.jpg",
+      "smallestPrice": 0,
+      "design": 5,
+      "display": 5.8,
+      "length": 148,
+      "width": 68,
+      "processor": 5,
+      "updates": 4,
+      "camera": 5,
+      "battery": 4,
+      "batterysize": 3000,
+      "storage": 64,
+      "memory": 4,
+      "sdslot": 1,
+      "simcards": 1,
+      "notch": 0,
+      "waterproof": "8",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "Galaxy S9 Plus",
+      "brand": "Samsung",
+      "imagelink": "images\\\\\/71dd-elhT7L._SY879_.jpg",
+      "smallestPrice": 0,
+      "design": 5,
+      "display": 6.2,
+      "length": 158,
+      "width": 74,
+      "processor": 5,
+      "updates": 4,
+      "camera": 5,
+      "battery": 4,
+      "batterysize": 3500,
+      "storage": 64,
+      "memory": 6,
+      "sdslot": 1,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "8",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "Galaxy S9 Plus",
+      "brand": "Samsung",
+      "imagelink": "images\\\\\/71dd-elhT7L._SY879_.jpg",
+      "smallestPrice": 0,
+      "design": 5,
+      "display": 6.2,
+      "length": 158,
+      "width": 74,
+      "processor": 5,
+      "updates": 4,
+      "camera": 5,
+      "battery": 4,
+      "batterysize": 3500,
+      "storage": 64,
+      "memory": 6,
+      "sdslot": 1,
+      "simcards": 1,
+      "notch": 0,
+      "waterproof": "8",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "Galaxy S8 Note",
+      "brand": "Samsung",
+      "imagelink": "images\\\\\/PQYBIud.jpg",
+      "smallestPrice": 0,
+      "design": 5,
+      "display": 6.3,
+      "length": 163,
+      "width": 75,
+      "processor": 5,
+      "updates": 4,
+      "camera": 5,
+      "battery": 4,
+      "batterysize": 3300,
+      "storage": 64,
+      "memory": 6,
+      "sdslot": 1,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "8",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "Galaxy S8 Note",
+      "brand": "Samsung",
+      "imagelink": "images\\\\\/PQYBIud.jpg",
+      "smallestPrice": 0,
+      "design": 5,
+      "display": 6.3,
+      "length": 163,
+      "width": 75,
+      "processor": 5,
+      "updates": 4,
+      "camera": 5,
+      "battery": 4,
+      "batterysize": 3300,
+      "storage": 64,
+      "memory": 6,
+      "sdslot": 1,
+      "simcards": 1,
+      "notch": 0,
+      "waterproof": "8",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "Galaxy S8",
+      "brand": "Samsung",
+      "imagelink": "images\\\\\/6gY3U53.jpg",
+      "smallestPrice": 0,
+      "design": 5,
+      "display": 5.8,
+      "length": 148,
+      "width": 68,
+      "processor": 5,
+      "updates": 3,
+      "camera": 4,
+      "battery": 4,
+      "batterysize": 3000,
+      "storage": 64,
+      "memory": 4,
+      "sdslot": 1,
+      "simcards": 1,
+      "notch": 0,
+      "waterproof": "8",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["white", ""],
+          ["white", ""]
+        ],
+        "com": [
+          ["white", ""],
+          ["black", ""]
+        ]
+      },
+      "price": {
+        "de": [],
+        "com": []
+      },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    }
+  ]
 }

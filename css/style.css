@@ -508,8 +508,8 @@ background : url("../images/star.png") 0 -16px;
 .a-icon-shop-now
 {
 position : absolute;
-top : 2px;
-left : 2px;
+top : 3px;
+left : 3px;
 display : inline-block;
 width : 25px;
 height : 25px;
@@ -530,12 +530,11 @@ padding : 0;
 cursor : pointer;
 text-align : center;
 text-decoration : none;
-border : 1px solid;
-border-color : #BCC1C8 #BABABA #ADB2BB;
+border-color : #FEBD69;
 -webkit-border-radius : 3px;
    -moz-border-radius : 3px;
         border-radius : 3px;
-background : #D8DDE6;
+background : #FEBD69;
 }
 
 .a-button-text
@@ -568,12 +567,12 @@ height : 100%;
 cursor : pointer;
 opacity : .01;
 border : 0;
-background-color : rgb(249, 249, 249);
+background-color : #FEBD69;
 }
 
 .a-button-primary
 {
-border-color : #CBA957 #BF942A #AA8326;
+border-color : #FEBD69;
 background : #F0C14B;
 }
 
@@ -617,7 +616,7 @@ background :    -moz-linear-gradient(top, #F7DFA5, #F0C14B);
 background :     -ms-linear-gradient(top, #F7DFA5, #F0C14B);
 background :      -o-linear-gradient(top, #F7DFA5, #F0C14B);
 background : #F3D078;
-background-color : #F7DFA5;
+background-color : #FEBD69;
 -webkit-box-shadow : 0 1px 0 rgba(255, 255, 255, .4) inset;
    -moz-box-shadow : 0 1px 0 rgba(255, 255, 255, .4) inset;
         box-shadow : 0 1px 0 rgba(255, 255, 255, .4) inset;
@@ -625,7 +624,7 @@ background-color : #F7DFA5;
 
 .a-button-primary:active .a-button-inner
 {
-background-color : #F0C14B;
+background-color : #FEBD69;
 background-image : none;
 -webkit-box-shadow : 0 1px 3px rgba(0, 0, 0, .2) inset;
    -moz-box-shadow : 0 1px 3px rgba(0, 0, 0, .2) inset;

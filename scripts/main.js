@@ -55,20 +55,20 @@ window.onload = function() {
     for (var i = 0; i < obj.smartphones.length; i++) {
 
       //prize not 0
-      if (obj.smartphones[i]["price_" + country] === 0) {
+      if (obj.smartphones[i]["price"][country] === 0) {
         continue;
       }
 
       //prize minimum
       if (document.getElementById("price_minimum_1").value !== "") {
-        if (obj.smartphones[i]["price_" + country] < document.getElementById("price_minimum_1").value) {
+        if (obj.smartphones[i]["price"][country] < document.getElementById("price_minimum_1").value) {
           continue;
         }
       }
 
       //prize maximum
       if (document.getElementById("price_maximum_1").value !== "") {
-        if (obj.smartphones[i]["price_" + country] > document.getElementById("price_maximum_1").value) {
+        if (obj.smartphones[i]["price"][country] > document.getElementById("price_maximum_1").value) {
           continue;
         }
       }
@@ -183,9 +183,9 @@ window.onload = function() {
 
   function sortListOfFilteredObjects(filterType) {
     switch (filterType) {
-      case "price_":
+      case "price":
       case "totalscore":
-        sortBy("price_" + country, "totalscore", isDescending);
+        sortBy("price" + country, "totalscore", isDescending);
         break;
       case "length":
         sortBy("length", "width", isDescending);
@@ -252,7 +252,7 @@ window.onload = function() {
       cell1.outerHTML = "<th></th>";
     }
 
-    if (filterType === "price_") {
+    if (filterType === "price") {
       row = table.insertRow();
       row.insertCell(0);
     } else if (filterType === 'length' || filterType === 'display') {
@@ -275,7 +275,7 @@ window.onload = function() {
     sortListOfFilteredObjects(tableType);
 
     switch (tableType) {
-      case "price_":
+      case "price":
         fillHorizontally(tableType + country, '');
         activateHorizontalScrolling(true);
         break;
@@ -337,7 +337,7 @@ window.onload = function() {
       '<div class="detailwindow float" id="hiddenpicture' + listOfFilteredAndScoredObjects[i].name + '" style ="display:' + isDetailsHidden + '" >' +
       '<p class="smartphone-name">' + listOfFilteredAndScoredObjects[i].brand + ' ' + listOfFilteredAndScoredObjects[i].name + '</p>' +
 
-      '<h3><span style="font-weight: bold;">' + listOfFilteredAndScoredObjects[i].display + '"</span><span style="float:right; font-weight: bold;" class="accentColor">' + listOfFilteredAndScoredObjects[i]["price_" + country] + '€</span></h3>' +
+      '<h3><span style="font-weight: bold;">' + listOfFilteredAndScoredObjects[i].display + '"</span><span style="float:right; font-weight: bold;" class="accentColor">' + listOfFilteredAndScoredObjects[i]["price"][country] + '€</span></h3>' +
       '<h3>' + listOfFilteredAndScoredObjects[i].width + ' * ' + listOfFilteredAndScoredObjects[i].length + 'mm</h3>' +
 
       '<div style="width:20px; height:20px; float:left;"><img style="max-width:20px; max-height:20px; float:left;" src="images/ram_icon.png"></div>' +
@@ -364,7 +364,7 @@ window.onload = function() {
       '<h3 ><span style="float:right; color: #129e41; font-weight: bold;">' + listOfFilteredAndScoredObjects[i].totalscore + '</span></h3>' +
       '<div class="wrapper">' +
       '<span class="a-button a-button-primary">' +
-      ' <a target="_blank" href="' + listOfFilteredAndScoredObjects[i]['amazon_' + country] + '" style="text-decoration:none;">' +
+      ' <a target="_blank" href="' + listOfFilteredAndScoredObjects[i]['amazon'][country] + '" style="text-decoration:none;">' +
       '<span class="a-button-inner">' +
       '<img src="images/Amazon-Favicon-64x64.png" class="a-icon a-icon-shop-now">' +
       '<input class="a-button-input" type="submit" value="Add to cart">' +
@@ -397,7 +397,7 @@ window.onload = function() {
   //Set Scale Smartphones to true when case "length": oder case "display":
   document.getElementById("filterInput").addEventListener("input", function() {
     switch (document.getElementById("filterInput").options[document.getElementById("filterInput").selectedIndex].value) {
-      case "price_":
+      case "price":
         break;
       case "length":
         document.getElementById("scaleInput").checked = true;
