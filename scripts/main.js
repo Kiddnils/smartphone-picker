@@ -18,10 +18,28 @@ window.onload = function() {
       // Parse JSON string into object
       obj = JSON.parse(response);
       calculateAllScores();
+      findLowestPriceForAllSmartphones()
       buildTableStructure();
       updateTable();
     });
   }
+
+  function findLowestPriceForAllSmartphones() {
+    for (var i = 0; i < obj.smartphones.length; i++) {
+      obj.smartphones[i].smallestPrice = findLowestPriceForOneSmartphones(obj.smartphones[i]);
+    }
+  }
+
+  function findLowestPriceForOneSmartphones(smartphone) {
+    var lowest = 0;
+    for (var i = 1; i < smartphone["price"][country].length; i++) {
+      if (smartphone["price"][country][i][0] < smartphone["price"][country][lowest][0] && smartphone["price"][country][i][0] !== 0) {
+        lowest = i;
+      }
+    }
+    return lowest;
+  }
+
 
   function loadJSON(callback) {
 
@@ -55,20 +73,20 @@ window.onload = function() {
     for (var i = 0; i < obj.smartphones.length; i++) {
 
       //prize not 0
-      if (obj.smartphones[i]["price"][country] === 0) {
+      if (obj.smartphones[i]["price"][country][obj.smartphones[i].smallestPrice][0] === 0) {
         continue;
       }
 
       //prize minimum
       if (document.getElementById("price_minimum_1").value !== "") {
-        if (obj.smartphones[i]["price"][country] < document.getElementById("price_minimum_1").value) {
+        if (obj.smartphones[i]["price"][country][obj.smartphones[i].smallestPrice][0] < document.getElementById("price_minimum_1").value) {
           continue;
         }
       }
 
       //prize maximum
       if (document.getElementById("price_maximum_1").value !== "") {
-        if (obj.smartphones[i]["price"][country] > document.getElementById("price_maximum_1").value) {
+        if (obj.smartphones[i]["price"][country][obj.smartphones[i].smallestPrice][0] > document.getElementById("price_maximum_1").value) {
           continue;
         }
       }
@@ -184,21 +202,23 @@ window.onload = function() {
   function sortListOfFilteredObjects(filterType) {
     switch (filterType) {
       case "price":
+        sortBy(getLowestParameter, "price", getNormalParameter, "totalscore", isDescending);
+        break;
       case "totalscore":
-        sortBy("price" + country, "totalscore", isDescending);
+        sortBy(getNormalParameter, "totalscore", getLowestParameter, "price", isDescending);
         break;
       case "length":
-        sortBy("length", "width", isDescending);
+        sortBy(getNormalParameter, "length", getNormalParameter, "width", isDescending);
         break;
       case "display":
-        sortBy("display", "length", isDescending);
+        sortBy(getNormalParameter, "display", getNormalParameter, "length", isDescending);
         break;
       default:
         break;
     }
   }
 
-  function sortBy(first, second, isDescending) {
+  function sortBy(getMethod1, first, getMethod2, second, isDescending) {
     listOfFilteredAndScoredObjects = [];
 
     //first score stuff
@@ -212,13 +232,13 @@ window.onload = function() {
         } else if (e == listOfFilteredAndScoredObjects.length) {
           listOfFilteredAndScoredObjects.splice(listOfFilteredAndScoredObjects.length, 0, listOfFilteredObjects[i]);
           break;
-        } else if (listOfFilteredObjects[i][first] > listOfFilteredAndScoredObjects[e][first] && isDescending) {
+        } else if (getMethod1(listOfFilteredObjects, i, first) > getMethod1(listOfFilteredAndScoredObjects, e, first) && isDescending) {
           listOfFilteredAndScoredObjects.splice(e, 0, listOfFilteredObjects[i]);
           break;
-        } else if (listOfFilteredObjects[i][first] < listOfFilteredAndScoredObjects[e][first] && !isDescending) {
+        } else if (getMethod1(listOfFilteredObjects, i, first) < getMethod1(listOfFilteredAndScoredObjects, e, first) && !isDescending) {
           listOfFilteredAndScoredObjects.splice(e, 0, listOfFilteredObjects[i]);
           break;
-        } else if (listOfFilteredObjects[i][first] === listOfFilteredAndScoredObjects[e][first] && listOfFilteredObjects[i][second] < listOfFilteredAndScoredObjects[e][second]) {
+        } else if (getMethod1(listOfFilteredObjects, i, first) === getMethod1(listOfFilteredAndScoredObjects, e, first) && getMethod2(listOfFilteredObjects, i, second) < getMethod2(listOfFilteredAndScoredObjects, e, second)) {
           listOfFilteredAndScoredObjects.splice(e, 0, listOfFilteredObjects[i]);
           break;
         }
@@ -306,7 +326,7 @@ window.onload = function() {
     for (var i = 0; i < listOfFilteredAndScoredObjects.length; i++) {
       cell1 = tableHead.rows[0].cells[i + 1];
       cell1.innerHTML = i;
-      cell1.innerHTML = functioncall(i, type) + "" + suffix;
+      cell1.innerHTML = functioncall(listOfFilteredAndScoredObjects, i, type) + "" + suffix;
 
       cell = table.rows[0].insertCell(table.rows[0].cells.length);
       cell.className += "smartphonecells";
@@ -315,12 +335,12 @@ window.onload = function() {
     }
   }
 
-  function getNormalParameter(i, type) {
-    return listOfFilteredAndScoredObjects[i][type];
+  function getNormalParameter(json, i, type) {
+    return json[i][type];
   }
 
-  function getLowestParameter(i, type) {
-    return listOfFilteredAndScoredObjects[i][type][country][listOfFilteredAndScoredObjects[i]["smallestPrice"]];
+  function getLowestParameter(json, i, type) {
+    return json[i][type][country][json[i].smallestPrice][0];
   }
 
 
@@ -347,7 +367,7 @@ window.onload = function() {
       '<p class="smartphone-name">' + listOfFilteredAndScoredObjects[i].brand + ' ' + listOfFilteredAndScoredObjects[i].name + '</p></div>' +
       '<div style="clear:both;"></div>' +
       '<div><span style="font-weight: bold;">' + listOfFilteredAndScoredObjects[i].display + '"</span>' +
-      '<span style="float:right; font-weight: bold;" class="accentColor">' + getLowestParameter(i, "price") + '€</span>' +
+      '<span style="float:right; font-weight: bold;" class="accentColor">' + getLowestParameter(listOfFilteredAndScoredObjects, i, "price") + '€</span>' +
       '<button class="btn-color dropdown-toggle">' +
       '<div class="colorpicker"></div>' +
       '<span class="caret"></span>' +
@@ -380,7 +400,7 @@ window.onload = function() {
       '<h3 ><span style="float:right; color: #129e41; font-weight: bold;">' + listOfFilteredAndScoredObjects[i].totalscore + '</span></h3>' +
       '<div class="wrapper">' +
       '<span class="a-button a-button-primary">' +
-      ' <a target="_blank" href="' + getLowestParameter(i, "amazon") + '" style="text-decoration:none;">' +
+      ' <a target="_blank" href="' + getLowestParameter(listOfFilteredAndScoredObjects, i, "amazon") + '" style="text-decoration:none;">' +
       '<span class="a-button-inner">' +
       '<img src="images/Amazon-Favicon-64x64.png" class="a-icon a-icon-shop-now">' +
       '<input class="a-button-input" type="submit" value="Add to cart">' +
