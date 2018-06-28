@@ -41,11 +41,14 @@
   logToFile("LogZipper", "Startdate timestamp: " . $date_before->getTimestamp());
   echo "Startdate timestamp: " . $date_before->getTimestamp() . "<br>";
 
+  $fileSizeSum = 0;
+
   $dir = new DirectoryIterator('logs');
   $logfiles = [];
   foreach ($dir as $fileinfo) {
     if (!$fileinfo->isDot() AND !$fileinfo->isDir() AND $fileinfo->getMTime() >= $date_before->getTimestamp() AND $fileinfo->getMTime() < $date_current->getTimestamp()) {
         $zip->addFile($fileinfo->getPathName(), $fileinfo->getFileName());
+        $fileSizeSum = $fileSizeSum + filesize($fileinfo->getFileName());
         //Solange die zip nocht nicht geclosed wurde sind die Dateien die in die zip sollen gelocked
         //und müssen daher nachträglich gelöscht werden und dafür zwischengespeichert werden
         $logfiles[] = $fileinfo->getFileName();
@@ -54,12 +57,16 @@
 
   logToFile("LogZipper", "Number of logfiles: " . $zip->numFiles);
   echo "<br>Number of logfiles: " . $zip->numFiles . "<br>";
+  logToFile("LogZipper", "File size Sum: " . $fileSizeSum);
+  echo "<br>File size Sum: " . $fileSizeSum . "<br>";
   logToFile("LogZipper", "Status of the new zip file:" . $zip->status);
   echo "Status of the new zip file:" . $zip->status . "<br>";
 
   $ret = $zip->close();
   logToFile("LogZipper", "Closed zipfile with result: " . ($ret ? "true" : "false"));
   echo "Closed zipfile with result: " . ($ret ? "true" : "false") . "<br>";
+  logToFile("LogZipper", "Zip filesize: " . filesize($fileinfo->getFileName($filename));
+  echo "<br>Zip filesize: " . filesize($fileinfo->getFileName($filename) . "<br>";
 
   logToFile("LogZipper", "Logfiles");
   echo "<br>Logfiles<br>";
