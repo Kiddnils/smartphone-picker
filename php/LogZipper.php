@@ -23,7 +23,7 @@
 
   //Create a new zip file
   $zip = new ZipArchive();
-  $filename = "logs/archive/logs_week_" . (intval(date("W"))-1) . ".zip";
+  $filename = "logs/archive/" . date("Y") . "_week_" . (intval(date("W"))-1) . "_logs.zip";
   $zip->open($filename, ZipArchive::CREATE);
 
   $date_current = new DateTime();
@@ -65,7 +65,7 @@
   $ret = $zip->close();
   logToFile("LogZipper", "Closed zipfile with result: " . ($ret ? "true" : "false"));
   echo "Closed zipfile with result: " . ($ret ? "true" : "false") . "<br>";
-  logToFile("LogZipper", "Zip filesize: " . filesize($fileinfo->getFileName($filename));
+  logToFile("LogZipper", "Zip filesize: " . filesize($fileinfo->getFileName($filename)));
   echo "<br>Zip filesize: " . filesize($fileinfo->getFileName($filename) . "<br>";
 
   logToFile("LogZipper", "Logfiles");
