@@ -1,5 +1,6 @@
 <?php
-  if($_SERVER['QUERY_STRING'] != "Schulze-Beckendorf"){
+  if($_SERVER['QUERY_STRING'] != "EXECUTE"){
+    echo "Nothing to see here <br>";
     exit();
   }
 
