@@ -10,7 +10,7 @@
   require_once "logger.php";
   require_once "SmartphoneDataRequester.php";
 
-  $json = json_decode(file_get_contents("../scripts/smartphones.js"),TRUE);
+  $json = json_decode(file_get_contents("../scripts/smartphones.json"),TRUE);
 
   $countries = array(
       array("de", "webservices.amazon.de", "smartphonep08-21"),
@@ -22,7 +22,8 @@
     for ($x=0; $x < count($countries); $x++) {
       for ($e=0; $e <count($json['smartphones'][$i]['asin'][$countries[$x][0]]) ; $e++) {
           $counter[] = array($i, $countries[$x][0], $x, $e );
-
+          $json['smartphones'][$i]['price'][$countries[$x][0]] = [];
+          $json['smartphones'][$i]['amazon'][$countries[$x][0]] = [];
       }
     }
   }
@@ -32,8 +33,9 @@
      $smartphoneDataRequester[] = new SmartphoneDataRequester($countries[$i][1], $countries[$i][2]);
    }
 
+$loopCount = 0;
 $x = 0;
-while (count($counter) > 0) {
+while (count($counter) > 0 && $loopCount != 3) {
     logToFile("amazonSlave_de", "Smartphonenumber is: " . $counter[$x][0]);
     echo "Smartphonenumber is: . $x . <br>";
     if ($json['smartphones'][$counter[$x][0]]['asin'][$counter[$x][1]][$counter[$x][3]][1] != '') {
@@ -62,10 +64,11 @@ while (count($counter) > 0) {
     {
       echo "Reset x to 0: " . "<br>";
       $x = 0;
+      $loopCount++;
     }
 }
 
-  file_put_contents("../scripts/smartphones.js", json_encode($json));
+  file_put_contents("../scripts/smartphones.json", json_encode($json));
   logToFile("amazonSlave_de", "Prices should be updated");
   echo "Files should be updated <br>";
 ?>
