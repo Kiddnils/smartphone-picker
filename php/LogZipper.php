@@ -66,7 +66,7 @@
   logToFile("LogZipper", "Closed zipfile with result: " . ($ret ? "true" : "false"));
   echo "Closed zipfile with result: " . ($ret ? "true" : "false") . "<br>";
   logToFile("LogZipper", "Zip filesize: " . filesize($fileinfo->getFileName($filename)));
-  echo "<br>Zip filesize: " . filesize($fileinfo->getFileName($filename) . "<br>";
+  echo "<br>Zip filesize: " . filesize($fileinfo->getFileName($filename)) . "<br>";
 
   logToFile("LogZipper", "Logfiles");
   echo "<br>Logfiles<br>";
