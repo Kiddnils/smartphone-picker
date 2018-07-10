@@ -35,7 +35,7 @@
           ["black/copper", "B07BVDG8P1", "Unlocked"]
         ]
       },
-      "price": { "de": [[249], [270], [269], [279]], "com": [] },
+      "price": { "de": [[265], [276], [255], [276]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -88,7 +88,7 @@
           ["black/copper", "B07BVS4LMN", ""]
         ]
       },
-      "price": { "de": [[378], [397], [372], [385]], "com": [] },
+      "price": { "de": [[362], [385], [359], [379]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -145,7 +145,7 @@
           ["tempered blue", "B074SJJBY2"]
         ]
       },
-      "price": { "de": [[355], [349], [0], [0], [335]], "com": [] },
+      "price": { "de": [[355], [349], [0], [0], [330]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -189,7 +189,7 @@
         "de": [["black", "B07B69SLMB"]],
         "com": [["black", "B07B69SLMB"]]
       },
-      "price": { "de": [[624]], "com": [] },
+      "price": { "de": [[599]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -225,9 +225,16 @@
         "de": [["black", "B07CZPXGVJ"], ["gold", "B07CRGJW16"]],
         "com": []
       },
-      "price": { "de": [], "com": [] },
+      "price": { "de": [[199], [198]], "com": [] },
       "amazon": {
-        "de": [],
+        "de": [
+          [
+            "https://www.amazon.de/Xiaomi-Redmi-Note-Handy-Schwarz/dp/B07CZPXGVJ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CZPXGVJ"
+          ],
+          [
+            "https://www.amazon.de/Xiaomi-Redmi-Note-32GB-Handy-Gold/dp/B07CRGJW16?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CRGJW16"
+          ]
+        ],
         "com": []
       }
     },
@@ -261,9 +268,19 @@
         ],
         "com": []
       },
-      "price": { "de": [], "com": [] },
+      "price": { "de": [[231], [206], [219]], "com": [] },
       "amazon": {
-        "de": [],
+        "de": [
+          [
+            "https://www.amazon.de/Xiaomi-Smartphone-Snapdragon-Octa-Core-Schwarz/dp/B07CZS8W5Y?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CZS8W5Y"
+          ],
+          [
+            "https://www.amazon.de/Xiaomi-Redmi-Note-64GB-Handy-Gold/dp/B07CZS7T17?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CZS7T17"
+          ],
+          [
+            "https://www.amazon.de/Xiaomi-Redmi-Note-64GB-Handy-Blau/dp/B07CZS9QDB?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CZS9QDB"
+          ]
+        ],
         "com": []
       }
     },
@@ -302,7 +319,7 @@
           ["black", "B076HQ6FSY"]
         ]
       },
-      "price": { "de": [[186], [168], [191], [183]], "com": [] },
+      "price": { "de": [[188], [180], [195], [183]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -351,7 +368,7 @@
         ],
         "com": [["black", "B075SBJ3T2"], ["black", "B079816Y5T"]]
       },
-      "price": { "de": [[350], [387], [548]], "com": [] },
+      "price": { "de": [[350], [389], [548]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -393,17 +410,14 @@
         "de": [["black", "B07CZFRXP1"], ["white", "B07D4NBDM9"]],
         "com": []
       },
-      "price": { "de": [[350], [387], [548]], "com": [] },
+      "price": { "de": [[485], [522]], "com": [] },
       "amazon": {
         "de": [
           [
-            "https://www.amazon.de/Xiaomi-Mi-Mix-Black-EU-Ware-schwarz/dp/B0784RQR88?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0784RQR88"
+            "https://www.amazon.de/Xiaomi-Mi-Mix-2S-Schwarz/dp/B07CZFRXP1?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07CZFRXP1"
           ],
           [
-            "https://www.amazon.de/Xiaomi-Globale-Marken-Snapdragon-Smartphone-Schwarz/dp/B076VLN14J?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076VLN14J"
-          ],
-          [
-            "https://www.amazon.de/Xiaomi-Mix-128GB-Dual-SIM-white/dp/B0792TXZ46?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0792TXZ46"
+            "https://www.amazon.de/Xiaomi-Mix-64GB-Handy-wei%C3%9F/dp/B07D4NBDM9?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07D4NBDM9"
           ]
         ],
         "com": []
@@ -431,21 +445,12 @@
       "waterproof": "0",
       "headphonejack": 0,
       "totalscore": 0,
-      "asin": {
-        "de": [["black", "B07D4QL67S"]],
-        "com": []
-      },
-      "price": { "de": [[350], [387], [548]], "com": [] },
+      "asin": { "de": [["black", "B07D4QL67S"]], "com": [] },
+      "price": { "de": [[549]], "com": [] },
       "amazon": {
         "de": [
           [
-            "https://www.amazon.de/Xiaomi-Mi-Mix-Black-EU-Ware-schwarz/dp/B0784RQR88?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0784RQR88"
-          ],
-          [
-            "https://www.amazon.de/Xiaomi-Globale-Marken-Snapdragon-Smartphone-Schwarz/dp/B076VLN14J?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076VLN14J"
-          ],
-          [
-            "https://www.amazon.de/Xiaomi-Mix-128GB-Dual-SIM-white/dp/B0792TXZ46?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0792TXZ46"
+            "https://www.amazon.de/Xiaomi-Mix-Dual-128GB-Black-Schwarz/dp/B07D4QL67S?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07D4QL67S"
           ]
         ],
         "com": []
@@ -480,7 +485,7 @@
         ],
         "com": [["sapphire blue", "B075GH2QP8"]]
       },
-      "price": { "de": [[242], [259]], "com": [] },
+      "price": { "de": [[230], [259]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -529,7 +534,7 @@
           ["translucent oil", "B077TMKPTQ"]
         ]
       },
-      "price": { "de": [[749], [642], [749], [632]], "com": [] },
+      "price": { "de": [[749], [644], [749], [633]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -582,7 +587,7 @@
           ["translucent blue", "B07D2Q65ZM"]
         ]
       },
-      "price": { "de": [[759], [799], [768]], "com": [] },
+      "price": { "de": [[759], [799], [769]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -634,7 +639,7 @@
           ["kinda blue", "B076KM3PYP"]
         ]
       },
-      "price": { "de": [[650], [734], [729], [724]], "com": [] },
+      "price": { "de": [[645], [730], [745], [749]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -688,7 +693,7 @@
           ["black/white", "B079J5FD54"]
         ]
       },
-      "price": { "de": [[699], [708], [699], [771]], "com": [] },
+      "price": { "de": [[699], [695], [699], [816]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -780,7 +785,7 @@
           ["white", "B07917BQWC"]
         ]
       },
-      "price": { "de": [[585], [585]], "com": [] },
+      "price": { "de": [[584], [582]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -827,7 +832,7 @@
           ["silk white", ""]
         ]
       },
-      "price": { "de": [[519]], "com": [] },
+      "price": { "de": [[534]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -871,7 +876,7 @@
           ["silk white", "B078BNQ2ZS"]
         ]
       },
-      "price": { "de": [[569], [569], [569]], "com": [] },
+      "price": { "de": [[567], [569], [569]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -921,7 +926,7 @@
           ["sapphire blue", "B078NCL7GJ"]
         ]
       },
-      "price": { "de": [[229], [221], [0], [217]], "com": [] },
+      "price": { "de": [[245], [226], [0], [217]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -976,7 +981,7 @@
           ["phantom green", "B07CTF3B98"]
         ]
       },
-      "price": { "de": [[368], [393], [383], [399]], "com": [] },
+      "price": { "de": [[368], [386], [377], [389]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1058,7 +1063,7 @@
         "de": [["black", "B07BHD7MHL"], ["blue", "B07BHDC33K"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[495], [509]], "com": [] },
+      "price": { "de": [[497], [503]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1102,7 +1107,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[294], [298], [298], [305]], "com": [] },
+      "price": { "de": [[285], [302], [303], [305]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1115,7 +1120,7 @@
             "https://www.amazon.de/Huawei-51092FTP-Smartphone-interner-Speicher-Blau/dp/B07BHDDDHB?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BHDDDHB"
           ],
           [
-            "https://www.amazon.de/HUAWEI-Smartphone-interner-Speicher-Android-Gold/dp/B07BLYRC9M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BLYRC9M"
+            "https://www.amazon.de/Huawei-Smartphone-interner-Speicher-Android-Gold/dp/B07BLYRC9M?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07BLYRC9M"
           ]
         ],
         "com": []
@@ -1151,7 +1156,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[719], [594], [709]], "com": [] },
+      "price": { "de": [[684], [688], [713]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1245,7 +1250,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[296], [334], [356], [303], [344]], "com": [] },
+      "price": { "de": [[292], [333], [354], [300], [345]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1293,9 +1298,16 @@
         "de": [["platinum grey", "B07D7NXYT6"], ["black", "B07D69KKBZ"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [], "com": [] },
+      "price": { "de": [[649], [573]], "com": [] },
       "amazon": {
-        "de": [],
+        "de": [
+          [
+            "https://www.amazon.de/LG-Smartphone-FullVision-Einstellbare-MIL-STD-810G-Platinum-Grau/dp/B07D7NXYT6?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07D7NXYT6"
+          ],
+          [
+            "https://www.amazon.de/LG-Smartphone-FullVision-Einstellbare-MIL-STD-810G-Schwarz/dp/B07D69KKBZ?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07D69KKBZ"
+          ]
+        ],
         "com": []
       }
     },
@@ -1325,7 +1337,7 @@
         "de": [["cloud silver", "B075GYD539"], ["moroccan blue", "B075GTJYSV"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[477], [477]], "com": [] },
+      "price": { "de": [[464], [464]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1369,7 +1381,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[574], [567], [583], [576]], "com": [] },
+      "price": { "de": [[571], [571], [571], [571]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1419,7 +1431,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[529], [522], [518], [536]], "com": [] },
+      "price": { "de": [[591], [520], [515], [531]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1468,7 +1480,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[645], [634], [657]], "com": [] },
+      "price": { "de": [[652], [630], [654]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1514,7 +1526,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[772], [886], [929]], "com": [] },
+      "price": { "de": [[759], [729], [886]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1561,7 +1573,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[793], [764], [756], [808]], "com": [] },
+      "price": { "de": [[783], [770], [751], [758]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1610,7 +1622,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[972], [962], [973]], "com": [] },
+      "price": { "de": [[934], [914], [973]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1652,7 +1664,7 @@
         "de": [["space grey", "B075LXNK24"], ["silver", "B075LYDD7Z"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[975], [995]], "com": [] },
+      "price": { "de": [[970], [966]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1691,7 +1703,7 @@
         "de": [["space grey", "B075LWF4C3"], ["silver", "B075LRK2QK"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[1119], [1121]], "com": [] },
+      "price": { "de": [[1107], [1107]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1769,7 +1781,7 @@
         "de": [["lunar grey", "B0747WYLTX"], ["fine gold", "B0747X83J5"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[309], [284]], "com": [] },
+      "price": { "de": [[299], [289]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1808,7 +1820,7 @@
         "de": [["black", "B074MH8DJ5"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[359]], "com": [] },
+      "price": { "de": [[369]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1844,7 +1856,7 @@
         "de": [["deep indigo", "B07BXWZ8ZG"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[220]], "com": [] },
+      "price": { "de": [[217]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1952,7 +1964,7 @@
         "de": [["deep indigo", "B07BXFRK2Q"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[169]], "com": [] },
+      "price": { "de": [[196]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1993,7 +2005,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[98], [149], [99], [94]], "com": [] },
+      "price": { "de": [[99], [159], [99], [117]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -2038,7 +2050,7 @@
         "de": [["fine gold", "B071J7FRBD"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[149]], "com": [] },
+      "price": { "de": [[159]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -2074,7 +2086,7 @@
         "de": [["fine gold", "B074MHL2DN"], ["lunar grey", "B074MGP8GJ"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[128], [125]], "com": [] },
+      "price": { "de": [[139], [125]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -2113,7 +2125,7 @@
         "de": [["blush gold", "B074SQZ2PB"], ["lunar grey", "B074SR2DVT"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[192], [194]], "com": [] },
+      "price": { "de": [[189], [194]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -2157,7 +2169,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[214], [248], [208], [221]], "com": [] },
+      "price": { "de": [[213], [232], [204], [220]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -2207,7 +2219,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[597], [590], [562], [706]], "com": [] },
+      "price": { "de": [[650], [610], [589], [706]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -2252,7 +2264,7 @@
         "de": [["grey", "B07C6351NJ"], ["midnight black", "B07C5ZNN9Q"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[949], [924]], "com": [] },
+      "price": { "de": [[949], [949]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -2296,7 +2308,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[751], [785], [697], [939]], "com": [] },
+      "price": { "de": [[769], [779], [684], [919]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -2341,7 +2353,7 @@
         "de": [["grey", "B07C64N3WD"], ["midnight black", "B07C61XVDQ"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[0], [1039]], "com": [] },
+      "price": { "de": [[0], [1036]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -2384,7 +2396,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[599], [599], [599]], "com": [] },
+      "price": { "de": [[648], [601], [634]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -2431,7 +2443,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[448], [470], [462], [458]], "com": [] },
+      "price": { "de": [[450], [468], [454], [463]], "com": [] },
       "amazon": {
         "de": [
           [
