@@ -1268,6 +1268,38 @@
       }
     },
     {
+      "name": "G7 ThinQ",
+      "brand": "LG",
+      "imagelink": "images\\\\/g7thinQ.jpg",
+      "smallestPrice": 0,
+      "design": 5,
+      "display": 6.1,
+      "length": 153,
+      "width": 72,
+      "processor": 5,
+      "updates": 4,
+      "camera": 4,
+      "battery": 3,
+      "batterysize": 3000,
+      "storage": 64,
+      "memory": 4,
+      "sdslot": 1,
+      "simcards": 1,
+      "notch": 1,
+      "waterproof": "8",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [["platinum grey", "B07D7NXYT6"], ["black", "B07D69KKBZ"]],
+        "com": [["white", ""], ["black", ""]]
+      },
+      "price": { "de": [], "com": [] },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
       "name": "V30",
       "brand": "LG",
       "imagelink": "images\\\\/715GbwmYJjL._SY879_.jpg",
