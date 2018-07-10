@@ -39,7 +39,10 @@
         <div style="float: right;">
           <ul>
             <li>
-              <select id="countryInput" class="heavy">
+              <a id="smartphoneCount" class="smartphoneCount" style="vertical-align: middle">100</a>
+            </li>
+            <li>
+              <select id="countryInput" class="countryInput">
                 <option value="de" selected>GERMANY</option>
                 <option value="com">UNITED STATES</option>
               </select>
@@ -62,7 +65,18 @@
               <tr>
                 <th colspan="2">Sorting Options</th>
               </tr>
-
+              <tr>
+                <th>Filter Templates</th>
+                <th>
+                  <select id="filterTemplates" class="filterTemplates">
+                    <option value="" selected="selected"></option>
+                    <option value="justGood">Good smartphones from all price ranges.</option>
+                    <option value="small">Smartphones made for small hands.</option>
+                    <option value="big">Smartphones made for freaky big hands.</option>
+                    <option value="cheap">Smartphones for small budgets.</option>
+                  </select>
+                </th>
+              </tr>
               <tr>
                 <th>Sort table by</th>
                 <th>
@@ -81,7 +95,7 @@
                 <th>Scale phones</th>
                 <th>
                   <input type="checkbox" id="scaleInput" class="cbx hidden rating_updater" checked="" />
-                  <label for="scaleInput" class="lbl rating_updater"></label>
+                  <label for="scaleInput" class="lbl"></label>
                 </th>
               </tr>
 
@@ -287,28 +301,28 @@
                   <br>Jack</th>
                 <th>
                   <input type="checkbox" id="jackInput" class="cbx hidden rating_updater" />
-                  <label for="jackInput" class="lbl rating_updater filterselect"></label>
+                  <label for="jackInput" class="lbl filterselect"></label>
                 </th>
               </tr>
               <tr>
                 <th>2 SIMs</th>
                 <th>
                   <input type="checkbox" id="simCardInput" class="cbx hidden rating_updater" />
-                  <label for="simCardInput" class="lbl rating_updater filterselect"></label>
+                  <label for="simCardInput" class="lbl filterselect"></label>
                 </th>
               </tr>
               <tr>
                 <th>SD Slot</th>
                 <th>
                   <input type="checkbox" id="sdSlotInput" class="cbx hidden rating_updater" />
-                  <label for="sdSlotInput" class="lbl rating_updater filterselect"></label>
+                  <label for="sdSlotInput" class="lbl filterselect"></label>
                 </th>
               </tr>
               <tr>
                 <th>No notch</th>
                 <th>
                   <input type="checkbox" id="notchInput" class="cbx hidden rating_updater" />
-                  <label for="notchInput" class="lbl rating_updater filterselect"></label>
+                  <label for="notchInput" class="lbl filterselect"></label>
                 </th>
               </tr>
               <tr>

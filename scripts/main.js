@@ -44,6 +44,8 @@ window.onload = function() {
         smartphone["price"][country][i][0] !== 0
       ) {
         lowest = i;
+      } else if(smartphone["price"][country][lowest][0] == 0){
+        lowest = i;
       }
     }
     return lowest;
@@ -73,6 +75,7 @@ window.onload = function() {
   function filterJSON() {
     listOfFilteredObjects = [];
     for (var i = 0; i < obj.smartphones.length; i++) {
+
       //prize not 0
       if (
         obj.smartphones[i]["price"][country][
@@ -274,6 +277,7 @@ window.onload = function() {
 
       listOfFilteredObjects.push(obj.smartphones[i]);
     }
+
   }
 
   function sortListOfFilteredObjects(filterType) {
@@ -373,6 +377,33 @@ window.onload = function() {
     );
   }
 
+  function resetFilters()
+  {
+    let filterElements = document.getElementsByClassName("rating_updater");
+    for (let i = 0; i < filterElements.length; i++) {
+      fieldType = filterElements[i].type.toLowerCase();
+      switch (fieldType)
+      {
+        case "text":
+        case "textarea":
+        filterElements[i].value = "";
+            break;
+        case "radio":
+        case "checkbox":
+            if (filterElements[i].checked)
+            {
+              filterElements[i].checked = false;
+            }
+            break;
+        default:
+            break;
+      }
+    }
+
+    //manuel stuff
+    document.getElementById('scaleInput').checked = true;
+  }
+
   function deleteTable() {
     var rowCount = table.rows.length;
     for (var i = rowCount - 1; i >= 0; i--) {
@@ -414,6 +445,7 @@ window.onload = function() {
     buildTableStructure(tableType);
     filterJSON();
     sortListOfFilteredObjects(tableType);
+    setSmartphoneCount();
 
     switch (tableType) {
       case "price":
@@ -439,6 +471,12 @@ window.onload = function() {
     }
   }
 
+  function setSmartphoneCount(){
+    document.getElementById("smartphoneCount").innerHTML = `${listOfFilteredAndScoredObjects.length}/${obj.smartphones.length}`;
+  }
+   
+  
+
   function fillHorizontally(functioncall, type, suffix) {
     var cell;
     var cell1;
@@ -451,7 +489,7 @@ window.onload = function() {
       cell = table.rows[0].insertCell(table.rows[0].cells.length);
       cell.className += "smartphonecells";
       cell.innerHTML = getInnerHTMLSmartphone(i, "block");
-      registerEventForDetails(listOfFilteredAndScoredObjects[i].name);
+      //registerEventForDetails(listOfFilteredAndScoredObjects[i].name);
     }
   }
 
@@ -471,103 +509,78 @@ window.onload = function() {
     }
 
     var innerHtml =
-      '<div style="display:flex; justify-content: flex-end; flex-direction: column; height: 425px;">' +
-      '<div style="text-align: center;">' +
-      '<input type="checkbox">' +
-      '<label for="toggle" id="picture' +
-      listOfFilteredAndScoredObjects[i].name +
-      '">' +
-      '<img class="qtip-img" id="picture' +
-      listOfFilteredAndScoredObjects[i].name +
-      '" style="max-height:' +
-      scale * listOfFilteredAndScoredObjects[i].length +
-      'px;"" src="' +
-      listOfFilteredAndScoredObjects[i].imagelink +
-      '">' +
-      "</label>" +
-      "</div>" +
-      "</div>" +
-      '<div class="detailwindow float" id="hiddenpicture' +
-      listOfFilteredAndScoredObjects[i].name +
-      '" style ="display:' +
-      isDetailsHidden +
-      '" >' +
-      "<div>" +
-      '<p class="smartphone-name">' +
-      listOfFilteredAndScoredObjects[i].brand +
-      " " +
-      listOfFilteredAndScoredObjects[i].name +
-      "</p></div>" +
-      '<div style="clear:both;"></div>' +
-      '<div><span style="font-weight: bold;">' +
-      listOfFilteredAndScoredObjects[i].display +
-      '"</span>' +
-      '<span style="float:right; font-weight: bold;" class="accentColor">' +
-      getLowestParameter(listOfFilteredAndScoredObjects, i, "price") +
-      "€</span>" +
-      '<button class="btn-color dropdown-toggle">' +
-      '<div class="colorpicker"></div>' +
-      '<span class="caret"></span>' +
-      "</button>" +
-      "</div>" +
-      "<h3>" +
-      listOfFilteredAndScoredObjects[i].width +
-      " * " +
-      listOfFilteredAndScoredObjects[i].length +
-      "mm</h3>" +
-      '<div style="width:20px; height:20px; float:left;"><img style="max-width:20px; max-height:20px; float:left;" src="images/ram_icon.png"></div>' +
-      '<h3 style="float:left;">' +
-      listOfFilteredAndScoredObjects[i].memory +
-      "GB</h3>" +
-      '<div style="width:20px; height:20px; float:right;"><img style="max-width:20px; max-height:20px; float:right;" src="images/charging-battery.png"></div>' +
-      '<h3 style="float:right;">' +
-      listOfFilteredAndScoredObjects[i].batterysize +
-      "</h3>" +
-      '<div style="clear:both;"></div>' +
-      '<div style="width:20px; height:20px; float:left;"><img style="max-width:20px; max-height:20px; " src="images/sd_storage.png"></div>' +
-      '<h3 style="float:left;">' +
-      listOfFilteredAndScoredObjects[i].storage +
-      "GB</h3>" +
-      "<br>" +
-      "<br>" +
-      '<div class="detailratingdescription">Design</div><div class="detailrating">' +
-      listOfFilteredAndScoredObjects[i].design +
-      "</span></div>" +
-      '<div style="clear: both"></div>' +
-      '<div class="detailratingdescription">Processor</div><div class="detailrating">' +
-      listOfFilteredAndScoredObjects[i].processor +
-      "</span></div>" +
-      '<div style="clear: both"></div>' +
-      '<div class="detailratingdescription">Software</div><div class="detailrating">' +
-      listOfFilteredAndScoredObjects[i].updates +
-      "</span></div>" +
-      '<div style="clear: both"></div>' +
-      '<div class="detailratingdescription">Camera</div><div class="detailrating">' +
-      listOfFilteredAndScoredObjects[i].camera +
-      "</span></div>" +
-      '<div style="clear: both"></div>' +
-      '<div class="detailratingdescription">Battery</div><div class="detailrating">' +
-      listOfFilteredAndScoredObjects[i].battery +
-      "</span></div>" +
-      '<div style="clear: both"></div>' +
-      "<hr>" +
-      '<h3 ><span style="float:right; color: #129e41; font-weight: bold;">' +
-      listOfFilteredAndScoredObjects[i].totalscore +
-      "</span></h3>" +
-      '<div class="wrapper">' +
-      '<span class="a-button a-button-primary">' +
-      ' <a target="_blank" href="' +
-      getLowestParameter(listOfFilteredAndScoredObjects, i, "amazon") +
-      '" style="text-decoration:none;">' +
-      '<span class="a-button-inner">' +
-      '<img src="images/Amazon-Favicon-64x64.png" class="a-icon a-icon-shop-now">' +
-      '<input class="a-button-input" type="submit" value="Add to cart">' +
-      '<span class="a-button-text">Shop Now</span>' +
-      "</span>" +
-      " </a>" +
-      "</span>" +
-      "</div> " +
-      " </div>";
+      `<div style="display:flex; justify-content: flex-end; flex-direction: column; height: 425px;"> 
+      <div style="text-align: center;"> 
+      <input type="checkbox"> 
+      <label for="toggle" id="picture${listOfFilteredAndScoredObjects[i].name}"> 
+      <img class="qtip-img" id="picture${listOfFilteredAndScoredObjects[i].name}" style="max-height:${scale * listOfFilteredAndScoredObjects[i].length}px;" src="${listOfFilteredAndScoredObjects[i].imagelink}"> 
+      </label>
+      </div> 
+      </div> 
+      <div class="detailwindow float" id="hiddenpicture${listOfFilteredAndScoredObjects[i].name}" style ="display: ${isDetailsHidden}"> 
+      <div>
+      <p class="smartphone-name">${listOfFilteredAndScoredObjects[i].brand} ${listOfFilteredAndScoredObjects[i].name} </p>
+      </div> 
+      <div style="clear:both;"></div> 
+      <div>
+      <span style="font-weight: bold;">${listOfFilteredAndScoredObjects[i].display}"</span> 
+      <span style="float:right; font-weight: bold;" class="accentColor">${getLowestParameter(listOfFilteredAndScoredObjects, i, "price")}€</span> 
+      <button class="btn-color dropdown-toggle"> 
+      <div class="colorpicker"></div> 
+      <span class="caret"></span> 
+      </button>
+      </div>
+      <h3>${listOfFilteredAndScoredObjects[i].width} * ${listOfFilteredAndScoredObjects[i].length}mm</h3> 
+      <div style="width:20px; height:20px; float:left;"><img style="max-width:20px; max-height:20px; float:left;" src="images/ram_icon.png"></div> 
+      <h3 style="float:left;"> ${listOfFilteredAndScoredObjects[i].memory} GB</h3> 
+      <div style="width:20px; height:20px; float:right;"><img style="max-width:20px; max-height:20px; float:right;" src="images/charging-battery.png"></div> 
+      <h3 style="float:right;"> 
+      ${listOfFilteredAndScoredObjects[i].batterysize} 
+      </h3> 
+      <div style="clear:both;"></div> 
+      <div style="width:20px; height:20px; float:left;"><img style="max-width:20px; max-height:20px; " src="images/sd_storage.png"></div> 
+      <h3 style="float:left;"> 
+      ${listOfFilteredAndScoredObjects[i].storage} 
+      GB</h3>
+      <br>      
+      <br>
+      <div class="detailratingdescription">Design</div><div class="detailrating"> 
+      ${listOfFilteredAndScoredObjects[i].design} 
+      </span></div> 
+      <div style="clear: both"></div> 
+      <div class="detailratingdescription">Processor</div><div class="detailrating"> 
+      ${listOfFilteredAndScoredObjects[i].processor} 
+      </span></div> 
+      <div style="clear: both"></div> 
+      <div class="detailratingdescription">Software</div><div class="detailrating"> 
+      ${listOfFilteredAndScoredObjects[i].updates} 
+      </span></div> 
+      <div style="clear: both"></div> 
+      <div class="detailratingdescription">Camera</div><div class="detailrating"> 
+      ${listOfFilteredAndScoredObjects[i].camera} 
+      </span></div> 
+      <div style="clear: both"></div> 
+      <div class="detailratingdescription">Battery</div><div class="detailrating"> 
+      ${listOfFilteredAndScoredObjects[i].battery}
+      </span></div> 
+      <div style="clear: both"></div> 
+      <hr> 
+      <h3 ><span style="float:right; color: #129e41; font-weight: bold;"> 
+      ${listOfFilteredAndScoredObjects[i].totalscore} 
+      </span></h3> 
+      <div class="wrapper"> 
+      <span class="a-button a-button-primary"> 
+       <a target="_blank" href=" 
+       ${getLowestParameter(listOfFilteredAndScoredObjects, i, "amazon")}" style="text-decoration:none;"> 
+      <span class="a-button-inner"> 
+      <img src="images/Amazon-Favicon-64x64.png" class="a-icon a-icon-shop-now"> 
+      <input class="a-button-input" type="submit" value="Add to cart"> 
+      <span class="a-button-text">Shop Now</span> 
+      </span> 
+       </a>
+      </span> 
+      </div>  
+       </div>`;
 
     return innerHtml;
   }
@@ -649,6 +662,36 @@ window.onload = function() {
   country = document.getElementById("countryInput").value;
   document.getElementById("countryInput").onchange = function() {
     country = document.getElementById("countryInput").value;
+    findLowestPriceForAllSmartphones();
+    updateTable();
+  };
+
+  document.getElementById("filterTemplates").onchange = function() {
+    resetFilters();
+    switch (document.getElementById("filterTemplates").value) {
+      case "":
+      break;
+      case "justGood":
+      document.getElementById("design-input-1-2").checked = true;
+      document.getElementById("processor-input-1-3").checked = true;
+      document.getElementById("updates-input-1-4").checked = true;
+      document.getElementById("camera-input-1-3").checked = true;
+      document.getElementById("battery-input-1-3").checked = true;
+      break;
+      case "small":
+      document.getElementById("size_maximum_2").value = 150;
+      break;
+      case "big":
+      document.getElementById("size_minimum_2").value = 150;
+      break;
+      case "cheap":
+        
+      break;
+
+      default:
+        break;
+}
+
     findLowestPriceForAllSmartphones();
     updateTable();
   };
