@@ -44,7 +44,7 @@ window.onload = function() {
         smartphone["price"][country][i][0] !== 0
       ) {
         lowest = i;
-      } else if(smartphone["price"][country][lowest][0] == 0){
+      } else if (smartphone["price"][country][lowest][0] == 0) {
         lowest = i;
       }
     }
@@ -75,9 +75,11 @@ window.onload = function() {
   function filterJSON() {
     listOfFilteredObjects = [];
     for (var i = 0; i < obj.smartphones.length; i++) {
-
       //prize not 0
       if (
+        obj.smartphones[i]["price"][country][
+          obj.smartphones[i].smallestPrice
+        ] == null ||
         obj.smartphones[i]["price"][country][
           obj.smartphones[i].smallestPrice
         ][0] === 0
@@ -277,7 +279,6 @@ window.onload = function() {
 
       listOfFilteredObjects.push(obj.smartphones[i]);
     }
-
   }
 
   function sortListOfFilteredObjects(filterType) {
@@ -377,31 +378,28 @@ window.onload = function() {
     );
   }
 
-  function resetFilters()
-  {
+  function resetFilters() {
     let filterElements = document.getElementsByClassName("rating_updater");
     for (let i = 0; i < filterElements.length; i++) {
       fieldType = filterElements[i].type.toLowerCase();
-      switch (fieldType)
-      {
+      switch (fieldType) {
         case "text":
         case "textarea":
-        filterElements[i].value = "";
-            break;
+          filterElements[i].value = "";
+          break;
         case "radio":
         case "checkbox":
-            if (filterElements[i].checked)
-            {
-              filterElements[i].checked = false;
-            }
-            break;
+          if (filterElements[i].checked) {
+            filterElements[i].checked = false;
+          }
+          break;
         default:
-            break;
+          break;
       }
     }
 
     //manuel stuff
-    document.getElementById('scaleInput').checked = true;
+    document.getElementById("scaleInput").checked = true;
   }
 
   function deleteTable() {
@@ -438,6 +436,7 @@ window.onload = function() {
   }
 
   function updateTable() {
+    console.log("aasa");
     var tableType = document.getElementById("filterInput").options[
       document.getElementById("filterInput").selectedIndex
     ].value;
@@ -471,11 +470,11 @@ window.onload = function() {
     }
   }
 
-  function setSmartphoneCount(){
-    document.getElementById("smartphoneCount").innerHTML = `${listOfFilteredAndScoredObjects.length}/${obj.smartphones.length}`;
+  function setSmartphoneCount() {
+    document.getElementById("smartphoneCount").innerHTML = `${
+      listOfFilteredAndScoredObjects.length
+    }/${obj.smartphones.length}`;
   }
-   
-  
 
   function fillHorizontally(functioncall, type, suffix) {
     var cell;
@@ -508,31 +507,51 @@ window.onload = function() {
       scale = "1x";
     }
 
-    var innerHtml =
-      `<div style="display:flex; justify-content: flex-end; flex-direction: column; height: 425px;"> 
+    var innerHtml = `<div style="display:flex; justify-content: flex-end; flex-direction: column; height: 425px;"> 
       <div style="text-align: center;"> 
       <input type="checkbox"> 
-      <label for="toggle" id="picture${listOfFilteredAndScoredObjects[i].name}"> 
-      <img class="qtip-img" id="picture${listOfFilteredAndScoredObjects[i].name}" style="max-height:${scale * listOfFilteredAndScoredObjects[i].length}px;" src="${listOfFilteredAndScoredObjects[i].imagelink}"> 
+      <label for="toggle" id="picture${
+        listOfFilteredAndScoredObjects[i].name
+      }"> 
+      <img class="qtip-img" id="picture${
+        listOfFilteredAndScoredObjects[i].name
+      }" style="max-height:${scale *
+      listOfFilteredAndScoredObjects[i].length}px;" src="${
+      listOfFilteredAndScoredObjects[i].imagelink
+    }"> 
       </label>
       </div> 
       </div> 
-      <div class="detailwindow float" id="hiddenpicture${listOfFilteredAndScoredObjects[i].name}" style ="display: ${isDetailsHidden}"> 
+      <div class="detailwindow float" id="hiddenpicture${
+        listOfFilteredAndScoredObjects[i].name
+      }" style ="display: ${isDetailsHidden}"> 
       <div>
-      <p class="smartphone-name">${listOfFilteredAndScoredObjects[i].brand} ${listOfFilteredAndScoredObjects[i].name} </p>
+      <p class="smartphone-name">${listOfFilteredAndScoredObjects[i].brand} ${
+      listOfFilteredAndScoredObjects[i].name
+    } </p>
       </div> 
       <div style="clear:both;"></div> 
       <div>
-      <span style="font-weight: bold;">${listOfFilteredAndScoredObjects[i].display}"</span> 
-      <span style="float:right; font-weight: bold;" class="accentColor">${getLowestParameter(listOfFilteredAndScoredObjects, i, "price")}€</span> 
+      <span style="font-weight: bold;">${
+        listOfFilteredAndScoredObjects[i].display
+      }"</span> 
+      <span style="float:right; font-weight: bold;" class="accentColor">${getLowestParameter(
+        listOfFilteredAndScoredObjects,
+        i,
+        "price"
+      )}€</span> 
       <button class="btn-color dropdown-toggle"> 
       <div class="colorpicker"></div> 
       <span class="caret"></span> 
       </button>
       </div>
-      <h3>${listOfFilteredAndScoredObjects[i].width} * ${listOfFilteredAndScoredObjects[i].length}mm</h3> 
+      <h3>${listOfFilteredAndScoredObjects[i].width} * ${
+      listOfFilteredAndScoredObjects[i].length
+    }mm</h3> 
       <div style="width:20px; height:20px; float:left;"><img style="max-width:20px; max-height:20px; float:left;" src="images/ram_icon.png"></div> 
-      <h3 style="float:left;"> ${listOfFilteredAndScoredObjects[i].memory} GB</h3> 
+      <h3 style="float:left;"> ${
+        listOfFilteredAndScoredObjects[i].memory
+      } GB</h3> 
       <div style="width:20px; height:20px; float:right;"><img style="max-width:20px; max-height:20px; float:right;" src="images/charging-battery.png"></div> 
       <h3 style="float:right;"> 
       ${listOfFilteredAndScoredObjects[i].batterysize} 
@@ -571,7 +590,11 @@ window.onload = function() {
       <div class="wrapper"> 
       <span class="a-button a-button-primary"> 
        <a target="_blank" href=" 
-       ${getLowestParameter(listOfFilteredAndScoredObjects, i, "amazon")}" style="text-decoration:none;"> 
+       ${getLowestParameter(
+         listOfFilteredAndScoredObjects,
+         i,
+         "amazon"
+       )}" style="text-decoration:none;"> 
       <span class="a-button-inner"> 
       <img src="images/Amazon-Favicon-64x64.png" class="a-icon a-icon-shop-now"> 
       <input class="a-button-input" type="submit" value="Add to cart"> 
@@ -670,27 +693,26 @@ window.onload = function() {
     resetFilters();
     switch (document.getElementById("filterTemplates").value) {
       case "":
-      break;
+        break;
       case "justGood":
-      document.getElementById("design-input-1-2").checked = true;
-      document.getElementById("processor-input-1-3").checked = true;
-      document.getElementById("updates-input-1-4").checked = true;
-      document.getElementById("camera-input-1-3").checked = true;
-      document.getElementById("battery-input-1-3").checked = true;
-      break;
+        document.getElementById("design-input-1-2").checked = true;
+        document.getElementById("processor-input-1-3").checked = true;
+        document.getElementById("updates-input-1-4").checked = true;
+        document.getElementById("camera-input-1-3").checked = true;
+        document.getElementById("battery-input-1-3").checked = true;
+        break;
       case "small":
-      document.getElementById("size_maximum_2").value = 150;
-      break;
+        document.getElementById("size_maximum_2").value = 150;
+        break;
       case "big":
-      document.getElementById("size_minimum_2").value = 150;
-      break;
+        document.getElementById("size_minimum_2").value = 150;
+        break;
       case "cheap":
-        
-      break;
+        break;
 
       default:
         break;
-}
+    }
 
     findLowestPriceForAllSmartphones();
     updateTable();

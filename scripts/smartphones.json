@@ -35,7 +35,7 @@
           ["black/copper", "B07BVDG8P1", "Unlocked"]
         ]
       },
-      "price": { "de": [[265], [270], [269], [279]], "com": [] },
+      "price": { "de": [[249], [270], [269], [279]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -88,7 +88,7 @@
           ["black/copper", "B07BVS4LMN", ""]
         ]
       },
-      "price": { "de": [[378], [385], [368], [385]], "com": [] },
+      "price": { "de": [[378], [397], [372], [385]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -189,13 +189,81 @@
         "de": [["black", "B07B69SLMB"]],
         "com": [["black", "B07B69SLMB"]]
       },
-      "price": { "de": [[599]], "com": [] },
+      "price": { "de": [[624]], "com": [] },
       "amazon": {
         "de": [
           [
             "https://www.amazon.de/Nokia-Sirocco-Hauptkamera-Frontkamera-spritzgesch%C3%BCtzt-Schwarz/dp/B07B69SLMB?psc=1&SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07B69SLMB"
           ]
         ],
+        "com": []
+      }
+    },
+    {
+      "name": "Redmi Note 5 (32GB)",
+      "brand": "Xiamoi",
+      "imagelink": "images\\\\/redmiNote5.jpg",
+      "smallestPrice": 0,
+      "design": 4,
+      "display": 6,
+      "length": 159,
+      "width": 76,
+      "processor": 3,
+      "updates": 3,
+      "camera": 3,
+      "battery": 5,
+      "batterysize": 4000,
+      "storage": 32,
+      "memory": 3,
+      "sdslot": 1,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "0",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [["black", "B07CZPXGVJ"], ["gold", "B07CRGJW16"]],
+        "com": []
+      },
+      "price": { "de": [], "com": [] },
+      "amazon": {
+        "de": [],
+        "com": []
+      }
+    },
+    {
+      "name": "Redmi Note 5 (64GB)",
+      "brand": "Xiamoi",
+      "imagelink": "images\\\\/redmiNote5.jpg",
+      "smallestPrice": 0,
+      "design": 4,
+      "display": 6,
+      "length": 159,
+      "width": 76,
+      "processor": 3,
+      "updates": 3,
+      "camera": 3,
+      "battery": 5,
+      "batterysize": 4000,
+      "storage": 64,
+      "memory": 4,
+      "sdslot": 1,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "0",
+      "headphonejack": 1,
+      "totalscore": 0,
+      "asin": {
+        "de": [
+          ["black", "B07CZS8W5Y"],
+          ["gold", "B07CZS7T17"],
+          ["blue", "B07CZS9QDB"]
+        ],
+        "com": []
+      },
+      "price": { "de": [], "com": [] },
+      "amazon": {
+        "de": [],
         "com": []
       }
     },
@@ -283,7 +351,91 @@
         ],
         "com": [["black", "B075SBJ3T2"], ["black", "B079816Y5T"]]
       },
-      "price": { "de": [[345], [375], [548]], "com": [] },
+      "price": { "de": [[350], [387], [548]], "com": [] },
+      "amazon": {
+        "de": [
+          [
+            "https://www.amazon.de/Xiaomi-Mi-Mix-Black-EU-Ware-schwarz/dp/B0784RQR88?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0784RQR88"
+          ],
+          [
+            "https://www.amazon.de/Xiaomi-Globale-Marken-Snapdragon-Smartphone-Schwarz/dp/B076VLN14J?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076VLN14J"
+          ],
+          [
+            "https://www.amazon.de/Xiaomi-Mix-128GB-Dual-SIM-white/dp/B0792TXZ46?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0792TXZ46"
+          ]
+        ],
+        "com": []
+      }
+    },
+    {
+      "name": "Mi MIX 2s (64GB)",
+      "brand": "Xiamoi",
+      "imagelink": "images\\\\/7EIAsGt.jpg",
+      "smallestPrice": 0,
+      "design": 5,
+      "display": 6,
+      "length": 152,
+      "width": 76,
+      "processor": 5,
+      "updates": 3,
+      "camera": 5,
+      "battery": 4,
+      "batterysize": 3400,
+      "storage": 64,
+      "memory": 6,
+      "sdslot": 0,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "0",
+      "headphonejack": 0,
+      "totalscore": 0,
+      "asin": {
+        "de": [["black", "B07CZFRXP1"], ["white", "B07D4NBDM9"]],
+        "com": []
+      },
+      "price": { "de": [[350], [387], [548]], "com": [] },
+      "amazon": {
+        "de": [
+          [
+            "https://www.amazon.de/Xiaomi-Mi-Mix-Black-EU-Ware-schwarz/dp/B0784RQR88?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0784RQR88"
+          ],
+          [
+            "https://www.amazon.de/Xiaomi-Globale-Marken-Snapdragon-Smartphone-Schwarz/dp/B076VLN14J?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B076VLN14J"
+          ],
+          [
+            "https://www.amazon.de/Xiaomi-Mix-128GB-Dual-SIM-white/dp/B0792TXZ46?SubscriptionId=AKIAID7PXQVND5NADH5A&tag=smartphonep08-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B0792TXZ46"
+          ]
+        ],
+        "com": []
+      }
+    },
+    {
+      "name": "Mi MIX 2s (128GB)",
+      "brand": "Xiamoi",
+      "imagelink": "images\\\\/7EIAsGt.jpg",
+      "smallestPrice": 0,
+      "design": 5,
+      "display": 6,
+      "length": 152,
+      "width": 76,
+      "processor": 5,
+      "updates": 3,
+      "camera": 5,
+      "battery": 4,
+      "batterysize": 3400,
+      "storage": 64,
+      "memory": 6,
+      "sdslot": 0,
+      "simcards": 2,
+      "notch": 0,
+      "waterproof": "0",
+      "headphonejack": 0,
+      "totalscore": 0,
+      "asin": {
+        "de": [["black", "B07D4QL67S"]],
+        "com": []
+      },
+      "price": { "de": [[350], [387], [548]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -377,7 +529,7 @@
           ["translucent oil", "B077TMKPTQ"]
         ]
       },
-      "price": { "de": [[749], [642], [749], [630]], "com": [] },
+      "price": { "de": [[749], [642], [749], [632]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -628,7 +780,7 @@
           ["white", "B07917BQWC"]
         ]
       },
-      "price": { "de": [[585], [584]], "com": [] },
+      "price": { "de": [[585], [585]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -719,7 +871,7 @@
           ["silk white", "B078BNQ2ZS"]
         ]
       },
-      "price": { "de": [[569], [569], [599]], "com": [] },
+      "price": { "de": [[569], [569], [569]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -769,7 +921,7 @@
           ["sapphire blue", "B078NCL7GJ"]
         ]
       },
-      "price": { "de": [[231], [221], [0], [229]], "com": [] },
+      "price": { "de": [[229], [221], [0], [217]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -999,7 +1151,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[729], [703], [709]], "com": [] },
+      "price": { "de": [[719], [594], [709]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1093,7 +1245,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[296], [334], [352], [303], [344]], "com": [] },
+      "price": { "de": [[296], [334], [356], [303], [344]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1235,7 +1387,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[526], [522], [519], [514]], "com": [] },
+      "price": { "de": [[529], [522], [518], [536]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1284,7 +1436,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[644], [634], [643]], "com": [] },
+      "price": { "de": [[645], [634], [657]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1330,7 +1482,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[772], [886], [902]], "com": [] },
+      "price": { "de": [[772], [886], [929]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1377,7 +1529,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[772], [764], [756], [779]], "com": [] },
+      "price": { "de": [[793], [764], [756], [808]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1546,7 +1698,7 @@
         "de": [["super black", "B074MHFGFS"], ["sterling blue", "B00V4Y3RII"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[244], [249]], "com": [] },
+      "price": { "de": [[236], [249]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1585,7 +1737,7 @@
         "de": [["lunar grey", "B0747WYLTX"], ["fine gold", "B0747X83J5"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[315], [284]], "com": [] },
+      "price": { "de": [[309], [284]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1624,7 +1776,7 @@
         "de": [["black", "B074MH8DJ5"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[379]], "com": [] },
+      "price": { "de": [[359]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1809,7 +1961,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[98], [139], [99], [94]], "com": [] },
+      "price": { "de": [[98], [149], [99], [94]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1854,7 +2006,7 @@
         "de": [["fine gold", "B071J7FRBD"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[139]], "com": [] },
+      "price": { "de": [[149]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1890,7 +2042,7 @@
         "de": [["fine gold", "B074MHL2DN"], ["lunar grey", "B074MGP8GJ"]],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[128], [137]], "com": [] },
+      "price": { "de": [[128], [125]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -1973,7 +2125,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[214], [248], [209], [221]], "com": [] },
+      "price": { "de": [[214], [248], [208], [221]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -2023,7 +2175,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[597], [610], [550], [706]], "com": [] },
+      "price": { "de": [[597], [590], [562], [706]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -2112,7 +2264,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[751], [759], [686], [939]], "com": [] },
+      "price": { "de": [[751], [785], [697], [939]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -2200,7 +2352,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[648], [633], [625]], "com": [] },
+      "price": { "de": [[599], [599], [599]], "com": [] },
       "amazon": {
         "de": [
           [
@@ -2247,7 +2399,7 @@
         ],
         "com": [["white", ""], ["black", ""]]
       },
-      "price": { "de": [[450], [469], [456], [458]], "com": [] },
+      "price": { "de": [[448], [470], [462], [458]], "com": [] },
       "amazon": {
         "de": [
           [
